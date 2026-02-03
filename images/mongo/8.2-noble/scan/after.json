@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c243f-f52b-765c-88e5-b336e0ed096e",
-  "CreatedAt": "2026-02-04T00:04:57.259420865+08:00",
-  "ArtifactID": "sha256:ccd3537e03449e19e02ad3563ac7906157e28b242c2b55af79a2787e8e9596ae",
+  "ReportID": "019c24be-7b4a-7bc3-8d82-357573555b33",
+  "CreatedAt": "2026-02-04T01:23:09.130774186+07:00",
+  "ArtifactID": "sha256:e1bb647bec4d343b862ac33bea060afba3844748fde4c8e4354d04b5bc8a010b",
   "ArtifactName": "detoxd/mongo:8.2-noble-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,7 +14,7 @@
       "Family": "ubuntu",
       "Name": "24.04"
     },
-    "ImageID": "sha256:9261810680b33da712e34c06f8ef822e8306124b8f4cbb32b7f5f4dee8358d3c",
+    "ImageID": "sha256:93643e8f7a363f18d9fd651f390555ea9bb731b8e66b88d1f013ec7b08b331a7",
     "DiffIDs": [
       "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f",
       "sha256:ea3de20ce71e2cb7b65a92293c3415f3372d4e11596cc2e6e18bf64e6e0c66ac",
@@ -24,9 +24,9 @@
       "sha256:36ec43c650791a15a3c5c45af5b76a45da4d40d98a86f0592564cb7988592d3f",
       "sha256:14f3b1c3abc234cd7f06644ef0f41259565866d8eec5feb8bca204a8ecb50307",
       "sha256:305b2f1afbb8892158e86cb131da7dbc56d0da8837f0760f84c0db8983d0dc9c",
-      "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841",
-      "sha256:306744746a606819631378a0d2292270409748ccf3289f257463ddc7e930811a",
-      "sha256:b89dc9b6588713736c9599e370d7362dfdaca3f491819fba938746f3c14e4364"
+      "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb",
+      "sha256:39174572499474e6cfd4572cd8eb6b562abb594de6cbfa0be9dd582d6a6255e8",
+      "sha256:3cdb59ea516984fe367d0f0e1e62bff5a00be53bfbb34ac47f91368521a428cb"
     ],
     "RepoTags": [
       "detoxd/mongo:8.2-noble-detox.1"
@@ -34,7 +34,7 @@
     "Reference": "detoxd/mongo:8.2-noble-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T00:04:35.661461924+08:00",
+      "created": "2026-02-04T02:22:48.754874862+08:00",
       "history": [
         {
           "created": "2026-01-13T05:37:25Z",
@@ -185,52 +185,52 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:04:34Z",
+          "created": "2026-02-03T18:22:47Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:04:34Z",
+          "created": "2026-02-03T18:22:47Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:04:34Z",
+          "created": "2026-02-03T18:22:47Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd mongo",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:04:34Z",
+          "created": "2026-02-03T18:22:47Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened mongo image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:04:34Z",
+          "created": "2026-02-03T18:22:47Z",
           "created_by": "LABEL detoxd.base.image=mongo:8.2-noble",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:04:34Z",
+          "created": "2026-02-03T18:22:47Z",
           "created_by": "RUN /bin/sh -c apt-get update \u0026\u0026     apt-get upgrade -y --no-install-recommends \u0026\u0026     apt-get dist-upgrade -y \u0026\u0026     apt-get purge -y --auto-remove         wget         curl         netcat*         telnet*         2\u003e/dev/null || true \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:04:35Z",
+          "created": "2026-02-03T18:22:48Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games gnats irc list news proxy uucp; do         userdel -r $user 2\u003e/dev/null || true;     done # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:04:35Z",
+          "created": "2026-02-03T18:22:48Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:04:35Z",
+          "created": "2026-02-03T18:22:48Z",
           "created_by": "EXPOSE map[27017/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -248,9 +248,9 @@
           "sha256:36ec43c650791a15a3c5c45af5b76a45da4d40d98a86f0592564cb7988592d3f",
           "sha256:14f3b1c3abc234cd7f06644ef0f41259565866d8eec5feb8bca204a8ecb50307",
           "sha256:305b2f1afbb8892158e86cb131da7dbc56d0da8837f0760f84c0db8983d0dc9c",
-          "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841",
-          "sha256:306744746a606819631378a0d2292270409748ccf3289f257463ddc7e930811a",
-          "sha256:b89dc9b6588713736c9599e370d7362dfdaca3f491819fba938746f3c14e4364"
+          "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb",
+          "sha256:39174572499474e6cfd4572cd8eb6b562abb594de6cbfa0be9dd582d6a6255e8",
+          "sha256:3cdb59ea516984fe367d0f0e1e62bff5a00be53bfbb34ac47f91368521a428cb"
         ]
       },
       "config": {
@@ -325,15 +325,15 @@
       },
       {
         "Size": 165204992,
-        "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+        "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
       },
       {
         "Size": 626176,
-        "DiffID": "sha256:306744746a606819631378a0d2292270409748ccf3289f257463ddc7e930811a"
+        "DiffID": "sha256:39174572499474e6cfd4572cd8eb6b562abb594de6cbfa0be9dd582d6a6255e8"
       },
       {
         "Size": 2048,
-        "DiffID": "sha256:b89dc9b6588713736c9599e370d7362dfdaca3f491819fba938746f3c14e4364"
+        "DiffID": "sha256:3cdb59ea516984fe367d0f0e1e62bff5a00be53bfbb34ac47f91368521a428cb"
       }
     ]
   },
@@ -2774,7 +2774,7 @@
             "libc6@2.39-0ubuntu8.7"
           ],
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "InstalledFiles": [
             "/usr/bin/getconf",
@@ -2836,7 +2836,7 @@
             "libgcc-s1@14.2.0-4ubuntu2~24.04"
           ],
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/gconv/ANSI_X3.110.so",
@@ -4048,7 +4048,7 @@
             "Class": "official"
           },
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "InstalledFiles": [
             "/usr/share/doc/libldap-common/changelog.Debian.gz",
@@ -4106,7 +4106,7 @@
             "libsasl2-2@2.1.28+dfsg1-5ubuntu3.1"
           ],
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblber.so.2.0.200",
@@ -6141,7 +6141,7 @@
             "libkrb5support0@1.20.1-6ubuntu2.6"
           ],
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "dpkg"
         },
@@ -9180,7 +9180,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:97c1893a107c71bb255fed1f0fc27dbdfda84cf6e535501665db13146e76f99f",
+          "Fingerprint": "sha256:0860de0857f8147b7604f3fd228035106f64626a3776dcf45ad25bdc45977ef1",
           "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
           "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
           "Severity": "LOW",
@@ -9242,7 +9242,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:7adf69cb7a9e1d85545afaa86b251700ccd14b33eccef4206ae117ca63742a2b",
+          "Fingerprint": "sha256:8aba72d8aa750359b7e24de8b9627a34f8718042c926f117f34183b0071d34f2",
           "Title": "gnupg: GnuPG: Signature bypass via form feed character in signed messages",
           "Description": "In GnuPG through 2.4.8, if a signed message has \\f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an \"invalid armor\" message is printed during verification). This is related to use of \\f as a marker to denote truncation of a long plaintext line.",
           "Severity": "MEDIUM",
@@ -9296,7 +9296,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:445652516177b03cd859d4c24fc6d5bdd855c4f6ad8f15ce6625c8649ec04bd4",
+          "Fingerprint": "sha256:3984dfc8e1dc66b6df4519c8bce9e45a058aa1bdffd5bc942bd3dd58a0664f7d",
           "Title": "GnuPG: GnuPG: Stack-based buffer overflow in tpm2daemon allows arbitrary code execution",
           "Description": "In GnuPG before 2.5.17, a stack-based buffer overflow exists in tpm2daemon during handling of the PKDECRYPT command for TPM-backed RSA and ECC keys.",
           "Severity": "MEDIUM",
@@ -9343,7 +9343,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:f95eb1aea4dc74dab9f825ef42f039d2bf8679b4f78bd29a63cd849e9bfae5fa",
+          "Fingerprint": "sha256:681a49a90fb48e767dd4ba5bc560d889e639c9668127785b06c2cb0dedafcb82",
           "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
           "Description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
           "Severity": "LOW",
@@ -9389,7 +9389,7 @@
           "InstalledVersion": "2.39-0ubuntu8.7",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "SeveritySource": "ubuntu",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
@@ -9398,7 +9398,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:bcc7ecd26cb42803c5b70819b59ccbcb86df0996e24e9deb5feae1fa14fbed06",
+          "Fingerprint": "sha256:e45a339cfba4558d9fb284c9be555b85ebed9a74ae83a077c7997d993089e9ed",
           "Title": "glibc: Integer overflow in memalign leads to heap corruption",
           "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
           "Severity": "MEDIUM",
@@ -9452,7 +9452,7 @@
           "InstalledVersion": "2.39-0ubuntu8.7",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "SeveritySource": "ubuntu",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
@@ -9461,7 +9461,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:e2c7ec1e600aafe5b64c40eeae23edb9f052edb24701c367b959c9c59f1615bb",
+          "Fingerprint": "sha256:fa0faa448da8c55cf288d767c137b017fe5d7a7627c182f531d8a57dc52089f7",
           "Title": "glibc: Integer overflow in memalign leads to heap corruption",
           "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
           "Severity": "MEDIUM",
@@ -9524,7 +9524,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:8baa0aa2d6aebb2f6f713738dbc5201668bd65caa56ad833a4e4efaad6ffbb7c",
+          "Fingerprint": "sha256:9b928a248f2d679a1b42e8e349738dd58cdfb98d720a3ff489895da27f055d68",
           "Title": "When asked to use a `.netrc` file for credentials **and** to follow HT ...",
           "Description": "When asked to use a `.netrc` file for credentials **and** to follow HTTP\nredirects, curl could leak the password used for the first host to the\nfollowed-to host under certain circumstances.\n\nThis flaw only manifests itself if the netrc file has a `default` entry that\nomits both login and password. A rare circumstance.",
           "Severity": "LOW",
@@ -9566,7 +9566,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:f5b817da728f03e93ca6fbe16859f15f9a8d97c080fafef490817fd1887c613a",
+          "Fingerprint": "sha256:babb7ceed52a29a82398dd1e04d9bd2c0632191de2ba15293a3acac05162aacd",
           "Title": "curl: predictable WebSocket mask",
           "Description": "curl's websocket code did not update the 32 bit mask pattern for each new\n outgoing frame as the specification says. Instead it used a fixed mask that\npersisted and was used throughout the entire connection.\n\nA predictable mask pattern allows for a malicious server to induce traffic\nbetween the two communicating parties that could be interpreted by an involved\nproxy (configured or transparent) as genuine, real, HTTP traffic with content\nand thereby poison its cache. That cached poisoned content could then be\nserved to all users of that proxy.",
           "Severity": "LOW",
@@ -9618,7 +9618,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:42dafa45c2eca325659e61d2bd4c365791f9ae427e6f0c0a4f5aa050cfd6856a",
+          "Fingerprint": "sha256:3bd3fbee89903622379cbe053ec16893e89b658a3e73b23ba772a94ec4d58837",
           "Title": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that  ...",
           "Description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a cross-protocol redirect to a second URL that uses an IMAP, LDAP,\nPOP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new\ntarget host.",
           "Severity": "LOW",
@@ -9659,7 +9659,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:931d6310445e1999aa3073eaaa593d0dfac54e7d6cf8b63fd5ce55c221d6865f",
+          "Fingerprint": "sha256:a477ffa2bfc6522c0f5319129da9b54fe7d8e5d90763e86de8919d413dbcec92",
           "Title": "When doing TLS related transfers with reused easy or multi handles and ...",
           "Description": "When doing TLS related transfers with reused easy or multi handles and\naltering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally\nreuse a CA store cached in memory for which the partial chain option was\nreversed. Contrary to the user's wishes and expectations. This could make\nlibcurl find and accept a trust chain that it otherwise would not.",
           "Severity": "LOW",
@@ -9699,7 +9699,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:4d57099994aab35d85d1872bc231a9d400f9b26cd07a9ebc2bb797236ce173b1",
+          "Fingerprint": "sha256:03ab7971d0bd6915c986e2f9bd517c0d844ce426563d2ac3236b63942ad6c99b",
           "Title": "When doing SSH-based transfers using either SCP or SFTP, and setting t ...",
           "Description": "When doing SSH-based transfers using either SCP or SFTP, and setting the\nknown_hosts file, libcurl could still mistakenly accept connecting to hosts\n*not present* in the specified file if they were added as recognized in the\nlibssh *global* known_hosts file.",
           "Severity": "LOW",
@@ -9740,7 +9740,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:1ccba3413d7c50bff79dbb4bab2e8b8365cb87219e545bbe2e6f9756ac6c25fd",
+          "Fingerprint": "sha256:f30f605ba0ece2f103fa9ce7acd72e503b84a05ece2672487850552c5592e54c",
           "Title": "When doing SSH-based transfers using either SCP or SFTP, and asked to  ...",
           "Description": "When doing SSH-based transfers using either SCP or SFTP, and asked to do\npublic key authentication, curl would wrongly still ask and authenticate using\na locally running SSH agent.",
           "Severity": "LOW",
@@ -9781,7 +9781,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:a7e05724e032b82e8cd33c5751f4c3eb98c4f91f6b3cbd36f472462c6a2c265f",
+          "Fingerprint": "sha256:b0f96d90abaa8f7327363dafb5db81f51bb44f5a7e3111e58cbe3e794882bb61",
           "Title": "curl: libcurl: Curl out of bounds read for cookie path",
           "Description": "1. A cookie is set using the `secure` keyword for `https://target` \n 2. curl is redirected to or otherwise made to speak with `http://target` (same \n   hostname, but using clear text HTTP) using the same cookie set \n 3. The same cookie name is set - but with just a slash as path (`path=\\\"/\\\",`).\n   Since this site is not secure, the cookie *should* just be ignored.\n4. A bug in the path comparison logic makes curl read outside a heap buffer\n   boundary\n\nThe bug either causes a crash or it potentially makes the comparison come to\nthe wrong conclusion and lets the clear-text site override the contents of the\nsecure cookie, contrary to expectations and depending on the memory contents\nimmediately following the single-byte allocation that holds the path.\n\nThe presumed and correct behavior would be to plainly ignore the second set of\nthe cookie since it was already set as secure on a secure host so overriding\nit on an insecure host should not be okay.",
           "Severity": "LOW",
@@ -9845,7 +9845,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:9cb2f13ad98be5541b88fde066685bdffb1d05f7e2958ad410787c47b2141f73",
+          "Fingerprint": "sha256:1e70df45087e48685810a6b0532f1d3220754b77589d8d193742497d72b189a3",
           "Title": "libgcrypt: vulnerable to Marvin Attack",
           "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
           "Severity": "LOW",
@@ -9909,7 +9909,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:a2a6171c37764333542a558ea9424102df9798d439435e4651a1f0fd96b62258",
+          "Fingerprint": "sha256:140308b5818915f98fcae5598a636841fcd8b1b3f71ce9c1862b6e8a52b563fd",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -9984,7 +9984,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:c55a684d91e4568b122002a35d91ccfb3c1ecccc1b119ae8b8f8127a454ab81b",
+          "Fingerprint": "sha256:e3c361c7a16287325a987baa7b2bfbcfce414af8101739602e49a6fa175ce898",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -10059,7 +10059,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:c8aa723e32dd75e18802a9e7afd6cc0c463b94227f8e4322b2e1390f4ce69447",
+          "Fingerprint": "sha256:d7973b0350e14d52776c7c0b8c8578066b3f459435ab03cb08a6e453c4d34815",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -10134,7 +10134,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:3ceee053b557b43f649831307141cdb9e0ec1928121470a07062c8c4db1b36f8",
+          "Fingerprint": "sha256:992e0cb8e91353699874075de5b1bbfda919d7f1dd115d6ea9b01579f2821e44",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -10209,7 +10209,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:35673c297da988e39d48c271ff7bd500cba3c054019764be78f1771d4ad7d6e6",
+          "Fingerprint": "sha256:5e8f7011775d3259da24563dc4f7eb5e1bf672d43f48e271bc457d0981579b5a",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -10269,7 +10269,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:26eb554b249ee4f5cc0db3f1b64d469af56c154d3297fe34867e1c9ce13c871b",
+          "Fingerprint": "sha256:d62d8da6955cc2cc05493333c15029c869a5761aa2025e04074752f7742e2923",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -10329,7 +10329,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:0786b660af8ed306fe2aafedd9f4306f04519a25a4c487a0de24fc14f2f020c7",
+          "Fingerprint": "sha256:fb11584d614bf1f4d56645dc387a3adf55ef274cadd4890e03254f5f7e7fee3e",
           "Title": "tar: Tar path traversal",
           "Description": "GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file's name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of \"Member name contains '..'\" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain \"x -\u003e ../../../../../home/victim/.ssh\" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which \"tar xf\" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each \"tar xf\" in its Security Rules of Thumb; however, third-party advice leads users to run \"tar xf\" more than once into the same directory.",
           "Severity": "MEDIUM",
@@ -10423,7 +10423,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:b2f4c1250d63b1fbabb1eb9d6fabe7a32f71a42b3d867179aeaa17af770ebf65",
+          "Fingerprint": "sha256:949d4959047f58d4f71160a54ce11f42eefe1c82888bfa362860ae60b1e275c4",
           "Title": "js-yaml: js-yaml prototype pollution in merge",
           "Description": "js-yaml is a JavaScript YAML parser and dumper. In js-yaml before 4.1.1 and 3.14.2, it's possible for an attacker to modify the prototype of the result of a parsed yaml document via prototype pollution (`__proto__`). All users who parse untrusted yaml documents may be impacted. The problem is patched in js-yaml 4.1.1 and 3.14.2. Users can protect against this kind of attack on the server by using `node --disable-proto=delete` or `deno` (in Deno, pollution protection is on by default).",
           "Severity": "MEDIUM",
@@ -10475,7 +10475,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10885,7 +10885,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -10893,7 +10893,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:44706f011deeb7f5df5399a95128bbbed4e5be95da9574bace09e031d0125c42",
+          "Fingerprint": "sha256:37049f88b23f6d35d12f0c0a53d942f0f48cacf3b29a05354eeb39df7f6a7036",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -10938,7 +10938,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -10946,7 +10946,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4c7f3acab5fce05144f3d5948b80c799dda9ec3bae863f5dbe4bb3e00c9d1b6a",
+          "Fingerprint": "sha256:03244a6e75d98b257b8a9aee6e25eff4ffb99c5f1f79075f7733bb42df67ed9a",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -10992,7 +10992,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -11000,7 +11000,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0067f339156f70531fbb1db2a4a4eb0e887e0a685f0976088681b8d89fe43196",
+          "Fingerprint": "sha256:85f11c45062092d62ad15621f9d2dffd058c8ed12cc0288b722ec660ada7447d",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -11040,7 +11040,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -11450,7 +11450,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -11458,7 +11458,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:815eeaa7c4ae2288a25ec693e8c4e70ce590dd451416c6b36dedfd3f80a39369",
+          "Fingerprint": "sha256:a546ebd36f0435b72532028132077195fcfe26120be4ad03c98eac4936f8ed9b",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -11503,7 +11503,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -11511,7 +11511,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6f998c1d18f00f7b2279bfc481d073bc31bad68200d671a4be0800d74f63af40",
+          "Fingerprint": "sha256:5f87782de78442e5ee0f8782c992f0e2d6d326cd636d9d003b56a303bdb1667c",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -11557,7 +11557,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -11565,7 +11565,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b55482af15e2f3c54ab885e17558fbef7fc66f4e9667bc3dca0ba80a47f95a71",
+          "Fingerprint": "sha256:bf544694968b3a7cda74bcba6b9e7c2edb93302a4f28786be87b4e08e30f2814",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -11605,7 +11605,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -12015,7 +12015,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -12023,7 +12023,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:aecd4aa12a42d0a792cb8388c62449a4851e166fe56647c8bd1002fc3c37f3d0",
+          "Fingerprint": "sha256:71b9218fae06326afe41ef6b66922f2f7dc7f0d588e99d261a95cab81ecce03e",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -12068,7 +12068,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -12076,7 +12076,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6c05b5c711d45afe04b1090cfad716a7178cea8b5e8144f3d5d7e15d171a5e89",
+          "Fingerprint": "sha256:2eceab97a5198b9d1340b524e8b7208414fa9449bff58534ae046dc49ad1a189",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -12122,7 +12122,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -12130,7 +12130,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2997635168061c33edd2bdd64342facb8573c4e715a0a31b9dc6d0ffaeca78eb",
+          "Fingerprint": "sha256:7830f50181c0eec14e8713bd648d16cec1a25255e6037417960437830b183c60",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -12170,7 +12170,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -12580,7 +12580,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -12588,7 +12588,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:1f23a1ce665efc0ec8fc6efec4a3fd92432b1fa42e9e1d89811c042d50c8ea4a",
+          "Fingerprint": "sha256:742c9a974129b249ea69c0a7353a805a27efa1b277bd172557a08fb0e271c489",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -12633,7 +12633,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -12641,7 +12641,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:50b3ff3633157b24b6f4cc43d41f6f7fb0f42ae6c1a299c8a3b66c6b9d7846fb",
+          "Fingerprint": "sha256:58a61d21740f4b08c9ef9db9453771712cfea5f102bb99bb5bed26fe34cb874c",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -12687,7 +12687,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -12695,7 +12695,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c1fa3c6758992997332db6ab268b4c6501ece7d447eccb25941f7a11ff37d0ed",
+          "Fingerprint": "sha256:b89103cdfc47d731716597451c42fe84f035ce8282806dc03d5c1bca45afb0b2",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -12735,7 +12735,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -13158,7 +13158,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -13166,7 +13166,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:e8a0177915c4b639657cda8b9456634ce569473cbf2f333fb26605ecfed5ffcf",
+          "Fingerprint": "sha256:4c304d9f9fe3facdb187786005490609fe398aef557a77e309d71a02ae063c74",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -13211,7 +13211,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -13219,7 +13219,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:bf8704c29166de5411404b40181633950a42fd9b0b775c53b7df0bfaab6464a6",
+          "Fingerprint": "sha256:b4e5935c500d63765cb9e55940ad258356ac0f4f12d6e6e76a7e1ae1d21071d7",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -13265,7 +13265,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -13273,7 +13273,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c0ae72017cad066b41698703ca147a5f19c7258c5ff306594ef55e7072778fc9",
+          "Fingerprint": "sha256:a455483ff6f5be739a2fbce1b79b1a1b36e3ae43faf7bd7fc263fb338ac520a5",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -13313,7 +13313,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -13723,7 +13723,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -13731,7 +13731,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:5dce6d75c05f7c51fbae1b3ebb8ad608ca328436d09b272d06a750bcc9839b42",
+          "Fingerprint": "sha256:ab5810b166599020a4c8b059156b7bda41a324e5aa46c38790d9b57a77c89270",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -13776,7 +13776,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -13784,7 +13784,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c0612c600457b3ab90855c31365c064b9ebbc131d23ae3f055dca5f5af301fe9",
+          "Fingerprint": "sha256:67a471eff600389ac11db905c93159adac108cf84bcf2f1d8bdf1d576bfc90eb",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -13830,7 +13830,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -13838,7 +13838,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:001cd6f6474e0f04635a1ac24cd4649c057834202a20a815d93264323bc83cb6",
+          "Fingerprint": "sha256:827c635d078ca7469e12ba7ba7069cdee35d69502b1858d1d8cf584d43168a07",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -13878,7 +13878,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -14327,7 +14327,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -14335,7 +14335,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3229c2f996a56fc7e52df31cdbcb0fbd50dea31caf8d6b03b14cfeb7a03d4e9d",
+          "Fingerprint": "sha256:e5b63d497de504266dd70e53ab2e0a00cc082b4f62e89ee9b5725a1ca88835ed",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -14380,7 +14380,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -14388,7 +14388,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:558fb1b7543194bd7d837dcd2e8fa91ce0135d62b237637b1cdb32c4f33ac391",
+          "Fingerprint": "sha256:7665f0282f9ebcbed3be223d6f9b3d2bda173122a6e80c768b963be3df9dade3",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -14434,7 +14434,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -14442,7 +14442,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6b5c60c50aeaa616b270572d702b82d6b8436b39ee1bfb81ab72d3ff0f7ef0e5",
+          "Fingerprint": "sha256:95c77da9bd3022d872ce74c2ac702c208e99b4ae884924b5cd3c8322c43095de",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -14482,7 +14482,7 @@
           "Version": "v1.25.5",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -14892,7 +14892,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -14900,7 +14900,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0648f509af468c17308168ba8a3e66d27e084291fac040e596734c19427fc2a7",
+          "Fingerprint": "sha256:d185baccb0f76a7bf0d36a91a9aa4035ec35298713f11d57b9624d2567ad49e2",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -14945,7 +14945,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -14953,7 +14953,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6d934724755ca9dc7f71d641b6866a6159714a1725b7480ec71531545dda6af6",
+          "Fingerprint": "sha256:5b5a99f25686242bbe9b3ab10fabf659111833215eb083ed3ceac3f7177100c1",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -14999,7 +14999,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:a182f446753f04f92932f2a2e7d6df65a349f1f0daaa89b8a0cb69e8a5264841"
+            "DiffID": "sha256:fa30167ddcb23e5ca28b5a7f6a70923731293a952baf15b5190942ae8df072cb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -15007,7 +15007,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:e9c7fd1f80c73cac787f032afe100c1432992609f282765e7a3451395ef21b0e",
+          "Fingerprint": "sha256:0f6b8f99348c45528275b0ce00935f80d9a9616a6a519cb241a287cc12afbbb9",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",
@@ -15121,7 +15121,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:1a155879c412cb97c93f054fe9088b882326a5bd237d80937e6f0d55cdd4c20d",
+          "Fingerprint": "sha256:6d830bfa63c4a1d9ed182c5ea2018636988fc0a12d52b29047cb1dbace7848fd",
           "Title": "golang: archive/tar: Unbounded allocation when parsing GNU sparse map",
           "Description": "tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.",
           "Severity": "HIGH",
@@ -15189,7 +15189,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:8ca83a5a23a8bd3ed9fbcc8f36c194ccaccaa21d8fab0aab8f43e5c3cd6aadb9",
+          "Fingerprint": "sha256:25730cb87bcf130ba9b4cc8974384cf6baf92fb51bf3a3fa3322ec09fb1997bd",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -15242,7 +15242,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:73cad508d2fb2eb3168af8c069c8bda08139741df219b09a7ccab6bc70ca92eb",
+          "Fingerprint": "sha256:7d1ea3b6415f2f1446d086283170af56da2ad8eff4cc8abb1092d5cf772ad799",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -15296,7 +15296,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:340dfd494c2269b887e683b78b4e830033ebae43d28e494421f8676ad777d278",
+          "Fingerprint": "sha256:d067917e28fca99267db4865e3e60700bb0455f4bedbfa4e809365ba3ab2a5e3",
           "Title": "crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate",
           "Description": "Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.",
           "Severity": "HIGH",
@@ -15364,7 +15364,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:29f79422757abef73f1c534f799c0cbd57a9847f68727a210d93500370e2e790",
+          "Fingerprint": "sha256:eed0775d342282c928c8e80681f3a40f1d5230ff13998e6cdb59d378b3545c8c",
           "Title": "net/url: Insufficient validation of bracketed IPv6 hostnames in net/url",
           "Description": "The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: \"http://[::1]/\". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.",
           "Severity": "MEDIUM",
@@ -15419,7 +15419,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:57685ec46e1a93bc01b67247a0ad4030439c7e5af6dc05ee4dea093c5a7b8485",
+          "Fingerprint": "sha256:9b5089f24fb0cc8b5f232539cb0849600c869a3cf003c3e4e62bb96a4fbf133f",
           "Title": "encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1",
           "Description": "Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.",
           "Severity": "MEDIUM",
@@ -15478,7 +15478,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:bf36102dcbdbded43a805b45d5bc0685f7a1a24de7b25c2d9570a923c8ae11e6",
+          "Fingerprint": "sha256:cd8a2f9c31570e63cd9def316c9b14b9366b4f1e1149d5837f710e0a7ada4986",
           "Title": "golang.org/net/http: Lack of limit when parsing cookies can cause memory exhaustion in net/http",
           "Description": "Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.",
           "Severity": "MEDIUM",
@@ -15533,7 +15533,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d1f089bd67ef4a6260ffc263fa8c26b2baa63fe5dd1d2a3889886c1a5d9e1868",
+          "Fingerprint": "sha256:a4f9ac4e5d9b9d3bfbcc832b6c94b97fc0087c410e61615e77087bf91c634d7f",
           "Title": "crypto/x509: Quadratic complexity when checking name constraints in crypto/x509",
           "Description": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -15592,7 +15592,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:48f53b3a8a9d12ef318db4ccad084cedf346b4d4a1ccb5040d98ac8983ec5e37",
+          "Fingerprint": "sha256:48e0cf8719eeb34fee2534d3665d3fb2d829c7cc1a814840c5d35834e73628e9",
           "Title": "crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509",
           "Description": "Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -15651,7 +15651,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2768ebba3efa50ff2a8ba0e1e84ac3f5a22f3f4f9870361f2eaa50d4f22ff149",
+          "Fingerprint": "sha256:58e379c3ff32d237e3094c3015f42eb83691c6a015f42beb41f68e95a277ca40",
           "Title": "crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information",
           "Description": "When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.",
           "Severity": "MEDIUM",
@@ -15709,7 +15709,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2ffc9989b4eb8a6fe3b1b3762b78c842ee1692a0f9ad8b7cd5da3cae48f70c67",
+          "Fingerprint": "sha256:b041816c163ca9f56dfb416ced2e9fb615f18d6eefdf5fe48ac6a27cfea36aed",
           "Title": "encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem",
           "Description": "The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.",
           "Severity": "MEDIUM",
@@ -15768,7 +15768,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b9f3b27b7649a5bcb58e76c6de7495af9c72934d794c8a4354a70d9d910979f4",
+          "Fingerprint": "sha256:ba066b26f5200837bd54949adc4b2b14ffe0ad33c50fcccb2be893032a4f436f",
           "Title": "net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto",
           "Description": "The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -15826,7 +15826,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d58d0ff181ae68990bb2350fa21a409173f15ee0a44ba59475d08523c08a92e2",
+          "Fingerprint": "sha256:8dc072426e00a36146f49ef993a84f4d949752d5a0d2af921d726476d49e0218",
           "Title": "net/mail: Excessive CPU consumption in ParseAddress in net/mail",
           "Description": "The ParseAddress function constructs domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -15881,7 +15881,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2070064f1f6009218b0154b4909fd709c7941b0f114a8e9d449250f90fee00c0",
+          "Fingerprint": "sha256:45e042ca7dcafc3707f8a2a298c04da2dc1a46c9da627b6f047075deee537594",
           "Title": "golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs",
           "Description": "An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.",
           "Severity": "MEDIUM",
@@ -15938,7 +15938,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:bc9e646067046e2329248b30d5400eded417f1c5b3e5f8d47ce6ffd6c7da4156",
+          "Fingerprint": "sha256:2fb2db1e74a6126b23d22b9768a1978875ecd45c7387cebb02680bcbaa2117f8",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "MEDIUM",

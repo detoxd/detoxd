@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c2449-5662-71de-a096-c067b1ce8e52",
-  "CreatedAt": "2026-02-04T00:15:11.970125556+08:00",
-  "ArtifactID": "sha256:ac782a2ce5876665126ca05acb863c08489897025291200ec89effb72c91cad9",
+  "ReportID": "019c24cb-5189-7e79-b79a-ac32f0ef6657",
+  "CreatedAt": "2026-02-04T01:37:10.409951028+07:00",
+  "ArtifactID": "sha256:e4616929893e9ccbb4110ba256e952cc1549f16832df94e1cc444efd0611d478",
   "ArtifactName": "detoxd/httpd:2.4.65-alpine-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,7 +14,7 @@
       "Family": "alpine",
       "Name": "3.22.2"
     },
-    "ImageID": "sha256:f8a5336e48e7e016711743bb823175e67ca666ce5622c876eeb5f6b9366a4d2d",
+    "ImageID": "sha256:c5dc3d35e3aa7538424e12316bf41c8fae405aaaa95e984b630e55cbfed5b675",
     "DiffIDs": [
       "sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2bc3e313ad12f8bde9d1",
       "sha256:4d7b6c5379e2b4e5554d0c291e6b51971e1be27bab73a1fdfabc7a7f802f0350",
@@ -23,10 +23,10 @@
       "sha256:b43aff53b66e747ed2c78a4723682368bede004a9f2149e3053e5d81b24c2d6f",
       "sha256:84f9ae7c2557f2f598805882baef61db72a8921e3a9aa27b01f182d0b5960de5",
       "sha256:06c1a12fa4d5d4d6f760b28fca0ccf9a8c1046037482660999a435ee33cd6552",
-      "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca",
-      "sha256:b32b6e69f94813178d8e2cb7dc8d0f206ac58a87ffbd07f2788270662b5125c7",
-      "sha256:a38f7965fd74367edec152f9ec0adb027bb26d1dd25223978beeeef0d652b201",
-      "sha256:9cac87c3030c22479bdfd6eeebcdbc39d7d4143029dd7af84048d22230b5f497"
+      "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885",
+      "sha256:18bb1b86ac834d97ea50e9142a833db36927727c48ee9e13caa97b4cdf101d31",
+      "sha256:40006d181543dba18213a5c770204cd4bd2713b314e0bcd98c1cc2fc412c1e3d",
+      "sha256:42486837764c35c68ec8799e7f1d7ee4e23d205dd1648e6d4d64a6e73fe690a6"
     ],
     "RepoTags": [
       "detoxd/httpd:2.4.65-alpine-detox.1"
@@ -34,7 +34,7 @@
     "Reference": "detoxd/httpd:2.4.65-alpine-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T00:15:10.659948921+08:00",
+      "created": "2026-02-04T02:37:09.064295023+08:00",
       "history": [
         {
           "created": "2025-07-23T17:31:12Z",
@@ -126,57 +126,57 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:15:09Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:15:09Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:15:09Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd httpd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:15:09Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened httpd image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:15:09Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "LABEL detoxd.base.image=httpd:2.4.65-alpine",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:15:09Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache \u0026\u0026     apk del --purge         wget         curl         busybox-extras         2\u003e/dev/null || true \u0026\u0026     rm -rf /var/cache/apk/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.ash_history /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:15:10Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games news uucp proxy www-data list irc gnats nobody; do         deluser $user 2\u003e/dev/null || true;     done \u0026\u0026     rm -rf /etc/cron.* /etc/crontabs 2\u003e/dev/null || true \u0026\u0026     rm -rf /etc/init.d /lib/rc /etc/conf.d /etc/inittab /etc/runlevels /etc/rc.conf 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:15:10Z",
+          "created": "2026-02-03T18:37:08Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:15:10Z",
+          "created": "2026-02-03T18:37:09Z",
           "created_by": "RUN /bin/sh -c sed -i 's/ServerSignature On/ServerSignature Off/' /usr/local/apache2/conf/httpd.conf 2\u003e/dev/null || true \u0026\u0026     sed -i 's/ServerTokens OS/ServerTokens Prod/' /usr/local/apache2/conf/httpd.conf 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:15:10Z",
+          "created": "2026-02-03T18:37:09Z",
           "created_by": "EXPOSE map[443/tcp:{} 80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -193,10 +193,10 @@
           "sha256:b43aff53b66e747ed2c78a4723682368bede004a9f2149e3053e5d81b24c2d6f",
           "sha256:84f9ae7c2557f2f598805882baef61db72a8921e3a9aa27b01f182d0b5960de5",
           "sha256:06c1a12fa4d5d4d6f760b28fca0ccf9a8c1046037482660999a435ee33cd6552",
-          "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca",
-          "sha256:b32b6e69f94813178d8e2cb7dc8d0f206ac58a87ffbd07f2788270662b5125c7",
-          "sha256:a38f7965fd74367edec152f9ec0adb027bb26d1dd25223978beeeef0d652b201",
-          "sha256:9cac87c3030c22479bdfd6eeebcdbc39d7d4143029dd7af84048d22230b5f497"
+          "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885",
+          "sha256:18bb1b86ac834d97ea50e9142a833db36927727c48ee9e13caa97b4cdf101d31",
+          "sha256:40006d181543dba18213a5c770204cd4bd2713b314e0bcd98c1cc2fc412c1e3d",
+          "sha256:42486837764c35c68ec8799e7f1d7ee4e23d205dd1648e6d4d64a6e73fe690a6"
         ]
       },
       "config": {
@@ -256,19 +256,19 @@
       },
       {
         "Size": 8618496,
-        "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+        "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
       },
       {
         "Size": 40448,
-        "DiffID": "sha256:b32b6e69f94813178d8e2cb7dc8d0f206ac58a87ffbd07f2788270662b5125c7"
+        "DiffID": "sha256:18bb1b86ac834d97ea50e9142a833db36927727c48ee9e13caa97b4cdf101d31"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:a38f7965fd74367edec152f9ec0adb027bb26d1dd25223978beeeef0d652b201"
+        "DiffID": "sha256:40006d181543dba18213a5c770204cd4bd2713b314e0bcd98c1cc2fc412c1e3d"
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:9cac87c3030c22479bdfd6eeebcdbc39d7d4143029dd7af84048d22230b5f497"
+        "DiffID": "sha256:42486837764c35c68ec8799e7f1d7ee4e23d205dd1648e6d4d64a6e73fe690a6"
       }
     ]
   },
@@ -472,7 +472,7 @@
             "alpine-keys@2.5-r0"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:4e3e3b4ce2653fc796f9608418f31687e6296a7b",
           "InstalledFiles": [
@@ -658,7 +658,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:3e9d75288280b3c492e91f30e126c2400d1701b3",
           "InstalledFiles": [
@@ -691,7 +691,7 @@
             "busybox@1.37.0-r20"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:acd495b3054831a7a33137aa5a2ba6193a08a2d2",
           "InstalledFiles": [
@@ -718,7 +718,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:157fc2522aff3f3f0faa2cb3d16ac9aff8b8ed9a",
           "InstalledFiles": [
@@ -1071,7 +1071,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:69f2e10ba246c41930285851af67ce5af75ecbe5",
           "InstalledFiles": [
@@ -1307,7 +1307,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:cccea10b0bf05b03f19640b4a35dbd4326d34073",
           "InstalledFiles": [
@@ -1393,7 +1393,7 @@
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:6ddad9a7b827ee30cd620f78e10a693464853d82",
           "InstalledFiles": [
@@ -3084,7 +3084,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:ec20bc8369a4273e1d2b7eb2d793ef61919f02b44846f4968ad416fa124a5cca"
+            "DiffID": "sha256:1c25d9f587376049600d529afcfa5d839b5fb46e2f25f4d53e6a735a123c3885"
           },
           "Digest": "sha1:8bdfbaab4c99a5d77844ca989971c87161126784",
           "InstalledFiles": [

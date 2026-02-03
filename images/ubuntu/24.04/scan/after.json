@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c2447-d737-7a11-90fa-8d0aae7a2dec",
-  "CreatedAt": "2026-02-04T00:13:33.879662514+08:00",
-  "ArtifactID": "sha256:b4790063f499e7a571264556ddaff16d3ee717bdbe9a9669ceec236f884e7336",
+  "ReportID": "019c24c9-4b6c-77a6-8c51-b6f552055cc3",
+  "CreatedAt": "2026-02-04T01:34:57.772503542+07:00",
+  "ArtifactID": "sha256:a306f05c16ad9b743a7d02a7ce600bec064ce849d6f324b29efd436b45225872",
   "ArtifactName": "detoxd/ubuntu:24.04-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,12 +14,12 @@
       "Family": "ubuntu",
       "Name": "24.04"
     },
-    "ImageID": "sha256:341cd2acf9e8c92ddc64357928073d63cee9f075f2bfcbb90795e07f7c11e423",
+    "ImageID": "sha256:e3e76cbccd229e0224f9e46d1faa63ac89b6e9898e67a253404bce96b6b619b9",
     "DiffIDs": [
       "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f",
-      "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3",
-      "sha256:31fda9f23c6bada0973c7016fc2213a70b5b824f04489b9db3f5329306d056c7",
-      "sha256:3cb8f67d8800505e7f44bea71f29cb573fe7e344539854f15496e4c0bbee9df8"
+      "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298",
+      "sha256:0cc2ec12aee1f76d4b1ec146352892b6b274d4cfe120e3ffe9dc26ea62e50431",
+      "sha256:2094badb6894bfa79dc7a02a461b72d3ff5f65f4101aef33f4b110d3f19cc68e"
     ],
     "RepoTags": [
       "detoxd/ubuntu:24.04-detox.1"
@@ -27,7 +27,7 @@
     "Reference": "detoxd/ubuntu:24.04-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T00:13:30.941250353+08:00",
+      "created": "2026-02-04T02:34:55.42229547+08:00",
       "history": [
         {
           "created": "2026-01-13T05:37:25Z",
@@ -59,47 +59,47 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:13:29Z",
+          "created": "2026-02-03T18:34:54Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:13:29Z",
+          "created": "2026-02-03T18:34:54Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:13:29Z",
+          "created": "2026-02-03T18:34:54Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd ubuntu",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:13:29Z",
+          "created": "2026-02-03T18:34:54Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened ubuntu image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:13:29Z",
+          "created": "2026-02-03T18:34:54Z",
           "created_by": "LABEL detoxd.base.image=ubuntu:24.04",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:13:29Z",
+          "created": "2026-02-03T18:34:54Z",
           "created_by": "RUN /bin/sh -c apt-get update \u0026\u0026     apt-get upgrade -y --no-install-recommends \u0026\u0026     apt-get dist-upgrade -y \u0026\u0026     apt-get purge -y --auto-remove         wget         curl         netcat*         telnet*         2\u003e/dev/null || true \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:13:30Z",
+          "created": "2026-02-03T18:34:55Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games gnats irc list news proxy uucp; do         userdel -r $user 2\u003e/dev/null || true;     done # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:13:30Z",
+          "created": "2026-02-03T18:34:55Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -109,9 +109,9 @@
         "type": "layers",
         "diff_ids": [
           "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f",
-          "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3",
-          "sha256:31fda9f23c6bada0973c7016fc2213a70b5b824f04489b9db3f5329306d056c7",
-          "sha256:3cb8f67d8800505e7f44bea71f29cb573fe7e344539854f15496e4c0bbee9df8"
+          "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298",
+          "sha256:0cc2ec12aee1f76d4b1ec146352892b6b274d4cfe120e3ffe9dc26ea62e50431",
+          "sha256:2094badb6894bfa79dc7a02a461b72d3ff5f65f4101aef33f4b110d3f19cc68e"
         ]
       },
       "config": {
@@ -139,15 +139,15 @@
       },
       {
         "Size": 23721984,
-        "DiffID": "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3"
+        "DiffID": "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298"
       },
       {
         "Size": 626176,
-        "DiffID": "sha256:31fda9f23c6bada0973c7016fc2213a70b5b824f04489b9db3f5329306d056c7"
+        "DiffID": "sha256:0cc2ec12aee1f76d4b1ec146352892b6b274d4cfe120e3ffe9dc26ea62e50431"
       },
       {
         "Size": 2048,
-        "DiffID": "sha256:3cb8f67d8800505e7f44bea71f29cb573fe7e344539854f15496e4c0bbee9df8"
+        "DiffID": "sha256:2094badb6894bfa79dc7a02a461b72d3ff5f65f4101aef33f4b110d3f19cc68e"
       }
     ]
   },
@@ -2224,7 +2224,7 @@
             "libc6@2.39-0ubuntu8.7"
           ],
           "Layer": {
-            "DiffID": "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3"
+            "DiffID": "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298"
           },
           "InstalledFiles": [
             "/usr/bin/getconf",
@@ -2286,7 +2286,7 @@
             "libgcc-s1@14.2.0-4ubuntu2~24.04"
           ],
           "Layer": {
-            "DiffID": "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3"
+            "DiffID": "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/gconv/ANSI_X3.110.so",
@@ -4201,7 +4201,7 @@
             "libc6@2.39-0ubuntu8.7"
           ],
           "Layer": {
-            "DiffID": "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3"
+            "DiffID": "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/engines-3/afalg.so",
@@ -6837,7 +6837,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:3221ea5cf14f7f3a4f851a22d3fc5d9537e64084779904c4260cf6a90ee00967",
+          "Fingerprint": "sha256:6e014135a3eb5fac1dd72159b1060a85f83d9bd6280f54764cdd8923f4957841",
           "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
           "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
           "Severity": "LOW",
@@ -6899,7 +6899,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:6b1d54b6997387c9e398384cc4eac6492430950a02cc151cbe7688e3f0a69076",
+          "Fingerprint": "sha256:40de992b75abbf39b2fa377fc278eec482062218063df333f20e9a9b19d05b54",
           "Title": "gnupg: GnuPG: Signature bypass via form feed character in signed messages",
           "Description": "In GnuPG through 2.4.8, if a signed message has \\f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an \"invalid armor\" message is printed during verification). This is related to use of \\f as a marker to denote truncation of a long plaintext line.",
           "Severity": "MEDIUM",
@@ -6953,7 +6953,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:4788f06883cf66d326e0514d4f3a6c2ccb6b86392f76fb10fd8a257d3c728fc9",
+          "Fingerprint": "sha256:ec25ce90cd0713847a1b2e416a396648455f44a28678248833ef043605ed632c",
           "Title": "GnuPG: GnuPG: Stack-based buffer overflow in tpm2daemon allows arbitrary code execution",
           "Description": "In GnuPG before 2.5.17, a stack-based buffer overflow exists in tpm2daemon during handling of the PKDECRYPT command for TPM-backed RSA and ECC keys.",
           "Severity": "MEDIUM",
@@ -7000,7 +7000,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:c0ea480f70ad884f2b9a3adb46ea9c1c2acb49fe357176b20367fb2c00c0e633",
+          "Fingerprint": "sha256:354f8ee6c0ae16cd2980d6ef6a2b9d3673d1e1a8d0b2e9c6b0e869bba1a542ca",
           "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
           "Description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
           "Severity": "LOW",
@@ -7046,7 +7046,7 @@
           "InstalledVersion": "2.39-0ubuntu8.7",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3"
+            "DiffID": "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298"
           },
           "SeveritySource": "ubuntu",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
@@ -7055,7 +7055,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:fa5abf6633352f69ce0092907b6d88552b845d25e44948adacb8c9028fedcea5",
+          "Fingerprint": "sha256:1f94a895975c7e605cf7ee4891e1a45261fe5db0b75c54405b181224df820142",
           "Title": "glibc: Integer overflow in memalign leads to heap corruption",
           "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
           "Severity": "MEDIUM",
@@ -7109,7 +7109,7 @@
           "InstalledVersion": "2.39-0ubuntu8.7",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:2c84d5ee061fe31eed74a7c95819b06817074d195c5fbf42662b8d65aead11e3"
+            "DiffID": "sha256:d7cde73972258d25b798912e102b9f02b8efca85cf3d4f627692a465bd3dd298"
           },
           "SeveritySource": "ubuntu",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
@@ -7118,7 +7118,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:2bc0917af9bf12020c0c7bc63e454c1acde702577eaacee02f9b772069f20900",
+          "Fingerprint": "sha256:5ce824552624073b1b03eec14300595f9e3734c79f6eec0ecc8ab2816fd952a4",
           "Title": "glibc: Integer overflow in memalign leads to heap corruption",
           "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
           "Severity": "MEDIUM",
@@ -7181,7 +7181,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:140b09d6ffcf948add5e8c3af84bddf6805dc6d4449b262ac677a80c9890bb7f",
+          "Fingerprint": "sha256:082b660332ea0ff8d14a353fa668548fbd45fb3ee6b34e74d76aea3e833b7634",
           "Title": "libgcrypt: vulnerable to Marvin Attack",
           "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
           "Severity": "LOW",
@@ -7245,7 +7245,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:5e3926c96dda4d3c8dba46791cefa748bd3abf87689fe6004f0e7ee4ed4eaf63",
+          "Fingerprint": "sha256:8afd9dfd2183b018f48d135962c7d3c43d5415bd28c5503e06d9889b5d019341",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7320,7 +7320,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:422da94fd04bf746b7ab75132d98f6dd59b753a7d8cf57c361ce87c8e82285a5",
+          "Fingerprint": "sha256:d273fe076b37134d9c69d0f27709f8394b8f6b65d0a3357a870926584bece84a",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7395,7 +7395,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:2c3e293a720f24516b8382787f12a866b41928af3c500652ed04c07f5025b8ec",
+          "Fingerprint": "sha256:f46e9f62877dfea4e7511c287524deebfd3914800fea65ff63826b88307ea802",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7470,7 +7470,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:01e93df67e022f8ca370bfbda434a3730f2a5c19369c25fc8834058dd8612283",
+          "Fingerprint": "sha256:e02aeb250b426b546a4774a5ef76d42ee2a812aa0c961aa20865dfb1c3912993",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7545,7 +7545,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:d1116e22de2a36d2b9786dd579479af61fa3510961f5542627d173b918fb80bf",
+          "Fingerprint": "sha256:f4df63c4a8735f9fc23d7262f1fc7c51185185de978298646cfbbc0a2a3b8ac5",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -7605,7 +7605,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:a6ac16c79e0cf579d444e5dc27cd928ffdddc0ce0da8dcb7454438e99a91c833",
+          "Fingerprint": "sha256:e29abf3830dc2dbad2c6c90d57678c6023b4274bba100c53acebe5ad5458b26c",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -7665,7 +7665,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:83159abcfdad869bb02b35f015fd11479bd99c4c444a7996de5698c44198cfe6",
+          "Fingerprint": "sha256:b67b8e83cbfe60d3fc99145691f6c99bea47f0a40ee48da20b5c11160810f1f2",
           "Title": "tar: Tar path traversal",
           "Description": "GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file's name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of \"Member name contains '..'\" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain \"x -\u003e ../../../../../home/victim/.ssh\" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which \"tar xf\" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each \"tar xf\" in its Security Rules of Thumb; however, third-party advice leads users to run \"tar xf\" more than once into the same directory.",
           "Severity": "MEDIUM",

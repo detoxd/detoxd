@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c2448-5839-72f0-8c1f-82bcf50eb11d",
-  "CreatedAt": "2026-02-04T00:14:06.90519473+08:00",
-  "ArtifactID": "sha256:8b5065c2e25c08ecca5829049af15df980cbf23088180803a4bb68576a6cab19",
+  "ReportID": "019c24c9-cbc4-7d4e-957a-6d41e936774f",
+  "CreatedAt": "2026-02-04T01:35:30.628874443+07:00",
+  "ArtifactID": "sha256:0030bcc649d8741da22e4de62619d141d285b5edc7ed066a9e2ac6f2d1657bb6",
   "ArtifactName": "detoxd/ubuntu:24.10-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -15,11 +15,11 @@
       "Name": "24.10",
       "EOSL": true
     },
-    "ImageID": "sha256:c70792b28b330d66f02f1eea6064b4955ebd8d7ab339e85748a09b85d7211b0f",
+    "ImageID": "sha256:bb30e655432c9be8633e3e0b1a4ef4a3a2c3be4592e2c4e00ee442476445cc2e",
     "DiffIDs": [
       "sha256:a16cf44ca25b04d82867dfbe5342a138a296566d7f974fe2bc8bfbedb2af40eb",
-      "sha256:e6f9cde03a933c578600bb1a3221a1dd2374904f3c974e2f343421390fbc0671",
-      "sha256:c7bb9528edde74299d10c76cc726f4ce5fd8a933b8904bd04072a37824ccb4f3",
+      "sha256:63d206bbfe3eb94d12097afd03b772b42d6383234f133fa7effcb55ac635bf34",
+      "sha256:a5f050e7b0e46e58533fda2cb35f32c84ea639c2c09c7a7676104b3e1ba5303e",
       "sha256:9fc19c562b84ec01541e85c475408f715396476d44b1d69209262848b8ed2b30"
     ],
     "RepoTags": [
@@ -28,7 +28,7 @@
     "Reference": "detoxd/ubuntu:24.10-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T00:14:05.634049681+08:00",
+      "created": "2026-02-04T02:35:29.339796867+08:00",
       "history": [
         {
           "created": "2025-06-20T10:17:14Z",
@@ -60,47 +60,47 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:14:04Z",
+          "created": "2026-02-03T18:35:28Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:14:04Z",
+          "created": "2026-02-03T18:35:28Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:14:04Z",
+          "created": "2026-02-03T18:35:28Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd ubuntu",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:14:04Z",
+          "created": "2026-02-03T18:35:28Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened ubuntu image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:14:04Z",
+          "created": "2026-02-03T18:35:28Z",
           "created_by": "LABEL detoxd.base.image=ubuntu:24.10",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T16:14:04Z",
+          "created": "2026-02-03T18:35:28Z",
           "created_by": "RUN /bin/sh -c apt-get update \u0026\u0026     apt-get upgrade -y --no-install-recommends \u0026\u0026     apt-get dist-upgrade -y \u0026\u0026     apt-get purge -y --auto-remove         wget         curl         netcat*         telnet*         2\u003e/dev/null || true \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:14:05Z",
+          "created": "2026-02-03T18:35:29Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games gnats irc list news proxy uucp; do         userdel -r $user 2\u003e/dev/null || true;     done # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T16:14:05Z",
+          "created": "2026-02-03T18:35:29Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -110,8 +110,8 @@
         "type": "layers",
         "diff_ids": [
           "sha256:a16cf44ca25b04d82867dfbe5342a138a296566d7f974fe2bc8bfbedb2af40eb",
-          "sha256:e6f9cde03a933c578600bb1a3221a1dd2374904f3c974e2f343421390fbc0671",
-          "sha256:c7bb9528edde74299d10c76cc726f4ce5fd8a933b8904bd04072a37824ccb4f3",
+          "sha256:63d206bbfe3eb94d12097afd03b772b42d6383234f133fa7effcb55ac635bf34",
+          "sha256:a5f050e7b0e46e58533fda2cb35f32c84ea639c2c09c7a7676104b3e1ba5303e",
           "sha256:9fc19c562b84ec01541e85c475408f715396476d44b1d69209262848b8ed2b30"
         ]
       },
@@ -140,11 +140,11 @@
       },
       {
         "Size": 5632,
-        "DiffID": "sha256:e6f9cde03a933c578600bb1a3221a1dd2374904f3c974e2f343421390fbc0671"
+        "DiffID": "sha256:63d206bbfe3eb94d12097afd03b772b42d6383234f133fa7effcb55ac635bf34"
       },
       {
         "Size": 660992,
-        "DiffID": "sha256:c7bb9528edde74299d10c76cc726f4ce5fd8a933b8904bd04072a37824ccb4f3"
+        "DiffID": "sha256:a5f050e7b0e46e58533fda2cb35f32c84ea639c2c09c7a7676104b3e1ba5303e"
       },
       {
         "Size": 2048,
