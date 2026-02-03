@@ -1,0 +1,88 @@
+# ============================================================================
+# Detoxd .gitignore
+# ============================================================================
+
+# ===================
+# Private processing folder (NOT pushed to git)
+# ===================
+.detoxd/
+
+# ===================
+# Dev tasks log (NOT pushed to git)
+# ===================
+.devtasks/
+
+# ===================
+# Docker and build artifacts
+# ===================
+*.tar
+*.tar.gz
+.docker/
+
+# ===================
+# OS generated files
+# ===================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===================
+# IDE and editor files
+# ===================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# ===================
+# Python
+# ===================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# ===================
+# Logs
+# ===================
+*.log
+logs/
+
+# ===================
+# Temporary files
+# ===================
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ===================
+# Secrets (never commit!)
+# ===================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+credentials/
