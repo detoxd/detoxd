@@ -1,6 +1,12 @@
-# Detoxd 🛡️
+<div align="center">
 
-> Hardened Docker Images with Reduced Vulnerabilities
+<img src="detoxd.png" alt="Detoxd Logo" width="200">
+
+# detoxd
+
+>Hardened Docker Images with Reduced Vulnerabilities
+
+</div>
 
 ## What is Detoxd?
 
