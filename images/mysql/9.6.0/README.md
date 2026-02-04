@@ -13,7 +13,7 @@ docker run -d detoxd/mysql:9.6.0-detox.1
 |----------|-------|
 | Original | `mysql:9.6.0` |
 | Detoxed | `detoxd/mysql:9.6.0-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

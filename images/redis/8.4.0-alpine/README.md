@@ -13,7 +13,7 @@ docker run -d detoxd/redis:8.4.0-alpine-detox.1
 |----------|-------|
 | Original | `redis:8.4.0-alpine` |
 | Detoxed | `detoxd/redis:8.4.0-alpine-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

@@ -13,7 +13,7 @@ docker run -d detoxd/httpd:2.4.65-alpine-detox.1
 |----------|-------|
 | Original | `httpd:2.4.65-alpine` |
 | Detoxed | `detoxd/httpd:2.4.65-alpine-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

@@ -13,7 +13,7 @@ docker run -d detoxd/nginx:1.29-alpine3.23-detox.1
 |----------|-------|
 | Original | `nginx:1.29-alpine3.23` |
 | Detoxed | `detoxd/nginx:1.29-alpine3.23-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

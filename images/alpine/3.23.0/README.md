@@ -13,7 +13,7 @@ docker run -d detoxd/alpine:3.23.0-detox.1
 |----------|-------|
 | Original | `alpine:3.23.0` |
 | Detoxed | `detoxd/alpine:3.23.0-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

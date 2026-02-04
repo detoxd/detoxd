@@ -13,7 +13,7 @@ docker run -d detoxd/ubuntu:24.10-detox.1
 |----------|-------|
 | Original | `ubuntu:24.10` |
 | Detoxed | `detoxd/ubuntu:24.10-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

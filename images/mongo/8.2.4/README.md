@@ -13,7 +13,7 @@ docker run -d detoxd/mongo:8.2.4-detox.1
 |----------|-------|
 | Original | `mongo:8.2.4` |
 | Detoxed | `detoxd/mongo:8.2.4-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

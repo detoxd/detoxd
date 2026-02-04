@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c24ab-f455-744b-acbe-ab2984a19172",
-  "CreatedAt": "2026-02-04T01:02:54.93328352+07:00",
-  "ArtifactID": "sha256:385cb9b71b006425eb4ea5b660513799d3df7c894fd755897b11d086a6243783",
+  "ReportID": "019c29d3-1523-74f2-9a53-c958bb2e24ff",
+  "CreatedAt": "2026-02-05T01:03:45.315326049+07:00",
+  "ArtifactID": "sha256:020eb822d0ae783c78d328663614f368ac1877942fb9f191857890561b4129ae",
   "ArtifactName": "detoxd/redis:8.2.3-alpine3.22-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,7 +14,7 @@
       "Family": "alpine",
       "Name": "3.22.3"
     },
-    "ImageID": "sha256:6b67aed97aa960bdc8efc0107955184bf2315a63bb8b19996b954f15bc1b86b7",
+    "ImageID": "sha256:d86f5836870b9bb3f1a8c8875a817bfd12be65280a00b4447b9c671094881794",
     "DiffIDs": [
       "sha256:cce92674e98722970ab3fdce76a2566f54db535beeb24f0b4397f070ab5f6987",
       "sha256:c459ccd8366b1ea9657a17c01df235448bd888ce2ede74b8bd7ffe4538a6d93e",
@@ -23,10 +23,10 @@
       "sha256:287062d0da7b7a937ba2e328f8d5c09b6be8e9b0e5f8ad76f19080ce091536f8",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
       "sha256:e5b9a8f9a7df8ab99de006137066ba19fe3a1a6552d2b0ef65b9f9bd7e77b251",
-      "sha256:85a84e4f31ebd03c50f2a48b41626b6a2d95f3c5148eb192031dedb3bd8d0301",
-      "sha256:1d1e42ddb1cca87bc8c213c9914a4342316ddf87c25742814167bb116c246f85",
-      "sha256:eaf65599a78ec196f299fc7b63cbe692af78e5a9ca385ebe0f9fd8f178b4d502",
-      "sha256:2409f17fc196f459fd1ec9db9820615636dbe2066b7a686ccb5c4f173ed8ddac"
+      "sha256:4a2cb41889d8477341f95a95c954f7e6275212c8ab1fa50502dc7ca46cfd110b",
+      "sha256:6e1c857cc46563963c5460474ca2b595782685381fecbac5acb04bd47304c2aa",
+      "sha256:a89e83672a80d3d518684e5fc28c2069ae2647d98c5cfbac2d5fc5adf31cae78",
+      "sha256:384a9dac474dd6b0401a7304eaca796d9c4d6f8771dfcc299c4ceedd2eb04c79"
     ],
     "RepoTags": [
       "detoxd/redis:8.2.3-alpine3.22-detox.1"
@@ -34,7 +34,7 @@
     "Reference": "detoxd/redis:8.2.3-alpine3.22-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T02:02:53.870426632+08:00",
+      "created": "2026-02-05T02:03:44.114868891+08:00",
       "history": [
         {
           "created": "2026-01-28T01:18:40Z",
@@ -114,57 +114,57 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:02:52Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:02:52Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:02:52Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd redis",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:02:52Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened redis image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:02:52Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "LABEL detoxd.base.image=redis:8.2.3-alpine3.22",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:02:52Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache \u0026\u0026     apk del --purge         wget         curl         busybox-extras         2\u003e/dev/null || true \u0026\u0026     rm -rf /var/cache/apk/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.ash_history /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:02:53Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games news uucp proxy www-data list irc gnats nobody; do         deluser $user 2\u003e/dev/null || true;     done \u0026\u0026     rm -rf /etc/cron.* /etc/crontabs 2\u003e/dev/null || true \u0026\u0026     rm -rf /etc/init.d /lib/rc /etc/conf.d /etc/inittab /etc/runlevels /etc/rc.conf 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:02:53Z",
+          "created": "2026-02-04T18:03:43Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:02:53Z",
+          "created": "2026-02-04T18:03:44Z",
           "created_by": "RUN /bin/sh -c if [ -f /etc/redis.conf ]; then         echo 'rename-command FLUSHDB \"\"' \u003e\u003e /etc/redis.conf \u0026\u0026         echo 'rename-command FLUSHALL \"\"' \u003e\u003e /etc/redis.conf \u0026\u0026         echo 'rename-command DEBUG \"\"' \u003e\u003e /etc/redis.conf \u0026\u0026         echo 'rename-command CONFIG \"\"' \u003e\u003e /etc/redis.conf;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:02:53Z",
+          "created": "2026-02-04T18:03:44Z",
           "created_by": "EXPOSE map[6379/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -181,10 +181,10 @@
           "sha256:287062d0da7b7a937ba2e328f8d5c09b6be8e9b0e5f8ad76f19080ce091536f8",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
           "sha256:e5b9a8f9a7df8ab99de006137066ba19fe3a1a6552d2b0ef65b9f9bd7e77b251",
-          "sha256:85a84e4f31ebd03c50f2a48b41626b6a2d95f3c5148eb192031dedb3bd8d0301",
-          "sha256:1d1e42ddb1cca87bc8c213c9914a4342316ddf87c25742814167bb116c246f85",
-          "sha256:eaf65599a78ec196f299fc7b63cbe692af78e5a9ca385ebe0f9fd8f178b4d502",
-          "sha256:2409f17fc196f459fd1ec9db9820615636dbe2066b7a686ccb5c4f173ed8ddac"
+          "sha256:4a2cb41889d8477341f95a95c954f7e6275212c8ab1fa50502dc7ca46cfd110b",
+          "sha256:6e1c857cc46563963c5460474ca2b595782685381fecbac5acb04bd47304c2aa",
+          "sha256:a89e83672a80d3d518684e5fc28c2069ae2647d98c5cfbac2d5fc5adf31cae78",
+          "sha256:384a9dac474dd6b0401a7304eaca796d9c4d6f8771dfcc299c4ceedd2eb04c79"
         ]
       },
       "config": {
@@ -246,19 +246,19 @@
       },
       {
         "Size": 64000,
-        "DiffID": "sha256:85a84e4f31ebd03c50f2a48b41626b6a2d95f3c5148eb192031dedb3bd8d0301"
+        "DiffID": "sha256:4a2cb41889d8477341f95a95c954f7e6275212c8ab1fa50502dc7ca46cfd110b"
       },
       {
         "Size": 9728,
-        "DiffID": "sha256:1d1e42ddb1cca87bc8c213c9914a4342316ddf87c25742814167bb116c246f85"
+        "DiffID": "sha256:6e1c857cc46563963c5460474ca2b595782685381fecbac5acb04bd47304c2aa"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:eaf65599a78ec196f299fc7b63cbe692af78e5a9ca385ebe0f9fd8f178b4d502"
+        "DiffID": "sha256:a89e83672a80d3d518684e5fc28c2069ae2647d98c5cfbac2d5fc5adf31cae78"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:2409f17fc196f459fd1ec9db9820615636dbe2066b7a686ccb5c4f173ed8ddac"
+        "DiffID": "sha256:384a9dac474dd6b0401a7304eaca796d9c4d6f8771dfcc299c4ceedd2eb04c79"
       }
     ]
   },

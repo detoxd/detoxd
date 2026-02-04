@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c24af-d261-7233-9325-84eec132d348",
-  "CreatedAt": "2026-02-04T01:07:08.38514716+07:00",
-  "ArtifactID": "sha256:6fb777e99cd079c1756b5846641b9f9634dc8aea959546e93230aaa391c81bad",
+  "ReportID": "019c29d6-dde0-7970-a4fc-b05738077604",
+  "CreatedAt": "2026-02-05T01:07:53.31262108+07:00",
+  "ArtifactID": "sha256:7a073cad3fd0db02746ea086579f8a5e308bc1a8eefb356d723bf345f6e0d376",
   "ArtifactName": "detoxd/node:22-alpine-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,18 +14,18 @@
       "Family": "alpine",
       "Name": "3.23.3"
     },
-    "ImageID": "sha256:b66904f31f60784a7ee57a6e92d08d964ccc23ba7338246e16b5ecaefe544ac9",
+    "ImageID": "sha256:b62cd546cb49e1485d7660b8f81b96dd45099dc4b5f1840e158325d966c23cc9",
     "DiffIDs": [
       "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
       "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e",
       "sha256:02289bdc8da66779c084441cadeb5580c50bfe67eb37b7ccfa24854433733f47",
       "sha256:d2f2025518d6d84c30eadd293be9fa61f0ac168b0865956ccbde715b7e6142e4",
-      "sha256:d7b7b17918072c78a80f7cebd39d308b111e5d2008e560402587962fa3903e98",
-      "sha256:cd3cb670867047ef7ecf2c9e870a0a5ad019f0297ba873fab32e23f650f5db00",
-      "sha256:737aede3b34a475daeb1d7c0e8288a483372ce45d7d42ef202f4379e18f410ff",
-      "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d",
-      "sha256:1a4f391f6a278d73c06641b2f68096afaafc413626ca3c9c8faed2a6a200ba4d",
-      "sha256:9a80b5d488700f3d969f957348dd28ff8c17ef828b288ccb007f88a607ff6bdb"
+      "sha256:8180511b20d2296eab2eed088b43b8edef3cf064d97c15df43488cd45558b7f0",
+      "sha256:c08aab0c46fb5df622bf3f101afda019d683f8fdbffff8a33365e7317c9db284",
+      "sha256:7e2270fdc0ac62f5782ffb8325c89844079a0f057be16a8c85322dcff6b8a121",
+      "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d",
+      "sha256:e7e80c137efd42e320489cea9935cbf9215aaae9930bdee980cdc257151db4a3",
+      "sha256:f1c778e2e96b45710713b277dabf3cd1b9c55b780fa4a317a3a74937cc0a0e81"
     ],
     "RepoTags": [
       "detoxd/node:22-alpine-detox.1"
@@ -33,7 +33,7 @@
     "Reference": "detoxd/node:22-alpine-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T02:07:05.30727738+08:00",
+      "created": "2026-02-05T02:07:50.020235701+08:00",
       "history": [
         {
           "created": "2026-01-28T01:18:04Z",
@@ -86,73 +86,73 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:40Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:40Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:40Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd node",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:40Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened node image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:40Z",
           "created_by": "LABEL detoxd.base.image=node:22-alpine",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:40Z",
           "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache \u0026\u0026     apk del --purge         wget         curl         busybox-extras         2\u003e/dev/null || true \u0026\u0026     rm -rf /var/cache/apk/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.ash_history /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:41Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games news uucp proxy www-data list irc gnats nobody; do         deluser $user 2\u003e/dev/null || true;     done \u0026\u0026     rm -rf /etc/cron.* /etc/crontabs 2\u003e/dev/null || true \u0026\u0026     rm -rf /etc/init.d /lib/rc /etc/conf.d /etc/inittab /etc/runlevels /etc/rc.conf 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:06:56Z",
+          "created": "2026-02-04T18:07:41Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:07:05Z",
+          "created": "2026-02-04T18:07:49Z",
           "created_by": "RUN /bin/sh -c npm install -g npm@latest \u0026\u0026     npm cache clean --force \u0026\u0026     rm -rf /root/.npm/_cacache # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:07:05Z",
+          "created": "2026-02-04T18:07:49Z",
           "created_by": "RUN /bin/sh -c adduser -D -H -u 1000 -s /sbin/nologin nodeuser 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:07:05Z",
+          "created": "2026-02-04T18:07:49Z",
           "created_by": "ENV NODE_ENV=production",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:07:05Z",
+          "created": "2026-02-04T18:07:50Z",
           "created_by": "WORKDIR /app",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:07:05Z",
+          "created": "2026-02-04T18:07:50Z",
           "created_by": "USER nodeuser",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -166,12 +166,12 @@
           "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e",
           "sha256:02289bdc8da66779c084441cadeb5580c50bfe67eb37b7ccfa24854433733f47",
           "sha256:d2f2025518d6d84c30eadd293be9fa61f0ac168b0865956ccbde715b7e6142e4",
-          "sha256:d7b7b17918072c78a80f7cebd39d308b111e5d2008e560402587962fa3903e98",
-          "sha256:cd3cb670867047ef7ecf2c9e870a0a5ad019f0297ba873fab32e23f650f5db00",
-          "sha256:737aede3b34a475daeb1d7c0e8288a483372ce45d7d42ef202f4379e18f410ff",
-          "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d",
-          "sha256:1a4f391f6a278d73c06641b2f68096afaafc413626ca3c9c8faed2a6a200ba4d",
-          "sha256:9a80b5d488700f3d969f957348dd28ff8c17ef828b288ccb007f88a607ff6bdb"
+          "sha256:8180511b20d2296eab2eed088b43b8edef3cf064d97c15df43488cd45558b7f0",
+          "sha256:c08aab0c46fb5df622bf3f101afda019d683f8fdbffff8a33365e7317c9db284",
+          "sha256:7e2270fdc0ac62f5782ffb8325c89844079a0f057be16a8c85322dcff6b8a121",
+          "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d",
+          "sha256:e7e80c137efd42e320489cea9935cbf9215aaae9930bdee980cdc257151db4a3",
+          "sha256:f1c778e2e96b45710713b277dabf3cd1b9c55b780fa4a317a3a74937cc0a0e81"
         ]
       },
       "config": {
@@ -217,27 +217,27 @@
       },
       {
         "Size": 430080,
-        "DiffID": "sha256:d7b7b17918072c78a80f7cebd39d308b111e5d2008e560402587962fa3903e98"
+        "DiffID": "sha256:8180511b20d2296eab2eed088b43b8edef3cf064d97c15df43488cd45558b7f0"
       },
       {
         "Size": 9728,
-        "DiffID": "sha256:cd3cb670867047ef7ecf2c9e870a0a5ad019f0297ba873fab32e23f650f5db00"
+        "DiffID": "sha256:c08aab0c46fb5df622bf3f101afda019d683f8fdbffff8a33365e7317c9db284"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:737aede3b34a475daeb1d7c0e8288a483372ce45d7d42ef202f4379e18f410ff"
+        "DiffID": "sha256:7e2270fdc0ac62f5782ffb8325c89844079a0f057be16a8c85322dcff6b8a121"
       },
       {
         "Size": 14669312,
-        "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+        "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:1a4f391f6a278d73c06641b2f68096afaafc413626ca3c9c8faed2a6a200ba4d"
+        "DiffID": "sha256:e7e80c137efd42e320489cea9935cbf9215aaae9930bdee980cdc257151db4a3"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:9a80b5d488700f3d969f957348dd28ff8c17ef828b288ccb007f88a607ff6bdb"
+        "DiffID": "sha256:f1c778e2e96b45710713b277dabf3cd1b9c55b780fa4a317a3a74937cc0a0e81"
       }
     ]
   },
@@ -443,7 +443,7 @@
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:d7b7b17918072c78a80f7cebd39d308b111e5d2008e560402587962fa3903e98"
+            "DiffID": "sha256:8180511b20d2296eab2eed088b43b8edef3cf064d97c15df43488cd45558b7f0"
           },
           "Digest": "sha1:5a87ccdc0cc1bad1c079326096c6449d1c028d9f",
           "InstalledFiles": [
@@ -561,7 +561,7 @@
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:d7b7b17918072c78a80f7cebd39d308b111e5d2008e560402587962fa3903e98"
+            "DiffID": "sha256:8180511b20d2296eab2eed088b43b8edef3cf064d97c15df43488cd45558b7f0"
           },
           "Digest": "sha1:2ebfb6414883004633e9fcfbca40e454a97a1b92",
           "InstalledFiles": [
@@ -853,7 +853,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@isaacs/balanced-match/package.json",
           "AnalyzedBy": "node-pkg"
@@ -870,7 +870,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@isaacs/brace-expansion/package.json",
           "AnalyzedBy": "node-pkg"
@@ -921,7 +921,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/agent/package.json",
           "AnalyzedBy": "node-pkg"
@@ -938,7 +938,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/package.json",
           "AnalyzedBy": "node-pkg"
@@ -955,7 +955,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/config/package.json",
           "AnalyzedBy": "node-pkg"
@@ -972,7 +972,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/fs/package.json",
           "AnalyzedBy": "node-pkg"
@@ -989,7 +989,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/git/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1006,7 +1006,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/installed-package-contents/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1023,7 +1023,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/map-workspaces/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1040,7 +1040,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/metavuln-calculator/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1057,7 +1057,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/name-from-folder/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1074,7 +1074,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/node-gyp/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1091,7 +1091,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/package-json/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1108,7 +1108,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1125,7 +1125,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/query/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1142,7 +1142,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/redact/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1159,7 +1159,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1176,7 +1176,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@sigstore/bundle/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1193,7 +1193,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@sigstore/core/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1210,7 +1210,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@sigstore/protobuf-specs/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1227,7 +1227,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@sigstore/sign/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1244,7 +1244,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@sigstore/tuf/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1261,7 +1261,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@sigstore/verify/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1295,7 +1295,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/@tufjs/models/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1312,7 +1312,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/abbrev/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1329,7 +1329,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/agent-base/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1363,7 +1363,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/aproba/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1397,7 +1397,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/bin-links/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1414,7 +1414,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/binary-extensions/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1431,7 +1431,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/cacache/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1448,7 +1448,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/chalk/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1465,7 +1465,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/chownr/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1482,7 +1482,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/ci-info/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1499,7 +1499,7 @@
             "BSD-2-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/cidr-regex/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1533,7 +1533,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/cmd-shim/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1550,7 +1550,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/common-ancestor-path/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1601,7 +1601,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/debug/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1618,7 +1618,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/diff/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1703,7 +1703,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/exponential-backoff/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1737,7 +1737,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tinyglobby/node_modules/fdir/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1771,7 +1771,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/glob/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1805,7 +1805,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/hosted-git-info/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1890,7 +1890,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/ignore-walk/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1924,7 +1924,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/ini/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1941,7 +1941,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/init-package-json/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1958,7 +1958,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/ip-address/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1992,7 +1992,7 @@
             "BSD-2-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/is-cidr/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2026,7 +2026,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/isexe/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2043,7 +2043,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/json-parse-even-better-errors/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2128,7 +2128,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmaccess/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2145,7 +2145,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmdiff/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2162,7 +2162,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmexec/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2179,7 +2179,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmfund/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2196,7 +2196,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmorg/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2213,7 +2213,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmpack/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2230,7 +2230,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmpublish/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2247,7 +2247,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmsearch/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2264,7 +2264,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmteam/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2281,7 +2281,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/libnpmversion/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2298,7 +2298,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/lru-cache/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2315,7 +2315,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/make-fetch-happen/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2332,7 +2332,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/minimatch/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2434,7 +2434,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/minipass-fetch/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2502,7 +2502,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/minizlib/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2536,7 +2536,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/mute-stream/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2553,7 +2553,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/negotiator/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2570,7 +2570,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/node-gyp/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2587,7 +2587,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/nopt/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2604,7 +2604,7 @@
             "Artistic-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2621,7 +2621,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-audit-report/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2638,7 +2638,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-bundled/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2655,7 +2655,7 @@
             "BSD-2-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-install-checks/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2672,7 +2672,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-normalize-package-bin/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2689,7 +2689,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-package-arg/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2706,7 +2706,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-packlist/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2723,7 +2723,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2740,7 +2740,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-profile/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2757,7 +2757,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-registry-fetch/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2774,7 +2774,7 @@
             "BSD-2-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/npm-user-validate/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2791,7 +2791,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/p-map/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2808,7 +2808,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/pacote/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2825,7 +2825,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/parse-conflict-json/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2842,7 +2842,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/path-scurry/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2859,7 +2859,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tinyglobby/node_modules/picomatch/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2876,7 +2876,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/postcss-selector-parser/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2893,7 +2893,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/proc-log/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2910,7 +2910,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/proggy/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2978,7 +2978,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/promzard/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3009,7 +3009,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/read/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3026,7 +3026,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/read-cmd-shim/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3077,7 +3077,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/semver/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3111,7 +3111,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/sigstore/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3145,7 +3145,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/socks/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3264,7 +3264,7 @@
             "CC0-1.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/spdx-license-ids/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3281,7 +3281,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/ssri/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3332,7 +3332,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/supports-color/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3349,7 +3349,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tar/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3383,7 +3383,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tiny-relative-date/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3400,7 +3400,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tinyglobby/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3434,7 +3434,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tuf-js/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3451,7 +3451,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/unique-filename/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3468,7 +3468,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/unique-slug/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3519,7 +3519,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/validate-npm-package-name/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3536,7 +3536,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/walk-up-path/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3553,7 +3553,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/which/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3570,7 +3570,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/write-file-atomic/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3604,7 +3604,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "FilePath": "usr/local/lib/node_modules/npm/node_modules/tar/node_modules/yallist/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3644,7 +3644,7 @@
           "FixedVersion": "7.5.7",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:1fdca90d0d807bec03b0dd2dc39d23f3f153ab0cf242befecd736c29321dd59d"
+            "DiffID": "sha256:dd571bc34765201c08e23344a11f9cc97b2fffb13772dec5c9146220a7a5796d"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24842",
@@ -3653,7 +3653,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:80dd7d2eb4ef863223f4ca3dec1b5bd2f99d519a6f261f7a2392271c6eaccd2a",
+          "Fingerprint": "sha256:249e6552703413ceb5c6d82e09b0d99484902dc2ff9e928004261409e6a3f0a3",
           "Title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
           "Description": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink entries uses different path resolution semantics than the actual hardlink creation logic. This mismatch allows an attacker to craft a malicious TAR archive that bypasses path traversal protections and creates hardlinks to arbitrary files outside the extraction directory. Version 7.5.7 contains a fix for the issue.",
           "Severity": "HIGH",

@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c24c5-0eeb-7ed8-ad1e-b7299b59fcad",
-  "CreatedAt": "2026-02-04T01:30:20.139974627+07:00",
-  "ArtifactID": "sha256:4928b0338c0ce5966ddad26175c2591f8e7b9148af42df9afe0e9e6696f2ee4d",
+  "ReportID": "019c29e9-c53d-785c-9693-113b7461c777",
+  "CreatedAt": "2026-02-05T01:28:32.189550454+07:00",
+  "ArtifactID": "sha256:3a694bbf2d4d98082e3710c839de5cf724c97233478a9e67f9f3dd487b5bee83",
   "ArtifactName": "detoxd/alpine:3.21-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,12 +14,12 @@
       "Family": "alpine",
       "Name": "3.21.6"
     },
-    "ImageID": "sha256:e0035ae15cd22bed986bbc64c2241f0c28ee475e3aab1a29c8121a03f3e6ef55",
+    "ImageID": "sha256:009398e54512a3827170fa7c133dc7b32405e0cbb3faf79a448e5719c99d6e7f",
     "DiffIDs": [
       "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e",
-      "sha256:0678674b1d3689b471027012e881a5e0053d78a1cb117cf8805a9c4b21913f3b",
-      "sha256:115658fb497ee20cd4104f6449039820e26ec28a992482200eab26b019b00df1",
-      "sha256:ff1dbbf90ac0f358013df61cc57740effd2b97eaedfa23f04017e86eb8ba5473"
+      "sha256:c15dec27efec20b3b6b2754de3a4c2d489ea848c77fcc6bab82281faeb993b5a",
+      "sha256:f011485257655d44e049b916cb20478816734eeb6271a4b45d8e82e90ea5eb43",
+      "sha256:4eb5e4df9bfff2eafcbdcc9b9791946dfb703bd2af8ebac0d91a5488f7536512"
     ],
     "RepoTags": [
       "detoxd/alpine:3.21-detox.1"
@@ -27,7 +27,7 @@
     "Reference": "detoxd/alpine:3.21-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-04T02:30:19.775155381+08:00",
+      "created": "2026-02-05T02:28:31.845553119+08:00",
       "history": [
         {
           "created": "2026-01-28T01:18:43Z",
@@ -41,47 +41,47 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "LABEL org.opencontainers.image.title=Detoxd alpine",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "LABEL org.opencontainers.image.description=Hardened alpine image with vulnerability fixes",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "LABEL detoxd.base.image=alpine:3.21",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache \u0026\u0026     apk del --purge         wget         curl         busybox-extras         2\u003e/dev/null || true \u0026\u0026     rm -rf /var/cache/apk/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.ash_history /root/.bash_history # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games news uucp proxy www-data list irc gnats nobody; do         deluser $user 2\u003e/dev/null || true;     done \u0026\u0026     rm -rf /etc/cron.* /etc/crontabs 2\u003e/dev/null || true \u0026\u0026     rm -rf /etc/init.d /lib/rc /etc/conf.d /etc/inittab /etc/runlevels /etc/rc.conf 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-03T18:30:19Z",
+          "created": "2026-02-04T18:28:31Z",
           "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -91,9 +91,9 @@
         "type": "layers",
         "diff_ids": [
           "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e",
-          "sha256:0678674b1d3689b471027012e881a5e0053d78a1cb117cf8805a9c4b21913f3b",
-          "sha256:115658fb497ee20cd4104f6449039820e26ec28a992482200eab26b019b00df1",
-          "sha256:ff1dbbf90ac0f358013df61cc57740effd2b97eaedfa23f04017e86eb8ba5473"
+          "sha256:c15dec27efec20b3b6b2754de3a4c2d489ea848c77fcc6bab82281faeb993b5a",
+          "sha256:f011485257655d44e049b916cb20478816734eeb6271a4b45d8e82e90ea5eb43",
+          "sha256:4eb5e4df9bfff2eafcbdcc9b9791946dfb703bd2af8ebac0d91a5488f7536512"
         ]
       },
       "config": {
@@ -120,15 +120,15 @@
       },
       {
         "Size": 34304,
-        "DiffID": "sha256:0678674b1d3689b471027012e881a5e0053d78a1cb117cf8805a9c4b21913f3b"
+        "DiffID": "sha256:c15dec27efec20b3b6b2754de3a4c2d489ea848c77fcc6bab82281faeb993b5a"
       },
       {
         "Size": 9728,
-        "DiffID": "sha256:115658fb497ee20cd4104f6449039820e26ec28a992482200eab26b019b00df1"
+        "DiffID": "sha256:f011485257655d44e049b916cb20478816734eeb6271a4b45d8e82e90ea5eb43"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:ff1dbbf90ac0f358013df61cc57740effd2b97eaedfa23f04017e86eb8ba5473"
+        "DiffID": "sha256:4eb5e4df9bfff2eafcbdcc9b9791946dfb703bd2af8ebac0d91a5488f7536512"
       }
     ]
   },

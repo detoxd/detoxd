@@ -13,7 +13,7 @@ docker run -d detoxd/postgres:17.7-alpine3.21-detox.1
 |----------|-------|
 | Original | `postgres:17.7-alpine3.21` |
 | Detoxed | `detoxd/postgres:17.7-alpine3.21-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 

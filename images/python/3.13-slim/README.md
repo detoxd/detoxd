@@ -13,7 +13,7 @@ docker run -d detoxd/python:3.13-slim-detox.1
 |----------|-------|
 | Original | `python:3.13-slim` |
 | Detoxed | `detoxd/python:3.13-slim-detox.1` |
-| Scan Date | 2026-02-03 |
+| Scan Date | 2026-02-04 |
 
 ## Scan Results
 
