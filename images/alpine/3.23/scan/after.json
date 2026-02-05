@@ -3,31 +3,31 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c29ec-202f-7880-8cf4-d00f885ba08a",
-  "CreatedAt": "2026-02-05T01:31:06.543559282+07:00",
-  "ArtifactID": "sha256:fac519277056acfb09a475810c1f72555ebc6859ab2e99a3adcf77577895f733",
-  "ArtifactName": "detoxd/alpine:3.23-detox.1",
+  "ReportID": "019c2ee2-6c43-76f6-932e-5d94b5805c70",
+  "CreatedAt": "2026-02-06T00:38:36.739459386+07:00",
+  "ArtifactID": "sha256:d61e104ea36df74c817fb6b4392d8133b80e5b74b089e44363d0ceb062bb568b",
+  "ArtifactName": "alpine:3.23",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 9160192,
+    "Size": 8724480,
     "OS": {
       "Family": "alpine",
       "Name": "3.23.3"
     },
-    "ImageID": "sha256:c52790d2f62554c5cc312edd191e7a9fb24047c906b2756bf3ef412e381e90d3",
+    "ImageID": "sha256:a40c03cbb81c59bfb0e0887ab0b1859727075da7b9cc576a1cec2c771f38c5fb",
     "DiffIDs": [
-      "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
-      "sha256:560b906c4ab59849ace13580b49910137e3a8bc10cb685f026cad19303a83fef",
-      "sha256:915569157e8e82623ba1701b4360e23c4a3b3913bcc1110b1ca3a8b92f5d9cf8",
-      "sha256:6d4e58731389da08cec3ba9eb6e8c14ed7f8da1406820cb10a0b4800efd3523f"
+      "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
     ],
     "RepoTags": [
-      "detoxd/alpine:3.23-detox.1"
+      "alpine:3.23"
     ],
-    "Reference": "detoxd/alpine:3.23-detox.1",
+    "RepoDigests": [
+      "alpine@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659"
+    ],
+    "Reference": "alpine:3.23",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-05T02:31:06.140146974+08:00",
+      "created": "2026-01-28T01:18:04.977843834Z",
       "history": [
         {
           "created": "2026-01-28T01:18:04Z",
@@ -39,61 +39,13 @@
           "created_by": "CMD [\"/bin/sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "LABEL maintainer=detoxd",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "LABEL org.opencontainers.image.title=Detoxd alpine",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "LABEL org.opencontainers.image.description=Hardened alpine image with vulnerability fixes",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "LABEL detoxd.base.image=alpine:3.23",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache \u0026\u0026     apk del --purge         wget         curl         busybox-extras         2\u003e/dev/null || true \u0026\u0026     rm -rf /var/cache/apk/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.ash_history /root/.bash_history # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2026-02-04T18:31:05Z",
-          "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games news uucp proxy www-data list irc gnats nobody; do         deluser $user 2\u003e/dev/null || true;     done \u0026\u0026     rm -rf /etc/cron.* /etc/crontabs 2\u003e/dev/null || true \u0026\u0026     rm -rf /etc/init.d /lib/rc /etc/conf.d /etc/inittab /etc/runlevels /etc/rc.conf 2\u003e/dev/null || true # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2026-02-04T18:31:06Z",
-          "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
-          "comment": "buildkit.dockerfile.v0"
         }
       ],
       "os": "linux",
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
-          "sha256:560b906c4ab59849ace13580b49910137e3a8bc10cb685f026cad19303a83fef",
-          "sha256:915569157e8e82623ba1701b4360e23c4a3b3913bcc1110b1ca3a8b92f5d9cf8",
-          "sha256:6d4e58731389da08cec3ba9eb6e8c14ed7f8da1406820cb10a0b4800efd3523f"
+          "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
         ]
       },
       "config": {
@@ -103,13 +55,6 @@
         "Env": [
           "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ],
-        "Labels": {
-          "detoxd.base.image": "alpine:3.23",
-          "maintainer": "detoxd",
-          "org.opencontainers.image.description": "Hardened alpine image with vulnerability fixes",
-          "org.opencontainers.image.source": "https://github.com/detoxd/detoxd",
-          "org.opencontainers.image.title": "Detoxd alpine"
-        },
         "WorkingDir": "/"
       }
     },
@@ -117,24 +62,12 @@
       {
         "Size": 8724480,
         "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
-      },
-      {
-        "Size": 423424,
-        "DiffID": "sha256:560b906c4ab59849ace13580b49910137e3a8bc10cb685f026cad19303a83fef"
-      },
-      {
-        "Size": 9728,
-        "DiffID": "sha256:915569157e8e82623ba1701b4360e23c4a3b3913bcc1110b1ca3a8b92f5d9cf8"
-      },
-      {
-        "Size": 2560,
-        "DiffID": "sha256:6d4e58731389da08cec3ba9eb6e8c14ed7f8da1406820cb10a0b4800efd3523f"
       }
     ]
   },
   "Results": [
     {
-      "Target": "detoxd/alpine:3.23-detox.1 (alpine 3.23.3)",
+      "Target": "alpine:3.23 (alpine 3.23.3)",
       "Class": "os-pkgs",
       "Type": "alpine",
       "Packages": [
@@ -312,31 +245,31 @@
           "AnalyzedBy": "apk"
         },
         {
-          "ID": "apk-tools@3.0.4-r0",
+          "ID": "apk-tools@3.0.3-r1",
           "Name": "apk-tools",
           "Identifier": {
-            "PURL": "pkg:apk/alpine/apk-tools@3.0.4-r0?arch=x86_64\u0026distro=3.23.3",
-            "UID": "3a506d0cd44f83c5"
+            "PURL": "pkg:apk/alpine/apk-tools@3.0.3-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "135e6dc8dcafde4f"
           },
-          "Version": "3.0.4-r0",
+          "Version": "3.0.3-r1",
           "Arch": "x86_64",
           "SrcName": "apk-tools",
-          "SrcVersion": "3.0.4-r0",
+          "SrcVersion": "3.0.3-r1",
           "Licenses": [
             "GPL-2.0-only"
           ],
           "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
           "DependsOn": [
             "ca-certificates-bundle@20251003-r0",
-            "libapk@3.0.4-r0",
+            "libapk@3.0.3-r1",
             "libcrypto3@3.5.5-r0",
             "musl@1.2.5-r21",
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:560b906c4ab59849ace13580b49910137e3a8bc10cb685f026cad19303a83fef"
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
           },
-          "Digest": "sha1:5a87ccdc0cc1bad1c079326096c6449d1c028d9f",
+          "Digest": "sha1:b2f877e6c9fb945c185cf36ed546064b8b374245",
           "InstalledFiles": [
             "sbin/apk"
           ],
@@ -431,16 +364,16 @@
           "AnalyzedBy": "apk"
         },
         {
-          "ID": "libapk@3.0.4-r0",
+          "ID": "libapk@3.0.3-r1",
           "Name": "libapk",
           "Identifier": {
-            "PURL": "pkg:apk/alpine/libapk@3.0.4-r0?arch=x86_64\u0026distro=3.23.3",
-            "UID": "3d82653ca4a5bf29"
+            "PURL": "pkg:apk/alpine/libapk@3.0.3-r1?arch=x86_64\u0026distro=3.23.3",
+            "UID": "d8a4dac06126e84f"
           },
-          "Version": "3.0.4-r0",
+          "Version": "3.0.3-r1",
           "Arch": "x86_64",
           "SrcName": "apk-tools",
-          "SrcVersion": "3.0.4-r0",
+          "SrcVersion": "3.0.3-r1",
           "Licenses": [
             "GPL-2.0-only"
           ],
@@ -452,9 +385,9 @@
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:560b906c4ab59849ace13580b49910137e3a8bc10cb685f026cad19303a83fef"
+            "DiffID": "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e"
           },
-          "Digest": "sha1:2ebfb6414883004633e9fcfbca40e454a97a1b92",
+          "Digest": "sha1:17d0c18e379eb411aaa3e07392343a2dd6e098cc",
           "InstalledFiles": [
             "usr/lib/libapk.so.3.0.0"
           ],

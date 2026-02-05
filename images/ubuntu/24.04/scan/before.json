@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c29ed-8c7f-79e5-86d6-4fe956833eb1",
-  "CreatedAt": "2026-02-05T01:32:39.807650224+07:00",
+  "ReportID": "019c2ed0-08c5-70b3-93d7-90076fc65ce7",
+  "CreatedAt": "2026-02-06T00:18:31.621049418+07:00",
   "ArtifactID": "sha256:9e924b6a080e679bf0a4a2159f282ec19e5d2ce66dd0feb1b6b00f9d6c718752",
   "ArtifactName": "ubuntu:24.04",
   "ArtifactType": "container_image",
@@ -7003,6 +7003,56 @@
           "LastModifiedDate": "2025-03-12T21:15:38.207Z"
         },
         {
+          "VulnerabilityID": "CVE-2025-15281",
+          "PkgID": "libc-bin@2.39-0ubuntu8.6",
+          "PkgName": "libc-bin",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.6?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "ae17308e14f471bd"
+          },
+          "InstalledVersion": "2.39-0ubuntu8.6",
+          "FixedVersion": "2.39-0ubuntu8.7",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15281",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:29581f235232eecef2acbb37ed47ced7393474be89a613fe145b8cdaa8a0702c",
+          "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
+          "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/20/3",
+            "https://access.redhat.com/security/cve/CVE-2025-15281",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15281",
+            "https://www.openwall.com/lists/oss-security/2026/01/20/3"
+          ],
+          "PublishedDate": "2026-01-20T14:16:07.843Z",
+          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
+        },
+        {
           "VulnerabilityID": "CVE-2026-0861",
           "PkgID": "libc-bin@2.39-0ubuntu8.6",
           "PkgName": "libc-bin",
@@ -7011,7 +7061,8 @@
             "UID": "ae17308e14f471bd"
           },
           "InstalledVersion": "2.39-0ubuntu8.6",
-          "Status": "affected",
+          "FixedVersion": "2.39-0ubuntu8.7",
+          "Status": "fixed",
           "Layer": {
             "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
           },
@@ -7060,10 +7111,126 @@
             "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
             "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
+            "https://ubuntu.com/security/notices/USN-8005-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-0861"
           ],
           "PublishedDate": "2026-01-14T21:15:52.617Z",
-          "LastModifiedDate": "2026-01-16T18:16:09.343Z"
+          "LastModifiedDate": "2026-02-03T18:26:25.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0915",
+          "PkgID": "libc-bin@2.39-0ubuntu8.6",
+          "PkgName": "libc-bin",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.6?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "ae17308e14f471bd"
+          },
+          "InstalledVersion": "2.39-0ubuntu8.6",
+          "FixedVersion": "2.39-0ubuntu8.7",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0915",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:0e1ad03c885d4b32b65e39905f9f595be14139f3240c6c9edbaae63215320445",
+          "Title": "glibc: glibc: Information disclosure via zero-valued network query",
+          "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/6",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0915",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0915.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0915",
+            "https://www.openwall.com/lists/oss-security/2026/01/16/6"
+          ],
+          "PublishedDate": "2026-01-15T22:16:12.457Z",
+          "LastModifiedDate": "2026-01-23T19:36:50.73Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-15281",
+          "PkgID": "libc6@2.39-0ubuntu8.6",
+          "PkgName": "libc6",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.6?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "9ad7c400de1666d8"
+          },
+          "InstalledVersion": "2.39-0ubuntu8.6",
+          "FixedVersion": "2.39-0ubuntu8.7",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15281",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:a1f0c225fcbf6b2c98a8986eee7c4181d711a819305a7748b74c6f7c0f5cc226",
+          "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
+          "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/20/3",
+            "https://access.redhat.com/security/cve/CVE-2025-15281",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15281",
+            "https://www.openwall.com/lists/oss-security/2026/01/20/3"
+          ],
+          "PublishedDate": "2026-01-20T14:16:07.843Z",
+          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
         },
         {
           "VulnerabilityID": "CVE-2026-0861",
@@ -7074,7 +7241,8 @@
             "UID": "9ad7c400de1666d8"
           },
           "InstalledVersion": "2.39-0ubuntu8.6",
-          "Status": "affected",
+          "FixedVersion": "2.39-0ubuntu8.7",
+          "Status": "fixed",
           "Layer": {
             "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
           },
@@ -7123,10 +7291,76 @@
             "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
             "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
+            "https://ubuntu.com/security/notices/USN-8005-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-0861"
           ],
           "PublishedDate": "2026-01-14T21:15:52.617Z",
-          "LastModifiedDate": "2026-01-16T18:16:09.343Z"
+          "LastModifiedDate": "2026-02-03T18:26:25.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0915",
+          "PkgID": "libc6@2.39-0ubuntu8.6",
+          "PkgName": "libc6",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.6?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "9ad7c400de1666d8"
+          },
+          "InstalledVersion": "2.39-0ubuntu8.6",
+          "FixedVersion": "2.39-0ubuntu8.7",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0915",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:19f2feec5ff40cd9bb9d03b46e4210ff26ec77257b335dd31331b05bc0a43ca4",
+          "Title": "glibc: glibc: Information disclosure via zero-valued network query",
+          "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/6",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0915",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0915.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0915",
+            "https://www.openwall.com/lists/oss-security/2026/01/16/6"
+          ],
+          "PublishedDate": "2026-01-15T22:16:12.457Z",
+          "LastModifiedDate": "2026-01-23T19:36:50.73Z"
         },
         {
           "VulnerabilityID": "CVE-2024-2236",
@@ -7522,6 +7756,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "azure": 4,
             "oracle-oval": 3,
             "photon": 4,
             "redhat": 3,
@@ -7621,6 +7856,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "azure": 2,
             "oracle-oval": 3,
             "photon": 2,
             "redhat": 1,
@@ -7720,6 +7956,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "azure": 2,
             "oracle-oval": 3,
             "photon": 2,
             "redhat": 1,
@@ -7918,6 +8155,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "azure": 2,
             "oracle-oval": 3,
             "photon": 3,
             "redhat": 1,
@@ -8017,6 +8255,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "azure": 2,
             "nvd": 3,
             "oracle-oval": 3,
             "photon": 3,

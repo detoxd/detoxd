@@ -1,28 +1,32 @@
-# postgres:17.7-alpine (Detoxed)
+# Detoxd: postgres:17.7-alpine
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 15 | 15 | 0 |
+| Fixable | 15 | 15 | 0 |
+| Unfixable | 0 | 0 | - |
+
+**Reduction: 0%**
 
 ## Quick Start
 
 ```bash
 docker pull detoxd/postgres:17.7-alpine-detox.1
-docker run -d detoxd/postgres:17.7-alpine-detox.1
+docker run -it detoxd/postgres:17.7-alpine-detox.1
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `postgres:17.7-alpine` |
-| Detoxed | `detoxd/postgres:17.7-alpine-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 15 | 15 | 0 (0.0%) |
-| Critical | 0 | 0 | 0 |
-| High | 4 | 4 | 0 |
-| Medium | 11 | 11 | 0 |
-| Low | 0 | 0 | 0 |
+```
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+## Files
+
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan

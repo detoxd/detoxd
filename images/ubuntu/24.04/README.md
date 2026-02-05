@@ -1,28 +1,43 @@
-# ubuntu:24.04 (Detoxed)
+# Detoxd: ubuntu:24.04
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 26 | 12 | 14 |
+| Fixable | 14 | 0 | 14 |
+| Unfixable | 12 | 12 | - |
+
+**Reduction: 53%**
 
 ## Quick Start
 
 ```bash
 docker pull detoxd/ubuntu:24.04-detox.1
-docker run -d detoxd/ubuntu:24.04-detox.1
+docker run -it detoxd/ubuntu:24.04-detox.1
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `ubuntu:24.04` |
-| Detoxed | `detoxd/ubuntu:24.04-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
+[LOW] CVE-2016-2781: coreutils
+[MEDIUM] CVE-2025-68972: gpgv
+[MEDIUM] CVE-2026-24882: gpgv
+[LOW] CVE-2022-3219: gpgv
+[LOW] CVE-2024-2236: libgcrypt20
+[MEDIUM] CVE-2025-8941: libpam-modules
+[MEDIUM] CVE-2025-8941: libpam-modules-bin
+[MEDIUM] CVE-2025-8941: libpam-runtime
+[MEDIUM] CVE-2025-8941: libpam0g
+[LOW] CVE-2024-56433: login
+[LOW] CVE-2024-56433: passwd
+[MEDIUM] CVE-2025-45582: tar
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 22 | 14 | 8 (36.4%) |
-| Critical | 0 | 0 | 0 |
-| High | 0 | 0 | 0 |
-| Medium | 10 | 9 | 1 |
-| Low | 12 | 5 | 7 |
+## Files
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan

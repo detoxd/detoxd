@@ -1,51 +1,21 @@
 # ============================================================================
-# Detoxd Hardened Image
-# Auto-generated Dockerfile with security fixes
+# Detoxd Hardened Image - Iteration 1
+# Generated from Trivy analysis - targeting 14 fixable vulns
 # ============================================================================
 
 ARG BASE_IMAGE=ubuntu:24.04
 FROM ${BASE_IMAGE}
 
-# Metadata
 LABEL maintainer="detoxd"
-LABEL org.opencontainers.image.source="https://github.com/detoxd/detoxd"
-LABEL org.opencontainers.image.title="Detoxd ubuntu"
-LABEL org.opencontainers.image.description="Hardened ubuntu image with vulnerability fixes"
-LABEL detoxd.base.image="ubuntu:24.04"
+LABEL detoxd.iteration="1"
+LABEL detoxd.fixable.count="14"
+LABEL detoxd.unfixable.count="12"
 
-# ============================================================================
-# SECURITY FIXES FOR DEBIAN/UBUNTU-BASED IMAGE
-# ============================================================================
-
-# Update all packages to latest versions (fixes known CVEs)
+# Fix OS packages with known vulnerabilities
 RUN apt-get update && \
-    apt-get upgrade -y --no-install-recommends && \
-    apt-get dist-upgrade -y && \
-    # Remove unnecessary packages
-    apt-get purge -y --auto-remove \
-        wget \
-        curl \
-        netcat* \
-        telnet* \
-        2>/dev/null || true && \
-    # Clean up apt cache
+    apt-get install -y --only-upgrade libc-bin libc6 libssl3t64 || apt-get upgrade -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
-    # Remove unnecessary files
-    rm -rf /tmp/* /var/tmp/* && \
-    # Remove shell history
-    rm -f /root/.bash_history
+    rm -rf /var/lib/apt/lists/*
 
-# Security hardening
-RUN \
-    # Remove setuid/setgid bits from binaries
-    find / -perm /6000 -type f -exec chmod a-s {} \; 2>/dev/null || true && \
-    # Remove unnecessary accounts (keeping system-critical ones)
-    for user in games gnats irc list news proxy uucp; do \
-        userdel -r $user 2>/dev/null || true; \
-    done
-
-# Set secure permissions
-RUN chmod 700 /root && \
-    chmod 1777 /tmp
-
+# Final cleanup
+RUN rm -rf /tmp/* /var/tmp/* 2>/dev/null || true

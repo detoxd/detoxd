@@ -1,28 +1,32 @@
-# httpd:2.4.66-alpine3.23 (Detoxed)
+# Detoxd: httpd:2.4.66-alpine3.23
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 2 | 0 | 2 |
+| Fixable | 2 | 0 | 2 |
+| Unfixable | 0 | 0 | - |
+
+**Reduction: 100%**
 
 ## Quick Start
 
 ```bash
 docker pull detoxd/httpd:2.4.66-alpine3.23-detox.1
-docker run -d detoxd/httpd:2.4.66-alpine3.23-detox.1
+docker run -it detoxd/httpd:2.4.66-alpine3.23-detox.1
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `httpd:2.4.66-alpine3.23` |
-| Detoxed | `detoxd/httpd:2.4.66-alpine3.23-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 0 | 0 | 0 (0%) |
-| Critical | 0 | 0 | 0 |
-| High | 0 | 0 | 0 |
-| Medium | 0 | 0 | 0 |
-| Low | 0 | 0 | 0 |
+```
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+## Files
+
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan

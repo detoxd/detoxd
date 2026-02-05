@@ -1,28 +1,32 @@
-# mysql:9.0 (Detoxed)
+# Detoxd: mysql:9.0
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 211 | 82 | 129 |
+| Fixable | 211 | 82 | 129 |
+| Unfixable | 0 | 0 | - |
+
+**Reduction: 61%**
 
 ## Quick Start
 
 ```bash
-docker pull detoxd/mysql:9.0-detox.1
-docker run -d detoxd/mysql:9.0-detox.1
+docker pull detoxd/mysql:9.0-detox.2
+docker run -it detoxd/mysql:9.0-detox.2
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `mysql:9.0` |
-| Detoxed | `detoxd/mysql:9.0-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 211 | 81 | 130 (61.6%) |
-| Critical | 3 | 3 | 0 |
-| High | 96 | 36 | 60 |
-| Medium | 98 | 40 | 58 |
-| Low | 14 | 2 | 12 |
+```
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+## Files
+
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan

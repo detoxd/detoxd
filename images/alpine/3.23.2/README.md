@@ -1,28 +1,32 @@
-# alpine:3.23.2 (Detoxed)
+# Detoxd: alpine:3.23.2
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 24 | 0 | 24 |
+| Fixable | 24 | 0 | 24 |
+| Unfixable | 0 | 0 | - |
+
+**Reduction: 100%**
 
 ## Quick Start
 
 ```bash
 docker pull detoxd/alpine:3.23.2-detox.1
-docker run -d detoxd/alpine:3.23.2-detox.1
+docker run -it detoxd/alpine:3.23.2-detox.1
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `alpine:3.23.2` |
-| Detoxed | `detoxd/alpine:3.23.2-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 24 | 0 | 24 (100.0%) |
-| Critical | 2 | 0 | 2 |
-| High | 4 | 0 | 4 |
-| Medium | 18 | 0 | 18 |
-| Low | 0 | 0 | 0 |
+```
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+## Files
+
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan

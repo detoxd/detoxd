@@ -3,31 +3,31 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c29e9-c53d-785c-9693-113b7461c777",
-  "CreatedAt": "2026-02-05T01:28:32.189550454+07:00",
-  "ArtifactID": "sha256:3a694bbf2d4d98082e3710c839de5cf724c97233478a9e67f9f3dd487b5bee83",
-  "ArtifactName": "detoxd/alpine:3.21-detox.1",
+  "ReportID": "019c2ee2-3d8b-7f0d-bf7f-722a9ea78f9b",
+  "CreatedAt": "2026-02-06T00:38:24.779988397+07:00",
+  "ArtifactID": "sha256:b455e8f2a8376ba31c1ffb073a7e3d68d5da42c9a7717959f32b533b13218a82",
+  "ArtifactName": "alpine:3.21",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 8168448,
+    "Size": 8121856,
     "OS": {
       "Family": "alpine",
       "Name": "3.21.6"
     },
-    "ImageID": "sha256:009398e54512a3827170fa7c133dc7b32405e0cbb3faf79a448e5719c99d6e7f",
+    "ImageID": "sha256:6aeafe801b80d22202e15849e99930f83810df4f0e535158480c590da19ecbd7",
     "DiffIDs": [
-      "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e",
-      "sha256:c15dec27efec20b3b6b2754de3a4c2d489ea848c77fcc6bab82281faeb993b5a",
-      "sha256:f011485257655d44e049b916cb20478816734eeb6271a4b45d8e82e90ea5eb43",
-      "sha256:4eb5e4df9bfff2eafcbdcc9b9791946dfb703bd2af8ebac0d91a5488f7536512"
+      "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e"
     ],
     "RepoTags": [
-      "detoxd/alpine:3.21-detox.1"
+      "alpine:3.21"
     ],
-    "Reference": "detoxd/alpine:3.21-detox.1",
+    "RepoDigests": [
+      "alpine@sha256:c3f8e73fdb79deaebaa2037150150191b9dcbfba68b4a46d70103204c53f4709"
+    ],
+    "Reference": "alpine:3.21",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-05T02:28:31.845553119+08:00",
+      "created": "2026-01-28T01:18:43.127739215Z",
       "history": [
         {
           "created": "2026-01-28T01:18:43Z",
@@ -39,61 +39,13 @@
           "created_by": "CMD [\"/bin/sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "LABEL maintainer=detoxd",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "LABEL org.opencontainers.image.title=Detoxd alpine",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "LABEL org.opencontainers.image.description=Hardened alpine image with vulnerability fixes",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "LABEL detoxd.base.image=alpine:3.21",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache \u0026\u0026     apk del --purge         wget         curl         busybox-extras         2\u003e/dev/null || true \u0026\u0026     rm -rf /var/cache/apk/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.ash_history /root/.bash_history # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games news uucp proxy www-data list irc gnats nobody; do         deluser $user 2\u003e/dev/null || true;     done \u0026\u0026     rm -rf /etc/cron.* /etc/crontabs 2\u003e/dev/null || true \u0026\u0026     rm -rf /etc/init.d /lib/rc /etc/conf.d /etc/inittab /etc/runlevels /etc/rc.conf 2\u003e/dev/null || true # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2026-02-04T18:28:31Z",
-          "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
-          "comment": "buildkit.dockerfile.v0"
         }
       ],
       "os": "linux",
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e",
-          "sha256:c15dec27efec20b3b6b2754de3a4c2d489ea848c77fcc6bab82281faeb993b5a",
-          "sha256:f011485257655d44e049b916cb20478816734eeb6271a4b45d8e82e90ea5eb43",
-          "sha256:4eb5e4df9bfff2eafcbdcc9b9791946dfb703bd2af8ebac0d91a5488f7536512"
+          "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e"
         ]
       },
       "config": {
@@ -103,13 +55,6 @@
         "Env": [
           "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ],
-        "Labels": {
-          "detoxd.base.image": "alpine:3.21",
-          "maintainer": "detoxd",
-          "org.opencontainers.image.description": "Hardened alpine image with vulnerability fixes",
-          "org.opencontainers.image.source": "https://github.com/detoxd/detoxd",
-          "org.opencontainers.image.title": "Detoxd alpine"
-        },
         "WorkingDir": "/"
       }
     },
@@ -117,24 +62,12 @@
       {
         "Size": 8121856,
         "DiffID": "sha256:23e75c9dd3ec742dcf0b41994dd6e581b011fb29044efa7b1921f92f59e3e11e"
-      },
-      {
-        "Size": 34304,
-        "DiffID": "sha256:c15dec27efec20b3b6b2754de3a4c2d489ea848c77fcc6bab82281faeb993b5a"
-      },
-      {
-        "Size": 9728,
-        "DiffID": "sha256:f011485257655d44e049b916cb20478816734eeb6271a4b45d8e82e90ea5eb43"
-      },
-      {
-        "Size": 2560,
-        "DiffID": "sha256:4eb5e4df9bfff2eafcbdcc9b9791946dfb703bd2af8ebac0d91a5488f7536512"
       }
     ]
   },
   "Results": [
     {
-      "Target": "detoxd/alpine:3.21-detox.1 (alpine 3.21.6)",
+      "Target": "alpine:3.21 (alpine 3.21.6)",
       "Class": "os-pkgs",
       "Type": "alpine",
       "Packages": [

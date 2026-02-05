@@ -3,31 +3,34 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c29ed-dc8a-7201-80e2-39c80a3e1c72",
-  "CreatedAt": "2026-02-05T01:33:00.298133788+07:00",
-  "ArtifactID": "sha256:adcf0dcad006b1e2225c129e63234ac21a5a935d0b9df3e4c1dd250835ef1a20",
+  "ReportID": "019c2ed0-0b09-718f-ac3f-8b94160f5145",
+  "CreatedAt": "2026-02-06T00:18:32.201104684+07:00",
+  "ArtifactID": "sha256:ececb26145bb487919e1443f0d92328b7844f7abdfcd976484118c5adfbcf4ca",
   "ArtifactName": "detoxd/ubuntu:24.04-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 104986624,
+    "Size": 104359424,
     "OS": {
       "Family": "ubuntu",
       "Name": "24.04"
     },
-    "ImageID": "sha256:4f5b9d27a137c074797faeb2cb8972324cd03b44a2d30726dfc49a10b34edf6a",
+    "ImageID": "sha256:c30fb88f0d56d1e8fa5385aae1bfbc9fff1538786e5de3ceb31a969c72038fb6",
     "DiffIDs": [
       "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f",
-      "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21",
-      "sha256:3b720a0d9672e1b12c5e5e1ec335ab0c1a89aba932b067d0042f2740c5eb7692",
-      "sha256:0cd588b4048c3404ac9220169eb13e2f309699470dd8144917bf2ef4c3a2dfe9"
+      "sha256:f8023cea66ff61f066367762813ba4f6cbf662f28fd2d5ad8629cd021eea69c5",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
     ],
     "RepoTags": [
+      "detoxd/ubuntu:24.04-detox",
       "detoxd/ubuntu:24.04-detox.1"
+    ],
+    "RepoDigests": [
+      "detoxd/ubuntu@sha256:efc46899f618bfb30e035696c328f1e8ed01582a0a6b26f48f41f38eb77d9cee"
     ],
     "Reference": "detoxd/ubuntu:24.04-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-05T02:32:57.868272633+08:00",
+      "created": "2026-02-06T01:14:18.934836835+08:00",
       "history": [
         {
           "created": "2026-01-13T05:37:25Z",
@@ -59,48 +62,37 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-04T18:32:56Z",
+          "created": "2026-02-05T17:14:18Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-04T18:32:56Z",
-          "created_by": "LABEL org.opencontainers.image.source=https://github.com/detoxd/detoxd",
+          "created": "2026-02-05T17:14:18Z",
+          "created_by": "LABEL detoxd.iteration=1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-04T18:32:56Z",
-          "created_by": "LABEL org.opencontainers.image.title=Detoxd ubuntu",
+          "created": "2026-02-05T17:14:18Z",
+          "created_by": "LABEL detoxd.fixable.count=14",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-04T18:32:56Z",
-          "created_by": "LABEL org.opencontainers.image.description=Hardened ubuntu image with vulnerability fixes",
+          "created": "2026-02-05T17:14:18Z",
+          "created_by": "LABEL detoxd.unfixable.count=12",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-04T18:32:56Z",
-          "created_by": "LABEL detoxd.base.image=ubuntu:24.04",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-02-04T18:32:56Z",
-          "created_by": "RUN /bin/sh -c apt-get update \u0026\u0026     apt-get upgrade -y --no-install-recommends \u0026\u0026     apt-get dist-upgrade -y \u0026\u0026     apt-get purge -y --auto-remove         wget         curl         netcat*         telnet*         2\u003e/dev/null || true \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/* \u0026\u0026     rm -rf /tmp/* /var/tmp/* \u0026\u0026     rm -f /root/.bash_history # buildkit",
+          "created": "2026-02-05T17:14:18Z",
+          "created_by": "RUN /bin/sh -c apt-get update \u0026\u0026     apt-get install -y --only-upgrade libc-bin libc6 libssl3t64 || apt-get upgrade -y \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-04T18:32:57Z",
-          "created_by": "RUN /bin/sh -c find / -perm /6000 -type f -exec chmod a-s {} \\; 2\u003e/dev/null || true \u0026\u0026     for user in games gnats irc list news proxy uucp; do         userdel -r $user 2\u003e/dev/null || true;     done # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2026-02-04T18:32:57Z",
-          "created_by": "RUN /bin/sh -c chmod 700 /root \u0026\u0026     chmod 1777 /tmp # buildkit",
+          "created": "2026-02-05T17:14:18Z",
+          "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
       ],
@@ -109,9 +101,8 @@
         "type": "layers",
         "diff_ids": [
           "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f",
-          "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21",
-          "sha256:3b720a0d9672e1b12c5e5e1ec335ab0c1a89aba932b067d0042f2740c5eb7692",
-          "sha256:0cd588b4048c3404ac9220169eb13e2f309699470dd8144917bf2ef4c3a2dfe9"
+          "sha256:f8023cea66ff61f066367762813ba4f6cbf662f28fd2d5ad8629cd021eea69c5",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
         ]
       },
       "config": {
@@ -122,12 +113,11 @@
           "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ],
         "Labels": {
-          "detoxd.base.image": "ubuntu:24.04",
+          "detoxd.fixable.count": "14",
+          "detoxd.iteration": "1",
+          "detoxd.unfixable.count": "12",
           "maintainer": "detoxd",
-          "org.opencontainers.image.description": "Hardened ubuntu image with vulnerability fixes",
           "org.opencontainers.image.ref.name": "ubuntu",
-          "org.opencontainers.image.source": "https://github.com/detoxd/detoxd",
-          "org.opencontainers.image.title": "Detoxd ubuntu",
           "org.opencontainers.image.version": "24.04"
         }
       }
@@ -139,15 +129,11 @@
       },
       {
         "Size": 23721984,
-        "DiffID": "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21"
+        "DiffID": "sha256:f8023cea66ff61f066367762813ba4f6cbf662f28fd2d5ad8629cd021eea69c5"
       },
       {
-        "Size": 626176,
-        "DiffID": "sha256:3b720a0d9672e1b12c5e5e1ec335ab0c1a89aba932b067d0042f2740c5eb7692"
-      },
-      {
-        "Size": 2048,
-        "DiffID": "sha256:0cd588b4048c3404ac9220169eb13e2f309699470dd8144917bf2ef4c3a2dfe9"
+        "Size": 1024,
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       }
     ]
   },
@@ -2224,7 +2210,7 @@
             "libc6@2.39-0ubuntu8.7"
           ],
           "Layer": {
-            "DiffID": "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21"
+            "DiffID": "sha256:f8023cea66ff61f066367762813ba4f6cbf662f28fd2d5ad8629cd021eea69c5"
           },
           "InstalledFiles": [
             "/usr/bin/getconf",
@@ -2286,7 +2272,7 @@
             "libgcc-s1@14.2.0-4ubuntu2~24.04"
           ],
           "Layer": {
-            "DiffID": "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21"
+            "DiffID": "sha256:f8023cea66ff61f066367762813ba4f6cbf662f28fd2d5ad8629cd021eea69c5"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/gconv/ANSI_X3.110.so",
@@ -4201,7 +4187,7 @@
             "libc6@2.39-0ubuntu8.7"
           ],
           "Layer": {
-            "DiffID": "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21"
+            "DiffID": "sha256:f8023cea66ff61f066367762813ba4f6cbf662f28fd2d5ad8629cd021eea69c5"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/engines-3/afalg.so",
@@ -6837,7 +6823,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:d0193b706a4bb570d4daaaebf6fc09cb858d94a07311c8558e87c17de7a2f6f0",
+          "Fingerprint": "sha256:609ff57f30a275b65f7e1ad442f312672fdbfa15911b4283f59da70b3d2a9aec",
           "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
           "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
           "Severity": "LOW",
@@ -6899,7 +6885,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:cb8932966086d140ce75f2ec7f119d9845ff4fd4177838fcb45c14ebaba91363",
+          "Fingerprint": "sha256:768621ea7adfb2d517da030c8f54283e1c846830cbe37b82656dfe325d787d98",
           "Title": "gnupg: GnuPG: Signature bypass via form feed character in signed messages",
           "Description": "In GnuPG through 2.4.8, if a signed message has \\f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an \"invalid armor\" message is printed during verification). This is related to use of \\f as a marker to denote truncation of a long plaintext line.",
           "Severity": "MEDIUM",
@@ -6953,7 +6939,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:2afdedfb9c19f762b8035afa66683b9cd02c7f83024532af50b2ff7c5f526a3d",
+          "Fingerprint": "sha256:5fd8edba480119a2b1d3fdb18b87c08a3da827f3fbe2daa9e714b59b2812f964",
           "Title": "GnuPG: GnuPG: Stack-based buffer overflow in tpm2daemon allows arbitrary code execution",
           "Description": "In GnuPG before 2.5.17, a stack-based buffer overflow exists in tpm2daemon during handling of the PKDECRYPT command for TPM-backed RSA and ECC keys.",
           "Severity": "MEDIUM",
@@ -7000,7 +6986,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:7bd4df9379e2c456fdb6b69b27092d7efa30c4f2db98fa02b5e0c57f67ef8119",
+          "Fingerprint": "sha256:6e337916c34bd46665f309d4ce1d2570d72c9782012e769b7a28e35d30bcc1b9",
           "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
           "Description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
           "Severity": "LOW",
@@ -7036,132 +7022,6 @@
           "LastModifiedDate": "2025-03-12T21:15:38.207Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-0861",
-          "PkgID": "libc-bin@2.39-0ubuntu8.7",
-          "PkgName": "libc-bin",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04",
-            "UID": "f7551db8de24aab9"
-          },
-          "InstalledVersion": "2.39-0ubuntu8.7",
-          "Status": "affected",
-          "Layer": {
-            "DiffID": "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21"
-          },
-          "SeveritySource": "ubuntu",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
-          "DataSource": {
-            "ID": "ubuntu",
-            "Name": "Ubuntu CVE Tracker",
-            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
-          },
-          "Fingerprint": "sha256:4773f751a1c42b40058489f1c685758755eca04866326552bc099ca14f4da4fd",
-          "Title": "glibc: Integer overflow in memalign leads to heap corruption",
-          "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-190"
-          ],
-          "VendorSeverity": {
-            "alma": 2,
-            "oracle-oval": 2,
-            "photon": 3,
-            "redhat": 1,
-            "rocky": 2,
-            "ubuntu": 2
-          },
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 8.1
-            }
-          },
-          "References": [
-            "http://www.openwall.com/lists/oss-security/2026/01/16/5",
-            "https://access.redhat.com/errata/RHSA-2026:1334",
-            "https://access.redhat.com/security/cve/CVE-2026-0861",
-            "https://bugzilla.redhat.com/2429771",
-            "https://bugzilla.redhat.com/2430201",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
-            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
-            "https://errata.rockylinux.org/RLSA-2026:1334",
-            "https://linux.oracle.com/cve/CVE-2026-0861.html",
-            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
-            "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
-            "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
-            "https://www.cve.org/CVERecord?id=CVE-2026-0861"
-          ],
-          "PublishedDate": "2026-01-14T21:15:52.617Z",
-          "LastModifiedDate": "2026-01-16T18:16:09.343Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-0861",
-          "PkgID": "libc6@2.39-0ubuntu8.7",
-          "PkgName": "libc6",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04",
-            "UID": "b73889d27fe119ba"
-          },
-          "InstalledVersion": "2.39-0ubuntu8.7",
-          "Status": "affected",
-          "Layer": {
-            "DiffID": "sha256:2babff7fd0b9fb61174975dd975c9af9b072590b91cfa69acbbfd5d78464fd21"
-          },
-          "SeveritySource": "ubuntu",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
-          "DataSource": {
-            "ID": "ubuntu",
-            "Name": "Ubuntu CVE Tracker",
-            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
-          },
-          "Fingerprint": "sha256:7953426bd9fcc0fa176bcd627c4d8f9ccceade66114e5d92c2e4129070c6d994",
-          "Title": "glibc: Integer overflow in memalign leads to heap corruption",
-          "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-190"
-          ],
-          "VendorSeverity": {
-            "alma": 2,
-            "oracle-oval": 2,
-            "photon": 3,
-            "redhat": 1,
-            "rocky": 2,
-            "ubuntu": 2
-          },
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 8.1
-            }
-          },
-          "References": [
-            "http://www.openwall.com/lists/oss-security/2026/01/16/5",
-            "https://access.redhat.com/errata/RHSA-2026:1334",
-            "https://access.redhat.com/security/cve/CVE-2026-0861",
-            "https://bugzilla.redhat.com/2429771",
-            "https://bugzilla.redhat.com/2430201",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
-            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
-            "https://errata.rockylinux.org/RLSA-2026:1334",
-            "https://linux.oracle.com/cve/CVE-2026-0861.html",
-            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
-            "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
-            "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
-            "https://www.cve.org/CVERecord?id=CVE-2026-0861"
-          ],
-          "PublishedDate": "2026-01-14T21:15:52.617Z",
-          "LastModifiedDate": "2026-01-16T18:16:09.343Z"
-        },
-        {
           "VulnerabilityID": "CVE-2024-2236",
           "PkgID": "libgcrypt20@1.10.3-2build1",
           "PkgName": "libgcrypt20",
@@ -7181,7 +7041,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:0aee80b50fc876865d0eab1034f41b14ef315edbe4486bcc8160e6e73d764513",
+          "Fingerprint": "sha256:82972514a6cad6d0203e370a5f6063480e189a70294e7418bd4e4da2c262c8cb",
           "Title": "libgcrypt: vulnerable to Marvin Attack",
           "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
           "Severity": "LOW",
@@ -7245,7 +7105,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:4d6160ae02d93bc377d1aef6d7aee5b60ca346f6d7f6ca236d66e86d43c04f40",
+          "Fingerprint": "sha256:91866704de2d9d643542ba0f2c18596cf8aaed46fc7a93b8ddb4008a58a28f41",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7320,7 +7180,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:0a2f7389a72bcd4726960391667dfbffd7ca5292551490c73171bba4ede1988b",
+          "Fingerprint": "sha256:5161b943c7e3979c55ba7c74b257b4c459bdaf6d34a02d8ee120d03f85a3a05b",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7395,7 +7255,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:7551a1b129c746c91358369aed80700d39712d59e5c62d9d2b72820e57c47795",
+          "Fingerprint": "sha256:15f73089f061c1751245f38c0c9635108841688ec73ff645c866636b79d2fa6e",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7470,7 +7330,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:2ff15f8cba1776e8d38b3f5e836aa24b6ab91c433230bf30660fc7975fa89dbb",
+          "Fingerprint": "sha256:f2f9159425ea82dd7fc2213a7ca68fb202370e9b855c8d57b326e228ea9cb1c2",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7545,7 +7405,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:f67aa3877918c6fb2a704c11b698746fd76359429e284e5cdcdc13e7ddc9e552",
+          "Fingerprint": "sha256:f5ae7ba43b175346443886499715655f82887ad4531af6f2b08eaacb9c3885cd",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -7605,7 +7465,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:6fddeb36cffd398d55cf8071529178a6509f83b3e8d338547a2d61d083651db9",
+          "Fingerprint": "sha256:2ca7d32a48977ff236dc874e58780cfdf613a4c971a6924729f18686bad30a8f",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -7665,7 +7525,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:c377464e14e7fba783d584ad206b0e8cf09ff89ccde56c0b98a1455d4881a7a3",
+          "Fingerprint": "sha256:5489007ce7523344a87263137a4275381625538d6650fea0d01a341982129c51",
           "Title": "tar: Tar path traversal",
           "Description": "GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file's name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of \"Member name contains '..'\" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain \"x -\u003e ../../../../../home/victim/.ssh\" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which \"tar xf\" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each \"tar xf\" in its Security Rules of Thumb; however, third-party advice leads users to run \"tar xf\" more than once into the same directory.",
           "Severity": "MEDIUM",

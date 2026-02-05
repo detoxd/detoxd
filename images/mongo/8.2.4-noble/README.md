@@ -1,28 +1,50 @@
-# mongo:8.2.4-noble (Detoxed)
+# Detoxd: mongo:8.2.4-noble
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 209 | 203 | 6 |
+| Fixable | 190 | 184 | 6 |
+| Unfixable | 19 | 19 | - |
+
+**Reduction: 2%**
 
 ## Quick Start
 
 ```bash
-docker pull detoxd/mongo:8.2.4-noble-detox.1
-docker run -d detoxd/mongo:8.2.4-noble-detox.1
+docker pull detoxd/mongo:8.2.4-noble-detox.2
+docker run -it detoxd/mongo:8.2.4-noble-detox.2
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `mongo:8.2.4-noble` |
-| Detoxed | `detoxd/mongo:8.2.4-noble-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
+[LOW] CVE-2016-2781: coreutils
+[MEDIUM] CVE-2025-68972: gpgv
+[MEDIUM] CVE-2026-24882: gpgv
+[LOW] CVE-2022-3219: gpgv
+[LOW] CVE-2025-0167: libcurl4t64
+[LOW] CVE-2025-10148: libcurl4t64
+[LOW] CVE-2025-14524: libcurl4t64
+[LOW] CVE-2025-14819: libcurl4t64
+[LOW] CVE-2025-15079: libcurl4t64
+[LOW] CVE-2025-15224: libcurl4t64
+[LOW] CVE-2025-9086: libcurl4t64
+[LOW] CVE-2024-2236: libgcrypt20
+[MEDIUM] CVE-2025-8941: libpam-modules
+[MEDIUM] CVE-2025-8941: libpam-modules-bin
+[MEDIUM] CVE-2025-8941: libpam-runtime
+[MEDIUM] CVE-2025-8941: libpam0g
+[LOW] CVE-2024-56433: login
+[LOW] CVE-2024-56433: passwd
+[MEDIUM] CVE-2025-45582: tar
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 205 | 61 | 144 (70.2%) |
-| Critical | 0 | 0 | 0 |
-| High | 52 | 20 | 32 |
-| Medium | 141 | 29 | 112 |
-| Low | 12 | 12 | 0 |
+## Files
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan

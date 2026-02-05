@@ -1,39 +1,21 @@
 # ============================================================================
-# Detoxd Hardened Image
-# Auto-generated Dockerfile with security fixes
+# Detoxd Hardened Image - Iteration 2
+# Generated from Trivy analysis - targeting 82 fixable vulns
 # ============================================================================
 
-ARG BASE_IMAGE=mysql:9.0
+ARG BASE_IMAGE=detoxd/mysql:9.0-detox.1
 FROM ${BASE_IMAGE}
 
-# Metadata
 LABEL maintainer="detoxd"
-LABEL org.opencontainers.image.source="https://github.com/detoxd/detoxd"
-LABEL org.opencontainers.image.title="Detoxd mysql"
-LABEL org.opencontainers.image.description="Hardened mysql image with vulnerability fixes"
-LABEL detoxd.base.image="mysql:9.0"
+LABEL detoxd.iteration="2"
+LABEL detoxd.fixable.count="82"
+LABEL detoxd.unfixable.count="0"
 
-# ============================================================================
-# GENERIC SECURITY FIXES (AUTO-DETECT PACKAGE MANAGER)
-# ============================================================================
+# Fix Python packages (only if pip is available)
+RUN if command -v pip >/dev/null 2>&1 || command -v pip3 >/dev/null 2>&1; then \
+    pip install --no-cache-dir --upgrade PyNaCl==1.6.2 certifi==2024.7.4 cryptography==43.0.1 && \
+    rm -rf /root/.cache/pip /tmp/*; \
+    fi
 
-# Try to update packages using available package manager
-RUN \
-    if command -v apk >/dev/null 2>&1; then \
-        apk update && apk upgrade --no-cache; \
-    elif command -v apt-get >/dev/null 2>&1; then \
-        apt-get update && apt-get upgrade -y && apt-get clean && rm -rf /var/lib/apt/lists/*; \
-    elif command -v yum >/dev/null 2>&1; then \
-        yum update -y && yum clean all; \
-    elif command -v dnf >/dev/null 2>&1; then \
-        dnf update -y && dnf clean all; \
-    elif command -v microdnf >/dev/null 2>&1; then \
-        microdnf update -y && microdnf clean all; \
-    fi && \
-    # Remove unnecessary files
-    rm -rf /tmp/* /var/tmp/* 2>/dev/null || true
-
-# Set secure permissions
-RUN chmod 700 /root 2>/dev/null || true && \
-    chmod 1777 /tmp 2>/dev/null || true
-
+# Final cleanup
+RUN rm -rf /tmp/* /var/tmp/* 2>/dev/null || true

@@ -1,28 +1,32 @@
-# mysql:9.6.0-oraclelinux9 (Detoxed)
+# Detoxd: mysql:9.6.0-oraclelinux9
+
+## Hardened Image
+
+| Metric | Before | After | Fixed |
+|--------|--------|-------|-------|
+| Total Vulnerabilities | 18 | 18 | 0 |
+| Fixable | 18 | 18 | 0 |
+| Unfixable | 0 | 0 | - |
+
+**Reduction: 0%**
 
 ## Quick Start
 
 ```bash
 docker pull detoxd/mysql:9.6.0-oraclelinux9-detox.1
-docker run -d detoxd/mysql:9.6.0-oraclelinux9-detox.1
+docker run -it detoxd/mysql:9.6.0-oraclelinux9-detox.1
 ```
 
-## Image Info
+## Remaining Vulnerabilities
 
-| Property | Value |
-|----------|-------|
-| Original | `mysql:9.6.0-oraclelinux9` |
-| Detoxed | `detoxd/mysql:9.6.0-oraclelinux9-detox.1` |
-| Scan Date | 2026-02-04 |
+These remain because **no upstream fix is available**:
 
-## Scan Results
+```
 
-| Metric | Before | After | Fixed |
-|--------|--------|-------|-------|
-| Total Vulnerabilities | 18 | 18 | 0 (0.0%) |
-| Critical | 0 | 0 | 0 |
-| High | 4 | 4 | 0 |
-| Medium | 13 | 13 | 0 |
-| Low | 1 | 1 | 0 |
+```
 
-> See `scan/before.json` and `scan/after.json` for full vulnerability details.
+## Files
+
+- `Dockerfile` - Hardened Dockerfile
+- `scan/before.json` - Initial vulnerability scan
+- `scan/after.json` - Final vulnerability scan
