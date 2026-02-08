@@ -4,8 +4,8 @@
 
 | Metric | Before | After | Fixed |
 |--------|--------|-------|-------|
-| Total Vulnerabilities | 18 | 18 | 0 |
-| Fixable | 18 | 18 | 0 |
+| Total Vulnerabilities | 19 | 19 | 0 |
+| Fixable | 19 | 19 | 0 |
 | Unfixable | 0 | 0 | - |
 
 **Reduction: 0%**

@@ -1,6 +1,6 @@
 # ============================================================================
 # Detoxd Hardened Image - Iteration 2
-# Generated from Trivy analysis - targeting 184 fixable vulns
+# Generated from Trivy analysis - targeting 201 fixable vulns
 # ============================================================================
 
 ARG BASE_IMAGE=detoxd/mongo:8.0-detox.1
@@ -8,7 +8,7 @@ FROM ${BASE_IMAGE}
 
 LABEL maintainer="detoxd"
 LABEL detoxd.iteration="2"
-LABEL detoxd.fixable.count="184"
+LABEL detoxd.fixable.count="201"
 LABEL detoxd.unfixable.count="19"
 
 # Fix NPM packages (only if npm is available)

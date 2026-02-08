@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c2ed1-f012-76f4-bc8b-6f8aa25b65db",
-  "CreatedAt": "2026-02-06T00:20:36.370457013+07:00",
+  "ReportID": "019c3ba7-c50d-792d-8830-cfd52b071aa1",
+  "CreatedAt": "2026-02-08T12:09:36.653604101+07:00",
   "ArtifactID": "sha256:19de103ac0f3355558aa9403cf5ef6bacb794e8d627575ec65fcd1a21fdb5318",
   "ArtifactName": "postgres:17-alpine",
   "ArtifactType": "container_image",
@@ -2488,12 +2488,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1380",
+            "https://access.redhat.com/errata/RHSA-2026:1381",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/8/ALSA-2026-1380.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -2535,6 +2535,7 @@
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
           "VendorSeverity": {
+            "azure": 2,
             "bitnami": 3,
             "redhat": 3
           },
@@ -2588,6 +2589,7 @@
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
           "VendorSeverity": {
+            "azure": 2,
             "bitnami": 2,
             "redhat": 2
           },
@@ -2663,12 +2665,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1518",
+            "https://access.redhat.com/errata/RHSA-2026:0923",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/8/ALSA-2026-1518.html",
+            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
             "https://errata.rockylinux.org/RLSA-2026:0923",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -3301,6 +3303,40 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.6",
+            "UID": "5a9b484fa87e1a00"
+          },
+          "InstalledVersion": "v1.24.6",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d964daa9e9de029ae8ff31542ec4a2a05e497133bbe07259fd27b33cab23b6f7",
+          "Title": "[crypto/tls: Config.Clone copies automatically generated session ticket keys, session resumption does not account for the expiration of full certificate chain]",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ]
         }
       ]
     }
