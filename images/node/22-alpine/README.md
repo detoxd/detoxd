@@ -4,11 +4,11 @@
 
 | Metric | Before | After | Fixed |
 |--------|--------|-------|-------|
-| Total Vulnerabilities | 12 | 14 | -2 |
+| Total Vulnerabilities | 11 | 13 | -2 |
 | Fixable | 11 | 13 | -2 |
-| Unfixable | 1 | 1 | - |
+| Unfixable | 0 | 0 | - |
 
-**Reduction: -16%**
+**Reduction: -18%**
 
 ## Quick Start
 
@@ -22,7 +22,7 @@ docker run -it detoxd/node:22-alpine-detox.1
 These remain because **no upstream fix is available**:
 
 ```
-[HIGH] CVE-2026-0775: npm
+
 ```
 
 ## Files

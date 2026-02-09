@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c3ba9-f953-771c-a381-fbc7cd4050f8",
-  "CreatedAt": "2026-02-08T12:12:01.107469003+07:00",
+  "ReportID": "019c4394-9e1f-7112-8fc5-35c1aba9c0b1",
+  "CreatedAt": "2026-02-10T01:05:39.231072485+07:00",
   "ArtifactID": "sha256:f780f9b9f3c7b7c0e006a304bbca2b27bfc739e9cc98b2a827a44684e47edc38",
   "ArtifactName": "node:22-alpine",
   "ArtifactType": "container_image",
@@ -4460,63 +4460,6 @@
           ],
           "PublishedDate": "2025-11-17T18:15:58.27Z",
           "LastModifiedDate": "2025-12-02T19:34:43.27Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-0775",
-          "VendorIDs": [
-            "GHSA-3966-f6p6-2qr9"
-          ],
-          "PkgID": "npm@10.9.4",
-          "PkgName": "npm",
-          "PkgPath": "usr/local/lib/node_modules/npm/package.json",
-          "PkgIdentifier": {
-            "PURL": "pkg:npm/npm@10.9.4",
-            "UID": "ce59ceb01d85a1e9"
-          },
-          "InstalledVersion": "10.9.4",
-          "Status": "affected",
-          "Layer": {
-            "DiffID": "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e"
-          },
-          "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0775",
-          "DataSource": {
-            "ID": "ghsa",
-            "Name": "GitHub Security Advisory npm",
-            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
-          },
-          "Fingerprint": "sha256:6dbd3d622b7ac7903fbfe4549da649705aa142272669f7e86172c43b48981a1d",
-          "Title": "npmcli: npm cli Incorrect Permission Assignment Local Privilege Escalation Vulnerability",
-          "Description": "npm cli Incorrect Permission Assignment Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of npm cli. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the handling of modules. The application loads modules from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of a target user. Was ZDI-CAN-25430.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-732"
-          ],
-          "VendorSeverity": {
-            "ghsa": 3,
-            "redhat": 3
-          },
-          "CVSS": {
-            "ghsa": {
-              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 7
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 7
-            }
-          },
-          "References": [
-            "https://access.redhat.com/security/cve/CVE-2026-0775",
-            "https://github.com/npm/cli",
-            "https://github.com/npm/cli/issues/8939",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-0775",
-            "https://www.cve.org/CVERecord?id=CVE-2026-0775",
-            "https://www.zerodayinitiative.com/advisories/ZDI-26-043",
-            "https://www.zerodayinitiative.com/advisories/ZDI-26-043/"
-          ],
-          "PublishedDate": "2026-01-23T04:16:04.793Z",
-          "LastModifiedDate": "2026-01-26T15:03:51.687Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23745",

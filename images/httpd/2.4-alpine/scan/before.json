@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c3bb5-e4f8-7344-aa01-6af50b9b805b",
-  "CreatedAt": "2026-02-08T12:25:02.328215842+07:00",
+  "ReportID": "019c43a0-9459-7a54-89f2-35fdb2beef5c",
+  "CreatedAt": "2026-02-10T01:18:43.1616795+07:00",
   "ArtifactID": "sha256:503f10fbb068dbb74caac79dd76ab80f42deabb9f4611e2d11b434e0ec15eed2",
   "ArtifactName": "httpd:2.4-alpine",
   "ArtifactType": "container_image",
@@ -3186,58 +3186,6 @@
       ],
       "Vulnerabilities": [
         {
-          "VulnerabilityID": "CVE-2026-24515",
-          "PkgID": "libexpat@2.7.3-r0",
-          "PkgName": "libexpat",
-          "PkgIdentifier": {
-            "PURL": "pkg:apk/alpine/libexpat@2.7.3-r0?arch=x86_64\u0026distro=3.23.3",
-            "UID": "309b0ae8e3b48231"
-          },
-          "InstalledVersion": "2.7.3-r0",
-          "FixedVersion": "2.7.4-r0",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:f4754286817135f9779b68daa51a0a8fe787778c5ba2ab5a6a7db0739b55e79b"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24515",
-          "DataSource": {
-            "ID": "alpine",
-            "Name": "Alpine Secdb",
-            "URL": "https://secdb.alpinelinux.org/"
-          },
-          "Fingerprint": "sha256:b3e2a114601eec5c7823094c6b74305a514526721de5f51bc275bdadee266b0e",
-          "Title": "libexpat: libexpat null pointer dereference",
-          "Description": "In libexpat before 2.7.4, XML_ExternalEntityParserCreate does not copy unknown encoding handler user data.",
-          "Severity": "CRITICAL",
-          "CweIDs": [
-            "CWE-476"
-          ],
-          "VendorSeverity": {
-            "nvd": 4,
-            "photon": 4,
-            "redhat": 1
-          },
-          "CVSS": {
-            "nvd": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 9.8
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
-              "V3Score": 2.9
-            }
-          },
-          "References": [
-            "https://access.redhat.com/security/cve/CVE-2026-24515",
-            "https://github.com/libexpat/libexpat/pull/1131",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-24515",
-            "https://www.cve.org/CVERecord?id=CVE-2026-24515"
-          ],
-          "PublishedDate": "2026-01-23T08:16:01.49Z",
-          "LastModifiedDate": "2026-01-30T17:54:41.927Z"
-        },
-        {
           "VulnerabilityID": "CVE-2026-25210",
           "PkgID": "libexpat@2.7.3-r0",
           "PkgName": "libexpat",
@@ -3282,6 +3230,59 @@
           ],
           "PublishedDate": "2026-01-30T07:16:15.57Z",
           "LastModifiedDate": "2026-02-04T16:34:21.763Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-24515",
+          "PkgID": "libexpat@2.7.3-r0",
+          "PkgName": "libexpat",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libexpat@2.7.3-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "309b0ae8e3b48231"
+          },
+          "InstalledVersion": "2.7.3-r0",
+          "FixedVersion": "2.7.4-r0",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:f4754286817135f9779b68daa51a0a8fe787778c5ba2ab5a6a7db0739b55e79b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24515",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:b3e2a114601eec5c7823094c6b74305a514526721de5f51bc275bdadee266b0e",
+          "Title": "libexpat: libexpat null pointer dereference",
+          "Description": "In libexpat before 2.7.4, XML_ExternalEntityParserCreate does not copy unknown encoding handler user data.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "cbl-mariner": 1,
+            "nvd": 1,
+            "photon": 4,
+            "redhat": 1
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 2.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 2.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-24515",
+            "https://github.com/libexpat/libexpat/pull/1131",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-24515",
+            "https://www.cve.org/CVERecord?id=CVE-2026-24515"
+          ],
+          "PublishedDate": "2026-01-23T08:16:01.49Z",
+          "LastModifiedDate": "2026-02-05T17:27:53.29Z"
         }
       ]
     }
