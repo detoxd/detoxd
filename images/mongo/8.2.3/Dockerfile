@@ -9,7 +9,7 @@ FROM ${BASE_IMAGE}
 LABEL maintainer="detoxd"
 LABEL detoxd.iteration="2"
 LABEL detoxd.fixable.count="201"
-LABEL detoxd.unfixable.count="19"
+LABEL detoxd.unfixable.count="18"
 
 # Fix NPM packages (only if npm is available)
 RUN if command -v npm >/dev/null 2>&1; then \

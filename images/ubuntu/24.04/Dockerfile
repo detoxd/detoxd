@@ -9,7 +9,7 @@ FROM ${BASE_IMAGE}
 LABEL maintainer="detoxd"
 LABEL detoxd.iteration="1"
 LABEL detoxd.fixable.count="14"
-LABEL detoxd.unfixable.count="12"
+LABEL detoxd.unfixable.count="11"
 
 # Fix OS packages with known vulnerabilities
 RUN apt-get update && \
