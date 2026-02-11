@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c48c4-1afc-7497-8250-fe1a983cf56d",
-  "CreatedAt": "2026-02-11T01:15:37.468303559+07:00",
+  "ReportID": "019c4de7-1c55-7312-a312-b2bb9e3c7b80",
+  "CreatedAt": "2026-02-12T01:11:57.653203179+07:00",
   "ArtifactID": "sha256:d99c6ea47ab5da0dffaed3399a3efcf7cc307b1ea18f39116beb3e26b6a9ab4f",
   "ArtifactName": "mysql:9.6.0",
   "ArtifactType": "container_image",
@@ -28477,6 +28477,50 @@
           "LastModifiedDate": "2026-01-07T17:16:02.003Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-26007",
+          "VendorIDs": [
+            "GHSA-r6ph-v2qm-q3c2"
+          ],
+          "PkgName": "cryptography",
+          "PkgPath": "usr/lib/mysqlsh/lib/python3.13/site-packages/cryptography-45.0.7.dist-info/METADATA",
+          "PkgIdentifier": {
+            "PURL": "pkg:pypi/cryptography@45.0.7",
+            "UID": "3d89b60b5bbede13"
+          },
+          "InstalledVersion": "45.0.7",
+          "FixedVersion": "46.0.5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66caf44e21b76be86d8358994c19977f55fa686a50e17dec8f1a84c38f4b7a47"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26007",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Fingerprint": "sha256:dd90b708e2f30dcc1a0bdb6d98d5c191dd0360628bc41b33455daa0fb7706723",
+          "Title": "cryptography is a package designed to expose cryptographic primitives  ...",
+          "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 46.0.5, the public_key_from_numbers (or EllipticCurvePublicNumbers.public_key()), EllipticCurvePublicNumbers.public_key(), load_der_public_key() and load_pem_public_key() functions do not verify that the point belongs to the expected prime-order subgroup of the curve. This missing validation allows an attacker to provide a public key point P from a small-order subgroup. This can lead to security issues in various situations, such as the most commonly used signature verification (ECDSA) and shared key negotiation (ECDH). When the victim computes the shared secret as S = [victim_private_key]P via ECDH, this leaks information about victim_private_key mod (small_subgroup_order). For curves with cofactor \u003e 1, this reveals the least significant bits of the private key. When these weak public keys are used in ECDSA , it's easy to forge signatures on the small subgroup. Only SECT curves are impacted by this. This vulnerability is fixed in 46.0.5.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-345"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/02/10/4",
+            "https://github.com/pyca/cryptography",
+            "https://github.com/pyca/cryptography/commit/0eebb9dbb6343d9bc1d91e5a2482ed4e054a6d8c",
+            "https://github.com/pyca/cryptography/releases/tag/46.0.5",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-r6ph-v2qm-q3c2"
+          ],
+          "PublishedDate": "2026-02-10T22:17:00.307Z",
+          "LastModifiedDate": "2026-02-11T00:16:51.847Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-8869",
           "VendorIDs": [
             "GHSA-4xh5-x5gv-qwph"
@@ -28655,6 +28699,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.6",
+            "UID": "5a9b484fa87e1a00"
+          },
+          "InstalledVersion": "v1.24.6",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:b1aa9f07d7f2c743d0bcf92b56d5204b241243d2b5e68efc004f863fc8a1ec3b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:3fa86fb61e10c14ad1593fbf1c27f5de4c2562547fa0dee914fabaa2f39cad85",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-58183",
           "VendorIDs": [
             "GO-2025-4014"
@@ -28709,7 +28809,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -28889,13 +28989,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -28954,56 +29054,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.6",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.6",
-            "UID": "5a9b484fa87e1a00"
-          },
-          "InstalledVersion": "v1.24.6",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:b1aa9f07d7f2c743d0bcf92b56d5204b241243d2b5e68efc004f863fc8a1ec3b"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:3fa86fb61e10c14ad1593fbf1c27f5de4c2562547fa0dee914fabaa2f39cad85",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-47912",

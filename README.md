@@ -32,51 +32,58 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 10 | `httpd:2.4.66-alpine` | 2 | 0 | 2 | 100% |
 | 11 | `httpd:2.4.66-alpine3.22` | 33 | 0 | 33 | 100% |
 | 12 | `httpd:2.4.66-alpine3.23` | 2 | 0 | 2 | 100% |
-| 13 | `mongo:8.0` | 225 | 219 | 6 | 3% |
+| 13 | `mongo:8.0` | 73 | 67 | 6 | 8% |
 | 14 | `mongo:8.2-noble` | 225 | 219 | 6 | 3% |
 | 15 | `mongo:8.2.3` | 241 | 219 | 22 | 9% |
 | 16 | `mongo:8.2.3-noble` | 241 | 219 | 22 | 9% |
 | 17 | `mongo:8.2.4` | 225 | 219 | 6 | 3% |
 | 18 | `mongo:8.2.4-noble` | 225 | 219 | 6 | 3% |
-| 19 | `mysql:9.0` | 218 | 84 | 134 | 61% |
-| 20 | `mysql:9.6-oracle` | 19 | 19 | 0 | 0% |
-| 21 | `mysql:9.6-oraclelinux9` | 19 | 19 | 0 | 0% |
-| 22 | `mysql:9.6.0` | 19 | 19 | 0 | 0% |
-| 23 | `mysql:9.6.0-oracle` | 19 | 19 | 0 | 0% |
-| 24 | `mysql:9.6.0-oraclelinux9` | 19 | 19 | 0 | 0% |
-| 25 | `nginx:1.28-alpine` | 0 | 0 | 0 | 0% |
-| 26 | `nginx:1.28.1-alpine3.23` | 0 | 0 | 0 | 0% |
-| 27 | `nginx:1.28.2-alpine3.23` | 0 | 0 | 0 | 0% |
-| 28 | `nginx:1.29-alpine` | 0 | 0 | 0 | 0% |
-| 29 | `nginx:1.29-alpine3.23` | 0 | 0 | 0 | 0% |
-| 30 | `nginx:1.29.4-alpine` | 0 | 0 | 0 | 0% |
-| 31 | `nginx:1.29.4-alpine3.23` | 0 | 0 | 0 | 0% |
-| 32 | `nginx:1.29.5-alpine` | 0 | 0 | 0 | 0% |
-| 33 | `nginx:1.29.5-alpine3.23` | 0 | 0 | 0 | 0% |
-| 34 | `node:22-alpine` | 11 | 13 | -2 | -18% |
-| 35 | `postgres:17-alpine` | 16 | 16 | 0 | 0% |
-| 36 | `postgres:17.7-alpine` | 16 | 16 | 0 | 0% |
-| 37 | `postgres:17.7-alpine3.21` | 42 | 16 | 26 | 62% |
-| 38 | `postgres:17.7-alpine3.22` | 16 | 16 | 0 | 0% |
-| 39 | `postgres:17.7-alpine3.23` | 16 | 16 | 0 | 0% |
-| 40 | `python:3.11-slim` | 72 | 69 | 3 | 4% |
-| 41 | `python:3.11.14-slim` | 72 | 69 | 3 | 4% |
-| 42 | `python:3.12-slim` | 69 | 67 | 2 | 3% |
-| 43 | `python:3.12.12-slim` | 69 | 67 | 2 | 3% |
-| 44 | `python:3.13-slim` | 68 | 67 | 1 | 1% |
-| 45 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
-| 46 | `python:3.13.12-slim` | 68 | 67 | 1 | 1% |
-| 47 | `python:3.14-slim` | 68 | 67 | 1 | 1% |
-| 48 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
-| 49 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
-| 50 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
-| 51 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
-| 52 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
-| 53 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
-| 54 | `redis:8.4.0-alpine` | 0 | 0 | 0 | 0% |
-| 55 | `redis:8.4.0-alpine3.22` | 0 | 0 | 0 | 0% |
-| 56 | `ubuntu:24.04` | 25 | 11 | 14 | 56% |
-| 57 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
+| 19 | `mongo:8.2.5` | 73 | 67 | 6 | 8% |
+| 20 | `mongo:8.2.5-noble` | 73 | 67 | 6 | 8% |
+| 21 | `mysql:9.0` | 219 | 85 | 134 | 61% |
+| 22 | `mysql:9.6-oracle` | 20 | 20 | 0 | 0% |
+| 23 | `mysql:9.6-oraclelinux9` | 20 | 20 | 0 | 0% |
+| 24 | `mysql:9.6.0` | 20 | 20 | 0 | 0% |
+| 25 | `mysql:9.6.0-oracle` | 20 | 20 | 0 | 0% |
+| 26 | `mysql:9.6.0-oraclelinux9` | 20 | 20 | 0 | 0% |
+| 27 | `nginx:1.28-alpine` | 0 | 0 | 0 | 0% |
+| 28 | `nginx:1.28.1-alpine3.23` | 0 | 0 | 0 | 0% |
+| 29 | `nginx:1.28.2-alpine3.23` | 0 | 0 | 0 | 0% |
+| 30 | `nginx:1.29-alpine` | 0 | 0 | 0 | 0% |
+| 31 | `nginx:1.29-alpine3.23` | 0 | 0 | 0 | 0% |
+| 32 | `nginx:1.29.4-alpine` | 0 | 0 | 0 | 0% |
+| 33 | `nginx:1.29.4-alpine3.23` | 0 | 0 | 0 | 0% |
+| 34 | `nginx:1.29.5-alpine` | 0 | 0 | 0 | 0% |
+| 35 | `nginx:1.29.5-alpine3.23` | 0 | 0 | 0 | 0% |
+| 36 | `node:22-alpine` | 11 | 13 | -2 | -18% |
+| 37 | `postgres:17-alpine` | 16 | 16 | 0 | 0% |
+| 38 | `postgres:17.7-alpine` | 16 | 16 | 0 | 0% |
+| 39 | `postgres:17.7-alpine3.21` | 42 | 16 | 26 | 62% |
+| 40 | `postgres:17.7-alpine3.22` | 16 | 16 | 0 | 0% |
+| 41 | `postgres:17.7-alpine3.23` | 16 | 16 | 0 | 0% |
+| 42 | `python:3.11-slim` | 72 | 69 | 3 | 4% |
+| 43 | `python:3.11.14-slim` | 72 | 69 | 3 | 4% |
+| 44 | `python:3.12-slim` | 69 | 67 | 2 | 3% |
+| 45 | `python:3.12.12-slim` | 69 | 67 | 2 | 3% |
+| 46 | `python:3.13-slim` | 68 | 67 | 1 | 1% |
+| 47 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
+| 48 | `python:3.13.12-slim` | 68 | 67 | 1 | 1% |
+| 49 | `python:3.14-slim` | 68 | 67 | 1 | 1% |
+| 50 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
+| 51 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
+| 52 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
+| 53 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
+| 54 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
+| 55 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
+| 56 | `redis:8.4.0-alpine` | 0 | 0 | 0 | 0% |
+| 57 | `redis:8.4.0-alpine3.22` | 0 | 0 | 0 | 0% |
+| 58 | `redis:8.4.1-alpine3.22` | 0 | 0 | 0 | 0% |
+| 59 | `redis:8.6-alpine` | 0 | 0 | 0 | 0% |
+| 60 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
+| 61 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
+| 62 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
+| 63 | `ubuntu:24.04` | 25 | 11 | 14 | 56% |
+| 64 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
 
 ## Quick Start
 
@@ -126,4 +133,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-10*
+*Last updated: 2026-02-11*

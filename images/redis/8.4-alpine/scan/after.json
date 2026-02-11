@@ -3,37 +3,37 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c48bb-45ac-74d1-ba6a-aa46b3f76a7f",
-  "CreatedAt": "2026-02-11T01:05:58.572318046+07:00",
-  "ArtifactID": "sha256:e391be027d686cd49921f21d17f3043c5ed472b24285ebb65442d6de33c81919",
+  "ReportID": "019c4dde-70a2-7d8f-9ca6-d18f5473f181",
+  "CreatedAt": "2026-02-12T01:02:29.41089112+07:00",
+  "ArtifactID": "sha256:b3d5ec3359fafa1cfadccc565671ada18a4e7489e9b5f319d5d7f57ff8a2d5e3",
   "ArtifactName": "redis:8.4-alpine",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 95471104,
+    "Size": 95795712,
     "OS": {
       "Family": "alpine",
       "Name": "3.22.3"
     },
-    "ImageID": "sha256:cad4195a4376c1018dd6fdadbe7dc9febb799402851a014f006cc77eb27b3e46",
+    "ImageID": "sha256:f52d6a9b539e8b2b3c58b5c1a4bac3cddf5b13cc41f2c66d68e42df075e9960a",
     "DiffIDs": [
       "sha256:cce92674e98722970ab3fdce76a2566f54db535beeb24f0b4397f070ab5f6987",
-      "sha256:43338c5128bdbd8af71ffe21df6e389b34a96acd39d6a69a3fc44500806d9d0d",
-      "sha256:75c2ef29904dbcdaba02ee0af81d12705125d885ddc2fe9148667ad257873180",
-      "sha256:27ae396e9aece744501d52fb59b66e38ef5a042bfabdeb072fb9a0bc0b51fc9f",
-      "sha256:1e9fe0b73d39b79e4f14fc70a76a287be395dc18a587eb109d85f5ec57377b37",
+      "sha256:d408a1d6d2e7975b90cb361b119077d0619ee4e015a76a17a5f1ae3814cad758",
+      "sha256:7d3aa8d9d6f2b5ad477f3dc8c806f321818b7861e6c4da1693b426f0c8bab338",
+      "sha256:32e4009031651c26ff2e17fc33c8a730a74235519c6406479d9e79ac065b3339",
+      "sha256:82a047b51712304aedd169dfa92986aff61b3a96d160928b6bdfef7a8717bf41",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-      "sha256:dd1762cc049b9f8e44527daa10bdb36952eb741cf736c1e8b167c05d45f1c5b9"
+      "sha256:217cf911dc0c0d9305015faa2b6be749866d47d4a869a6f3b0f8ec9177e74fce"
     ],
     "RepoTags": [
       "redis:8.4-alpine"
     ],
     "RepoDigests": [
-      "redis@sha256:4eec4565e45aa0b3966554c866bc73211e281b0b3d89fe9a33c982e6faca809d"
+      "redis@sha256:e55195a3afbb812a14306909caad6583a1ab6c79f393f53490e42cb2111084a9"
     ],
     "Reference": "redis:8.4-alpine",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-01-28T02:39:14.774661694Z",
+      "created": "2026-02-10T19:12:51.890375513Z",
       "history": [
         {
           "created": "2026-01-28T01:18:40Z",
@@ -47,67 +47,67 @@
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:41Z",
+          "created": "2026-02-10T19:05:14Z",
           "created_by": "RUN /bin/sh -c set -eux; \taddgroup -S -g 1000 redis; \tadduser -S -G redis -u 999 redis # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:42Z",
+          "created": "2026-02-10T19:05:15Z",
           "created_by": "RUN /bin/sh -c set -eux; \tapk add --no-cache \t\ttzdata \t\tsetpriv \t; # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:39:14Z",
-          "created_by": "ENV REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.4.0.tar.gz",
+          "created": "2026-02-10T19:12:51Z",
+          "created_by": "ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.4.1.tar.gz",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:39:14Z",
-          "created_by": "ENV REDIS_DOWNLOAD_SHA=b947d9015622669b5bee8ec954f658b3278d42dbefae23a92d9b7704bfe143f9",
+          "created": "2026-02-10T19:12:51Z",
+          "created_by": "ARG REDIS_DOWNLOAD_SHA=b5edf7a234bbd11c8effb75bf0e50f1470c7f4b29898d596e2a7e88621af4912",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:39:14Z",
-          "created_by": "RUN /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .build-deps \t\tcoreutils \t\tdpkg-dev dpkg \t\tgcc \t\tlinux-headers \t\tmake \t\tmusl-dev \t\topenssl-dev \t\tg++; \t\tarch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \tcase \"$arch\" in \t\t'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; \t\t'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; \t\t*) echo \u003e\u00262 \"Modules are NOT supported! unsupported architecture: '$arch'\"; export BUILD_WITH_MODULES=no ;; \tesac; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \tapk add --no-cache --virtual .module-build-deps \t\tautoconf \t\tautomake \t\tbash \t\tbsd-compat-headers \t\tbuild-base \t\tcargo \t\tclang \t\tclang-static \t\tclang-libclang \t\tcmake \t\tcurl \t\tg++ \t\tgit \t\tlibffi-dev \t\tlibgcc \t\tlibtool \t\tllvm-dev \t\tncurses-dev \t\topenssh \t\topenssl  \t\tpy-virtualenv \t\tpy3-cryptography \t\tpy3-pip \t\tpy3-virtualenv \t\tpython3 \t\tpython3-dev \t\trsync \t\ttar \t\tunzip \t\twhich \t\txsimd \t\txz; \tfi; \t\tpip install -q --upgrade setuptools \u0026\u0026  pip install -q --upgrade pip \u0026\u0026 PIP_BREAK_SYSTEM_PACKAGES=1 pip install -q addict toml jinja2 ramp-packer ;\twget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; \techo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha256sum -c -; \tmkdir -p /usr/src/redis; \ttar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; \trm redis.tar.gz; \t\tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; \tsed -ri 's!^( *createBoolConfig[(]\"protected-mode\",.*, *)1( *,.*[)],)$!\\10\\2!' /usr/src/redis/src/config.c; \tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; \t\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \textraJemallocConfigureFlags=\"--build=$gnuArch\"; \tdpkgArch=\"$(dpkg --print-architecture)\"; \tcase \"${dpkgArch##*-}\" in \t\tamd64 | i386 | x32) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=12\" ;; \t\t*) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=16\" ;; \tesac; \textraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-hugepage=21\"; \tgrep -F 'cd jemalloc \u0026\u0026 ./configure ' /usr/src/redis/deps/Makefile; \tsed -ri 's!cd jemalloc \u0026\u0026 ./configure !\u0026'\"$extraJemallocConfigureFlags\"' !' /usr/src/redis/deps/Makefile; \tgrep -F \"cd jemalloc \u0026\u0026 ./configure $extraJemallocConfigureFlags \" /usr/src/redis/deps/Makefile; \t\texport RUST_DYN_CRT=1; \texport BUILD_TLS=yes; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \t\tmake -C /usr/src/redis/modules/redisjson get_source; \t\tsed -i 's/^RUST_FLAGS=$/RUST_FLAGS += -C target-feature=-crt-static/' /usr/src/redis/modules/redisjson/src/Makefile ; \t\tgrep -E 'RUST_FLAGS' /usr/src/redis/modules/redisjson/src/Makefile; \tfi; \tmake -C /usr/src/redis -j \"$(nproc)\" all; \tmake -C /usr/src/redis install; \t\tserverMd5=\"$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)\"; export serverMd5; \tfind /usr/local/bin/redis* -maxdepth 0 \t\t-type f -not -name redis-server \t\t-exec sh -eux -c ' \t\t\tmd5=\"$(md5sum \"$1\" | cut -d\" \" -f1)\"; \t\t\ttest \"$md5\" = \"$serverMd5\"; \t\t' -- '{}' ';' \t\t-exec ln -svfT 'redis-server' '{}' ';' \t; \t\tmake -C /usr/src/redis distclean; \trm -r /usr/src/redis; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .redis-rundeps $runDeps; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \t\tapk del --no-network .module-build-deps; \tfi; \tapk del --no-network .build-deps; \trm -rf ~/.cache ~/.gitconfig; \t\tredis-cli --version; \tredis-server --version; # buildkit",
+          "created": "2026-02-10T19:12:51Z",
+          "created_by": "RUN |2 REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.4.1.tar.gz REDIS_DOWNLOAD_SHA=b5edf7a234bbd11c8effb75bf0e50f1470c7f4b29898d596e2a7e88621af4912 /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .build-deps \t\tcoreutils \t\tdpkg-dev dpkg \t\tgcc \t\tlinux-headers \t\tmake \t\tmusl-dev \t\topenssl-dev \t\tg++; \t\tarch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \tcase \"$arch\" in \t\t'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; \t\t'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; \t\t*) echo \u003e\u00262 \"Modules are NOT supported! unsupported architecture: '$arch'\"; export BUILD_WITH_MODULES=no ;; \tesac; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \tapk add --no-cache --virtual .module-build-deps \t\tautoconf \t\tautomake \t\tbash \t\tbsd-compat-headers \t\tbuild-base \t\tcargo \t\tclang \t\tclang-static \t\tclang-libclang \t\tcmake \t\tcurl \t\tg++ \t\tgit \t\tlibffi-dev \t\tlibgcc \t\tlibtool \t\tllvm-dev \t\tncurses-dev \t\topenssh \t\topenssl  \t\tpy-virtualenv \t\tpy3-cryptography \t\tpy3-pip \t\tpy3-virtualenv \t\tpython3 \t\tpython3-dev \t\trsync \t\ttar \t\tunzip \t\twhich \t\txsimd \t\txz; \tfi; \t\tpip install -q --upgrade setuptools \u0026\u0026  pip install -q --upgrade pip \u0026\u0026 PIP_BREAK_SYSTEM_PACKAGES=1 pip install -q addict toml jinja2 ramp-packer ;\twget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; \techo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha256sum -c -; \tmkdir -p /usr/src/redis; \ttar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; \trm redis.tar.gz; \t\tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; \tsed -ri 's!^( *createBoolConfig[(]\"protected-mode\",.*, *)1( *,.*[)],)$!\\10\\2!' /usr/src/redis/src/config.c; \tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; \t\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \textraJemallocConfigureFlags=\"--build=$gnuArch\"; \tdpkgArch=\"$(dpkg --print-architecture)\"; \tcase \"${dpkgArch##*-}\" in \t\tamd64 | i386 | x32) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=12\" ;; \t\t*) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=16\" ;; \tesac; \textraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-hugepage=21\"; \tgrep -F 'cd jemalloc \u0026\u0026 ./configure ' /usr/src/redis/deps/Makefile; \tsed -ri 's!cd jemalloc \u0026\u0026 ./configure !\u0026'\"$extraJemallocConfigureFlags\"' !' /usr/src/redis/deps/Makefile; \tgrep -F \"cd jemalloc \u0026\u0026 ./configure $extraJemallocConfigureFlags \" /usr/src/redis/deps/Makefile; \t\texport RUST_DYN_CRT=1; \texport BUILD_TLS=yes; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \t\tmake -C /usr/src/redis/modules/redisjson get_source; \t\tsed -i 's/^RUST_FLAGS=$/RUST_FLAGS += -C target-feature=-crt-static/' /usr/src/redis/modules/redisjson/src/Makefile ; \t\tgrep -E 'RUST_FLAGS' /usr/src/redis/modules/redisjson/src/Makefile; \tfi; \tmake -C /usr/src/redis -j \"$(nproc)\" all; \tmake -C /usr/src/redis install; \t\tserverMd5=\"$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)\"; export serverMd5; \tfind /usr/local/bin/redis* -maxdepth 0 \t\t-type f -not -name redis-server \t\t-exec sh -eux -c ' \t\t\tmd5=\"$(md5sum \"$1\" | cut -d\" \" -f1)\"; \t\t\ttest \"$md5\" = \"$serverMd5\"; \t\t' -- '{}' ';' \t\t-exec ln -svfT 'redis-server' '{}' ';' \t; \t\tmake -C /usr/src/redis distclean; \trm -r /usr/src/redis; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .redis-rundeps $runDeps; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \t\tapk del --no-network .module-build-deps; \tfi; \tapk del --no-network .build-deps; \trm -rf ~/.cache ~/.gitconfig; \t\tredis-cli --version; \tredis-server --version; # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:39:14Z",
-          "created_by": "RUN /bin/sh -c mkdir /data \u0026\u0026 chown redis:redis /data # buildkit",
+          "created": "2026-02-10T19:12:51Z",
+          "created_by": "RUN |2 REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.4.1.tar.gz REDIS_DOWNLOAD_SHA=b5edf7a234bbd11c8effb75bf0e50f1470c7f4b29898d596e2a7e88621af4912 /bin/sh -c mkdir /data \u0026\u0026 chown redis:redis /data # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:39:14Z",
+          "created": "2026-02-10T19:12:51Z",
           "created_by": "VOLUME [/data]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:39:14Z",
+          "created": "2026-02-10T19:12:51Z",
           "created_by": "WORKDIR /data",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:39:14Z",
+          "created": "2026-02-10T19:12:51Z",
           "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:39:14Z",
+          "created": "2026-02-10T19:12:51Z",
           "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:39:14Z",
+          "created": "2026-02-10T19:12:51Z",
           "created_by": "EXPOSE map[6379/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:39:14Z",
+          "created": "2026-02-10T19:12:51Z",
           "created_by": "CMD [\"redis-server\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -118,12 +118,12 @@
         "type": "layers",
         "diff_ids": [
           "sha256:cce92674e98722970ab3fdce76a2566f54db535beeb24f0b4397f070ab5f6987",
-          "sha256:43338c5128bdbd8af71ffe21df6e389b34a96acd39d6a69a3fc44500806d9d0d",
-          "sha256:75c2ef29904dbcdaba02ee0af81d12705125d885ddc2fe9148667ad257873180",
-          "sha256:27ae396e9aece744501d52fb59b66e38ef5a042bfabdeb072fb9a0bc0b51fc9f",
-          "sha256:1e9fe0b73d39b79e4f14fc70a76a287be395dc18a587eb109d85f5ec57377b37",
+          "sha256:d408a1d6d2e7975b90cb361b119077d0619ee4e015a76a17a5f1ae3814cad758",
+          "sha256:7d3aa8d9d6f2b5ad477f3dc8c806f321818b7861e6c4da1693b426f0c8bab338",
+          "sha256:32e4009031651c26ff2e17fc33c8a730a74235519c6406479d9e79ac065b3339",
+          "sha256:82a047b51712304aedd169dfa92986aff61b3a96d160928b6bdfef7a8717bf41",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-          "sha256:dd1762cc049b9f8e44527daa10bdb36952eb741cf736c1e8b167c05d45f1c5b9"
+          "sha256:217cf911dc0c0d9305015faa2b6be749866d47d4a869a6f3b0f8ec9177e74fce"
         ]
       },
       "config": {
@@ -134,9 +134,7 @@
           "docker-entrypoint.sh"
         ],
         "Env": [
-          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-          "REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.4.0.tar.gz",
-          "REDIS_DOWNLOAD_SHA=b947d9015622669b5bee8ec954f658b3278d42dbefae23a92d9b7704bfe143f9"
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ],
         "Volumes": {
           "/data": {}
@@ -154,19 +152,19 @@
       },
       {
         "Size": 10752,
-        "DiffID": "sha256:43338c5128bdbd8af71ffe21df6e389b34a96acd39d6a69a3fc44500806d9d0d"
+        "DiffID": "sha256:d408a1d6d2e7975b90cb361b119077d0619ee4e015a76a17a5f1ae3814cad758"
       },
       {
         "Size": 1004032,
-        "DiffID": "sha256:75c2ef29904dbcdaba02ee0af81d12705125d885ddc2fe9148667ad257873180"
+        "DiffID": "sha256:7d3aa8d9d6f2b5ad477f3dc8c806f321818b7861e6c4da1693b426f0c8bab338"
       },
       {
-        "Size": 85838336,
-        "DiffID": "sha256:27ae396e9aece744501d52fb59b66e38ef5a042bfabdeb072fb9a0bc0b51fc9f"
+        "Size": 86162944,
+        "DiffID": "sha256:32e4009031651c26ff2e17fc33c8a730a74235519c6406479d9e79ac065b3339"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:1e9fe0b73d39b79e4f14fc70a76a287be395dc18a587eb109d85f5ec57377b37"
+        "DiffID": "sha256:82a047b51712304aedd169dfa92986aff61b3a96d160928b6bdfef7a8717bf41"
       },
       {
         "Size": 1024,
@@ -174,7 +172,7 @@
       },
       {
         "Size": 8192,
-        "DiffID": "sha256:dd1762cc049b9f8e44527daa10bdb36952eb741cf736c1e8b167c05d45f1c5b9"
+        "DiffID": "sha256:217cf911dc0c0d9305015faa2b6be749866d47d4a869a6f3b0f8ec9177e74fce"
       }
     ]
   },
@@ -185,13 +183,13 @@
       "Type": "alpine",
       "Packages": [
         {
-          "ID": ".redis-rundeps@20260128.023914",
+          "ID": ".redis-rundeps@20260210.191251",
           "Name": ".redis-rundeps",
           "Identifier": {
-            "PURL": "pkg:apk/alpine/.redis-rundeps@20260128.023914?arch=noarch\u0026distro=3.22.3",
-            "UID": "3c38f6547c3895d4"
+            "PURL": "pkg:apk/alpine/.redis-rundeps@20260210.191251?arch=noarch\u0026distro=3.22.3",
+            "UID": "e784702b769253ee"
           },
-          "Version": "20260128.023914",
+          "Version": "20260210.191251",
           "Arch": "noarch",
           "DependsOn": [
             "libcrypto3@3.5.5-r0",
@@ -201,9 +199,9 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:27ae396e9aece744501d52fb59b66e38ef5a042bfabdeb072fb9a0bc0b51fc9f"
+            "DiffID": "sha256:32e4009031651c26ff2e17fc33c8a730a74235519c6406479d9e79ac065b3339"
           },
-          "Digest": "sha1:d748a43669d0f4f0b146b197270b09f3be801ad2",
+          "Digest": "sha1:a5751d6836d20724d6f0868a6d026b2bbb89ac9e",
           "AnalyzedBy": "apk"
         },
         {
@@ -551,7 +549,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:75c2ef29904dbcdaba02ee0af81d12705125d885ddc2fe9148667ad257873180"
+            "DiffID": "sha256:7d3aa8d9d6f2b5ad477f3dc8c806f321818b7861e6c4da1693b426f0c8bab338"
           },
           "Digest": "sha1:e1137c402548ed1f601dd4f506f62de4d46f03cc",
           "InstalledFiles": [
@@ -618,7 +616,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:27ae396e9aece744501d52fb59b66e38ef5a042bfabdeb072fb9a0bc0b51fc9f"
+            "DiffID": "sha256:32e4009031651c26ff2e17fc33c8a730a74235519c6406479d9e79ac065b3339"
           },
           "Digest": "sha1:6945911dc2b13485e97460d9df2716ad1a0aa32d",
           "InstalledFiles": [
@@ -675,7 +673,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:27ae396e9aece744501d52fb59b66e38ef5a042bfabdeb072fb9a0bc0b51fc9f"
+            "DiffID": "sha256:32e4009031651c26ff2e17fc33c8a730a74235519c6406479d9e79ac065b3339"
           },
           "Digest": "sha1:edf5cac1e98ffe4fb3609f48ded83b35bec14c9d",
           "InstalledFiles": [
@@ -790,7 +788,7 @@
             "musl@1.2.5-r10"
           ],
           "Layer": {
-            "DiffID": "sha256:75c2ef29904dbcdaba02ee0af81d12705125d885ddc2fe9148667ad257873180"
+            "DiffID": "sha256:7d3aa8d9d6f2b5ad477f3dc8c806f321818b7861e6c4da1693b426f0c8bab338"
           },
           "Digest": "sha1:3d4d94cb165ddb5e30f379021ee211456b813259",
           "InstalledFiles": [
@@ -843,7 +841,7 @@
           ],
           "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
           "Layer": {
-            "DiffID": "sha256:75c2ef29904dbcdaba02ee0af81d12705125d885ddc2fe9148667ad257873180"
+            "DiffID": "sha256:7d3aa8d9d6f2b5ad477f3dc8c806f321818b7861e6c4da1693b426f0c8bab338"
           },
           "Digest": "sha1:88f12d67afd1e388a4db02c971da4362ea3bf797",
           "InstalledFiles": [

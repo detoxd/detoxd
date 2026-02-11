@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c48c7-6b4d-7802-ab50-9972467685d2",
-  "CreatedAt": "2026-02-11T01:19:14.637527411+07:00",
+  "ReportID": "019c4de9-701c-77dc-b64e-b9df07fedd69",
+  "CreatedAt": "2026-02-12T01:14:30.172517199+07:00",
   "ArtifactID": "sha256:92137cddea9982d41d4c1f6e44890de826719961dacaa68b936aa3681d40f81e",
   "ArtifactName": "mongo:8.2.3-noble",
   "ArtifactType": "container_image",
@@ -9910,7 +9910,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 1,
             "oracle-oval": 2,
             "photon": 3,
             "redhat": 2,
@@ -9933,7 +9933,7 @@
             "https://curl.se/docs/CVE-2025-9086.json",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086",
             "https://errata.almalinux.org/9/ALSA-2026-1350.html",
-            "https://errata.rockylinux.org/RLSA-2025:23383",
+            "https://errata.rockylinux.org/RLSA-2026:1825",
             "https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6",
             "https://hackerone.com/reports/3294999",
             "https://linux.oracle.com/cve/CVE-2025-9086.html",
@@ -10076,7 +10076,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -10152,7 +10152,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -10228,7 +10228,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -10304,7 +10304,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -12607,6 +12607,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "8418ba6ad3320ba3"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:ca225fe65a3eb16f1897060ac5dbecdf484e078e63122bc5e2e4ea7b48fe2fea",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -12785,7 +12841,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -12965,13 +13021,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -13030,56 +13086,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "8418ba6ad3320ba3"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:ca225fe65a3eb16f1897060ac5dbecdf484e078e63122bc5e2e4ea7b48fe2fea",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -13189,7 +13195,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -13255,7 +13261,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -13312,7 +13318,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -13379,11 +13385,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -14383,6 +14387,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "a95f40e9c33ad1b8"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d7f291f65e110e340a1c04dd8eae05c9f91b5f26cce8329b55dcb0779da706fc",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -14561,7 +14621,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -14741,13 +14801,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -14806,56 +14866,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "a95f40e9c33ad1b8"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:d7f291f65e110e340a1c04dd8eae05c9f91b5f26cce8329b55dcb0779da706fc",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -14965,7 +14975,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -15031,7 +15041,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -15088,7 +15098,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -15155,11 +15165,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -16159,6 +16167,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "9e35b06f9fa09fa3"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:35bdd44dce54d515348259d48a66b40b84d3b4a6e369706bf69108e980f6f50d",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -16337,7 +16401,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -16517,13 +16581,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -16582,56 +16646,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "9e35b06f9fa09fa3"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:35bdd44dce54d515348259d48a66b40b84d3b4a6e369706bf69108e980f6f50d",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -16741,7 +16755,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -16807,7 +16821,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -16864,7 +16878,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -16931,11 +16945,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -17935,6 +17947,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "7ce883082ba40a0e"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:0ce3163fdf09136251cde6242f6e2099515d9af6818bd96e9826c50048aaa23a",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -18113,7 +18181,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -18293,13 +18361,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -18358,56 +18426,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "7ce883082ba40a0e"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:0ce3163fdf09136251cde6242f6e2099515d9af6818bd96e9826c50048aaa23a",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -18517,7 +18535,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -18583,7 +18601,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -18640,7 +18658,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -18707,11 +18725,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -19724,6 +19740,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "4aa483aaa93a7917"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d979cb5385db356bf41bc707337c4cda011d46014688a53102c0e64033d37d6f",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -19902,7 +19974,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -20082,13 +20154,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -20147,56 +20219,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "4aa483aaa93a7917"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:d979cb5385db356bf41bc707337c4cda011d46014688a53102c0e64033d37d6f",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -20306,7 +20328,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -20372,7 +20394,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -20429,7 +20451,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -20496,11 +20518,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -21500,6 +21520,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "6ae4a7c24665142e"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:238f3f1b569eb803c79473b585c5ca4a43752b967c49d3cfabe83b2db4b7418d",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -21678,7 +21754,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -21858,13 +21934,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -21923,56 +21999,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "6ae4a7c24665142e"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:238f3f1b569eb803c79473b585c5ca4a43752b967c49d3cfabe83b2db4b7418d",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -22082,7 +22108,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -22148,7 +22174,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -22205,7 +22231,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -22272,11 +22298,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -23315,6 +23339,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "303391abcfcecd58"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:801671c9afb73d53522ef3ef5e9b45589b49f477ba21fac981cb1406b77398e2",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -23493,7 +23573,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -23673,13 +23753,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -23738,56 +23818,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "303391abcfcecd58"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:801671c9afb73d53522ef3ef5e9b45589b49f477ba21fac981cb1406b77398e2",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -23897,7 +23927,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -23963,7 +23993,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -24020,7 +24050,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -24087,11 +24117,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -25091,6 +25119,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.0",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.0",
+            "UID": "fd97a8c5b0eba938"
+          },
+          "InstalledVersion": "v1.24.0",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:36a65c45ac755640ecb13dae373bac8a47549812ebb913b2167b28af78164c95",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-22874",
           "VendorIDs": [
             "GO-2025-3749"
@@ -25269,7 +25353,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -25449,13 +25533,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -25514,56 +25598,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.0",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.0",
-            "UID": "fd97a8c5b0eba938"
-          },
-          "InstalledVersion": "v1.24.0",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:0573830a373446998d643390a51128b4028b719eafd104540774aa75ee6a30bd"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:36a65c45ac755640ecb13dae373bac8a47549812ebb913b2167b28af78164c95",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-0913",
@@ -25673,7 +25707,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
             "https://errata.almalinux.org/9/ALSA-2025-9635.html",
-            "https://errata.rockylinux.org/RLSA-2025:9845",
+            "https://errata.rockylinux.org/RLSA-2025:9317",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
             "https://github.com/roadrunner-server/roadrunner/issues/2166",
@@ -25739,7 +25773,7 @@
             "https://pkg.go.dev/vuln/GO-2026-4403"
           ],
           "PublishedDate": "2026-02-04T23:15:54.22Z",
-          "LastModifiedDate": "2026-02-05T15:16:06.713Z"
+          "LastModifiedDate": "2026-02-10T15:16:40.057Z"
         },
         {
           "VulnerabilityID": "CVE-2025-4673",
@@ -25796,7 +25830,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
             "https://errata.almalinux.org/9/ALSA-2025-15887.html",
-            "https://errata.rockylinux.org/RLSA-2025:10672",
+            "https://errata.rockylinux.org/RLSA-2025:16432",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
             "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
@@ -25863,11 +25897,9 @@
             "https://access.redhat.com/security/cve/CVE-2025-47906",
             "https://bugzilla.redhat.com/2396546",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396546",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2025-22005.html",
-            "https://errata.rockylinux.org/RLSA-2025:22668",
+            "https://errata.rockylinux.org/RLSA-2025:22005",
             "https://go.dev/cl/691775",
             "https://go.dev/issue/74466",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -26523,6 +26555,62 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2025-68121",
+          "VendorIDs": [
+            "GO-2026-4337"
+          ],
+          "PkgID": "stdlib@v1.24.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.24.6",
+            "UID": "5a9b484fa87e1a00"
+          },
+          "InstalledVersion": "v1.24.6",
+          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:9fdbc1357b5173150cdb2146838623f97d231b473bcc7fe928bc4dd50e2243f9"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:33ad3bffa5bf8f90b4429572ed3c717cb767741926ed5ccfd5a3040ae4d75704",
+          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://go.dev/cl/737700",
+            "https://go.dev/issue/77217",
+            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
+            "https://pkg.go.dev/vuln/GO-2026-4337"
+          ],
+          "PublishedDate": "2026-02-05T18:16:10.857Z",
+          "LastModifiedDate": "2026-02-10T16:08:03.303Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-58183",
           "VendorIDs": [
             "GO-2025-4014"
@@ -26577,7 +26665,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23948",
+            "https://errata.rockylinux.org/RLSA-2025:23295",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -26757,13 +26845,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:0923",
+            "https://access.redhat.com/errata/RHSA-2026:1908",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-0923.html",
-            "https://errata.rockylinux.org/RLSA-2026:1518",
+            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.rockylinux.org/RLSA-2026:1715",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -26822,56 +26910,6 @@
           ],
           "PublishedDate": "2026-01-28T20:16:09.94Z",
           "LastModifiedDate": "2026-02-03T20:36:41.3Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-68121",
-          "VendorIDs": [
-            "GO-2026-4337"
-          ],
-          "PkgID": "stdlib@v1.24.6",
-          "PkgName": "stdlib",
-          "PkgIdentifier": {
-            "PURL": "pkg:golang/stdlib@v1.24.6",
-            "UID": "5a9b484fa87e1a00"
-          },
-          "InstalledVersion": "v1.24.6",
-          "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:9fdbc1357b5173150cdb2146838623f97d231b473bcc7fe928bc4dd50e2243f9"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
-          "DataSource": {
-            "ID": "govulndb",
-            "Name": "The Go Vulnerability Database",
-            "URL": "https://pkg.go.dev/vuln/"
-          },
-          "Fingerprint": "sha256:33ad3bffa5bf8f90b4429572ed3c717cb767741926ed5ccfd5a3040ae4d75704",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
-          "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-295"
-          ],
-          "VendorSeverity": {
-            "amazon": 3,
-            "bitnami": 2
-          },
-          "CVSS": {
-            "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "https://go.dev/cl/737700",
-            "https://go.dev/issue/77217",
-            "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
-          ],
-          "PublishedDate": "2026-02-05T18:16:10.857Z",
-          "LastModifiedDate": "2026-02-06T16:16:14.373Z"
         },
         {
           "VulnerabilityID": "CVE-2025-47912",
