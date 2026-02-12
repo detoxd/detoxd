@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c4de6-3324-758d-bc51-4ebdd3b02531",
-  "CreatedAt": "2026-02-12T01:10:57.95636569+07:00",
+  "ReportID": "019c530d-060d-748d-8255-4528c163504e",
+  "CreatedAt": "2026-02-13T01:11:28.397300985+07:00",
   "ArtifactID": "sha256:d99c6ea47ab5da0dffaed3399a3efcf7cc307b1ea18f39116beb3e26b6a9ab4f",
   "ArtifactName": "mysql:9.6-oracle",
   "ArtifactType": "container_image",
@@ -28501,24 +28501,34 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
           "Fingerprint": "sha256:dd90b708e2f30dcc1a0bdb6d98d5c191dd0360628bc41b33455daa0fb7706723",
-          "Title": "cryptography is a package designed to expose cryptographic primitives  ...",
+          "Title": "cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
           "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 46.0.5, the public_key_from_numbers (or EllipticCurvePublicNumbers.public_key()), EllipticCurvePublicNumbers.public_key(), load_der_public_key() and load_pem_public_key() functions do not verify that the point belongs to the expected prime-order subgroup of the curve. This missing validation allows an attacker to provide a public key point P from a small-order subgroup. This can lead to security issues in various situations, such as the most commonly used signature verification (ECDSA) and shared key negotiation (ECDH). When the victim computes the shared secret as S = [victim_private_key]P via ECDH, this leaks information about victim_private_key mod (small_subgroup_order). For curves with cofactor \u003e 1, this reveals the least significant bits of the private key. When these weak public keys are used in ECDSA , it's easy to forge signatures on the small subgroup. Only SECT curves are impacted by this. This vulnerability is fixed in 46.0.5.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-345"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/02/10/4",
+            "https://access.redhat.com/security/cve/CVE-2026-26007",
             "https://github.com/pyca/cryptography",
             "https://github.com/pyca/cryptography/commit/0eebb9dbb6343d9bc1d91e5a2482ed4e054a6d8c",
             "https://github.com/pyca/cryptography/releases/tag/46.0.5",
-            "https://github.com/pyca/cryptography/security/advisories/GHSA-r6ph-v2qm-q3c2"
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-r6ph-v2qm-q3c2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26007",
+            "https://www.cve.org/CVERecord?id=CVE-2026-26007"
           ],
           "PublishedDate": "2026-02-10T22:17:00.307Z",
-          "LastModifiedDate": "2026-02-11T00:16:51.847Z"
+          "LastModifiedDate": "2026-02-11T15:27:26.37Z"
         },
         {
           "VulnerabilityID": "CVE-2025-8869",
@@ -28809,7 +28819,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23295",
+            "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -28995,7 +29005,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
             "https://errata.almalinux.org/9/ALSA-2026-1908.html",
-            "https://errata.rockylinux.org/RLSA-2026:1715",
+            "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",

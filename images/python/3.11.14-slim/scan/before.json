@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c2ed5-d97c-7787-bae9-8be9a40ff6df",
-  "CreatedAt": "2026-02-06T00:24:52.732495352+07:00",
+  "ReportID": "019c5309-952d-76a2-a2c1-68abe96ef296",
+  "CreatedAt": "2026-02-13T01:07:42.893437086+07:00",
   "ArtifactID": "sha256:cb20a927f78b1e658b1a1c76dc1027cbbacf4f56a694efb991244102bb932fc6",
   "ArtifactName": "python:3.11.14-slim",
   "ArtifactType": "container_image",
@@ -25,7 +25,7 @@
       "python:3.11.14-slim"
     ],
     "RepoDigests": [
-      "python@sha256:db27ce7778e5f581d5d97812ee577a01a9fffbfa612c47fc521fa684e3389c9b"
+      "python@sha256:0b23cfb7425d065008b778022a17b1551c82f8b4866ee5a7a200084b7e2eafbf"
     ],
     "Reference": "python:3.11.14-slim",
     "ImageConfig": {
@@ -7766,7 +7766,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -7777,17 +7778,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -8039,7 +8045,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -8050,17 +8057,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -8150,6 +8162,8 @@
           ],
           "VendorSeverity": {
             "alma": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 3,
             "redhat": 1,
@@ -8212,6 +8226,7 @@
             "CWE-908"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -8231,7 +8246,7 @@
             "https://www.openwall.com/lists/oss-security/2026/01/20/3"
           ],
           "PublishedDate": "2026-01-20T14:16:07.843Z",
-          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
+          "LastModifiedDate": "2026-02-05T17:43:18.63Z"
         },
         {
           "VulnerabilityID": "CVE-2026-0915",
@@ -8261,6 +8276,8 @@
           ],
           "VendorSeverity": {
             "alma": 2,
+            "azure": 1,
+            "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 3,
             "redhat": 2,
@@ -8713,6 +8730,8 @@
           ],
           "VendorSeverity": {
             "alma": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 3,
             "redhat": 1,
@@ -8775,6 +8794,7 @@
             "CWE-908"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -8794,7 +8814,7 @@
             "https://www.openwall.com/lists/oss-security/2026/01/20/3"
           ],
           "PublishedDate": "2026-01-20T14:16:07.843Z",
-          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
+          "LastModifiedDate": "2026-02-05T17:43:18.63Z"
         },
         {
           "VulnerabilityID": "CVE-2026-0915",
@@ -8824,6 +8844,8 @@
           ],
           "VendorSeverity": {
             "alma": 2,
+            "azure": 1,
+            "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 3,
             "redhat": 2,
@@ -9280,7 +9302,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -9291,17 +9314,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -9395,7 +9423,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -9406,17 +9435,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -9563,7 +9597,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -9574,17 +9609,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -10215,7 +10255,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -10226,17 +10267,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -10330,7 +10376,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -10341,17 +10388,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -10502,12 +10554,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20145",
+            "https://access.redhat.com/errata/RHSA-2025:20559",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
+            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -10579,7 +10631,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -10590,17 +10643,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -10857,12 +10915,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20145",
+            "https://access.redhat.com/errata/RHSA-2025:20559",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
+            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -11094,7 +11152,8 @@
             "cbl-mariner": 2,
             "oracle-oval": 2,
             "photon": 2,
-            "redhat": 2
+            "redhat": 2,
+            "rocky": 2
           },
           "CVSS": {
             "redhat": {
@@ -11105,17 +11164,22 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:1696",
             "https://access.redhat.com/errata/RHSA-2026:1852",
+            "https://access.redhat.com/errata/RHSA-2026:1913",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
             "https://access.redhat.com/security/cve/CVE-2025-14104",
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
+            "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
-            "https://linux.oracle.com/errata/ELSA-2026-1696.html",
+            "https://linux.oracle.com/errata/ELSA-2026-1913.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-14104",
             "https://www.cve.org/CVERecord?id=CVE-2025-14104"
           ],
           "PublishedDate": "2025-12-05T17:16:03.117Z",
-          "LastModifiedDate": "2026-02-04T12:16:14.643Z"
+          "LastModifiedDate": "2026-02-11T15:16:12.893Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
@@ -11521,7 +11585,8 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
-            "redhat": 3
+            "redhat": 3,
+            "ubuntu": 2
           },
           "CVSS": {
             "ghsa": {
@@ -11541,6 +11606,7 @@
             "https://github.com/jaraco/jaraco.context/security/advisories/GHSA-58pv-8j8x-9vj2",
             "https://github.com/pypa/setuptools/blob/main/setuptools/_vendor/jaraco/context.py#L55-L76",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-23949",
+            "https://ubuntu.com/security/notices/USN-7979-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-23949"
           ],
           "PublishedDate": "2026-01-20T01:15:57.723Z",
@@ -11689,8 +11755,12 @@
             "CWE-732"
           ],
           "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
             "ghsa": 3,
-            "redhat": 3
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
           },
           "CVSS": {
             "ghsa": {
@@ -11703,12 +11773,20 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:1939",
             "https://access.redhat.com/security/cve/CVE-2026-24049",
+            "https://bugzilla.redhat.com/2431959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2431959",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24049",
+            "https://errata.almalinux.org/9/ALSA-2026-1939.html",
+            "https://errata.rockylinux.org/RLSA-2026:1939",
             "https://github.com/pypa/wheel",
             "https://github.com/pypa/wheel/commit/7a7d2de96b22a9adf9208afcc9547e1001569fef",
             "https://github.com/pypa/wheel/commit/934fe177ff912c8e03d5ae951d3805e1fd90ba5e",
             "https://github.com/pypa/wheel/releases/tag/0.46.2",
             "https://github.com/pypa/wheel/security/advisories/GHSA-8rrh-rw8j-w5fx",
+            "https://linux.oracle.com/cve/CVE-2026-24049.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2090.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-24049",
             "https://www.cve.org/CVERecord?id=CVE-2026-24049"
           ],
@@ -11748,8 +11826,12 @@
             "CWE-732"
           ],
           "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
             "ghsa": 3,
-            "redhat": 3
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
           },
           "CVSS": {
             "ghsa": {
@@ -11762,12 +11844,20 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:1939",
             "https://access.redhat.com/security/cve/CVE-2026-24049",
+            "https://bugzilla.redhat.com/2431959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2431959",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24049",
+            "https://errata.almalinux.org/9/ALSA-2026-1939.html",
+            "https://errata.rockylinux.org/RLSA-2026:1939",
             "https://github.com/pypa/wheel",
             "https://github.com/pypa/wheel/commit/7a7d2de96b22a9adf9208afcc9547e1001569fef",
             "https://github.com/pypa/wheel/commit/934fe177ff912c8e03d5ae951d3805e1fd90ba5e",
             "https://github.com/pypa/wheel/releases/tag/0.46.2",
             "https://github.com/pypa/wheel/security/advisories/GHSA-8rrh-rw8j-w5fx",
+            "https://linux.oracle.com/cve/CVE-2026-24049.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2090.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-24049",
             "https://www.cve.org/CVERecord?id=CVE-2026-24049"
           ],

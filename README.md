@@ -72,18 +72,19 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 50 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
 | 51 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
 | 52 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
-| 53 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
-| 54 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
-| 55 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
-| 56 | `redis:8.4.0-alpine` | 0 | 0 | 0 | 0% |
-| 57 | `redis:8.4.0-alpine3.22` | 0 | 0 | 0 | 0% |
-| 58 | `redis:8.4.1-alpine3.22` | 0 | 0 | 0 | 0% |
-| 59 | `redis:8.6-alpine` | 0 | 0 | 0 | 0% |
-| 60 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
-| 61 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
-| 62 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
-| 63 | `ubuntu:24.04` | 25 | 11 | 14 | 56% |
-| 64 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
+| 53 | `python:3.15.0a6-slim` | 67 | 67 | 0 | 0% |
+| 54 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
+| 55 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
+| 56 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
+| 57 | `redis:8.4.0-alpine` | 0 | 0 | 0 | 0% |
+| 58 | `redis:8.4.0-alpine3.22` | 0 | 0 | 0 | 0% |
+| 59 | `redis:8.4.1-alpine3.22` | 0 | 0 | 0 | 0% |
+| 60 | `redis:8.6-alpine` | 0 | 0 | 0 | 0% |
+| 61 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
+| 62 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
+| 63 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
+| 64 | `ubuntu:24.04` | 25 | 11 | 14 | 56% |
+| 65 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
 
 ## Quick Start
 
@@ -133,4 +134,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-11*
+*Last updated: 2026-02-12*
