@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c5314-1bbe-7070-a6a3-5c3a1e7e63a9",
-  "CreatedAt": "2026-02-13T01:19:12.702031104+07:00",
+  "ReportID": "019c5838-584d-79c8-87bc-148cf8ad166c",
+  "CreatedAt": "2026-02-14T01:16:53.581643043+07:00",
   "ArtifactID": "sha256:a9497586023f6f6beca9b1a7fd22682b7ae242b8edfa7d72250e706c94cfdbac",
   "ArtifactName": "mongo:8.2.5",
   "ArtifactType": "container_image",
@@ -9290,6 +9290,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
+            "photon": 3,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -9475,6 +9476,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
+            "photon": 3,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -9931,14 +9933,14 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/09/10/1",
-            "https://access.redhat.com/errata/RHSA-2026:1350",
+            "https://access.redhat.com/errata/RHSA-2026:1825",
             "https://access.redhat.com/security/cve/CVE-2025-9086",
             "https://bugzilla.redhat.com/2394750",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2394750",
             "https://curl.se/docs/CVE-2025-9086.html",
             "https://curl.se/docs/CVE-2025-9086.json",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086",
-            "https://errata.almalinux.org/9/ALSA-2026-1350.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1825.html",
             "https://errata.rockylinux.org/RLSA-2026:1350",
             "https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6",
             "https://hackerone.com/reports/3294999",
@@ -10361,12 +10363,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20559",
+            "https://access.redhat.com/errata/RHSA-2025:20145",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -10421,12 +10423,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20559",
+            "https://access.redhat.com/errata/RHSA-2025:20145",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -10481,12 +10483,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/11/01/6",
-            "https://access.redhat.com/errata/RHSA-2026:0067",
+            "https://access.redhat.com/errata/RHSA-2026:0002",
             "https://access.redhat.com/security/cve/CVE-2025-45582",
             "https://bugzilla.redhat.com/2379592",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2379592",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582",
-            "https://errata.almalinux.org/9/ALSA-2026-0067.html",
+            "https://errata.almalinux.org/10/ALSA-2026-0002.html",
             "https://errata.rockylinux.org/RLSA-2026:0067",
             "https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md",
             "https://linux.oracle.com/cve/CVE-2025-45582.html",
@@ -11025,7 +11027,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:e2443a231d8a17416589939b89bcfdc92e6d091a31e506d542fdce7e79779348",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -11034,7 +11036,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -11044,14 +11047,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -11658,7 +11667,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:c3b6e88b191665f32cc94f68b5b7ce01c57daa7e91eb8e6b870a84df4670bda2",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -11667,7 +11676,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -11677,14 +11687,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -12291,7 +12307,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:a24496747ea08693dc44c065c9feab7a357111a87ecab9eac982a4c5d99e7b12",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -12300,7 +12316,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -12310,14 +12327,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -12924,7 +12947,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:7b46875d944ec9de12b75053bd0bc4ab695df0413e0a042e5186b37da34fa796",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -12933,7 +12956,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -12943,14 +12967,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -13570,7 +13600,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:da445a0fd3fd6eaadc413370ba24d4e0e651388607adc17fdc3e31a6067db634",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -13579,7 +13609,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -13589,14 +13620,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -14203,7 +14240,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:bd06580f9c90fd7ba365371c10fb02392002511012b61a6dc0976e096bf50a3c",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -14212,7 +14249,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -14222,14 +14260,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -14875,7 +14919,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:f269521f117ab2e67363a7318f9bab8b7435e56179ef3d5b9ba96b5121d64acd",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -14884,7 +14928,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -14894,14 +14939,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -15508,7 +15559,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:5938dd0c54f73b734b31314d834129a0ac30c05f109fcbbce888f90ab9bddc27",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -15517,7 +15568,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -15527,14 +15579,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -15797,7 +15855,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:ff7b380d83b02d8939c2570e5859b2aefcfa28ad967f997bce9b99adbd61a13a",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -15806,7 +15864,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -15816,14 +15875,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -15877,12 +15942,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -16063,12 +16128,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",

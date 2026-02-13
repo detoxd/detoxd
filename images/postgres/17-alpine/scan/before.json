@@ -3,40 +3,40 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c5305-a73f-7620-9bfb-c85b55023df2",
-  "CreatedAt": "2026-02-13T01:03:25.37540366+07:00",
-  "ArtifactID": "sha256:19de103ac0f3355558aa9403cf5ef6bacb794e8d627575ec65fcd1a21fdb5318",
+  "ReportID": "019c582c-1617-7312-a13a-7e33b46ea540",
+  "CreatedAt": "2026-02-14T01:03:30.199204355+07:00",
+  "ArtifactID": "sha256:7077c0760e6ab986de9f2d975d4e59daaf4c072dbca96bf88d18b523ebbef15a",
   "ArtifactName": "postgres:17-alpine",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 281742336,
+    "Size": 281781760,
     "OS": {
       "Family": "alpine",
       "Name": "3.23.3"
     },
-    "ImageID": "sha256:9104a94e25680111c00d6c9ad5913129d2f45c1bc51b363db177d638c313392e",
+    "ImageID": "sha256:86b2714af70f2db20155c8111faf54dcd64010136c1320fa2fc7243ba1b0154c",
     "DiffIDs": [
       "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
-      "sha256:97862322da31c58d3b17f5644ad80d80604077e1e10a17165243398f8a5f6e90",
-      "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa",
-      "sha256:2eeac7ca7b8908b37598b389e816c6cf6e0cd8e5f8658e7ce8c72e942db8f014",
-      "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a",
-      "sha256:5f622325287340714dc77f53691294d9554faae586d60219621e4a5afe5f761f",
-      "sha256:e96b01770c7113b66abf4ff86818983cb41f287f216da51148ea80b8059c57de",
-      "sha256:f7607dc5c3491e3f52dc997e781a8c909aecfd5953a99b9bdef0f5354c7d9fa0",
-      "sha256:6e2b4607720916dfb981a1ea6b6d3cba4c6932667ba6d121eebc02ed0dfeef8d",
-      "sha256:032b606df4db53699b3e9cb11e8c8832b0d652bc71548af7a918a5f2e4cec641"
+      "sha256:5fc4929df05d2306e6bc307e16adaf04b36d408b600fabf92292a1cf103d3510",
+      "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c",
+      "sha256:76753ba918b98e0cb9cd0f6d8c16c037b074c1ae77412ec5c752cb06a28d1de8",
+      "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7",
+      "sha256:88599ddf5eaf1aeb0fb76d499ff4d250979af7c4bc2e4591925251df22a06fb4",
+      "sha256:29e7957d5db9a18b85a057601f8c1edc2dd35a377e90b622afe0d2c208bb4a12",
+      "sha256:b44b0ea9cd984d35d73f1e003b40d6438ead7b573ffce7ea1e61e5dd412dfc0c",
+      "sha256:a7619b73d2df1e5ef7e0a041431db7ad9ee9dfc3094cc3b7b9a39722e9057e4d",
+      "sha256:5d70455e0c7ebcb8b0ac6a19436484e4d11fa82dbe3765afa4ce3c5a5e79df36"
     ],
     "RepoTags": [
       "postgres:17-alpine"
     ],
     "RepoDigests": [
-      "postgres@sha256:bb377b7239d2774ac8cc76f481596ce96c5a6b5e9d141f6d0a0ee371a6e7c0f2"
+      "postgres@sha256:3430fe182f5065a6ea505c3d432d2c7fff18fbab954df8f277c1dbf4c70124af"
     ],
     "Reference": "postgres:17-alpine",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-01-28T02:32:19.008847153Z",
+      "created": "2026-02-12T21:06:27.323783395Z",
       "history": [
         {
           "created": "2026-01-28T01:18:04Z",
@@ -50,118 +50,118 @@
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:29:40Z",
+          "created": "2026-02-12T21:04:12Z",
           "created_by": "RUN /bin/sh -c set -eux; \taddgroup -g 70 -S postgres; \tadduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; \tinstall --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:29:43Z",
+          "created": "2026-02-12T21:04:15Z",
           "created_by": "ENV GOSU_VERSION=1.19",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:29:43Z",
+          "created": "2026-02-12T21:04:15Z",
           "created_by": "RUN /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .gosu-deps \t\tca-certificates \t\tdpkg \t\tgnupg \t; \t\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \t\texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \t\tapk del --no-network .gosu-deps; \t\tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:29:43Z",
+          "created": "2026-02-12T21:04:15Z",
           "created_by": "ENV LANG=en_US.utf8",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:29:43Z",
+          "created": "2026-02-12T21:04:15Z",
           "created_by": "RUN /bin/sh -c mkdir /docker-entrypoint-initdb.d # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:29:43Z",
+          "created": "2026-02-12T21:04:15Z",
           "created_by": "ENV PG_MAJOR=17",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:29:43Z",
-          "created_by": "ENV PG_VERSION=17.7",
+          "created": "2026-02-12T21:04:15Z",
+          "created_by": "ENV PG_VERSION=17.8",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:29:43Z",
-          "created_by": "ENV PG_SHA256=ef9e343302eccd33112f1b2f0247be493cb5768313adeb558b02de8797a2e9b5",
+          "created": "2026-02-12T21:04:15Z",
+          "created_by": "ENV PG_SHA256=a88d195dd93730452d0cfa1a11896720d6d1ba084bc2be7d7fc557fa4e4158a0",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:29:43Z",
+          "created": "2026-02-12T21:04:15Z",
           "created_by": "ENV DOCKER_PG_LLVM_DEPS=llvm19-dev \t\tclang19",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:26Z",
           "created_by": "RUN /bin/sh -c set -eux; \t\twget -O postgresql.tar.bz2 \"https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2\"; \techo \"$PG_SHA256 *postgresql.tar.bz2\" | sha256sum -c -; \tmkdir -p /usr/src/postgresql; \ttar \t\t--extract \t\t--file postgresql.tar.bz2 \t\t--directory /usr/src/postgresql \t\t--strip-components 1 \t; \trm postgresql.tar.bz2; \t\tapk add --no-cache --virtual .build-deps \t\t$DOCKER_PG_LLVM_DEPS \t\tbison \t\tcoreutils \t\tdpkg-dev dpkg \t\tflex \t\tg++ \t\tgcc \t\tkrb5-dev \t\tlibc-dev \t\tlibedit-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlinux-headers \t\tmake \t\topenldap-dev \t\topenssl-dev \t\tperl-dev \t\tperl-ipc-run \t\tperl-utils \t\tpython3-dev \t\ttcl-dev \t\tutil-linux-dev \t\tzlib-dev \t\ticu-dev \t\tlz4-dev \t\tzstd-dev \t; \t\tcd /usr/src/postgresql; \tawk '$1 == \"#define\" \u0026\u0026 $2 == \"DEFAULT_PGSOCKET_DIR\" \u0026\u0026 $3 == \"\\\"/tmp\\\"\" { $3 = \"\\\"/var/run/postgresql\\\"\"; print; next } { print }' src/include/pg_config_manual.h \u003e src/include/pg_config_manual.h.new; \tgrep '/var/run/postgresql' src/include/pg_config_manual.h.new; \tmv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t\texport LLVM_CONFIG=\"/usr/lib/llvm19/bin/llvm-config\"; \texport CLANG=clang-19; \t\t./configure \t\t--enable-option-checking=fatal \t\t--build=\"$gnuArch\" \t\t--enable-integer-datetimes \t\t--enable-tap-tests \t\t--disable-rpath \t\t--with-uuid=e2fs \t\t--with-pgport=5432 \t\t--with-system-tzdata=/usr/share/zoneinfo \t\t--prefix=/usr/local \t\t--with-includes=/usr/local/include \t\t--with-libraries=/usr/local/lib \t\t--with-gssapi \t\t--with-icu \t\t--with-ldap \t\t--with-libxml \t\t--with-libxslt \t\t--with-llvm \t\t--with-lz4 \t\t--with-openssl \t\t--with-perl \t\t--with-python \t\t--with-tcl \t\t--with-zstd \t; \tmake -j \"$(nproc)\" world-bin; \tmake install-world-bin; \tmake -C contrib install; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t\t\t| grep -v -e perl -e python -e tcl \t)\"; \tapk add --no-cache --virtual .postgresql-rundeps \t\t$runDeps \t\tbash \t\ttzdata \t\tzstd \t\ticu-data-full \t\t$([ \"$(apk --print-arch)\" != 'ppc64le' ] \u0026\u0026 echo 'nss_wrapper') \t; \tapk del --no-network .build-deps; \tcd /; \trm -rf \t\t/usr/src/postgresql \t\t/usr/local/share/doc \t\t/usr/local/share/man \t; \t\tpostgres --version # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:26Z",
           "created_by": "RUN /bin/sh -c set -eux; \tcp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; \tsed -ri \"s!^#?(listen_addresses)\\s*=\\s*\\S+.*!\\1 = '*'!\" /usr/local/share/postgresql/postgresql.conf.sample; \tgrep -F \"listen_addresses = '*'\" /usr/local/share/postgresql/postgresql.conf.sample # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "RUN /bin/sh -c install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "ENV PGDATA=/var/lib/postgresql/data",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "RUN /bin/sh -c install --verbose --directory --owner postgres --group postgres --mode 1777 \"$PGDATA\" # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "VOLUME [/var/lib/postgresql/data]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:18Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:19Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "RUN /bin/sh -c ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-01-28T02:32:19Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:19Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "STOPSIGNAL SIGINT",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:19Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "EXPOSE map[5432/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-01-28T02:32:19Z",
+          "created": "2026-02-12T21:06:27Z",
           "created_by": "CMD [\"postgres\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -172,15 +172,15 @@
         "type": "layers",
         "diff_ids": [
           "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
-          "sha256:97862322da31c58d3b17f5644ad80d80604077e1e10a17165243398f8a5f6e90",
-          "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa",
-          "sha256:2eeac7ca7b8908b37598b389e816c6cf6e0cd8e5f8658e7ce8c72e942db8f014",
-          "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a",
-          "sha256:5f622325287340714dc77f53691294d9554faae586d60219621e4a5afe5f761f",
-          "sha256:e96b01770c7113b66abf4ff86818983cb41f287f216da51148ea80b8059c57de",
-          "sha256:f7607dc5c3491e3f52dc997e781a8c909aecfd5953a99b9bdef0f5354c7d9fa0",
-          "sha256:6e2b4607720916dfb981a1ea6b6d3cba4c6932667ba6d121eebc02ed0dfeef8d",
-          "sha256:032b606df4db53699b3e9cb11e8c8832b0d652bc71548af7a918a5f2e4cec641"
+          "sha256:5fc4929df05d2306e6bc307e16adaf04b36d408b600fabf92292a1cf103d3510",
+          "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c",
+          "sha256:76753ba918b98e0cb9cd0f6d8c16c037b074c1ae77412ec5c752cb06a28d1de8",
+          "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7",
+          "sha256:88599ddf5eaf1aeb0fb76d499ff4d250979af7c4bc2e4591925251df22a06fb4",
+          "sha256:29e7957d5db9a18b85a057601f8c1edc2dd35a377e90b622afe0d2c208bb4a12",
+          "sha256:b44b0ea9cd984d35d73f1e003b40d6438ead7b573ffce7ea1e61e5dd412dfc0c",
+          "sha256:a7619b73d2df1e5ef7e0a041431db7ad9ee9dfc3094cc3b7b9a39722e9057e4d",
+          "sha256:5d70455e0c7ebcb8b0ac6a19436484e4d11fa82dbe3765afa4ce3c5a5e79df36"
         ]
       },
       "config": {
@@ -195,8 +195,8 @@
           "GOSU_VERSION=1.19",
           "LANG=en_US.utf8",
           "PG_MAJOR=17",
-          "PG_VERSION=17.7",
-          "PG_SHA256=ef9e343302eccd33112f1b2f0247be493cb5768313adeb558b02de8797a2e9b5",
+          "PG_VERSION=17.8",
+          "PG_SHA256=a88d195dd93730452d0cfa1a11896720d6d1ba084bc2be7d7fc557fa4e4158a0",
           "DOCKER_PG_LLVM_DEPS=llvm19-dev \t\tclang19",
           "PGDATA=/var/lib/postgresql/data"
         ],
@@ -217,39 +217,39 @@
       },
       {
         "Size": 11264,
-        "DiffID": "sha256:97862322da31c58d3b17f5644ad80d80604077e1e10a17165243398f8a5f6e90"
+        "DiffID": "sha256:5fc4929df05d2306e6bc307e16adaf04b36d408b600fabf92292a1cf103d3510"
       },
       {
         "Size": 2030592,
-        "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+        "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:2eeac7ca7b8908b37598b389e816c6cf6e0cd8e5f8658e7ce8c72e942db8f014"
+        "DiffID": "sha256:76753ba918b98e0cb9cd0f6d8c16c037b074c1ae77412ec5c752cb06a28d1de8"
       },
       {
-        "Size": 270880256,
-        "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+        "Size": 270918656,
+        "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
       },
       {
-        "Size": 65536,
-        "DiffID": "sha256:5f622325287340714dc77f53691294d9554faae586d60219621e4a5afe5f761f"
+        "Size": 66560,
+        "DiffID": "sha256:88599ddf5eaf1aeb0fb76d499ff4d250979af7c4bc2e4591925251df22a06fb4"
       },
       {
         "Size": 2048,
-        "DiffID": "sha256:e96b01770c7113b66abf4ff86818983cb41f287f216da51148ea80b8059c57de"
+        "DiffID": "sha256:29e7957d5db9a18b85a057601f8c1edc2dd35a377e90b622afe0d2c208bb4a12"
       },
       {
         "Size": 3072,
-        "DiffID": "sha256:f7607dc5c3491e3f52dc997e781a8c909aecfd5953a99b9bdef0f5354c7d9fa0"
+        "DiffID": "sha256:b44b0ea9cd984d35d73f1e003b40d6438ead7b573ffce7ea1e61e5dd412dfc0c"
       },
       {
         "Size": 20480,
-        "DiffID": "sha256:6e2b4607720916dfb981a1ea6b6d3cba4c6932667ba6d121eebc02ed0dfeef8d"
+        "DiffID": "sha256:a7619b73d2df1e5ef7e0a041431db7ad9ee9dfc3094cc3b7b9a39722e9057e4d"
       },
       {
         "Size": 3072,
-        "DiffID": "sha256:032b606df4db53699b3e9cb11e8c8832b0d652bc71548af7a918a5f2e4cec641"
+        "DiffID": "sha256:5d70455e0c7ebcb8b0ac6a19436484e4d11fa82dbe3765afa4ce3c5a5e79df36"
       }
     ]
   },
@@ -260,13 +260,13 @@
       "Type": "alpine",
       "Packages": [
         {
-          "ID": ".postgresql-rundeps@20260128.023217",
+          "ID": ".postgresql-rundeps@20260212.210626",
           "Name": ".postgresql-rundeps",
           "Identifier": {
-            "PURL": "pkg:apk/alpine/.postgresql-rundeps@20260128.023217?arch=noarch\u0026distro=3.23.3",
-            "UID": "b59e8d0b62171ce6"
+            "PURL": "pkg:apk/alpine/.postgresql-rundeps@20260212.210626?arch=noarch\u0026distro=3.23.3",
+            "UID": "c2e7369c760f32cc"
           },
-          "Version": "20260128.023217",
+          "Version": "20260212.210626",
           "Arch": "noarch",
           "DependsOn": [
             "bash@5.3.3-r1",
@@ -292,9 +292,9 @@
             "zstd@1.5.7-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
-          "Digest": "sha1:395b3465381d44972980e95f69a01961cfab8d15",
+          "Digest": "sha1:0c2c8d5a6c0fe62bc709000d3094457562d5cff7",
           "AnalyzedBy": "apk"
         },
         {
@@ -522,7 +522,7 @@
             "readline@8.3.1-r0"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:8e9ab21d4dfbe0faa8151517bd855b63b4e3301c",
           "InstalledFiles": [
@@ -679,7 +679,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:015081387c654fbfd7d9e000cb35ee31b3158567",
           "InstalledFiles": [
@@ -706,7 +706,7 @@
           ],
           "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:7381ec213cec6b6372ffbe94e3d40d05bc5f4725",
           "InstalledFiles": [
@@ -736,7 +736,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:5b2e798ba20f831d64e54526431c52d98e3edf90",
           "InstalledFiles": [
@@ -771,7 +771,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:d4529850efb95a5b8f8f8d58b531ce6d712dde2c",
           "InstalledFiles": [
@@ -796,7 +796,7 @@
           ],
           "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:9251a08082168006d54f220687e7829b60057015",
           "InstalledFiles": [
@@ -829,7 +829,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:1980f1ffd1e00cc794a1293046e4cf5cfcee7f4d",
           "InstalledFiles": [
@@ -911,7 +911,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:33d20f078c62deac6f96cc0f1e5f53f478e38dba",
           "InstalledFiles": [
@@ -976,7 +976,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:463f69335a3223b1ce6856ce3bef5c03fee721bf",
           "InstalledFiles": [
@@ -1004,7 +1004,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:fa51bf028f40768bfe1c7ef494b1fe3f8590c19f",
           "InstalledFiles": [
@@ -1033,7 +1033,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:57fccbe9eebf23f2c4f38ee2a24f8b0bdd508ff7",
           "InstalledFiles": [
@@ -1063,7 +1063,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:2e538f6fe6703d9dcde2ad672ea7edfe15c556f0",
           "InstalledFiles": [
@@ -1095,7 +1095,7 @@
             "ncurses-terminfo-base@6.5_p20251123-r0"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:649d3041c52b80620fb50a98f5979d25ebbe1523",
           "InstalledFiles": [
@@ -1125,7 +1125,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:7b48ffd82456f643defe2c7f2d63593720c964a7",
           "InstalledFiles": [
@@ -1192,7 +1192,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:528d77417a16706468af852f2859ad00f176e266",
           "InstalledFiles": [
@@ -1220,7 +1220,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:0050e9a7637cd71596beab9996afd0e335489016",
           "InstalledFiles": [
@@ -1248,7 +1248,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:a480cee839488914fb744756c6d314909e2f36b5",
           "InstalledFiles": [
@@ -1278,7 +1278,7 @@
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:9fb56eb6e62b7b6658a8abe14cded8d87a47ebc7",
           "InstalledFiles": [
@@ -1307,7 +1307,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:7d73182371fbf2141e137329e5432b94551bdd1b",
           "InstalledFiles": [
@@ -1344,7 +1344,7 @@
             "zstd-libs@1.5.7-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:8fabaf2d03a304bc0be7a41c9120340a2020aeaa",
           "InstalledFiles": [
@@ -1373,7 +1373,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:dd524f4bc98af26056784c89725ddc54c57065d4",
           "InstalledFiles": [
@@ -1457,7 +1457,7 @@
           ],
           "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:57bd1d8124ec957eefea2314bdf45b0ed1068cee",
           "InstalledFiles": [
@@ -1524,7 +1524,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:27e72becc30ef55ee3cb7892e090b195a4975da1",
           "InstalledFiles": [
@@ -1554,7 +1554,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:8aeb81b3a477f922b9b6a533381114c63dd928fe",
           "InstalledFiles": [
@@ -1636,7 +1636,7 @@
           ],
           "Maintainer": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:e067ced08b33621edaec1b52c781ea34da9ce596",
           "InstalledFiles": [
@@ -2268,7 +2268,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:d3eb4807f74650a151b4463266ecd1b507f3c49f",
           "InstalledFiles": [
@@ -2328,7 +2328,7 @@
             "zstd-libs@1.5.7-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:223a76377db7315c77fa90ff270971d70d0796a1",
           "InstalledFiles": [
@@ -2362,7 +2362,7 @@
             "musl@1.2.5-r21"
           ],
           "Layer": {
-            "DiffID": "sha256:2fbe4e462ed6d63d1968ec3401664c09b77e6b0f4a798d4239a9e3eecbe2b58a"
+            "DiffID": "sha256:8ad67ddb13d68680186cb16316f10e2571d70a9334c9b370a92fe670ad031cc7"
           },
           "Digest": "sha1:d507b8ac3c4335a40405ac20e49bac9d43642be6",
           "InstalledFiles": [
@@ -2393,7 +2393,7 @@
             "stdlib@v1.24.6"
           ],
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -2407,7 +2407,7 @@
           "Version": "v1.24.6",
           "Relationship": "direct",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -2420,7 +2420,7 @@
           },
           "Version": "v0.1.0",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -2433,7 +2433,7 @@
           },
           "Version": "v0.1.0",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "AnalyzedBy": "gobinary"
         }
@@ -2454,7 +2454,7 @@
           "FixedVersion": "1.24.13, 1.25.7, 1.26.0-rc.3",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-68121",
@@ -2463,8 +2463,8 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d964daa9e9de029ae8ff31542ec4a2a05e497133bbe07259fd27b33cab23b6f7",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Fingerprint": "sha256:831d255077cc6a3d8a75dc79bc57ea21f71c777005cd6860447dba213de0c356",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -2473,7 +2473,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -2483,14 +2484,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -2510,7 +2517,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58183",
           "DataSource": {
@@ -2518,7 +2525,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6a20a71603ca2fea70be6dbb7f8b915067e95a4f095b5f602438feeb441a69e7",
+          "Fingerprint": "sha256:ade413e043337714aa06f1c1215f8b736fc26b4615f08aef5fa203e9e819ac95",
           "Title": "golang: archive/tar: Unbounded allocation when parsing GNU sparse map",
           "Description": "tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.",
           "Severity": "HIGH",
@@ -2544,12 +2551,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -2578,7 +2585,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61726",
           "DataSource": {
@@ -2586,7 +2593,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:9946382e8987d8bc3b257df64902282b6c3ae21f0aeb46dccee7de8320304679",
+          "Fingerprint": "sha256:8e7218aa0858e237116c7e0f6f567dbb8b8774276750e09291f26ffab3503d3d",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -2637,7 +2644,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61728",
           "DataSource": {
@@ -2645,7 +2652,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:070d0b020014e791efa3dc161a89685a5ec92325f24d3d8757ca6d8669158791",
+          "Fingerprint": "sha256:2257dc04693cf46663f9a1e79c4089d19e5e34e2ddf54a7d53c7803f4970c11b",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -2696,7 +2703,7 @@
           "FixedVersion": "1.24.11, 1.25.5",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61729",
           "DataSource": {
@@ -2704,7 +2711,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:605c6b79206964268da344a8702f508369add8bedb7d5358f2d14f22d9494587",
+          "Fingerprint": "sha256:a6390e995368dbf4233f5fbd130c5553be7df2e0be7a55b0434fd5bc1a2fbda0",
           "Title": "crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate",
           "Description": "Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.",
           "Severity": "HIGH",
@@ -2730,12 +2737,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -2764,7 +2771,7 @@
           "FixedVersion": "1.24.12, 1.25.6",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61730",
           "DataSource": {
@@ -2772,7 +2779,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:f866566b2430832098d26ed2c4cd153a7d1fb49d414ba54f8d492d56e589b842",
+          "Fingerprint": "sha256:dbae1a2af216e5a458f9c22bfdf3ef110299b2e857f169f1664d3054196f4a3d",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "HIGH",
@@ -2811,7 +2818,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-47912",
           "DataSource": {
@@ -2819,7 +2826,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:62919a6f0cb0a55abf43ac95945289996809bbeeef08cece840476979e3f9533",
+          "Fingerprint": "sha256:8c2fe14b1bf62501ec2284a82589a65d44e302ed019695f2df467d4e8937b47c",
           "Title": "net/url: Insufficient validation of bracketed IPv6 hostnames in net/url",
           "Description": "The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: \"http://[::1]/\". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.",
           "Severity": "MEDIUM",
@@ -2866,7 +2873,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58185",
           "DataSource": {
@@ -2874,7 +2881,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:8217f25f82e4e238b689f801e41c4d2887f24e147eb0a15ddc2ffc53be13a0ff",
+          "Fingerprint": "sha256:2c7462a44bcda35f3a1b13030f9df9237078ee92d76290bb0ae682381af4e9f3",
           "Title": "encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1",
           "Description": "Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.",
           "Severity": "MEDIUM",
@@ -2925,7 +2932,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58186",
           "DataSource": {
@@ -2933,7 +2940,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:779d33bbdcbd230044e0318d083ae942fbb2de0b98113229a696c5d4fe4ce739",
+          "Fingerprint": "sha256:e8b6a6fbe5a3225842d4de03e471384fda1e84553293b53d528795b2b830a217",
           "Title": "golang.org/net/http: Lack of limit when parsing cookies can cause memory exhaustion in net/http",
           "Description": "Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.",
           "Severity": "MEDIUM",
@@ -2980,7 +2987,7 @@
           "FixedVersion": "1.24.9, 1.25.3",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58187",
           "DataSource": {
@@ -2988,7 +2995,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3d49287b27690f7267b4deb7d06a7f093cab2d2f504c0ea30e5b76e6f0118ec6",
+          "Fingerprint": "sha256:d9827fa3d76f719f3f8634d9f0addc4c67eb840f2ccec9a9bbbf11550b4b4c57",
           "Title": "crypto/x509: Quadratic complexity when checking name constraints in crypto/x509",
           "Description": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -3039,7 +3046,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58188",
           "DataSource": {
@@ -3047,7 +3054,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:eaab603534c207e923ce17bb8bdbb6ba9d7e58036bd2e8150b24cbf28502a831",
+          "Fingerprint": "sha256:801c98db160739e4b23348c56eef55e78586f17454fa2f77280dc63a8adc4dfa",
           "Title": "crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509",
           "Description": "Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -3098,7 +3105,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-58189",
           "DataSource": {
@@ -3106,7 +3113,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4bed6714dd78c389b1ec103d5df702bff9e004dad97e8447ed2e1250d082bb57",
+          "Fingerprint": "sha256:16d4dee0a5a942044a359682bed36b5c3ef7986c2b1731b9d4cf37881e94a8c0",
           "Title": "crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information",
           "Description": "When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.",
           "Severity": "MEDIUM",
@@ -3156,7 +3163,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61723",
           "DataSource": {
@@ -3164,7 +3171,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:205f93646754d75f91090897f67be244c3b63672243b323e2bf468a9e3cc6288",
+          "Fingerprint": "sha256:d08caa61540bf2fbdc267ed3c2ae2fa8bb60ffa070eab8ad531cedba0abfee62",
           "Title": "encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem",
           "Description": "The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.",
           "Severity": "MEDIUM",
@@ -3215,7 +3222,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61724",
           "DataSource": {
@@ -3223,7 +3230,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:e11cf4f68db48f414462234ccda2732be9708dac5f4fa20d9fb750f7b5853b40",
+          "Fingerprint": "sha256:2640cbc3463e0366997cc500eb0cce1f1af3f591e39261f5d06003e6f4be4e72",
           "Title": "net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto",
           "Description": "The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -3273,7 +3280,7 @@
           "FixedVersion": "1.24.8, 1.25.2",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61725",
           "DataSource": {
@@ -3281,7 +3288,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6303955d53166c5eea71335a7475ca15f1a92c4c5da8de76deeb67e1b0a56faf",
+          "Fingerprint": "sha256:635c64c29fd7ccc60ffd9b08db293feae36868357e139b0d1a02db29eb7ffbb2",
           "Title": "net/mail: Excessive CPU consumption in ParseAddress in net/mail",
           "Description": "The ParseAddress function constructs domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -3328,7 +3335,7 @@
           "FixedVersion": "1.24.11, 1.25.5",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:752915e11e20a4ab90c981195e196cb3fe66cb02792e5194d46fc97cd25457aa"
+            "DiffID": "sha256:116074a61e5c2f8184b77ac19133afb7812046f7e0b6461b6fbd808a2bdede4c"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61727",
           "DataSource": {
@@ -3336,7 +3343,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6ef34a1dc88717d7debc023c17133c0d1137f10ed354c76edebca5779cc6c43b",
+          "Fingerprint": "sha256:c8570fcc67cd72a03846870b88b4badbe137f8d3d9660cfb174ac209e3e2e4fb",
           "Title": "golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs",
           "Description": "An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.",
           "Severity": "MEDIUM",

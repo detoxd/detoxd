@@ -61,30 +61,33 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 39 | `postgres:17.7-alpine3.21` | 42 | 16 | 26 | 62% |
 | 40 | `postgres:17.7-alpine3.22` | 16 | 16 | 0 | 0% |
 | 41 | `postgres:17.7-alpine3.23` | 16 | 16 | 0 | 0% |
-| 42 | `python:3.11-slim` | 72 | 69 | 3 | 4% |
-| 43 | `python:3.11.14-slim` | 72 | 69 | 3 | 4% |
-| 44 | `python:3.12-slim` | 69 | 67 | 2 | 3% |
-| 45 | `python:3.12.12-slim` | 69 | 67 | 2 | 3% |
-| 46 | `python:3.13-slim` | 68 | 67 | 1 | 1% |
-| 47 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
-| 48 | `python:3.13.12-slim` | 68 | 67 | 1 | 1% |
-| 49 | `python:3.14-slim` | 68 | 67 | 1 | 1% |
-| 50 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
-| 51 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
-| 52 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
-| 53 | `python:3.15.0a6-slim` | 67 | 67 | 0 | 0% |
-| 54 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
-| 55 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
-| 56 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
-| 57 | `redis:8.4.0-alpine` | 0 | 0 | 0 | 0% |
-| 58 | `redis:8.4.0-alpine3.22` | 0 | 0 | 0 | 0% |
-| 59 | `redis:8.4.1-alpine3.22` | 0 | 0 | 0 | 0% |
-| 60 | `redis:8.6-alpine` | 0 | 0 | 0 | 0% |
-| 61 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
-| 62 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
-| 63 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
-| 64 | `ubuntu:24.04` | 25 | 11 | 14 | 56% |
-| 65 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
+| 42 | `postgres:17.8-alpine` | 16 | 16 | 0 | 0% |
+| 43 | `postgres:17.8-alpine3.22` | 16 | 16 | 0 | 0% |
+| 44 | `postgres:17.8-alpine3.23` | 16 | 16 | 0 | 0% |
+| 45 | `python:3.11-slim` | 72 | 69 | 3 | 4% |
+| 46 | `python:3.11.14-slim` | 72 | 69 | 3 | 4% |
+| 47 | `python:3.12-slim` | 69 | 67 | 2 | 3% |
+| 48 | `python:3.12.12-slim` | 69 | 67 | 2 | 3% |
+| 49 | `python:3.13-slim` | 68 | 67 | 1 | 1% |
+| 50 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
+| 51 | `python:3.13.12-slim` | 68 | 67 | 1 | 1% |
+| 52 | `python:3.14-slim` | 68 | 67 | 1 | 1% |
+| 53 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
+| 54 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
+| 55 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
+| 56 | `python:3.15.0a6-slim` | 67 | 67 | 0 | 0% |
+| 57 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
+| 58 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
+| 59 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
+| 60 | `redis:8.4.0-alpine` | 0 | 0 | 0 | 0% |
+| 61 | `redis:8.4.0-alpine3.22` | 0 | 0 | 0 | 0% |
+| 62 | `redis:8.4.1-alpine3.22` | 0 | 0 | 0 | 0% |
+| 63 | `redis:8.6-alpine` | 0 | 0 | 0 | 0% |
+| 64 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
+| 65 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
+| 66 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
+| 67 | `ubuntu:24.04` | 25 | 11 | 14 | 56% |
+| 68 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
 
 ## Quick Start
 
@@ -134,4 +137,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-12*
+*Last updated: 2026-02-13*

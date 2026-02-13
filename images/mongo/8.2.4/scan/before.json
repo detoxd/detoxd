@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c5312-ee83-7bf9-b1aa-c724e0913023",
-  "CreatedAt": "2026-02-13T01:17:55.587787558+07:00",
+  "ReportID": "019c5837-35a7-79b0-a543-5f2e261de7ba",
+  "CreatedAt": "2026-02-14T01:15:39.175637999+07:00",
   "ArtifactID": "sha256:e93bdb87d1baf4e5a1a12d0b71f695870c13709a3a6bbe26b9bb4f760a776d03",
   "ArtifactName": "mongo:8.2.4",
   "ArtifactType": "container_image",
@@ -9290,6 +9290,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
+            "photon": 3,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -9475,6 +9476,7 @@
           ],
           "VendorSeverity": {
             "azure": 2,
+            "photon": 3,
             "redhat": 1,
             "ubuntu": 2
           },
@@ -9931,14 +9933,14 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/09/10/1",
-            "https://access.redhat.com/errata/RHSA-2026:1350",
+            "https://access.redhat.com/errata/RHSA-2026:1825",
             "https://access.redhat.com/security/cve/CVE-2025-9086",
             "https://bugzilla.redhat.com/2394750",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2394750",
             "https://curl.se/docs/CVE-2025-9086.html",
             "https://curl.se/docs/CVE-2025-9086.json",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086",
-            "https://errata.almalinux.org/9/ALSA-2026-1350.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1825.html",
             "https://errata.rockylinux.org/RLSA-2026:1350",
             "https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6",
             "https://hackerone.com/reports/3294999",
@@ -10361,12 +10363,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20559",
+            "https://access.redhat.com/errata/RHSA-2025:20145",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -10421,12 +10423,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20559",
+            "https://access.redhat.com/errata/RHSA-2025:20145",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -10481,12 +10483,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/11/01/6",
-            "https://access.redhat.com/errata/RHSA-2026:0067",
+            "https://access.redhat.com/errata/RHSA-2026:0002",
             "https://access.redhat.com/security/cve/CVE-2025-45582",
             "https://bugzilla.redhat.com/2379592",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2379592",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582",
-            "https://errata.almalinux.org/9/ALSA-2026-0067.html",
+            "https://errata.almalinux.org/10/ALSA-2026-0002.html",
             "https://errata.rockylinux.org/RLSA-2026:0067",
             "https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md",
             "https://linux.oracle.com/cve/CVE-2025-45582.html",
@@ -11025,7 +11027,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:791bb8983e57bb9a5a2a0ad3613c2e2579ea288d3b23a1a6afad731e598e13c0",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -11034,7 +11036,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -11044,14 +11047,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -11163,11 +11172,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -11229,12 +11238,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -11415,12 +11424,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -11583,12 +11592,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -11713,12 +11722,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -12812,7 +12821,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:2493619f62c267428c3cef8da73230e992adc9e182aec834622d2ecb97c2643d",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -12821,7 +12830,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -12831,14 +12841,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -12950,11 +12966,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -13016,12 +13032,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -13202,12 +13218,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -13370,12 +13386,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -13500,12 +13516,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -14599,7 +14615,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:897623e0bb658f109a772a7627d45ef406e35c54c70fb8a4427c73be277ca148",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -14608,7 +14624,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -14618,14 +14635,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -14737,11 +14760,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -14803,12 +14826,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -14989,12 +15012,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -15157,12 +15180,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -15287,12 +15310,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -16386,7 +16409,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:c3420cde60f61bcecfb7734b0ff83625c6adc37f2c2e0c48bff641af59ea16b0",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -16395,7 +16418,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -16405,14 +16429,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -16524,11 +16554,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -16590,12 +16620,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -16776,12 +16806,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -16944,12 +16974,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -17074,12 +17104,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -18186,7 +18216,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:9bbfcf2484190a0be8306d72cc153ce5886e07d2d5c748d7dff9203991edac75",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -18195,7 +18225,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -18205,14 +18236,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -18324,11 +18361,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -18390,12 +18427,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -18576,12 +18613,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -18744,12 +18781,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -18874,12 +18911,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -19973,7 +20010,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:15c1cbe90c944f6eea27efa8bce05177f34053d28cd2fb94231b2c3d7e4c993c",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -19982,7 +20019,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -19992,14 +20030,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -20111,11 +20155,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -20177,12 +20221,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -20363,12 +20407,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -20531,12 +20575,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -20661,12 +20705,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -21799,7 +21843,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:3889ac9e0161dcc99cc1521790ea161c4070ef8d74d3aa06df363a27d665d9b2",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -21808,7 +21852,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -21818,14 +21863,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -21937,11 +21988,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -22003,12 +22054,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -22189,12 +22240,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -22357,12 +22408,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -22487,12 +22538,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -23586,7 +23637,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:895ccc69fb4cc915e2f9f9f7fe9e03744a9798a550d1cc2b6b6b810b6c1e4d2d",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -23595,7 +23646,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -23605,14 +23657,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -23724,11 +23782,11 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/08/06/1",
-            "https://access.redhat.com/errata/RHSA-2025:20909",
+            "https://access.redhat.com/errata/RHSA-2025:20983",
             "https://access.redhat.com/security/cve/CVE-2025-47907",
             "https://bugzilla.redhat.com/2387083",
             "https://bugzilla.redhat.com/2393152",
-            "https://errata.almalinux.org/9/ALSA-2025-20909.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20983.html",
             "https://go.dev/cl/693735",
             "https://go.dev/issue/74831",
             "https://groups.google.com/g/golang-announce/c/x5MKroML2yM",
@@ -23790,12 +23848,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -23976,12 +24034,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
@@ -24144,12 +24202,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/04/04/4",
-            "https://access.redhat.com/errata/RHSA-2025:9635",
+            "https://access.redhat.com/errata/RHSA-2025:9146",
             "https://access.redhat.com/security/cve/CVE-2025-22871",
             "https://bugzilla.redhat.com/2358493",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2358493",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871",
-            "https://errata.almalinux.org/9/ALSA-2025-9635.html",
+            "https://errata.almalinux.org/10/ALSA-2025-9146.html",
             "https://errata.rockylinux.org/RLSA-2025:9635",
             "https://github.com/roadrunner-server/roadrunner",
             "https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa",
@@ -24274,12 +24332,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:15887",
+            "https://access.redhat.com/errata/RHSA-2025:10677",
             "https://access.redhat.com/security/cve/CVE-2025-4673",
             "https://bugzilla.redhat.com/2373305",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2373305",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673",
-            "https://errata.almalinux.org/9/ALSA-2025-15887.html",
+            "https://errata.almalinux.org/10/ALSA-2025-10677.html",
             "https://errata.rockylinux.org/RLSA-2025:15887",
             "https://go.dev/cl/679257",
             "https://go.dev/issue/73816",
@@ -25029,7 +25087,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:10ee2b0d69ec5eb8c5d7d462f2b4c05b94afea098d18d7362e18cf4ae7e86fb4",
-          "Title": "During session resumption in crypto/tls, if the underlying Config has  ...",
+          "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
           "CweIDs": [
@@ -25038,7 +25096,8 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 4,
-            "nvd": 4
+            "nvd": 4,
+            "redhat": 2
           },
           "CVSS": {
             "bitnami": {
@@ -25048,14 +25107,20 @@
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
               "V3Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
-            "https://pkg.go.dev/vuln/GO-2026-4337"
+            "https://pkg.go.dev/vuln/GO-2026-4337",
+            "https://www.cve.org/CVERecord?id=CVE-2025-68121"
           ],
           "PublishedDate": "2026-02-05T18:16:10.857Z",
           "LastModifiedDate": "2026-02-10T16:08:03.303Z"
@@ -25109,12 +25174,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/10/08/1",
-            "https://access.redhat.com/errata/RHSA-2026:1381",
+            "https://access.redhat.com/errata/RHSA-2026:1837",
             "https://access.redhat.com/security/cve/CVE-2025-58183",
             "https://bugzilla.redhat.com/2407258",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
-            "https://errata.almalinux.org/9/ALSA-2026-1381.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1837.html",
             "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
@@ -25295,12 +25360,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1908",
+            "https://access.redhat.com/errata/RHSA-2026:1907",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-1908.html",
+            "https://errata.almalinux.org/10/ALSA-2026-1907.html",
             "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
