@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c679c-4c78-7911-b9f3-a94acb98b978",
-  "CreatedAt": "2026-02-17T01:00:22.392596251+07:00",
+  "ReportID": "019c6cc2-afcf-7249-9b96-699a95fba67a",
+  "CreatedAt": "2026-02-18T01:00:24.271152952+07:00",
   "ArtifactID": "sha256:9e924b6a080e679bf0a4a2159f282ec19e5d2ce66dd0feb1b6b00f9d6c718752",
   "ArtifactName": "ubuntu:24.04",
   "ArtifactType": "container_image",
@@ -7392,6 +7392,108 @@
           "LastModifiedDate": "2025-04-02T17:15:37.79Z"
         },
         {
+          "VulnerabilityID": "CVE-2025-14831",
+          "PkgID": "libgnutls30t64@3.8.3-1.1ubuntu3.4",
+          "PkgName": "libgnutls30t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.4?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "c9feda717db29a40"
+          },
+          "InstalledVersion": "3.8.3-1.1ubuntu3.4",
+          "FixedVersion": "3.8.3-1.1ubuntu3.5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-14831",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:25ee204059da39b668cb6c6c009da00e36a730382f1364ff081e66b6736616fc",
+          "Title": "gnutls: GnuTLS: Denial of Service via excessive resource consumption during certificate verification",
+          "Description": "A flaw was found in GnuTLS. This vulnerability allows a denial of service (DoS) by excessive CPU (Central Processing Unit) and memory consumption via specially crafted malicious certificates containing a large number of name constraints and subject alternative names (SANs).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-407"
+          ],
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-14831",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2423177",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-14831",
+            "https://ubuntu.com/security/notices/USN-8043-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-14831"
+          ],
+          "PublishedDate": "2026-02-09T15:16:09.937Z",
+          "LastModifiedDate": "2026-02-09T16:08:35.29Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-9820",
+          "PkgID": "libgnutls30t64@3.8.3-1.1ubuntu3.4",
+          "PkgName": "libgnutls30t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.4?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "c9feda717db29a40"
+          },
+          "InstalledVersion": "3.8.3-1.1ubuntu3.4",
+          "FixedVersion": "3.8.3-1.1ubuntu3.5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-9820",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:d88f12f3161ea8caaeac18d5612b42b2d13c636a1f11b7bbd0faa54a1f0b3e2c",
+          "Title": "gnutls: Stack-based Buffer Overflow in gnutls_pkcs11_token_init() Function",
+          "Description": "A flaw was found in the GnuTLS library, specifically in the gnutls_pkcs11_token_init() function that handles PKCS#11 token initialization. When a token label longer than expected is processed, the function writes past the end of a fixed-size stack buffer. This programming error can cause the application using GnuTLS to crash or, in certain conditions, be exploited for code execution. As a result, systems or applications relying on GnuTLS may be vulnerable to a denial of service or local privilege escalation attacks.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-121"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "cbl-mariner": 2,
+            "redhat": 1,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/11/20/2",
+            "https://access.redhat.com/security/cve/CVE-2025-9820",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2392528",
+            "https://gitlab.com/gnutls/gnutls/-/commit/1d56f96f6ab5034d677136b9d50b5a75dff0faf5",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1732",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-9820",
+            "https://ubuntu.com/security/notices/USN-8043-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-9820",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2025-11-18"
+          ],
+          "PublishedDate": "2026-01-26T20:16:09.37Z",
+          "LastModifiedDate": "2026-01-27T14:59:34.073Z"
+        },
+        {
           "VulnerabilityID": "CVE-2025-8941",
           "PkgID": "libpam-modules@1.5.3-5ubuntu5.5",
           "PkgName": "libpam-modules",
@@ -7458,7 +7560,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -7534,7 +7636,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -7610,7 +7712,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -7686,7 +7788,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941",
             "https://errata.almalinux.org/9/ALSA-2025-15099.html",
-            "https://errata.rockylinux.org/RLSA-2025:14557",
+            "https://errata.rockylinux.org/RLSA-2025:15099",
             "https://linux.oracle.com/cve/CVE-2025-8941.html",
             "https://linux.oracle.com/errata/ELSA-2025-15099.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-8941",
@@ -8027,6 +8129,7 @@
           "VendorSeverity": {
             "alma": 3,
             "azure": 3,
+            "cbl-mariner": 3,
             "oracle-oval": 3,
             "photon": 3,
             "redhat": 2,
@@ -8127,6 +8230,7 @@
           "VendorSeverity": {
             "alma": 3,
             "azure": 3,
+            "cbl-mariner": 3,
             "oracle-oval": 3,
             "photon": 3,
             "redhat": 1,
@@ -8227,6 +8331,7 @@
           "VendorSeverity": {
             "alma": 3,
             "azure": 2,
+            "cbl-mariner": 2,
             "nvd": 3,
             "oracle-oval": 3,
             "photon": 3,
@@ -8332,6 +8437,7 @@
           "VendorSeverity": {
             "alma": 3,
             "azure": 2,
+            "cbl-mariner": 2,
             "oracle-oval": 3,
             "photon": 2,
             "redhat": 1,
