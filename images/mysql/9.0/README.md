@@ -4,11 +4,11 @@
 
 | Metric | Before | After | Fixed |
 |--------|--------|-------|-------|
-| Total Vulnerabilities | 219 | 85 | 134 |
-| Fixable | 219 | 85 | 134 |
+| Total Vulnerabilities | 228 | 85 | 143 |
+| Fixable | 228 | 85 | 143 |
 | Unfixable | 0 | 0 | - |
 
-**Reduction: 61%**
+**Reduction: 62%**
 
 ## Quick Start
 

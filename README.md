@@ -32,20 +32,20 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 10 | `httpd:2.4.66-alpine` | 2 | 0 | 2 | 100% |
 | 11 | `httpd:2.4.66-alpine3.22` | 33 | 0 | 33 | 100% |
 | 12 | `httpd:2.4.66-alpine3.23` | 2 | 0 | 2 | 100% |
-| 13 | `mongo:8.0` | 75 | 67 | 8 | 11% |
+| 13 | `mongo:8.0` | 69 | 67 | 2 | 3% |
 | 14 | `mongo:8.2-noble` | 225 | 219 | 6 | 3% |
 | 15 | `mongo:8.2.3` | 241 | 219 | 22 | 9% |
 | 16 | `mongo:8.2.3-noble` | 243 | 219 | 24 | 10% |
 | 17 | `mongo:8.2.4` | 227 | 219 | 8 | 4% |
 | 18 | `mongo:8.2.4-noble` | 227 | 219 | 8 | 4% |
-| 19 | `mongo:8.2.5` | 75 | 67 | 8 | 11% |
-| 20 | `mongo:8.2.5-noble` | 75 | 67 | 8 | 11% |
-| 21 | `mysql:9.0` | 219 | 85 | 134 | 61% |
-| 22 | `mysql:9.6-oracle` | 20 | 20 | 0 | 0% |
-| 23 | `mysql:9.6-oraclelinux9` | 20 | 20 | 0 | 0% |
-| 24 | `mysql:9.6.0` | 20 | 20 | 0 | 0% |
-| 25 | `mysql:9.6.0-oracle` | 20 | 20 | 0 | 0% |
-| 26 | `mysql:9.6.0-oraclelinux9` | 20 | 20 | 0 | 0% |
+| 19 | `mongo:8.2.5` | 69 | 67 | 2 | 3% |
+| 20 | `mongo:8.2.5-noble` | 69 | 67 | 2 | 3% |
+| 21 | `mysql:9.0` | 228 | 85 | 143 | 63% |
+| 22 | `mysql:9.6-oracle` | 29 | 20 | 9 | 31% |
+| 23 | `mysql:9.6-oraclelinux9` | 29 | 20 | 9 | 31% |
+| 24 | `mysql:9.6.0` | 29 | 20 | 9 | 31% |
+| 25 | `mysql:9.6.0-oracle` | 29 | 20 | 9 | 31% |
+| 26 | `mysql:9.6.0-oraclelinux9` | 29 | 20 | 9 | 31% |
 | 27 | `nginx:1.28-alpine` | 0 | 0 | 0 | 0% |
 | 28 | `nginx:1.28.1-alpine3.23` | 0 | 0 | 0 | 0% |
 | 29 | `nginx:1.28.2-alpine3.23` | 0 | 0 | 0 | 0% |
@@ -55,7 +55,7 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 33 | `nginx:1.29.4-alpine3.23` | 0 | 0 | 0 | 0% |
 | 34 | `nginx:1.29.5-alpine` | 0 | 0 | 0 | 0% |
 | 35 | `nginx:1.29.5-alpine3.23` | 0 | 0 | 0 | 0% |
-| 36 | `node:22-alpine` | 11 | 13 | -2 | -18% |
+| 36 | `node:22-alpine` | 14 | 17 | -3 | -21% |
 | 37 | `postgres:17-alpine` | 16 | 16 | 0 | 0% |
 | 38 | `postgres:17.7-alpine` | 16 | 16 | 0 | 0% |
 | 39 | `postgres:17.7-alpine3.21` | 42 | 16 | 26 | 62% |
@@ -64,18 +64,18 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 42 | `postgres:17.8-alpine` | 16 | 16 | 0 | 0% |
 | 43 | `postgres:17.8-alpine3.22` | 16 | 16 | 0 | 0% |
 | 44 | `postgres:17.8-alpine3.23` | 16 | 16 | 0 | 0% |
-| 45 | `python:3.11-slim` | 72 | 69 | 3 | 4% |
-| 46 | `python:3.11.14-slim` | 72 | 69 | 3 | 4% |
-| 47 | `python:3.12-slim` | 69 | 67 | 2 | 3% |
-| 48 | `python:3.12.12-slim` | 69 | 67 | 2 | 3% |
-| 49 | `python:3.13-slim` | 68 | 67 | 1 | 1% |
+| 45 | `python:3.11-slim` | 73 | 70 | 3 | 4% |
+| 46 | `python:3.11.14-slim` | 73 | 70 | 3 | 4% |
+| 47 | `python:3.12-slim` | 70 | 68 | 2 | 3% |
+| 48 | `python:3.12.12-slim` | 70 | 68 | 2 | 3% |
+| 49 | `python:3.13-slim` | 69 | 68 | 1 | 1% |
 | 50 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
 | 51 | `python:3.13.12-slim` | 68 | 67 | 1 | 1% |
 | 52 | `python:3.14-slim` | 68 | 67 | 1 | 1% |
 | 53 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
 | 54 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
 | 55 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
-| 56 | `python:3.15.0a6-slim` | 67 | 67 | 0 | 0% |
+| 56 | `python:3.15.0a6-slim` | 68 | 68 | 0 | 0% |
 | 57 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
 | 58 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
 | 59 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
@@ -86,7 +86,7 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 64 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
 | 65 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
 | 66 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
-| 67 | `ubuntu:24.04` | 27 | 11 | 16 | 59% |
+| 67 | `ubuntu:24.04` | 13 | 11 | 2 | 15% |
 | 68 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
 
 ## Quick Start
@@ -137,4 +137,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-17*
+*Last updated: 2026-02-18*

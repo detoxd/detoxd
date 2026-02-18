@@ -9,7 +9,7 @@ FROM ${BASE_IMAGE}
 LABEL maintainer="detoxd"
 LABEL detoxd.iteration="1"
 LABEL detoxd.fixable.count="1"
-LABEL detoxd.unfixable.count="67"
+LABEL detoxd.unfixable.count="68"
 
 # Fix Python packages (only if pip is available)
 RUN if command -v pip >/dev/null 2>&1 || command -v pip3 >/dev/null 2>&1; then \

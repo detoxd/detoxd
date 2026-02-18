@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c6cc7-fc29-7348-8882-e5b033928bed",
-  "CreatedAt": "2026-02-18T01:06:11.497217891+07:00",
-  "ArtifactID": "sha256:0135869c33a09a0beecca9f750affc5d204c16e6e7bdd0965714e9899c042ff4",
+  "ReportID": "019c71ee-464b-7710-b51e-487da9b223df",
+  "CreatedAt": "2026-02-19T01:06:06.923465766+07:00",
+  "ArtifactID": "sha256:abeacbef6841a7cd455c7e5537d7d3c9e61d8bfe8901b9ecb7b7a62cf2ba6523",
   "ArtifactName": "detoxd/node:22-alpine-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,14 +14,14 @@
       "Family": "alpine",
       "Name": "3.23.3"
     },
-    "ImageID": "sha256:f62f87b714fcfc6b649c4ce8296daa8759a992c4a78a6df54bcbfcdc01466a3d",
+    "ImageID": "sha256:be617e6fd7c5efefd20fc07d71681123790fd2f65f509f3f2c5ff77e2f818f1a",
     "DiffIDs": [
       "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
       "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e",
       "sha256:02289bdc8da66779c084441cadeb5580c50bfe67eb37b7ccfa24854433733f47",
       "sha256:d2f2025518d6d84c30eadd293be9fa61f0ac168b0865956ccbde715b7e6142e4",
-      "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f",
-      "sha256:e00ebeb16fec0c95f94694473fa7ce61f9e7b46ebaaaf49bd22a30cbaf5c72f1"
+      "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa",
+      "sha256:16c7a72f8f47168166e91f69356fa0d7790b09f843802664a78973c5a3c161a7"
     ],
     "RepoTags": [
       "detoxd/node:22-alpine-detox.1"
@@ -29,7 +29,7 @@
     "Reference": "detoxd/node:22-alpine-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-18T02:06:08.648503036+08:00",
+      "created": "2026-02-19T02:06:03.916512811+08:00",
       "history": [
         {
           "created": "2026-01-28T01:18:04Z",
@@ -82,36 +82,36 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:06:08Z",
+          "created": "2026-02-18T18:06:03Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:06:08Z",
+          "created": "2026-02-18T18:06:03Z",
           "created_by": "LABEL detoxd.iteration=1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:06:08Z",
-          "created_by": "LABEL detoxd.fixable.count=11",
+          "created": "2026-02-18T18:06:03Z",
+          "created_by": "LABEL detoxd.fixable.count=14",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:06:08Z",
+          "created": "2026-02-18T18:06:03Z",
           "created_by": "LABEL detoxd.unfixable.count=0",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:06:08Z",
+          "created": "2026-02-18T18:06:03Z",
           "created_by": "RUN /bin/sh -c if command -v npm \u003e/dev/null 2\u003e\u00261; then     npm install -g diff@8.0.3 glob@11.1.0 tar@7.5.3 \u0026\u0026     npm cache clean --force;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-17T18:06:08Z",
+          "created": "2026-02-18T18:06:03Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -124,8 +124,8 @@
           "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e",
           "sha256:02289bdc8da66779c084441cadeb5580c50bfe67eb37b7ccfa24854433733f47",
           "sha256:d2f2025518d6d84c30eadd293be9fa61f0ac168b0865956ccbde715b7e6142e4",
-          "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f",
-          "sha256:e00ebeb16fec0c95f94694473fa7ce61f9e7b46ebaaaf49bd22a30cbaf5c72f1"
+          "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa",
+          "sha256:16c7a72f8f47168166e91f69356fa0d7790b09f843802664a78973c5a3c161a7"
         ]
       },
       "config": {
@@ -141,7 +141,7 @@
           "YARN_VERSION=1.22.22"
         ],
         "Labels": {
-          "detoxd.fixable.count": "11",
+          "detoxd.fixable.count": "14",
           "detoxd.iteration": "1",
           "detoxd.unfixable.count": "0",
           "maintainer": "detoxd"
@@ -168,11 +168,11 @@
       },
       {
         "Size": 9102848,
-        "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+        "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:e00ebeb16fec0c95f94694473fa7ce61f9e7b46ebaaaf49bd22a30cbaf5c72f1"
+        "DiffID": "sha256:16c7a72f8f47168166e91f69356fa0d7790b09f843802664a78973c5a3c161a7"
       }
     ]
   },
@@ -805,7 +805,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/@isaacs/cliui/package.json",
           "AnalyzedBy": "node-pkg"
@@ -839,7 +839,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/tar/node_modules/@isaacs/fs-minipass/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1440,18 +1440,18 @@
           "AnalyzedBy": "node-pkg"
         },
         {
-          "ID": "balanced-match@4.0.2",
+          "ID": "balanced-match@4.0.3",
           "Name": "balanced-match",
           "Identifier": {
-            "PURL": "pkg:npm/balanced-match@4.0.2",
-            "UID": "b155a659a7b6a81a"
+            "PURL": "pkg:npm/balanced-match@4.0.3",
+            "UID": "a98edf80fcc76dc5"
           },
-          "Version": "4.0.2",
+          "Version": "4.0.3",
           "Licenses": [
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/balanced-match/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1519,7 +1519,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/brace-expansion/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1621,7 +1621,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/tar/node_modules/chownr/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1774,7 +1774,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/cross-spawn/package.json",
           "AnalyzedBy": "node-pkg"
@@ -1859,7 +1859,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/diff/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2046,7 +2046,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/foreground-child/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2131,7 +2131,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2386,7 +2386,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/isexe/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2454,7 +2454,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/jackspeak/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2777,7 +2777,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/lru-cache/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2811,7 +2811,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/minimatch/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2947,7 +2947,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/minipass/package.json",
           "AnalyzedBy": "node-pkg"
@@ -2981,7 +2981,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/tar/node_modules/minipass/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3117,7 +3117,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/tar/node_modules/minizlib/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3525,7 +3525,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/package-json-from-dist/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3610,7 +3610,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/path-key/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3661,7 +3661,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/path-scurry/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3930,7 +3930,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/shebang-command/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3964,7 +3964,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/shebang-regex/package.json",
           "AnalyzedBy": "node-pkg"
@@ -3998,7 +3998,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/signal-exit/package.json",
           "AnalyzedBy": "node-pkg"
@@ -4440,7 +4440,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/tar/package.json",
           "AnalyzedBy": "node-pkg"
@@ -4644,7 +4644,7 @@
             "ISC"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/glob/node_modules/which/package.json",
           "AnalyzedBy": "node-pkg"
@@ -4797,7 +4797,7 @@
             "BlueOak-1.0.0"
           ],
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "FilePath": "usr/local/lib/node_modules/tar/node_modules/yallist/package.json",
           "AnalyzedBy": "node-pkg"
@@ -4846,7 +4846,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:4e66748b3215c24adc7bf1d011706821ba66d515397ecc4617cbbb12a97b66b9",
+          "Fingerprint": "sha256:c2dddfa408a3cdd1064e5b59a475db103ea3f480c0117e1b739c8777285e2b55",
           "Title": "jsdiff: denial of service vulnerability in parsePatch and applyPatch",
           "Description": "jsdiff is a JavaScript text differencing implementation. Prior to versions 8.0.3, 5.2.2, 4.0.4, and 3.5.1, attempting to parse a patch whose filename headers contain the line break characters `\\r`, `\\u2028`, or `\\u2029` can cause the `parsePatch` method to enter an infinite loop. It then consumes memory without limit until the process crashes due to running out of memory. Applications are therefore likely to be vulnerable to a denial-of-service attack if they call `parsePatch` with a user-provided patch as input. A large payload is not needed to trigger the vulnerability, so size limits on user input do not provide any protection. Furthermore, some applications may be vulnerable even when calling `parsePatch` on a patch generated by the application itself if the user is nonetheless able to control the filename headers (e.g. by directly providing the filenames of the files to be diffed). The `applyPatch` method is similarly affected if (and only if) called with a string representation of a patch as an argument, since under the hood it parses that string using `parsePatch`. Other methods of the library are unaffected. Finally, a second and lesser interdependent bug - a ReDOS - also exhibits when those same line break characters are present in a patch's *patch* header (also known as its \"leading garbage\"). A maliciously-crafted patch header of length *n* can take `parsePatch` O(*n*³) time to parse. Versions 8.0.3, 5.2.2, 4.0.4, and 3.5.1 contain a fix. As a workaround, do not attempt to parse patches that contain any of these characters: `\\r`, `\\u2028`, or `\\u2029`.",
           "Severity": "LOW",
@@ -4859,6 +4859,10 @@
             "redhat": 3
           },
           "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+              "V40Score": 2.7
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
@@ -4902,7 +4906,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:425e58ec24222f3b6c83138f492d42deee61e56dbceb84a22ae8f7469add3dbe",
+          "Fingerprint": "sha256:8b31fb92eff6c20c03565435770ec3cb1b5a2903e69eb5974971a37a9e3aa356",
           "Title": "glob: glob: Command Injection Vulnerability via Malicious Filenames",
           "Description": "Glob matches files using patterns the shell uses. Starting in version 10.2.0 and prior to versions 10.5.0 and 11.1.0, the glob CLI contains a command injection vulnerability in its -c/--cmd option that allows arbitrary command execution when processing files with malicious names. When glob -c \u003ccommand\u003e \u003cpatterns\u003e are used, matched filenames are passed to a shell with shell: true, enabling shell metacharacters in filenames to trigger command injection and achieve arbitrary code execution under the user or CI account privileges. This issue has been patched in versions 10.5.0 and 11.1.0.",
           "Severity": "HIGH",
@@ -4960,7 +4964,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:c93dce2d39b30ad1e857905a035f2abb2fb8bcf95d618f0928dfb049735fe3a7",
+          "Fingerprint": "sha256:ee9a22f8fb6fd769ac55c1b37ad74a0f8d72afcc01f5cf6c8e2f88fd3f4a6e63",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
           "Description": "node-tar is a Tar for Node.js. The node-tar library (\u003c= 7.5.2) fails to sanitize the linkpath of Link (hardlink) and SymbolicLink entries when preservePaths is false (the default secure behavior). This allows malicious archives to bypass the extraction root restriction, leading to Arbitrary File Overwrite via hardlinks and Symlink Poisoning via absolute symlink targets. This vulnerability is fixed in 7.5.3.",
           "Severity": "HIGH",
@@ -4972,6 +4976,10 @@
             "redhat": 3
           },
           "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
+              "V40Score": 8.2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
               "V3Score": 8.2
@@ -5013,7 +5021,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:b809c95b7028abe537a3073bd7d281be9583280b53494ac64756f4f0d6ef206a",
+          "Fingerprint": "sha256:5e67a53cad89f870fb7182570f4b274ee6687d8691243721c09075801cd28954",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
           "Description": "node-tar,a Tar for Node.js, has a race condition vulnerability in versions up to and including 7.5.3. This is due to an incomplete handling of Unicode path collisions in the `path-reservations` system. On case-insensitive or normalization-insensitive filesystems (such as macOS APFS, In which it has been tested), the library fails to lock colliding paths (e.g., `ß` and `ss`), allowing them to be processed in parallel. This bypasses the library's internal concurrency safeguards and permits Symlink Poisoning attacks via race conditions. The library uses a `PathReservations` system to ensure that metadata checks and file operations for the same path are serialized. This prevents race conditions where one entry might clobber another concurrently. This is a Race Condition which enables Arbitrary File Overwrite. This vulnerability affects users and systems using node-tar on macOS (APFS/HFS+). Because of using `NFD` Unicode normalization (in which `ß` and `ss` are different), conflicting paths do not have their order properly preserved under filesystems that ignore Unicode normalization (e.g., APFS (in which `ß` causes an inode collision with `ss`)). This enables an attacker to circumvent internal parallelization locks (`PathReservations`) using conflicting filenames within a malicious tar archive. The patch in version 7.5.4 updates `path-reservations.js` to use a normalization form that matches the target filesystem's behavior (e.g., `NFKD`), followed by first `toLocaleLowerCase('en')` and then `toLocaleUpperCase('en')`. As a workaround, users who cannot upgrade promptly, and who are programmatically using `node-tar` to extract arbitrary tarball data should filter out all `SymbolicLink` entries (as npm does) to defend against arbitrary file writes via this file system entry name collision issue.",
           "Severity": "HIGH",
@@ -5072,7 +5080,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:108b9d757a81e0076b7908386fbd48ca93ffd40d23451d3ffceef8c19b8aae4d",
+          "Fingerprint": "sha256:f414800d1119e2fd8597583ac95e81b8414ac25ae6f4e8415b1bdd034b8738df",
           "Title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
           "Description": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink entries uses different path resolution semantics than the actual hardlink creation logic. This mismatch allows an attacker to craft a malicious TAR archive that bypasses path traversal protections and creates hardlinks to arbitrary files outside the extraction directory. Version 7.5.7 contains a fix for the issue.",
           "Severity": "HIGH",
@@ -5106,6 +5114,51 @@
           "LastModifiedDate": "2026-02-02T14:30:10.89Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-26960",
+          "VendorIDs": [
+            "GHSA-83g3-92jg-28cx"
+          ],
+          "PkgID": "tar@6.2.1",
+          "PkgName": "tar",
+          "PkgPath": "usr/local/lib/node_modules/npm/node_modules/tar/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/tar@6.2.1",
+            "UID": "da51341d82b508b9"
+          },
+          "InstalledVersion": "6.2.1",
+          "FixedVersion": "7.5.8",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26960",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:5b59f0580c191dfd475a6871f5c462577396385ebc5cabbe79cac00cf20b28de",
+          "Title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+          "Description": "### Summary\n`tar.extract()` in Node `tar` allows an attacker-controlled archive to create a hardlink inside the extraction directory that points to a file outside the extraction root, using default options.\n\nThis enables **arbitrary file read and write** as the extracting user (no root, no chmod, no `preservePaths`).\n\nSeverity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive.\n\n### Details\nThe bypass chain uses two symlinks plus one hardlink:\n\n1. `a/b/c/up -\u003e ../..`\n2. `a/b/escape -\u003e c/up/../..`\n3. `exfil` (hardlink) -\u003e `a/b/escape/\u003ctarget-relative-to-parent-of-extract\u003e`\n\nWhy this works:\n\n- Linkpath checks are string-based and do not resolve symlinks on disk for hardlink target safety.\n  - See `STRIPABSOLUTEPATH` logic in:\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:255`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:268`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:281`\n\n- Hardlink extraction resolves target as `path.resolve(cwd, entry.linkpath)` and then calls `fs.link(target, destination)`.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:566`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:567`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:703`\n\n- Parent directory safety checks (`mkdir` + symlink detection) are applied to the destination path of the extracted entry, not to the resolved hardlink target path.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:617`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:619`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:27`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:101`\n\nAs a result, `exfil` is created inside extraction root but linked to an external file. The PoC confirms shared inode and successful read+write via `exfil`.\n\n### PoC\n[hardlink.js](https://github.com/user-attachments/files/25240082/hardlink.js)\nEnvironment used for validation:\n\n- Node: `v25.4.0`\n- tar: `7.5.7`\n- OS: macOS Darwin 25.2.0\n- Extract options: defaults (`tar.extract({ file, cwd })`)\n\nSteps:\n\n1. Prepare/locate a `tar` module. If `require('tar')` is not available locally, set `TAR_MODULE` to an absolute path to a tar package directory.\n\n2. Run:\n\n```bash\nTAR_MODULE=\"$(cd '../tar-audit-setuid - CVE/node_modules/tar' \u0026\u0026 pwd)\" node hardlink.js\n```\n\n3. Expected vulnerable output (key lines):\n\n```text\nsame_inode=true\nread_ok=true\nwrite_ok=true\nresult=VULNERABLE\n```\n\nInterpretation:\n\n- `same_inode=true`: extracted `exfil` and external secret are the same file object.\n- `read_ok=true`: reading `exfil` leaks external content.\n- `write_ok=true`: writing `exfil` modifies external file.\n\n### Impact\nVulnerability type:\n\n- Arbitrary file read/write via archive extraction path confusion and link resolution.\n\nWho is impacted:\n\n- Any application/service that extracts attacker-controlled tar archives with Node `tar` defaults.\n- Impact scope is the privileges of the extracting process user.\n\nPotential outcomes:\n\n- Read sensitive files reachable by the process user.\n- Overwrite writable files outside extraction root.\n- Escalate impact depending on deployment context (keys, configs, scripts, app data).",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
+            "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2026-23745",
           "VendorIDs": [
             "GHSA-8qq5-rm4j-mr97"
@@ -5130,7 +5183,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:cb264e0641ea1e74cf82924ca1e35e7aeac7dd21ec446c36a926076b78de34d9",
+          "Fingerprint": "sha256:45877a86742e5985808a0b0724b6de9e545d2978a30abc93b3a6b5379eb9fb0d",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
           "Description": "node-tar is a Tar for Node.js. The node-tar library (\u003c= 7.5.2) fails to sanitize the linkpath of Link (hardlink) and SymbolicLink entries when preservePaths is false (the default secure behavior). This allows malicious archives to bypass the extraction root restriction, leading to Arbitrary File Overwrite via hardlinks and Symlink Poisoning via absolute symlink targets. This vulnerability is fixed in 7.5.3.",
           "Severity": "HIGH",
@@ -5142,6 +5195,10 @@
             "redhat": 3
           },
           "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
+              "V40Score": 8.2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
               "V3Score": 8.2
@@ -5183,7 +5240,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:cb264e0641ea1e74cf82924ca1e35e7aeac7dd21ec446c36a926076b78de34d9",
+          "Fingerprint": "sha256:45877a86742e5985808a0b0724b6de9e545d2978a30abc93b3a6b5379eb9fb0d",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
           "Description": "node-tar is a Tar for Node.js. The node-tar library (\u003c= 7.5.2) fails to sanitize the linkpath of Link (hardlink) and SymbolicLink entries when preservePaths is false (the default secure behavior). This allows malicious archives to bypass the extraction root restriction, leading to Arbitrary File Overwrite via hardlinks and Symlink Poisoning via absolute symlink targets. This vulnerability is fixed in 7.5.3.",
           "Severity": "HIGH",
@@ -5195,6 +5252,10 @@
             "redhat": 3
           },
           "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
+              "V40Score": 8.2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
               "V3Score": 8.2
@@ -5236,7 +5297,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:5fa0e47382b89113c144fe6eaf89c938e0de2ac5044f0304977d2ebc534b0813",
+          "Fingerprint": "sha256:44087ab3dde7003aecd58e180f2d75145e46719a0982696dbbf4fa3c24d7f80d",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
           "Description": "node-tar,a Tar for Node.js, has a race condition vulnerability in versions up to and including 7.5.3. This is due to an incomplete handling of Unicode path collisions in the `path-reservations` system. On case-insensitive or normalization-insensitive filesystems (such as macOS APFS, In which it has been tested), the library fails to lock colliding paths (e.g., `ß` and `ss`), allowing them to be processed in parallel. This bypasses the library's internal concurrency safeguards and permits Symlink Poisoning attacks via race conditions. The library uses a `PathReservations` system to ensure that metadata checks and file operations for the same path are serialized. This prevents race conditions where one entry might clobber another concurrently. This is a Race Condition which enables Arbitrary File Overwrite. This vulnerability affects users and systems using node-tar on macOS (APFS/HFS+). Because of using `NFD` Unicode normalization (in which `ß` and `ss` are different), conflicting paths do not have their order properly preserved under filesystems that ignore Unicode normalization (e.g., APFS (in which `ß` causes an inode collision with `ss`)). This enables an attacker to circumvent internal parallelization locks (`PathReservations`) using conflicting filenames within a malicious tar archive. The patch in version 7.5.4 updates `path-reservations.js` to use a normalization form that matches the target filesystem's behavior (e.g., `NFKD`), followed by first `toLocaleLowerCase('en')` and then `toLocaleUpperCase('en')`. As a workaround, users who cannot upgrade promptly, and who are programmatically using `node-tar` to extract arbitrary tarball data should filter out all `SymbolicLink` entries (as npm does) to defend against arbitrary file writes via this file system entry name collision issue.",
           "Severity": "HIGH",
@@ -5295,7 +5356,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:5fa0e47382b89113c144fe6eaf89c938e0de2ac5044f0304977d2ebc534b0813",
+          "Fingerprint": "sha256:44087ab3dde7003aecd58e180f2d75145e46719a0982696dbbf4fa3c24d7f80d",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
           "Description": "node-tar,a Tar for Node.js, has a race condition vulnerability in versions up to and including 7.5.3. This is due to an incomplete handling of Unicode path collisions in the `path-reservations` system. On case-insensitive or normalization-insensitive filesystems (such as macOS APFS, In which it has been tested), the library fails to lock colliding paths (e.g., `ß` and `ss`), allowing them to be processed in parallel. This bypasses the library's internal concurrency safeguards and permits Symlink Poisoning attacks via race conditions. The library uses a `PathReservations` system to ensure that metadata checks and file operations for the same path are serialized. This prevents race conditions where one entry might clobber another concurrently. This is a Race Condition which enables Arbitrary File Overwrite. This vulnerability affects users and systems using node-tar on macOS (APFS/HFS+). Because of using `NFD` Unicode normalization (in which `ß` and `ss` are different), conflicting paths do not have their order properly preserved under filesystems that ignore Unicode normalization (e.g., APFS (in which `ß` causes an inode collision with `ss`)). This enables an attacker to circumvent internal parallelization locks (`PathReservations`) using conflicting filenames within a malicious tar archive. The patch in version 7.5.4 updates `path-reservations.js` to use a normalization form that matches the target filesystem's behavior (e.g., `NFKD`), followed by first `toLocaleLowerCase('en')` and then `toLocaleUpperCase('en')`. As a workaround, users who cannot upgrade promptly, and who are programmatically using `node-tar` to extract arbitrary tarball data should filter out all `SymbolicLink` entries (as npm does) to defend against arbitrary file writes via this file system entry name collision issue.",
           "Severity": "HIGH",
@@ -5354,7 +5415,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:75cce3cb7bc2295709ee4087b8e9194ac329f2b2ad4c366a90e813579e333f93",
+          "Fingerprint": "sha256:0d313a39807c2ea58af13b093ba160d859a8b3b99460b0ddcca1e0cee9f72731",
           "Title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
           "Description": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink entries uses different path resolution semantics than the actual hardlink creation logic. This mismatch allows an attacker to craft a malicious TAR archive that bypasses path traversal protections and creates hardlinks to arbitrary files outside the extraction directory. Version 7.5.7 contains a fix for the issue.",
           "Severity": "HIGH",
@@ -5412,7 +5473,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:75cce3cb7bc2295709ee4087b8e9194ac329f2b2ad4c366a90e813579e333f93",
+          "Fingerprint": "sha256:0d313a39807c2ea58af13b093ba160d859a8b3b99460b0ddcca1e0cee9f72731",
           "Title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
           "Description": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink entries uses different path resolution semantics than the actual hardlink creation logic. This mismatch allows an attacker to craft a malicious TAR archive that bypasses path traversal protections and creates hardlinks to arbitrary files outside the extraction directory. Version 7.5.7 contains a fix for the issue.",
           "Severity": "HIGH",
@@ -5446,6 +5507,96 @@
           "LastModifiedDate": "2026-02-02T14:30:10.89Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-26960",
+          "VendorIDs": [
+            "GHSA-83g3-92jg-28cx"
+          ],
+          "PkgID": "tar@7.4.3",
+          "PkgName": "tar",
+          "PkgPath": "usr/local/lib/node_modules/npm/node_modules/cacache/node_modules/tar/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/tar@7.4.3",
+            "UID": "32af9b8b4cc0a7c1"
+          },
+          "InstalledVersion": "7.4.3",
+          "FixedVersion": "7.5.8",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26960",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:0230d7e1337e323d35be9b29b7c0db23ebe69743556e7adb84775091a8db1786",
+          "Title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+          "Description": "### Summary\n`tar.extract()` in Node `tar` allows an attacker-controlled archive to create a hardlink inside the extraction directory that points to a file outside the extraction root, using default options.\n\nThis enables **arbitrary file read and write** as the extracting user (no root, no chmod, no `preservePaths`).\n\nSeverity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive.\n\n### Details\nThe bypass chain uses two symlinks plus one hardlink:\n\n1. `a/b/c/up -\u003e ../..`\n2. `a/b/escape -\u003e c/up/../..`\n3. `exfil` (hardlink) -\u003e `a/b/escape/\u003ctarget-relative-to-parent-of-extract\u003e`\n\nWhy this works:\n\n- Linkpath checks are string-based and do not resolve symlinks on disk for hardlink target safety.\n  - See `STRIPABSOLUTEPATH` logic in:\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:255`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:268`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:281`\n\n- Hardlink extraction resolves target as `path.resolve(cwd, entry.linkpath)` and then calls `fs.link(target, destination)`.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:566`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:567`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:703`\n\n- Parent directory safety checks (`mkdir` + symlink detection) are applied to the destination path of the extracted entry, not to the resolved hardlink target path.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:617`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:619`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:27`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:101`\n\nAs a result, `exfil` is created inside extraction root but linked to an external file. The PoC confirms shared inode and successful read+write via `exfil`.\n\n### PoC\n[hardlink.js](https://github.com/user-attachments/files/25240082/hardlink.js)\nEnvironment used for validation:\n\n- Node: `v25.4.0`\n- tar: `7.5.7`\n- OS: macOS Darwin 25.2.0\n- Extract options: defaults (`tar.extract({ file, cwd })`)\n\nSteps:\n\n1. Prepare/locate a `tar` module. If `require('tar')` is not available locally, set `TAR_MODULE` to an absolute path to a tar package directory.\n\n2. Run:\n\n```bash\nTAR_MODULE=\"$(cd '../tar-audit-setuid - CVE/node_modules/tar' \u0026\u0026 pwd)\" node hardlink.js\n```\n\n3. Expected vulnerable output (key lines):\n\n```text\nsame_inode=true\nread_ok=true\nwrite_ok=true\nresult=VULNERABLE\n```\n\nInterpretation:\n\n- `same_inode=true`: extracted `exfil` and external secret are the same file object.\n- `read_ok=true`: reading `exfil` leaks external content.\n- `write_ok=true`: writing `exfil` modifies external file.\n\n### Impact\nVulnerability type:\n\n- Arbitrary file read/write via archive extraction path confusion and link resolution.\n\nWho is impacted:\n\n- Any application/service that extracts attacker-controlled tar archives with Node `tar` defaults.\n- Impact scope is the privileges of the extracting process user.\n\nPotential outcomes:\n\n- Read sensitive files reachable by the process user.\n- Overwrite writable files outside extraction root.\n- Escalate impact depending on deployment context (keys, configs, scripts, app data).",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
+            "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-26960",
+          "VendorIDs": [
+            "GHSA-83g3-92jg-28cx"
+          ],
+          "PkgID": "tar@7.4.3",
+          "PkgName": "tar",
+          "PkgPath": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/tar/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/tar@7.4.3",
+            "UID": "41eb4742f054bf19"
+          },
+          "InstalledVersion": "7.4.3",
+          "FixedVersion": "7.5.8",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26960",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:0230d7e1337e323d35be9b29b7c0db23ebe69743556e7adb84775091a8db1786",
+          "Title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+          "Description": "### Summary\n`tar.extract()` in Node `tar` allows an attacker-controlled archive to create a hardlink inside the extraction directory that points to a file outside the extraction root, using default options.\n\nThis enables **arbitrary file read and write** as the extracting user (no root, no chmod, no `preservePaths`).\n\nSeverity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive.\n\n### Details\nThe bypass chain uses two symlinks plus one hardlink:\n\n1. `a/b/c/up -\u003e ../..`\n2. `a/b/escape -\u003e c/up/../..`\n3. `exfil` (hardlink) -\u003e `a/b/escape/\u003ctarget-relative-to-parent-of-extract\u003e`\n\nWhy this works:\n\n- Linkpath checks are string-based and do not resolve symlinks on disk for hardlink target safety.\n  - See `STRIPABSOLUTEPATH` logic in:\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:255`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:268`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:281`\n\n- Hardlink extraction resolves target as `path.resolve(cwd, entry.linkpath)` and then calls `fs.link(target, destination)`.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:566`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:567`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:703`\n\n- Parent directory safety checks (`mkdir` + symlink detection) are applied to the destination path of the extracted entry, not to the resolved hardlink target path.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:617`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:619`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:27`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:101`\n\nAs a result, `exfil` is created inside extraction root but linked to an external file. The PoC confirms shared inode and successful read+write via `exfil`.\n\n### PoC\n[hardlink.js](https://github.com/user-attachments/files/25240082/hardlink.js)\nEnvironment used for validation:\n\n- Node: `v25.4.0`\n- tar: `7.5.7`\n- OS: macOS Darwin 25.2.0\n- Extract options: defaults (`tar.extract({ file, cwd })`)\n\nSteps:\n\n1. Prepare/locate a `tar` module. If `require('tar')` is not available locally, set `TAR_MODULE` to an absolute path to a tar package directory.\n\n2. Run:\n\n```bash\nTAR_MODULE=\"$(cd '../tar-audit-setuid - CVE/node_modules/tar' \u0026\u0026 pwd)\" node hardlink.js\n```\n\n3. Expected vulnerable output (key lines):\n\n```text\nsame_inode=true\nread_ok=true\nwrite_ok=true\nresult=VULNERABLE\n```\n\nInterpretation:\n\n- `same_inode=true`: extracted `exfil` and external secret are the same file object.\n- `read_ok=true`: reading `exfil` leaks external content.\n- `write_ok=true`: writing `exfil` modifies external file.\n\n### Impact\nVulnerability type:\n\n- Arbitrary file read/write via archive extraction path confusion and link resolution.\n\nWho is impacted:\n\n- Any application/service that extracts attacker-controlled tar archives with Node `tar` defaults.\n- Impact scope is the privileges of the extracting process user.\n\nPotential outcomes:\n\n- Read sensitive files reachable by the process user.\n- Overwrite writable files outside extraction root.\n- Escalate impact depending on deployment context (keys, configs, scripts, app data).",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
+            "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2026-23950",
           "VendorIDs": [
             "GHSA-r6q2-hw4h-h46w"
@@ -5461,7 +5612,7 @@
           "FixedVersion": "7.5.4",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-23950",
@@ -5470,7 +5621,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:4eddd6e88fa338b61e68bda5c4ab7d42589a5230ec599b57faa873511cdd0880",
+          "Fingerprint": "sha256:ee2745f1937b03e2515786212be13d25c57616da5b5b30343baae81b389e58a8",
           "Title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
           "Description": "node-tar,a Tar for Node.js, has a race condition vulnerability in versions up to and including 7.5.3. This is due to an incomplete handling of Unicode path collisions in the `path-reservations` system. On case-insensitive or normalization-insensitive filesystems (such as macOS APFS, In which it has been tested), the library fails to lock colliding paths (e.g., `ß` and `ss`), allowing them to be processed in parallel. This bypasses the library's internal concurrency safeguards and permits Symlink Poisoning attacks via race conditions. The library uses a `PathReservations` system to ensure that metadata checks and file operations for the same path are serialized. This prevents race conditions where one entry might clobber another concurrently. This is a Race Condition which enables Arbitrary File Overwrite. This vulnerability affects users and systems using node-tar on macOS (APFS/HFS+). Because of using `NFD` Unicode normalization (in which `ß` and `ss` are different), conflicting paths do not have their order properly preserved under filesystems that ignore Unicode normalization (e.g., APFS (in which `ß` causes an inode collision with `ss`)). This enables an attacker to circumvent internal parallelization locks (`PathReservations`) using conflicting filenames within a malicious tar archive. The patch in version 7.5.4 updates `path-reservations.js` to use a normalization form that matches the target filesystem's behavior (e.g., `NFKD`), followed by first `toLocaleLowerCase('en')` and then `toLocaleUpperCase('en')`. As a workaround, users who cannot upgrade promptly, and who are programmatically using `node-tar` to extract arbitrary tarball data should filter out all `SymbolicLink` entries (as npm does) to defend against arbitrary file writes via this file system entry name collision issue.",
           "Severity": "HIGH",
@@ -5520,7 +5671,7 @@
           "FixedVersion": "7.5.7",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:59cc0f7dfcc01f290b0bb51b4496d2afe3aec025a7aab48adc4c8efdf58ff80f"
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-24842",
@@ -5529,7 +5680,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:f75ea8da4c7cd54a69f71c8b2db6ef514702c114f08749da6b1f30603989646f",
+          "Fingerprint": "sha256:b270a547dcf5d82615820e397d63ac9b96ae9d1b9b1f648acc49fc370027ec4b",
           "Title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
           "Description": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink entries uses different path resolution semantics than the actual hardlink creation logic. This mismatch allows an attacker to craft a malicious TAR archive that bypasses path traversal protections and creates hardlinks to arbitrary files outside the extraction directory. Version 7.5.7 contains a fix for the issue.",
           "Severity": "HIGH",
@@ -5561,6 +5712,51 @@
           ],
           "PublishedDate": "2026-01-28T01:16:14.947Z",
           "LastModifiedDate": "2026-02-02T14:30:10.89Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-26960",
+          "VendorIDs": [
+            "GHSA-83g3-92jg-28cx"
+          ],
+          "PkgID": "tar@7.5.3",
+          "PkgName": "tar",
+          "PkgPath": "usr/local/lib/node_modules/tar/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/tar@7.5.3",
+            "UID": "7bd1e67830c13055"
+          },
+          "InstalledVersion": "7.5.3",
+          "FixedVersion": "7.5.8",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:473a972619cb536507c98037d7153941d29f72f54a8428e9a0374305f3b46eaa"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26960",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:3ffc44c886e05374880c12f59bdee9f9e79a328f7efd28245835e1b65a448f88",
+          "Title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+          "Description": "### Summary\n`tar.extract()` in Node `tar` allows an attacker-controlled archive to create a hardlink inside the extraction directory that points to a file outside the extraction root, using default options.\n\nThis enables **arbitrary file read and write** as the extracting user (no root, no chmod, no `preservePaths`).\n\nSeverity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive.\n\n### Details\nThe bypass chain uses two symlinks plus one hardlink:\n\n1. `a/b/c/up -\u003e ../..`\n2. `a/b/escape -\u003e c/up/../..`\n3. `exfil` (hardlink) -\u003e `a/b/escape/\u003ctarget-relative-to-parent-of-extract\u003e`\n\nWhy this works:\n\n- Linkpath checks are string-based and do not resolve symlinks on disk for hardlink target safety.\n  - See `STRIPABSOLUTEPATH` logic in:\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:255`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:268`\n    - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:281`\n\n- Hardlink extraction resolves target as `path.resolve(cwd, entry.linkpath)` and then calls `fs.link(target, destination)`.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:566`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:567`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:703`\n\n- Parent directory safety checks (`mkdir` + symlink detection) are applied to the destination path of the extracted entry, not to the resolved hardlink target path.\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:617`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/unpack.js:619`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:27`\n  - `../tar-audit-setuid - CVE/node_modules/tar/dist/commonjs/mkdir.js:101`\n\nAs a result, `exfil` is created inside extraction root but linked to an external file. The PoC confirms shared inode and successful read+write via `exfil`.\n\n### PoC\n[hardlink.js](https://github.com/user-attachments/files/25240082/hardlink.js)\nEnvironment used for validation:\n\n- Node: `v25.4.0`\n- tar: `7.5.7`\n- OS: macOS Darwin 25.2.0\n- Extract options: defaults (`tar.extract({ file, cwd })`)\n\nSteps:\n\n1. Prepare/locate a `tar` module. If `require('tar')` is not available locally, set `TAR_MODULE` to an absolute path to a tar package directory.\n\n2. Run:\n\n```bash\nTAR_MODULE=\"$(cd '../tar-audit-setuid - CVE/node_modules/tar' \u0026\u0026 pwd)\" node hardlink.js\n```\n\n3. Expected vulnerable output (key lines):\n\n```text\nsame_inode=true\nread_ok=true\nwrite_ok=true\nresult=VULNERABLE\n```\n\nInterpretation:\n\n- `same_inode=true`: extracted `exfil` and external secret are the same file object.\n- `read_ok=true`: reading `exfil` leaks external content.\n- `write_ok=true`: writing `exfil` modifies external file.\n\n### Impact\nVulnerability type:\n\n- Arbitrary file read/write via archive extraction path confusion and link resolution.\n\nWho is impacted:\n\n- Any application/service that extracts attacker-controlled tar archives with Node `tar` defaults.\n- Impact scope is the privileges of the extracting process user.\n\nPotential outcomes:\n\n- Read sensitive files reachable by the process user.\n- Overwrite writable files outside extraction root.\n- Escalate impact depending on deployment context (keys, configs, scripts, app data).",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/node-tar",
+            "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
+            "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+          ]
         }
       ]
     }

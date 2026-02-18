@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c6cce-2830-79ac-8425-a7ba2435d85a",
-  "CreatedAt": "2026-02-18T01:12:55.984636466+07:00",
+  "ReportID": "019c71f5-e440-764e-addf-4867a045ca14",
+  "CreatedAt": "2026-02-19T01:14:26.112415383+07:00",
   "ArtifactID": "sha256:d99c6ea47ab5da0dffaed3399a3efcf7cc307b1ea18f39116beb3e26b6a9ab4f",
   "ArtifactName": "mysql:9.6.0-oraclelinux9",
   "ArtifactType": "container_image",
@@ -27973,6 +27973,575 @@
           ],
           "AnalyzedBy": "rpm"
         }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2025-15281",
+          "PkgID": "glibc@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "225879753d48c719"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15281",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:966a85789da63fa8dc722b672d81ae7615ba05771d758eba4e4acf04245394a1",
+          "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
+          "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/20/3",
+            "https://access.redhat.com/security/cve/CVE-2025-15281",
+            "https://linux.oracle.com/cve/CVE-2025-15281.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2786.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15281",
+            "https://www.openwall.com/lists/oss-security/2026/01/20/3"
+          ],
+          "PublishedDate": "2026-01-20T14:16:07.843Z",
+          "LastModifiedDate": "2026-02-05T17:43:18.63Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0861",
+          "PkgID": "glibc@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "225879753d48c719"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:c359cbbec6f77e4566e5c4c908d5d93f545084d5e02987fdb303576293f3aae5",
+          "Title": "glibc: Integer overflow in memalign leads to heap corruption",
+          "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 1,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/5",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0861",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0861.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
+            "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0861"
+          ],
+          "PublishedDate": "2026-01-14T21:15:52.617Z",
+          "LastModifiedDate": "2026-02-03T18:26:25.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0915",
+          "PkgID": "glibc@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "225879753d48c719"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0915",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:4434e76f473cbb1fd9056d2af94dc746450538a194e145d231b51b2968c7e26b",
+          "Title": "glibc: glibc: Information disclosure via zero-valued network query",
+          "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 1,
+            "cbl-mariner": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/6",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0915",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0915.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0915",
+            "https://www.openwall.com/lists/oss-security/2026/01/16/6"
+          ],
+          "PublishedDate": "2026-01-15T22:16:12.457Z",
+          "LastModifiedDate": "2026-01-23T19:36:50.73Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-15281",
+          "PkgID": "glibc-common@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc-common",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc-common@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "f86291cc27cc1a44"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15281",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:04e53a07048a04fec28926e4c916f021e69f3cd8eaa81c8bac969b9950a09333",
+          "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
+          "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/20/3",
+            "https://access.redhat.com/security/cve/CVE-2025-15281",
+            "https://linux.oracle.com/cve/CVE-2025-15281.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2786.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15281",
+            "https://www.openwall.com/lists/oss-security/2026/01/20/3"
+          ],
+          "PublishedDate": "2026-01-20T14:16:07.843Z",
+          "LastModifiedDate": "2026-02-05T17:43:18.63Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0861",
+          "PkgID": "glibc-common@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc-common",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc-common@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "f86291cc27cc1a44"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:c3e55cdca18fb19f288555b53e3c0bf63d529b045658def67bcde8aaaf5eec1d",
+          "Title": "glibc: Integer overflow in memalign leads to heap corruption",
+          "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 1,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/5",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0861",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0861.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
+            "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0861"
+          ],
+          "PublishedDate": "2026-01-14T21:15:52.617Z",
+          "LastModifiedDate": "2026-02-03T18:26:25.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0915",
+          "PkgID": "glibc-common@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc-common",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc-common@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "f86291cc27cc1a44"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0915",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:d5a5d605245f8579a08928d638580fbf79ab704555731b21428730e13daa13cd",
+          "Title": "glibc: glibc: Information disclosure via zero-valued network query",
+          "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 1,
+            "cbl-mariner": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/6",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0915",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0915.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0915",
+            "https://www.openwall.com/lists/oss-security/2026/01/16/6"
+          ],
+          "PublishedDate": "2026-01-15T22:16:12.457Z",
+          "LastModifiedDate": "2026-01-23T19:36:50.73Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-15281",
+          "PkgID": "glibc-minimal-langpack@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc-minimal-langpack",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc-minimal-langpack@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "eb8b6c6e63f91843"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15281",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:36f778606bda1faac451ca23d3c46797cb033f282817e9a5e304b517e35e71dd",
+          "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
+          "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/20/3",
+            "https://access.redhat.com/security/cve/CVE-2025-15281",
+            "https://linux.oracle.com/cve/CVE-2025-15281.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2786.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15281",
+            "https://www.openwall.com/lists/oss-security/2026/01/20/3"
+          ],
+          "PublishedDate": "2026-01-20T14:16:07.843Z",
+          "LastModifiedDate": "2026-02-05T17:43:18.63Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0861",
+          "PkgID": "glibc-minimal-langpack@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc-minimal-langpack",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc-minimal-langpack@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "eb8b6c6e63f91843"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0861",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:2d9564398a79d1d99e86e5ef9503e6251a58464be9dd02a60302a6597a52bd47",
+          "Title": "glibc: Integer overflow in memalign leads to heap corruption",
+          "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 1,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/5",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0861",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0861.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
+            "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0861"
+          ],
+          "PublishedDate": "2026-01-14T21:15:52.617Z",
+          "LastModifiedDate": "2026-02-03T18:26:25.39Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0915",
+          "PkgID": "glibc-minimal-langpack@2.34-231.0.1.el9_7.2.x86_64",
+          "PkgName": "glibc-minimal-langpack",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/oracle/glibc-minimal-langpack@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "eb8b6c6e63f91843"
+          },
+          "InstalledVersion": "2.34-231.0.1.el9_7.2",
+          "FixedVersion": "2.34-231.0.1.el9_7.10",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0915",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Fingerprint": "sha256:c0924af1bb0273c35ad17fb47a61a2bf7f81c14abd1f1fb8812168f9e75589dc",
+          "Title": "glibc: glibc: Information disclosure via zero-valued network query",
+          "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-908"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 1,
+            "cbl-mariner": 2,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/16/6",
+            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/security/cve/CVE-2026-0915",
+            "https://bugzilla.redhat.com/2429771",
+            "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
+            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.rockylinux.org/RLSA-2026:1334",
+            "https://linux.oracle.com/cve/CVE-2026-0915.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
+            "https://ubuntu.com/security/notices/USN-8005-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0915",
+            "https://www.openwall.com/lists/oss-security/2026/01/16/6"
+          ],
+          "PublishedDate": "2026-01-15T22:16:12.457Z",
+          "LastModifiedDate": "2026-01-23T19:36:50.73Z"
+        }
       ]
     },
     {
@@ -28512,6 +29081,10 @@
             "redhat": 3
           },
           "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 8.2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
               "V3Score": 7.4
@@ -28561,11 +29134,20 @@
           "VendorSeverity": {
             "amazon": 2,
             "azure": 2,
+            "bitnami": 2,
             "ghsa": 2,
             "redhat": 2,
             "ubuntu": 2
           },
           "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 5.9
+            },
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 5.9
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
               "V3Score": 5.3
@@ -28623,6 +29205,14 @@
             "redhat": 1
           },
           "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 2
+            },
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N",
               "V3Score": 3.9
@@ -28746,6 +29336,7 @@
             "bitnami": 4,
             "nvd": 4,
             "oracle-oval": 3,
+            "photon": 4,
             "redhat": 2
           },
           "CVSS": {
@@ -28763,13 +29354,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2708",
+            "https://access.redhat.com/errata/RHSA-2026:2709",
             "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437016",
             "https://bugzilla.redhat.com/2437111",
-            "https://errata.almalinux.org/8/ALSA-2026-2708.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2709.html",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
@@ -28816,6 +29407,7 @@
             "bitnami": 2,
             "cbl-mariner": 2,
             "oracle-oval": 2,
+            "photon": 2,
             "redhat": 2,
             "rocky": 2
           },
@@ -28837,7 +29429,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23295",
+            "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -28887,6 +29479,7 @@
             "bitnami": 3,
             "cbl-mariner": 2,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3
           },
           "CVSS": {
@@ -28900,13 +29493,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2708",
+            "https://access.redhat.com/errata/RHSA-2026:2709",
             "https://access.redhat.com/security/cve/CVE-2025-61726",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437016",
             "https://bugzilla.redhat.com/2437111",
-            "https://errata.almalinux.org/8/ALSA-2026-2708.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2709.html",
             "https://go.dev/cl/736712",
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
@@ -28955,6 +29548,7 @@
             "azure": 2,
             "bitnami": 2,
             "oracle-oval": 3,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -28969,13 +29563,13 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/15/4",
-            "https://access.redhat.com/errata/RHSA-2026:2708",
+            "https://access.redhat.com/errata/RHSA-2026:2709",
             "https://access.redhat.com/security/cve/CVE-2025-61728",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437016",
             "https://bugzilla.redhat.com/2437111",
-            "https://errata.almalinux.org/8/ALSA-2026-2708.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2709.html",
             "https://go.dev/cl/736713",
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
@@ -29023,6 +29617,7 @@
             "amazon": 3,
             "bitnami": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3
           },
@@ -29043,7 +29638,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
             "https://errata.almalinux.org/9/ALSA-2026-1908.html",
-            "https://errata.rockylinux.org/RLSA-2026:1715",
+            "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -29085,7 +29680,8 @@
           "Severity": "HIGH",
           "VendorSeverity": {
             "amazon": 3,
-            "bitnami": 2
+            "bitnami": 2,
+            "photon": 2
           },
           "CVSS": {
             "bitnami": {
@@ -29133,6 +29729,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29191,6 +29788,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29247,6 +29845,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 1
           },
           "CVSS": {
@@ -29305,6 +29904,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29364,6 +29964,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29423,6 +30024,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29481,6 +30083,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29540,6 +30143,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29595,6 +30199,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29653,6 +30258,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {

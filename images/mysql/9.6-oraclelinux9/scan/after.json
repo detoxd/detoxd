@@ -3,18 +3,18 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c6ccd-8ef0-76c8-9932-4f6ceb5c5006",
-  "CreatedAt": "2026-02-18T01:12:16.752446699+07:00",
-  "ArtifactID": "sha256:19f97cf9ef76a93e7cd2323b8eacfa10c220d93eeeb0ad8611f545dbff1e68b2",
-  "ArtifactName": "detoxd/mysql:9.6-oraclelinux9-detox.1",
+  "ReportID": "019c71f5-4351-7592-a5b6-0d40ed3a4921",
+  "CreatedAt": "2026-02-19T01:13:44.913367173+07:00",
+  "ArtifactID": "sha256:05902b8f54f1401ef0b29d9a373bb6facf8bcfc38a43687e105a5498a7d81d94",
+  "ArtifactName": "detoxd/mysql:9.6-oraclelinux9-detox.2",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 943733248,
+    "Size": 967636992,
     "OS": {
       "Family": "oracle",
       "Name": "9.7"
     },
-    "ImageID": "sha256:7684bf9b318792e73900c4510c0a8229b52b127e149db32feb1720206e157bff",
+    "ImageID": "sha256:3199b37045b1977e90db8a3eced37b9d4e362f41df5b7de30712b4fc8b924295",
     "DiffIDs": [
       "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b",
       "sha256:4cf54230702089bbf8aaf4c56baa5199a4040b97c342d4ddb1c3fd79be6a9781",
@@ -26,20 +26,21 @@
       "sha256:61cd42324fea1a951796b0c75877b074aa0c2cc5710706fdb9dc3a7cbe8c843e",
       "sha256:66caf44e21b76be86d8358994c19977f55fa686a50e17dec8f1a84c38f4b7a47",
       "sha256:ef18edfb0335e8adce253426e182f680658f5b25765c69507ea717832d60b12c",
-      "sha256:bce4ec27d9f393cdf1a9732c7ca0942d896c21cf589454cbc6bc9ed4ab376e7e",
-      "sha256:bce4ec27d9f393cdf1a9732c7ca0942d896c21cf589454cbc6bc9ed4ab376e7e"
+      "sha256:fe946062d7e86b33636aae272487c724bbbfff7f32596c62254f34aabe4f04f2",
+      "sha256:f4e7f0d87a44261633eacf65106218d15b8a2fcfa0ef88a579618958cf23d7cd",
+      "sha256:f4e7f0d87a44261633eacf65106218d15b8a2fcfa0ef88a579618958cf23d7cd",
+      "sha256:2693d0c81180de23ace42934349f6d6632cda1b6f30de9e8ceb838e45bd86c13",
+      "sha256:2693d0c81180de23ace42934349f6d6632cda1b6f30de9e8ceb838e45bd86c13"
     ],
     "RepoTags": [
       "detoxd/mysql:9.6-oracle-detox",
-      "detoxd/mysql:9.6-oraclelinux9-detox.1"
+      "detoxd/mysql:9.6-oracle-detox.2",
+      "detoxd/mysql:9.6-oraclelinux9-detox.2"
     ],
-    "RepoDigests": [
-      "detoxd/mysql@sha256:f4d05ec3d08da7422b30173425205245ac6b682c083835d210a89c88413bb80d"
-    ],
-    "Reference": "detoxd/mysql:9.6-oraclelinux9-detox.1",
+    "Reference": "detoxd/mysql:9.6-oraclelinux9-detox.2",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-18T02:11:29.038793124+08:00",
+      "created": "2026-02-19T02:12:52.528636902+08:00",
       "history": [
         {
           "created": "2026-02-05T22:02:11Z",
@@ -146,36 +147,75 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:11:28Z",
+          "created": "2026-02-18T18:12:23Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:11:28Z",
+          "created": "2026-02-18T18:12:23Z",
           "created_by": "LABEL detoxd.iteration=1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:11:28Z",
-          "created_by": "LABEL detoxd.fixable.count=20",
+          "created": "2026-02-18T18:12:23Z",
+          "created_by": "LABEL detoxd.fixable.count=29",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:11:28Z",
+          "created": "2026-02-18T18:12:23Z",
           "created_by": "LABEL detoxd.unfixable.count=0",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-17T18:11:28Z",
+          "created": "2026-02-18T18:12:23Z",
+          "created_by": "RUN /bin/sh -c yum update -y glibc glibc-common glibc-minimal-langpack || dnf update -y glibc glibc-common glibc-minimal-langpack || microdnf update -y glibc glibc-common glibc-minimal-langpack \u0026\u0026     yum clean all || dnf clean all || microdnf clean all # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-02-18T18:12:23Z",
           "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade PyNaCl==1.6.2 cryptography==46.0.5 pip==25.3 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-17T18:11:29Z",
+          "created": "2026-02-18T18:12:23Z",
+          "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-02-18T18:12:52Z",
+          "created_by": "LABEL maintainer=detoxd",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-18T18:12:52Z",
+          "created_by": "LABEL detoxd.iteration=2",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-18T18:12:52Z",
+          "created_by": "LABEL detoxd.fixable.count=20",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-18T18:12:52Z",
+          "created_by": "LABEL detoxd.unfixable.count=0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-18T18:12:52Z",
+          "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade PyNaCl==1.6.2 cryptography==46.0.5 pip==25.3 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-02-18T18:12:52Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -194,8 +234,11 @@
           "sha256:61cd42324fea1a951796b0c75877b074aa0c2cc5710706fdb9dc3a7cbe8c843e",
           "sha256:66caf44e21b76be86d8358994c19977f55fa686a50e17dec8f1a84c38f4b7a47",
           "sha256:ef18edfb0335e8adce253426e182f680658f5b25765c69507ea717832d60b12c",
-          "sha256:bce4ec27d9f393cdf1a9732c7ca0942d896c21cf589454cbc6bc9ed4ab376e7e",
-          "sha256:bce4ec27d9f393cdf1a9732c7ca0942d896c21cf589454cbc6bc9ed4ab376e7e"
+          "sha256:fe946062d7e86b33636aae272487c724bbbfff7f32596c62254f34aabe4f04f2",
+          "sha256:f4e7f0d87a44261633eacf65106218d15b8a2fcfa0ef88a579618958cf23d7cd",
+          "sha256:f4e7f0d87a44261633eacf65106218d15b8a2fcfa0ef88a579618958cf23d7cd",
+          "sha256:2693d0c81180de23ace42934349f6d6632cda1b6f30de9e8ceb838e45bd86c13",
+          "sha256:2693d0c81180de23ace42934349f6d6632cda1b6f30de9e8ceb838e45bd86c13"
         ]
       },
       "config": {
@@ -214,7 +257,7 @@
         ],
         "Labels": {
           "detoxd.fixable.count": "20",
-          "detoxd.iteration": "1",
+          "detoxd.iteration": "2",
           "detoxd.unfixable.count": "0",
           "maintainer": "detoxd"
         },
@@ -270,18 +313,30 @@
         "DiffID": "sha256:ef18edfb0335e8adce253426e182f680658f5b25765c69507ea717832d60b12c"
       },
       {
-        "Size": 1536,
-        "DiffID": "sha256:bce4ec27d9f393cdf1a9732c7ca0942d896c21cf589454cbc6bc9ed4ab376e7e"
+        "Size": 23900672,
+        "DiffID": "sha256:fe946062d7e86b33636aae272487c724bbbfff7f32596c62254f34aabe4f04f2"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:bce4ec27d9f393cdf1a9732c7ca0942d896c21cf589454cbc6bc9ed4ab376e7e"
+        "DiffID": "sha256:f4e7f0d87a44261633eacf65106218d15b8a2fcfa0ef88a579618958cf23d7cd"
+      },
+      {
+        "Size": 1536,
+        "DiffID": "sha256:f4e7f0d87a44261633eacf65106218d15b8a2fcfa0ef88a579618958cf23d7cd"
+      },
+      {
+        "Size": 1536,
+        "DiffID": "sha256:2693d0c81180de23ace42934349f6d6632cda1b6f30de9e8ceb838e45bd86c13"
+      },
+      {
+        "Size": 1536,
+        "DiffID": "sha256:2693d0c81180de23ace42934349f6d6632cda1b6f30de9e8ceb838e45bd86c13"
       }
     ]
   },
   "Results": [
     {
-      "Target": "detoxd/mysql:9.6-oraclelinux9-detox.1 (oracle 9.7)",
+      "Target": "detoxd/mysql:9.6-oraclelinux9-detox.2 (oracle 9.7)",
       "Class": "os-pkgs",
       "Type": "oracle",
       "Packages": [
@@ -290,7 +345,7 @@
           "Name": "alternatives",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/alternatives@1.24-2.0.1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "74124751fbcf8ce9"
+            "UID": "4c9c7bd4312db407"
           },
           "Version": "1.24",
           "Release": "2.0.1.el9",
@@ -306,7 +361,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -333,7 +388,7 @@
           "Name": "audit-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/audit-libs@3.1.5-7.0.1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "103d29a28dc3b985"
+            "UID": "161dedd3fca803d9"
           },
           "Version": "3.1.5",
           "Release": "7.0.1.el9",
@@ -349,7 +404,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libcap-ng@0.8.2-7.el9.x86_64"
           ],
           "Layer": {
@@ -409,7 +464,7 @@
           "Name": "bash",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/bash@5.1.8-9.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "41cddefc66c4d836"
+            "UID": "f564ed4d5b2929dd"
           },
           "Version": "5.1.8",
           "Release": "9.el9",
@@ -426,7 +481,7 @@
           },
           "DependsOn": [
             "filesystem@3.16-5.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "ncurses-libs@6.2-12.20210508.el9.x86_64"
           ],
           "Layer": {
@@ -574,7 +629,7 @@
           "Name": "bzip2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/bzip2@1.0.8-10.el9_5?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "ce55a45bef479b92"
+            "UID": "daeea11a3d89a608"
           },
           "Version": "1.0.8",
           "Release": "10.el9_5",
@@ -591,7 +646,7 @@
           },
           "DependsOn": [
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:37a09b1239029567dd010074286bf97ee5f234ede9e5242573f799c947cdade2"
@@ -639,7 +694,7 @@
           "Name": "bzip2-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/bzip2-libs@1.0.8-10.el9_5?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "d5ef16ec7cc268b5"
+            "UID": "892cab81065a6381"
           },
           "Version": "1.0.8",
           "Release": "10.el9_5",
@@ -655,7 +710,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -1203,7 +1258,7 @@
           "Name": "coreutils-single",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/coreutils-single@8.32-39.0.1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "68c86160531803d7"
+            "UID": "ee44b003004bbe22"
           },
           "Version": "8.32",
           "Release": "39.0.1.el9",
@@ -1219,7 +1274,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libacl@2.3.1-4.el9.x86_64",
             "libattr@2.5.1-3.el9.x86_64",
             "libcap@2.48-10.el9.x86_64",
@@ -1545,7 +1600,7 @@
           "Name": "curl",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/curl@7.76.1-35.el9_7.3?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "8da0efa83d6830ab"
+            "UID": "98929c99a15046b4"
           },
           "Version": "7.76.1",
           "Release": "35.el9_7.3",
@@ -1561,7 +1616,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libcurl@7.76.1-35.el9_7.3.x86_64",
             "zlib@1.2.11-40.el9.x86_64"
           ],
@@ -1594,7 +1649,7 @@
           "Name": "cyrus-sasl-lib",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/cyrus-sasl-lib@2.1.27-22.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1e1894c140a012cd"
+            "UID": "f7ffb2590c13cd14"
           },
           "Version": "2.1.27",
           "Release": "22.el9",
@@ -1611,7 +1666,7 @@
           },
           "DependsOn": [
             "gdbm-libs@1.23-1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "krb5-libs@1.21.1-8.0.1.el9_6.x86_64",
             "libcom_err@1.46.5-8.el9.x86_64",
             "libxcrypt@4.4.18-3.el9.x86_64"
@@ -1729,7 +1784,7 @@
           "Name": "file-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/file-libs@5.39-16.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "e5db370313511be7"
+            "UID": "e287ac884202833e"
           },
           "Version": "5.39",
           "Release": "16.el9",
@@ -1745,7 +1800,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
@@ -19077,7 +19132,7 @@
           "Name": "findutils",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/findutils@4.8.0-7.el9?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=1",
-            "UID": "39e2ecdc52ab2bd5"
+            "UID": "201981c60caf7ace"
           },
           "Version": "4.8.0",
           "Release": "7.el9",
@@ -19095,7 +19150,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libselinux@3.6-3.el9.x86_64"
           ],
           "Layer": {
@@ -19171,7 +19226,7 @@
           "Name": "gawk",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gawk@5.1.0-6.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "c5affdcefc920196"
+            "UID": "42078d6dc54b528c"
           },
           "Version": "5.1.0",
           "Release": "6.el9",
@@ -19188,7 +19243,7 @@
           },
           "DependsOn": [
             "filesystem@3.16-5.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gmp@6.2.0-13.el9.x86_64",
             "libsigsegv@2.13-4.el9.x86_64",
             "mpfr@4.1.0-7.el9.x86_64",
@@ -19313,7 +19368,7 @@
           "Name": "gdbm-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gdbm-libs@1.23-1.el9?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=1",
-            "UID": "a7ce247a9887aa64"
+            "UID": "6ce6b05bcfe09df3"
           },
           "Version": "1.23",
           "Release": "1.el9",
@@ -19331,7 +19386,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -19357,7 +19412,7 @@
           "Name": "glib2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/glib2@2.68.4-18.el9_7.1?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "3127bc1f2300e19f"
+            "UID": "ff4924844961161f"
           },
           "Version": "2.68.4",
           "Release": "18.el9_7.1",
@@ -19374,7 +19429,7 @@
           },
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gnutls@3.8.3-9.el9.x86_64",
             "libffi@3.4.2-8.el9.x86_64",
             "libmount@2.37.4-21.0.1.el9_7.x86_64",
@@ -19551,18 +19606,18 @@
           "AnalyzedBy": "rpm"
         },
         {
-          "ID": "glibc@2.34-231.0.1.el9_7.2.x86_64",
+          "ID": "glibc@2.34-231.0.1.el9_7.10.x86_64",
           "Name": "glibc",
           "Identifier": {
-            "PURL": "pkg:rpm/oracle/glibc@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "225879753d48c719"
+            "PURL": "pkg:rpm/oracle/glibc@2.34-231.0.1.el9_7.10?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "de4ed59ba4bd9ef6"
           },
           "Version": "2.34",
-          "Release": "231.0.1.el9_7.2",
+          "Release": "231.0.1.el9_7.10",
           "Arch": "x86_64",
           "SrcName": "glibc",
           "SrcVersion": "2.34",
-          "SrcRelease": "231.0.1.el9_7.2",
+          "SrcRelease": "231.0.1.el9_7.10",
           "Licenses": [
             "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
           ],
@@ -19572,14 +19627,14 @@
           },
           "DependsOn": [
             "basesystem@11-13.el9.noarch",
-            "glibc-common@2.34-231.0.1.el9_7.2.x86_64",
-            "glibc-minimal-langpack@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc-common@2.34-231.0.1.el9_7.10.x86_64",
+            "glibc-minimal-langpack@2.34-231.0.1.el9_7.10.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+            "DiffID": "sha256:fe946062d7e86b33636aae272487c724bbbfff7f32596c62254f34aabe4f04f2"
           },
-          "Digest": "md5:4f8c4a16fd5946c7f7c65cb2ac0fbfb8",
+          "Digest": "md5:ba602a2d64ccdf9eca1662fce76e21dd",
           "InstalledFiles": [
             "/etc/gai.conf",
             "/etc/ld.so.cache",
@@ -19588,69 +19643,67 @@
             "/etc/nsswitch.conf",
             "/etc/rpc",
             "/usr/lib/.build-id",
-            "/usr/lib/.build-id/00",
-            "/usr/lib/.build-id/00/bf48ca688aad79b1fbd90aeb5cc56c0dc55e3f",
-            "/usr/lib/.build-id/09",
-            "/usr/lib/.build-id/09/245410c878a3effdb276c18218b13644e0ae3a",
-            "/usr/lib/.build-id/0f",
-            "/usr/lib/.build-id/0f/bd218fba24b36fc4614054458912800e387ebf",
-            "/usr/lib/.build-id/16",
-            "/usr/lib/.build-id/16/0d560c908861b637e151a2d91108ded0d752fa",
-            "/usr/lib/.build-id/1f",
-            "/usr/lib/.build-id/1f/51f14eabf2bd6287f59595ea840d8e79818226",
-            "/usr/lib/.build-id/2b",
-            "/usr/lib/.build-id/2b/575794476d9ad22e6eeeea32dda5c15cc807bb",
+            "/usr/lib/.build-id/0c",
+            "/usr/lib/.build-id/0c/06b2b08ce00be19ca2c86006c230369a9da8d7",
+            "/usr/lib/.build-id/0c/c29d97a63e5def45ca3c0f04944d60a80b6635",
+            "/usr/lib/.build-id/0d",
+            "/usr/lib/.build-id/0d/e57366ae6267a489d6e146ebc821642f742a8a",
+            "/usr/lib/.build-id/15",
+            "/usr/lib/.build-id/15/f8c798fa773d358741bf2bacfa64cdc0997eb7",
+            "/usr/lib/.build-id/25",
+            "/usr/lib/.build-id/25/c6f2ada8db83b03b21728904dd420df13e2370",
+            "/usr/lib/.build-id/29",
+            "/usr/lib/.build-id/29/3a7ed0c7491d789c61ff0303d8f4d0dfb67912",
             "/usr/lib/.build-id/2c",
-            "/usr/lib/.build-id/2c/c1e66cd3938410255501119dcb059ff88cef79",
-            "/usr/lib/.build-id/2d",
-            "/usr/lib/.build-id/2d/cd412dd1c86144026dc4681a7ef794e95cf537",
-            "/usr/lib/.build-id/2f",
-            "/usr/lib/.build-id/2f/40330fe71d07a7b8290b361d251fa24ae6ec76",
-            "/usr/lib/.build-id/31",
-            "/usr/lib/.build-id/31/64b0cd1b9cdbd7a14a8b9e053e468502cb090b",
-            "/usr/lib/.build-id/37",
-            "/usr/lib/.build-id/37/0dca61806c064ccaf8920c6fea23c05c63d334",
-            "/usr/lib/.build-id/4d",
-            "/usr/lib/.build-id/4d/8f542f8dfa3a6b59c45b22acdfa58900d434b5",
+            "/usr/lib/.build-id/2c/e5418ffb7044c20cf683b6d65f720807fe286c",
+            "/usr/lib/.build-id/2e",
+            "/usr/lib/.build-id/2e/954aae9f473a0d0369b3b016622a518aed8198",
             "/usr/lib/.build-id/54",
-            "/usr/lib/.build-id/54/94460ad5e85c940ed42ef052b05ebe5ef9dc53",
-            "/usr/lib/.build-id/63",
-            "/usr/lib/.build-id/63/ecad251538d86714dec616389c8d1814d8dbec",
-            "/usr/lib/.build-id/6f",
-            "/usr/lib/.build-id/6f/ab054d988e7f9c29700a2ff02586a8d034ddcf",
-            "/usr/lib/.build-id/75",
-            "/usr/lib/.build-id/75/e09ba73e7ee56d3e916e101fe2df8ecbf8e023",
-            "/usr/lib/.build-id/75/e09ba73e7ee56d3e916e101fe2df8ecbf8e023.1",
-            "/usr/lib/.build-id/75/e09ba73e7ee56d3e916e101fe2df8ecbf8e023.2",
-            "/usr/lib/.build-id/76",
-            "/usr/lib/.build-id/76/fdd46e1534abce35cfb5256357a16cc39a211d",
-            "/usr/lib/.build-id/80",
-            "/usr/lib/.build-id/80/a1e71bc171df82e9bd247e1793ae933fb93b6e",
-            "/usr/lib/.build-id/82",
-            "/usr/lib/.build-id/82/2b720f41405b806e83ba09961023d81f477da5",
-            "/usr/lib/.build-id/89",
-            "/usr/lib/.build-id/89/3120bf53fba6f22d49d73df5b82dbedb61cae3",
-            "/usr/lib/.build-id/94",
-            "/usr/lib/.build-id/94/db7afe73cedf42c17793c2e15ecdf8a5a38ba0",
-            "/usr/lib/.build-id/95",
-            "/usr/lib/.build-id/95/084e6a9162b7499c829606cebceebc05b9c513",
-            "/usr/lib/.build-id/95/b057d3e8724fec0d4a1e7169905c840f3bb6ff",
-            "/usr/lib/.build-id/a1",
-            "/usr/lib/.build-id/a1/c9ba0fc8d5187544a326ce6f0d55ff02cd4788",
-            "/usr/lib/.build-id/a4",
-            "/usr/lib/.build-id/a4/5fce23f0a9925db3a4bbe374991a5b3793c05b",
-            "/usr/lib/.build-id/b7",
-            "/usr/lib/.build-id/b7/8535ab172ad77a6df1a6bd67dd0115ade9b9c7",
-            "/usr/lib/.build-id/c0",
-            "/usr/lib/.build-id/c0/751a528924d80d5fd9d578ca7806f01b7503e4",
-            "/usr/lib/.build-id/c3",
-            "/usr/lib/.build-id/c3/5b0a30e4b7ad2aa037746ef2456b985bf505cf",
-            "/usr/lib/.build-id/eb",
-            "/usr/lib/.build-id/eb/5e56ff4e0b3fdc6f2b961a47860ed1355eb8ef",
-            "/usr/lib/.build-id/ee",
-            "/usr/lib/.build-id/ee/05e7d5c6584848622af23de57c297fd3081b70",
-            "/usr/lib/.build-id/ff",
-            "/usr/lib/.build-id/ff/77e9d40c17ec02a13e437cd0d0be9eac619ec5",
+            "/usr/lib/.build-id/54/7b77977416407fed3ae3e83f6c289763136947",
+            "/usr/lib/.build-id/5c",
+            "/usr/lib/.build-id/5c/97d72f4efc74b056757c2273de8c25fd1428fb",
+            "/usr/lib/.build-id/72",
+            "/usr/lib/.build-id/72/adefeafbe85aaac2b587f28915968e0a77b355",
+            "/usr/lib/.build-id/7e",
+            "/usr/lib/.build-id/7e/9ca912b88877805bd220cd11b0758ccd7f32a0",
+            "/usr/lib/.build-id/87",
+            "/usr/lib/.build-id/87/e43b6973738bfe3b491c7c2fec3d490576f52f",
+            "/usr/lib/.build-id/88",
+            "/usr/lib/.build-id/88/967fe769b93beea287af1e78429e61131665db",
+            "/usr/lib/.build-id/8b",
+            "/usr/lib/.build-id/8b/a2b4d213ac6674f43d28bbaaee480d76478035",
+            "/usr/lib/.build-id/91",
+            "/usr/lib/.build-id/91/dc3088b95b953982d8ad5abe0d28ae1eeace7b",
+            "/usr/lib/.build-id/97",
+            "/usr/lib/.build-id/97/25ed7b1d140151975f01326262348f3384c702",
+            "/usr/lib/.build-id/98",
+            "/usr/lib/.build-id/98/cb0cbe61d9a0a34db2f7b02ae72d52c4c50ec4",
+            "/usr/lib/.build-id/a5",
+            "/usr/lib/.build-id/a5/68956e94fd223994c26b3a3d6e80cb9bc381ab",
+            "/usr/lib/.build-id/a5/c7403c92967b2b5f4252ae01b54be0a87b4abf",
+            "/usr/lib/.build-id/aa",
+            "/usr/lib/.build-id/aa/03cdf638037b25d484d3bc3b66949f48ab7766",
+            "/usr/lib/.build-id/b5",
+            "/usr/lib/.build-id/b5/000962fde2ac1f2c9e841c055d0651d58b719b",
+            "/usr/lib/.build-id/b8",
+            "/usr/lib/.build-id/b8/20884e95551951662a16a4f3470793947255c2",
+            "/usr/lib/.build-id/c4",
+            "/usr/lib/.build-id/c4/5c7b05fedd2caf3b64b8e9082b4003bbf71f60",
+            "/usr/lib/.build-id/c9",
+            "/usr/lib/.build-id/c9/56b0d4036d0cada700fb522574ea5775e923d0",
+            "/usr/lib/.build-id/d9",
+            "/usr/lib/.build-id/d9/9b319ee9be5bb45df7433baa14f3615227a21f",
+            "/usr/lib/.build-id/d9/9b319ee9be5bb45df7433baa14f3615227a21f.1",
+            "/usr/lib/.build-id/d9/9b319ee9be5bb45df7433baa14f3615227a21f.2",
+            "/usr/lib/.build-id/d9/a30f229b52916e58b5bd82639936f754857ce9",
+            "/usr/lib/.build-id/de",
+            "/usr/lib/.build-id/de/60246060b844b2c6e6b3aad1eb963eff7cc43e",
+            "/usr/lib/.build-id/e7",
+            "/usr/lib/.build-id/e7/e7a811d4db480910b2225890b0d5b4242502ea",
+            "/usr/lib/.build-id/fb",
+            "/usr/lib/.build-id/fb/139561a9f21d2c2dab4d445e40bcd32fef385c",
+            "/usr/lib/.build-id/fc",
+            "/usr/lib/.build-id/fc/06e7c5e744e49a6d308b44cb04833edf9b6560",
             "/usr/lib64/audit",
             "/usr/lib64/audit/sotruss-lib.so",
             "/usr/lib64/gconv",
@@ -19700,18 +19753,18 @@
           "AnalyzedBy": "rpm"
         },
         {
-          "ID": "glibc-common@2.34-231.0.1.el9_7.2.x86_64",
+          "ID": "glibc-common@2.34-231.0.1.el9_7.10.x86_64",
           "Name": "glibc-common",
           "Identifier": {
-            "PURL": "pkg:rpm/oracle/glibc-common@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "f86291cc27cc1a44"
+            "PURL": "pkg:rpm/oracle/glibc-common@2.34-231.0.1.el9_7.10?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "73a864154184d399"
           },
           "Version": "2.34",
-          "Release": "231.0.1.el9_7.2",
+          "Release": "231.0.1.el9_7.10",
           "Arch": "x86_64",
           "SrcName": "glibc",
           "SrcVersion": "2.34",
-          "SrcRelease": "231.0.1.el9_7.2",
+          "SrcRelease": "231.0.1.el9_7.10",
           "Licenses": [
             "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
           ],
@@ -19721,13 +19774,13 @@
           },
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "tzdata@2025c-1.el9.noarch"
           ],
           "Layer": {
-            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+            "DiffID": "sha256:fe946062d7e86b33636aae272487c724bbbfff7f32596c62254f34aabe4f04f2"
           },
-          "Digest": "md5:df16d60539a8365840b0991773dc8c0a",
+          "Digest": "md5:591309635aaec6b2f5473008e2ce852c",
           "InstalledFiles": [
             "/usr/bin/catchsegv",
             "/usr/bin/gencat",
@@ -19744,24 +19797,25 @@
             "/usr/bin/tzselect",
             "/usr/bin/zdump",
             "/usr/lib/.build-id",
-            "/usr/lib/.build-id/30",
-            "/usr/lib/.build-id/30/57418f529763fb71b8bd45a3d8e9744335c65e",
-            "/usr/lib/.build-id/4c",
-            "/usr/lib/.build-id/4c/bf11f2e9bf51bceaa577f6b51404892d89b80d",
-            "/usr/lib/.build-id/61",
-            "/usr/lib/.build-id/61/815e9c70d0b18f630933dce9bb6ede53c48245",
-            "/usr/lib/.build-id/61/fcb87168af471e03628c0b98bf7c8a691528d6",
-            "/usr/lib/.build-id/68",
-            "/usr/lib/.build-id/68/d403192adcc09dcb87cb9c73bb8649de96176e",
-            "/usr/lib/.build-id/75/e09ba73e7ee56d3e916e101fe2df8ecbf8e023.3",
-            "/usr/lib/.build-id/9c",
-            "/usr/lib/.build-id/9c/163d17bd05e12c88a971573b96fc7181eeb133",
-            "/usr/lib/.build-id/a5",
-            "/usr/lib/.build-id/a5/1b09c00865ff120cf047367ef2eb75ab91c055",
-            "/usr/lib/.build-id/be",
-            "/usr/lib/.build-id/be/0885f2cedea33554da7887f61b1ab8f682031d",
-            "/usr/lib/.build-id/d2",
-            "/usr/lib/.build-id/d2/7a8cc9505fec095c0f3dec958162986fb70a61",
+            "/usr/lib/.build-id/17",
+            "/usr/lib/.build-id/17/95592b84e9d0fed4609d87ae2b4d77c74a937f",
+            "/usr/lib/.build-id/3a",
+            "/usr/lib/.build-id/3a/fa34fd88aa30ad49ee066424d0b7b1b8ea6334",
+            "/usr/lib/.build-id/3f",
+            "/usr/lib/.build-id/3f/e3a5c910819f9f53ebd9e4123a468839ce3268",
+            "/usr/lib/.build-id/65",
+            "/usr/lib/.build-id/65/be18a3f4c64e04149dd6492817be2bb3400c2f",
+            "/usr/lib/.build-id/6a",
+            "/usr/lib/.build-id/6a/7f2ee0a173fe498c94f8dff7f51d5c36491071",
+            "/usr/lib/.build-id/8c",
+            "/usr/lib/.build-id/8c/2be257868803b3d225cf3d199c1b52ec5432c3",
+            "/usr/lib/.build-id/96",
+            "/usr/lib/.build-id/96/ae59e8d504226801edb0266241a9987b87f8e8",
+            "/usr/lib/.build-id/9e",
+            "/usr/lib/.build-id/9e/648bc65fc1b72ecffca036d922a043001d092e",
+            "/usr/lib/.build-id/ba",
+            "/usr/lib/.build-id/ba/08f4b24a4818e8fd4ba2ca6a74a4bf57afaa0c",
+            "/usr/lib/.build-id/d9/9b319ee9be5bb45df7433baa14f3615227a21f.3",
             "/usr/lib/locale",
             "/usr/lib/locale/C.utf8",
             "/usr/lib/locale/C.utf8/LC_ADDRESS",
@@ -19786,18 +19840,18 @@
           "AnalyzedBy": "rpm"
         },
         {
-          "ID": "glibc-minimal-langpack@2.34-231.0.1.el9_7.2.x86_64",
+          "ID": "glibc-minimal-langpack@2.34-231.0.1.el9_7.10.x86_64",
           "Name": "glibc-minimal-langpack",
           "Identifier": {
-            "PURL": "pkg:rpm/oracle/glibc-minimal-langpack@2.34-231.0.1.el9_7.2?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "eb8b6c6e63f91843"
+            "PURL": "pkg:rpm/oracle/glibc-minimal-langpack@2.34-231.0.1.el9_7.10?arch=x86_64\u0026distro=oracle-9.7",
+            "UID": "b47a28dd550765be"
           },
           "Version": "2.34",
-          "Release": "231.0.1.el9_7.2",
+          "Release": "231.0.1.el9_7.10",
           "Arch": "x86_64",
           "SrcName": "glibc",
           "SrcVersion": "2.34",
-          "SrcRelease": "231.0.1.el9_7.2",
+          "SrcRelease": "231.0.1.el9_7.10",
           "Licenses": [
             "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
           ],
@@ -19806,13 +19860,13 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc-common@2.34-231.0.1.el9_7.2.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc-common@2.34-231.0.1.el9_7.10.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
+            "DiffID": "sha256:fe946062d7e86b33636aae272487c724bbbfff7f32596c62254f34aabe4f04f2"
           },
-          "Digest": "md5:73028deb35cff98f2ed5d46bda1fa1e2",
+          "Digest": "md5:79e8483644ec69afaaea590d6d061069",
           "AnalyzedBy": "rpm"
         },
         {
@@ -19820,7 +19874,7 @@
           "Name": "gmp",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gmp@6.2.0-13.el9?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=1",
-            "UID": "16340d8d94c8067"
+            "UID": "4799ace72231d77e"
           },
           "Version": "6.2.0",
           "Release": "13.el9",
@@ -19838,7 +19892,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -19870,7 +19924,7 @@
           "Name": "gnupg2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gnupg2@2.3.3-5.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "bc7924f7d1c8ecb2"
+            "UID": "7f6e8517ab1e7a5b"
           },
           "Version": "2.3.3",
           "Release": "5.el9_7",
@@ -19887,7 +19941,7 @@
           },
           "DependsOn": [
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gnutls@3.8.3-9.el9.x86_64",
             "libassuan@2.5.5-3.el9.x86_64",
             "libgcrypt@1.10.0-11.el9.x86_64",
@@ -20109,7 +20163,7 @@
           "Name": "gnutls",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gnutls@3.8.3-9.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1bdc15064e632179"
+            "UID": "dfd26bd711d861ae"
           },
           "Version": "3.8.3",
           "Release": "9.el9",
@@ -20126,7 +20180,7 @@
           },
           "DependsOn": [
             "crypto-policies@20250905-1.git377cc42.el9_7.noarch",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libidn2@2.3.0-7.el9.x86_64",
             "libtasn1@4.16.0-9.el9.x86_64",
             "libunistring@0.9.10-15.el9.x86_64",
@@ -20181,7 +20235,7 @@
           "Name": "gobject-introspection",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gobject-introspection@1.68.0-11.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "cea38f8b720a3a8f"
+            "UID": "9b3137482f236232"
           },
           "Version": "1.68.0",
           "Release": "11.el9",
@@ -20198,7 +20252,7 @@
           },
           "DependsOn": [
             "glib2@2.68.4-18.el9_7.1.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libffi@3.4.2-8.el9.x86_64"
           ],
           "Layer": {
@@ -20287,7 +20341,7 @@
           "Name": "gpgme",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gpgme@1.15.1-6.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "821df121ad611df7"
+            "UID": "44cda3ed074d79d1"
           },
           "Version": "1.15.1",
           "Release": "6.el9",
@@ -20303,7 +20357,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gnupg2@2.3.3-5.el9_7.x86_64",
             "libassuan@2.5.5-3.el9.x86_64",
             "libgpg-error@1.42-5.el9.x86_64"
@@ -20337,7 +20391,7 @@
           "Name": "grep",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/grep@3.6-5.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "945bb890cf180bd0"
+            "UID": "2da37ab7b32a0ff4"
           },
           "Version": "3.6",
           "Release": "5.el9",
@@ -20353,7 +20407,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libsigsegv@2.13-4.el9.x86_64",
             "pcre@8.44-4.el9.x86_64"
           ],
@@ -20435,7 +20489,7 @@
           "Name": "gzip",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/gzip@1.12-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "107de659468d8193"
+            "UID": "2246d58400636734"
           },
           "Version": "1.12",
           "Release": "1.el9",
@@ -20452,7 +20506,7 @@
           },
           "DependsOn": [
             "coreutils-single@8.32-39.0.1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:37a09b1239029567dd010074286bf97ee5f234ede9e5242573f799c947cdade2"
@@ -20507,7 +20561,7 @@
           "Name": "json-c",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/json-c@0.14-11.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "f05e20e0faa258c4"
+            "UID": "319848f0cd2ab7d9"
           },
           "Version": "0.14",
           "Release": "11.el9",
@@ -20523,7 +20577,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -20546,7 +20600,7 @@
           "Name": "keyutils-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/keyutils-libs@1.6.3-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "400156f3535888f1"
+            "UID": "510fd176b0fe4675"
           },
           "Version": "1.6.3",
           "Release": "1.el9",
@@ -20562,7 +20616,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -20586,7 +20640,7 @@
           "Name": "krb5-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/krb5-libs@1.21.1-8.0.1.el9_6?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "a94c968554c4e5c3"
+            "UID": "908d34a8d3ee5f2c"
           },
           "Version": "1.21.1",
           "Release": "8.0.1.el9_6",
@@ -20605,7 +20659,7 @@
             "bash@5.1.8-9.el9.x86_64",
             "coreutils-single@8.32-39.0.1.el9.x86_64",
             "gawk@5.1.0-6.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "grep@3.6-5.el9.x86_64",
             "keyutils-libs@1.6.3-1.el9.x86_64",
             "libcom_err@1.46.5-8.el9.x86_64",
@@ -20691,7 +20745,7 @@
           "Name": "libacl",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libacl@2.3.1-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "405a1e65d57b5ab9"
+            "UID": "5572aa3c446f737a"
           },
           "Version": "2.3.1",
           "Release": "4.el9",
@@ -20707,7 +20761,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libattr@2.5.1-3.el9.x86_64"
           ],
           "Layer": {
@@ -20728,7 +20782,7 @@
           "Name": "libaio",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libaio@0.3.111-13.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "25d982ee1548c074"
+            "UID": "ffaf60ca8c78bb76"
           },
           "Version": "0.3.111",
           "Release": "13.el9",
@@ -20744,7 +20798,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:65a812b8105986572bbeef46edbc494d069d09bc7a39d9c53d043671b2bd4c22"
@@ -20769,7 +20823,7 @@
           "Name": "libarchive",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libarchive@3.5.3-6.el9_6?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "c058183779bf7528"
+            "UID": "2d822bac91fb81fc"
           },
           "Version": "3.5.3",
           "Release": "6.el9_6",
@@ -20786,7 +20840,7 @@
           },
           "DependsOn": [
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libacl@2.3.1-4.el9.x86_64",
             "libxml2@2.9.13-14.el9_7.x86_64",
             "libzstd@1.5.5-1.el9.x86_64",
@@ -20821,7 +20875,7 @@
           "Name": "libassuan",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libassuan@2.5.5-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "ea1d911ab8597926"
+            "UID": "d30a974638c0d75b"
           },
           "Version": "2.5.5",
           "Release": "3.el9",
@@ -20837,7 +20891,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgpg-error@1.42-5.el9.x86_64"
           ],
           "Layer": {
@@ -20865,7 +20919,7 @@
           "Name": "libattr",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libattr@2.5.1-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "fd8cf72c5aefd21d"
+            "UID": "43812ffd04383396"
           },
           "Version": "2.5.1",
           "Release": "3.el9",
@@ -20881,7 +20935,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -20902,7 +20956,7 @@
           "Name": "libblkid",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libblkid@2.37.4-21.0.1.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "744c9c2b0afd5de6"
+            "UID": "b7f4d333a1379590"
           },
           "Version": "2.37.4",
           "Release": "21.0.1.el9_7",
@@ -20920,7 +20974,7 @@
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
             "coreutils-single@8.32-39.0.1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libuuid@2.37.4-21.0.1.el9_7.x86_64"
           ],
           "Layer": {
@@ -20943,7 +20997,7 @@
           "Name": "libbrotli",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libbrotli@1.0.9-9.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "98aeb3217f5a2028"
+            "UID": "158929a2ab1fb962"
           },
           "Version": "1.0.9",
           "Release": "9.el9_7",
@@ -20959,7 +21013,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -20989,7 +21043,7 @@
           "Name": "libcap",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libcap@2.48-10.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "8e89071b10bc0fde"
+            "UID": "2b8f0e09a5328444"
           },
           "Version": "2.48",
           "Release": "10.el9",
@@ -21005,7 +21059,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64"
           ],
           "Layer": {
@@ -21053,7 +21107,7 @@
           "Name": "libcap-ng",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libcap-ng@0.8.2-7.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "99e1d7ef9207606f"
+            "UID": "57dbdbea8d3b2a35"
           },
           "Version": "0.8.2",
           "Release": "7.el9",
@@ -21069,7 +21123,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -21096,7 +21150,7 @@
           "Name": "libcom_err",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libcom_err@1.46.5-8.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "16a63a7dd69c328e"
+            "UID": "d296141293a4b50a"
           },
           "Version": "1.46.5",
           "Release": "8.el9",
@@ -21112,7 +21166,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -21134,7 +21188,7 @@
           "Name": "libcurl",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libcurl@7.76.1-35.el9_7.3?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "43cf7ffe7bf09229"
+            "UID": "2838089de008d678"
           },
           "Version": "7.76.1",
           "Release": "35.el9_7.3",
@@ -21150,7 +21204,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "krb5-libs@1.21.1-8.0.1.el9_6.x86_64",
             "libbrotli@1.0.9-9.el9_7.x86_64",
             "libcom_err@1.46.5-8.el9.x86_64",
@@ -21182,7 +21236,7 @@
           "Name": "libdnf",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libdnf@0.69.0-16.0.1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "a0dd71404d85eeb0"
+            "UID": "dfe43833f4b12721"
           },
           "Version": "0.69.0",
           "Release": "16.0.1.el9",
@@ -21199,7 +21253,7 @@
           },
           "DependsOn": [
             "glib2@2.68.4-18.el9_7.1.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gpgme@1.15.1-6.el9.x86_64",
             "json-c@0.14-11.el9.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64",
@@ -21287,7 +21341,7 @@
           "Name": "libevent",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libevent@2.1.12-8.el9_4?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1cad554767991acc"
+            "UID": "70724b69e510fc0e"
           },
           "Version": "2.1.12",
           "Release": "8.el9_4",
@@ -21303,7 +21357,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "openssl-libs@3.5.1-7.0.1.el9_7.x86_64"
           ],
           "Layer": {
@@ -21344,7 +21398,7 @@
           "Name": "libffi",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libffi@3.4.2-8.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "11cefd3ad5d74548"
+            "UID": "815b795b2a75510b"
           },
           "Version": "3.4.2",
           "Release": "8.el9",
@@ -21360,7 +21414,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -21384,7 +21438,7 @@
           "Name": "libgcc",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libgcc@11.5.0-11.0.2.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1624d1a0b554222d"
+            "UID": "501ac4cb4b5ee8da"
           },
           "Version": "11.5.0",
           "Release": "11.0.2.el9",
@@ -21400,7 +21454,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -21426,7 +21480,7 @@
           "Name": "libgcrypt",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libgcrypt@1.10.0-11.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "7bc00b13f71a09f1"
+            "UID": "d2108cd68ed0c996"
           },
           "Version": "1.10.0",
           "Release": "11.el9",
@@ -21442,7 +21496,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgpg-error@1.42-5.el9.x86_64"
           ],
           "Layer": {
@@ -21470,7 +21524,7 @@
           "Name": "libgpg-error",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libgpg-error@1.42-5.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "c3791f6ff54d569a"
+            "UID": "7f0c28e0a8b460c6"
           },
           "Version": "1.42",
           "Release": "5.el9",
@@ -21486,7 +21540,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -21538,7 +21592,7 @@
           "Name": "libidn2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libidn2@2.3.0-7.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "ef3a39bdd9b35e3e"
+            "UID": "9a15c21b3a1d3fd2"
           },
           "Version": "2.3.0",
           "Release": "7.el9",
@@ -21554,7 +21608,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libunistring@0.9.10-15.el9.x86_64"
           ],
           "Layer": {
@@ -21607,7 +21661,7 @@
           "Name": "libksba",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libksba@1.5.1-7.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "d9352b5589fb12d2"
+            "UID": "1be3042d6cc6f68"
           },
           "Version": "1.5.1",
           "Release": "7.el9",
@@ -21623,7 +21677,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgpg-error@1.42-5.el9.x86_64"
           ],
           "Layer": {
@@ -21656,7 +21710,7 @@
           "Name": "libmodulemd",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libmodulemd@2.13.0-2.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "f93a0a891d1c2629"
+            "UID": "5643c25f278a663e"
           },
           "Version": "2.13.0",
           "Release": "2.el9",
@@ -21674,7 +21728,7 @@
           "DependsOn": [
             "file-libs@5.39-16.el9.x86_64",
             "glib2@2.68.4-18.el9_7.1.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64",
             "libyaml@0.2.5-7.el9.x86_64",
             "rpm-libs@4.16.1.3-39.el9.x86_64"
@@ -21708,7 +21762,7 @@
           "Name": "libmount",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libmount@2.37.4-21.0.1.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "6253dfb68da9faf9"
+            "UID": "69ee7862c860ba41"
           },
           "Version": "2.37.4",
           "Release": "21.0.1.el9_7",
@@ -21724,7 +21778,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libblkid@2.37.4-21.0.1.el9_7.x86_64",
             "libselinux@3.6-3.el9.x86_64",
             "libuuid@2.37.4-21.0.1.el9_7.x86_64"
@@ -21750,7 +21804,7 @@
           "Name": "libnghttp2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libnghttp2@1.43.0-6.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "658719201b31b14b"
+            "UID": "296d5d7395b02277"
           },
           "Version": "1.43.0",
           "Release": "6.el9",
@@ -21766,7 +21820,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -21788,7 +21842,7 @@
           "Name": "libpeas",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libpeas@1.30.0-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "b3f5acf84ced0e85"
+            "UID": "2c9bd4bec11fa431"
           },
           "Version": "1.30.0",
           "Release": "4.el9",
@@ -21805,7 +21859,7 @@
           },
           "DependsOn": [
             "glib2@2.68.4-18.el9_7.1.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gobject-introspection@1.68.0-11.el9.x86_64"
           ],
           "Layer": {
@@ -21909,7 +21963,7 @@
           "Name": "libpsl",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libpsl@0.21.1-5.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "9e4897ef7c7a7baa"
+            "UID": "690674efa89e9a35"
           },
           "Version": "0.21.1",
           "Release": "5.el9",
@@ -21925,7 +21979,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libidn2@2.3.0-7.el9.x86_64",
             "libunistring@0.9.10-15.el9.x86_64",
             "publicsuffix-list-dafsa@20210518-3.el9.noarch"
@@ -21950,7 +22004,7 @@
           "Name": "librepo",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/librepo@1.14.5-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "afbaf9ea708338e3"
+            "UID": "e534d8e13957395c"
           },
           "Version": "1.14.5",
           "Release": "3.el9",
@@ -21967,7 +22021,7 @@
           },
           "DependsOn": [
             "glib2@2.68.4-18.el9_7.1.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gpgme@1.15.1-6.el9.x86_64",
             "libcurl@7.76.1-35.el9_7.3.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64",
@@ -22034,7 +22088,7 @@
           "Name": "libselinux",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libselinux@3.6-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "52aeecb559780f15"
+            "UID": "7eb8ce9cd58c3cbf"
           },
           "Version": "3.6",
           "Release": "3.el9",
@@ -22050,7 +22104,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libsepol@3.6-3.el9.x86_64",
             "pcre2@10.40-6.0.1.el9.x86_64"
           ],
@@ -22075,7 +22129,7 @@
           "Name": "libsemanage",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libsemanage@3.6-5.el9_6?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1883a3696779434c"
+            "UID": "b0f707dc02217551"
           },
           "Version": "3.6",
           "Release": "5.el9_6",
@@ -22093,7 +22147,7 @@
           "DependsOn": [
             "audit-libs@3.1.5-7.0.1.el9.x86_64",
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libselinux@3.6-3.el9.x86_64",
             "libsepol@3.6-3.el9.x86_64"
           ],
@@ -22123,7 +22177,7 @@
           "Name": "libsepol",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libsepol@3.6-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "5c6e2c7fc29119b7"
+            "UID": "204f88b74956eb8c"
           },
           "Version": "3.6",
           "Release": "3.el9",
@@ -22139,7 +22193,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22160,7 +22214,7 @@
           "Name": "libsigsegv",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libsigsegv@2.13-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1658a32324654ad"
+            "UID": "4d9a0567a2d60c90"
           },
           "Version": "2.13",
           "Release": "4.el9",
@@ -22176,7 +22230,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22202,7 +22256,7 @@
           "Name": "libsmartcols",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libsmartcols@2.37.4-21.0.1.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "4e8e9ed3e39398a7"
+            "UID": "b11c03f361aaf34f"
           },
           "Version": "2.37.4",
           "Release": "21.0.1.el9_7",
@@ -22218,7 +22272,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22241,7 +22295,7 @@
           "Name": "libsolv",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libsolv@0.7.24-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "a82cf76ba8982eab"
+            "UID": "4c61dffccecea06f"
           },
           "Version": "0.7.24",
           "Release": "3.el9",
@@ -22258,7 +22312,7 @@
           },
           "DependsOn": [
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libxml2@2.9.13-14.el9_7.x86_64",
             "libzstd@1.5.5-1.el9.x86_64",
             "openssl-libs@3.5.1-7.0.1.el9_7.x86_64",
@@ -22290,7 +22344,7 @@
           "Name": "libssh",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libssh@0.10.4-17.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "7753bbc3aaa03fd6"
+            "UID": "261ffed7f8d6128d"
           },
           "Version": "0.10.4",
           "Release": "17.el9_7",
@@ -22307,7 +22361,7 @@
           },
           "DependsOn": [
             "crypto-policies@20250905-1.git377cc42.el9_7.noarch",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "krb5-libs@1.21.1-8.0.1.el9_6.x86_64",
             "libssh-config@0.10.4-17.el9_7.noarch",
             "openssl-libs@3.5.1-7.0.1.el9_7.x86_64",
@@ -22371,7 +22425,7 @@
           "Name": "libstdc++",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libstdc%2B%2B@11.5.0-11.0.2.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "8e0dfe055a380980"
+            "UID": "60b4c17c84f1601"
           },
           "Version": "11.5.0",
           "Release": "11.0.2.el9",
@@ -22387,7 +22441,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64"
           ],
           "Layer": {
@@ -22434,7 +22488,7 @@
           "Name": "libtasn1",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libtasn1@4.16.0-9.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "8574a09695cd76d1"
+            "UID": "ffedd9871779ca96"
           },
           "Version": "4.16.0",
           "Release": "9.el9",
@@ -22450,7 +22504,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22478,7 +22532,7 @@
           "Name": "libtirpc",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libtirpc@1.3.3-9.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "52ef92820e5e875a"
+            "UID": "30491c27f79942fe"
           },
           "Version": "1.3.3",
           "Release": "9.el9",
@@ -22494,7 +22548,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "krb5-libs@1.21.1-8.0.1.el9_6.x86_64",
             "libcom_err@1.46.5-8.el9.x86_64"
           ],
@@ -22523,7 +22577,7 @@
           "Name": "libtool-ltdl",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libtool-ltdl@2.4.6-46.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "6623c99913ec6f69"
+            "UID": "eb165c232dbc6d3c"
           },
           "Version": "2.4.6",
           "Release": "46.el9",
@@ -22539,7 +22593,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22561,7 +22615,7 @@
           "Name": "libunistring",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libunistring@0.9.10-15.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "383d5a7ab671083d"
+            "UID": "1052aea03a39ebc1"
           },
           "Version": "0.9.10",
           "Release": "15.el9",
@@ -22577,7 +22631,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22604,7 +22658,7 @@
           "Name": "libuuid",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libuuid@2.37.4-21.0.1.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "ca965abb82c2db60"
+            "UID": "efcb4c23ed145e4a"
           },
           "Version": "2.37.4",
           "Release": "21.0.1.el9_7",
@@ -22620,7 +22674,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22642,7 +22696,7 @@
           "Name": "libverto",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libverto@0.3.2-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "24f3db32cbd546d6"
+            "UID": "b3764b5fd7de155f"
           },
           "Version": "0.3.2",
           "Release": "3.el9",
@@ -22658,7 +22712,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22685,7 +22739,7 @@
           "Name": "libxcrypt",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libxcrypt@4.4.18-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "c6c243b6342d8397"
+            "UID": "1f34ae04e431c6b8"
           },
           "Version": "4.4.18",
           "Release": "3.el9",
@@ -22701,7 +22755,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22734,7 +22788,7 @@
           "Name": "libxml2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libxml2@2.9.13-14.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "5bd48e08f230a8be"
+            "UID": "1f90a3b8a386e73e"
           },
           "Version": "2.9.13",
           "Release": "14.el9_7",
@@ -22750,7 +22804,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "xz-libs@5.2.5-8.el9_0.x86_64",
             "zlib@1.2.11-40.el9.x86_64"
           ],
@@ -22787,7 +22841,7 @@
           "Name": "libyaml",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libyaml@0.2.5-7.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "cc8b1c177f76136c"
+            "UID": "8d31ab0d84218b56"
           },
           "Version": "0.2.5",
           "Release": "7.el9",
@@ -22803,7 +22857,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22827,7 +22881,7 @@
           "Name": "libzstd",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/libzstd@1.5.5-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "a8be50001088a914"
+            "UID": "bd8a17e0d8b1d3fc"
           },
           "Version": "1.5.5",
           "Release": "1.el9",
@@ -22843,7 +22897,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22866,7 +22920,7 @@
           "Name": "lua-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/lua-libs@5.4.4-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "e49adc9ca2c4ed85"
+            "UID": "57353f2622a864aa"
           },
           "Version": "5.4.4",
           "Release": "4.el9",
@@ -22882,7 +22936,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22905,7 +22959,7 @@
           "Name": "lz4-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/lz4-libs@1.9.3-5.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "489c8ddb15d156f0"
+            "UID": "4ed3cfdaf315fa6d"
           },
           "Version": "1.9.3",
           "Release": "5.el9",
@@ -22921,7 +22975,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -22943,7 +22997,7 @@
           "Name": "microdnf",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/microdnf@3.9.1-3.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "c4271c991d201a7f"
+            "UID": "1548ee74bcf42baf"
           },
           "Version": "3.9.1",
           "Release": "3.el9",
@@ -22961,7 +23015,7 @@
           "DependsOn": [
             "dnf-data@4.14.0-31.0.1.el9.noarch",
             "glib2@2.68.4-18.el9_7.1.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libdnf@0.69.0-16.0.1.el9.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64",
             "libpeas@1.30.0-4.el9.x86_64",
@@ -22990,7 +23044,7 @@
           "Name": "mpfr",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/mpfr@4.1.0-7.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "d3ed443077bbef04"
+            "UID": "ec287b7512013906"
           },
           "Version": "4.1.0",
           "Release": "7.el9",
@@ -23006,7 +23060,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "gmp@6.2.0-13.el9.x86_64"
           ],
           "Layer": {
@@ -23034,7 +23088,7 @@
           "Name": "mysql-community-server-minimal",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/mysql-community-server-minimal@9.6.0-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "881b753af879f26e"
+            "UID": "6575b8251ba1bd34"
           },
           "Version": "9.6.0",
           "Release": "1.el9",
@@ -23052,7 +23106,7 @@
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
             "cyrus-sasl-lib@2.1.27-22.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "krb5-libs@1.21.1-8.0.1.el9_6.x86_64",
             "libaio@0.3.111-13.el9.x86_64",
             "libcom_err@1.46.5-8.el9.x86_64",
@@ -23075,7 +23129,7 @@
           "Name": "mysql-shell",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/mysql-shell@9.6.0-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "e28ea30c29379456"
+            "UID": "74cd05e0e065f3e1"
           },
           "Version": "9.6.0",
           "Release": "1.el9",
@@ -23092,7 +23146,7 @@
           "DependsOn": [
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
             "cyrus-sasl-lib@2.1.27-22.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "krb5-libs@1.21.1-8.0.1.el9_6.x86_64",
             "libcom_err@1.46.5-8.el9.x86_64",
             "libcurl@7.76.1-35.el9_7.3.x86_64",
@@ -23320,7 +23374,7 @@
           "Name": "ncurses-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/ncurses-libs@6.2-12.20210508.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "63e6f4a4840eeb95"
+            "UID": "81de60af20bebd79"
           },
           "Version": "6.2",
           "Release": "12.20210508.el9",
@@ -23336,7 +23390,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "ncurses-base@6.2-12.20210508.el9.noarch"
           ],
           "Layer": {
@@ -23397,7 +23451,7 @@
           "Name": "nettle",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/nettle@3.10.1-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "2066a55995daddfb"
+            "UID": "5ebca2c130736b9d"
           },
           "Version": "3.10.1",
           "Release": "1.el9",
@@ -23413,7 +23467,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -23449,7 +23503,7 @@
           "Name": "npth",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/npth@1.6-8.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "e04dca4908f9a224"
+            "UID": "c4c5213eea08ae2"
           },
           "Version": "1.6",
           "Release": "8.el9",
@@ -23465,7 +23519,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -23487,7 +23541,7 @@
           "Name": "openldap",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/openldap@2.6.8-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "5a702458297d14d4"
+            "UID": "8403805f2dcb6438"
           },
           "Version": "2.6.8",
           "Release": "4.el9",
@@ -23504,7 +23558,7 @@
           },
           "DependsOn": [
             "cyrus-sasl-lib@2.1.27-22.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libevent@2.1.12-8.el9_4.x86_64",
             "libtool-ltdl@2.4.6-46.el9.x86_64",
             "openssl-libs@3.5.1-7.0.1.el9_7.x86_64",
@@ -23625,7 +23679,7 @@
           "Name": "openssl",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/openssl@3.5.1-7.0.1.el9_7?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=1",
-            "UID": "3930e1707b08f5dc"
+            "UID": "e7eda07e26c9d8f5"
           },
           "Version": "3.5.1",
           "Release": "7.0.1.el9_7",
@@ -23644,7 +23698,7 @@
           },
           "DependsOn": [
             "coreutils-single@8.32-39.0.1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "openssl-libs@3.5.1-7.0.1.el9_7.x86_64"
           ],
           "Layer": {
@@ -24058,7 +24112,7 @@
           "Name": "openssl-fips-provider-so",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/openssl-fips-provider-so@3.0.7-8.0.1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "369d63eb191c42c7"
+            "UID": "42088d5cc7c412cc"
           },
           "Version": "3.0.7",
           "Release": "8.0.1.el9",
@@ -24075,7 +24129,7 @@
           },
           "DependsOn": [
             "coreutils-single@8.32-39.0.1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -24094,7 +24148,7 @@
           "Name": "openssl-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/openssl-libs@3.5.1-7.0.1.el9_7?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=1",
-            "UID": "8bc648edd0815324"
+            "UID": "f1fb1abb7f2c6108"
           },
           "Version": "3.5.1",
           "Release": "7.0.1.el9_7",
@@ -24114,7 +24168,7 @@
           "DependsOn": [
             "ca-certificates@2025.2.80_v9.0.305-91.el9.noarch",
             "crypto-policies@20250905-1.git377cc42.el9_7.noarch",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "openssl-fips-provider@3.0.7-8.0.1.el9.x86_64",
             "zlib@1.2.11-40.el9.x86_64"
           ],
@@ -24263,7 +24317,7 @@
           "Name": "p11-kit",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/p11-kit@0.25.3-3.el9_5?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "94ab95b81452fc0f"
+            "UID": "6af19671f5ffe239"
           },
           "Version": "0.25.3",
           "Release": "3.el9_5",
@@ -24279,7 +24333,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libffi@3.4.2-8.el9.x86_64",
             "libtasn1@4.16.0-9.el9.x86_64"
           ],
@@ -24395,7 +24449,7 @@
           "Name": "p11-kit-trust",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/p11-kit-trust@0.25.3-3.el9_5?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "d537c89ee0d6db82"
+            "UID": "dbd4fe6968603454"
           },
           "Version": "0.25.3",
           "Release": "3.el9_5",
@@ -24412,7 +24466,7 @@
           },
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libtasn1@4.16.0-9.el9.x86_64",
             "p11-kit@0.25.3-3.el9_5.x86_64"
           ],
@@ -24441,7 +24495,7 @@
           "Name": "pcre",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/pcre@8.44-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "be27f9942ef92b1d"
+            "UID": "2e7acd9071351db1"
           },
           "Version": "8.44",
           "Release": "4.el9",
@@ -24457,7 +24511,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -24487,7 +24541,7 @@
           "Name": "pcre2",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/pcre2@10.40-6.0.1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "19dafe7a214cccf7"
+            "UID": "51caaf1c77e9045c"
           },
           "Version": "10.40",
           "Release": "6.0.1.el9",
@@ -24504,7 +24558,7 @@
           },
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "pcre2-syntax@10.40-6.0.1.el9.noarch"
           ],
           "Layer": {
@@ -24573,7 +24627,7 @@
           "Name": "popt",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/popt@1.18-8.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "ab5fc619faf044d6"
+            "UID": "5efcc6d05b874bce"
           },
           "Version": "1.18",
           "Release": "8.el9",
@@ -24589,7 +24643,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -24678,7 +24732,7 @@
           "Name": "readline",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/readline@8.1-4.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "57c34a1c6d1ffde0"
+            "UID": "21c222a3e72daffa"
           },
           "Version": "8.1",
           "Release": "4.el9",
@@ -24694,7 +24748,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "ncurses-libs@6.2-12.20210508.el9.x86_64"
           ],
           "Layer": {
@@ -24761,7 +24815,7 @@
           "Name": "rpm",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/rpm@4.16.1.3-39.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "c4c0f9ac54104720"
+            "UID": "c3567c4e295f95e"
           },
           "Version": "4.16.1.3",
           "Release": "39.el9",
@@ -24780,7 +24834,7 @@
             "bash@5.1.8-9.el9.x86_64",
             "coreutils-single@8.32-39.0.1.el9.x86_64",
             "curl@7.76.1-35.el9_7.3.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libarchive@3.5.3-6.el9_6.x86_64",
             "popt@1.18-8.el9.x86_64",
             "rpm-libs@4.16.1.3-39.el9.x86_64"
@@ -25048,7 +25102,7 @@
           "Name": "rpm-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/rpm-libs@4.16.1.3-39.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "d61d716bb1f2b53e"
+            "UID": "f0afcb638dabed3f"
           },
           "Version": "4.16.1.3",
           "Release": "39.el9",
@@ -25066,7 +25120,7 @@
           "DependsOn": [
             "audit-libs@3.1.5-7.0.1.el9.x86_64",
             "bzip2-libs@1.0.8-10.el9_5.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libacl@2.3.1-4.el9.x86_64",
             "libcap@2.48-10.el9.x86_64",
             "libzstd@1.5.5-1.el9.x86_64",
@@ -25101,7 +25155,7 @@
           "Name": "sed",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/sed@4.8-9.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "5c06308145da39a2"
+            "UID": "705e9073e2f3d85"
           },
           "Version": "4.8",
           "Release": "9.el9",
@@ -25117,7 +25171,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libacl@2.3.1-4.el9.x86_64",
             "libselinux@3.6-3.el9.x86_64"
           ],
@@ -25260,7 +25314,7 @@
           "Name": "shadow-utils",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/shadow-utils@4.9-15.el9?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=2",
-            "UID": "5eb72b65ff642438"
+            "UID": "2dd9e5df74c9f6f"
           },
           "Version": "4.9",
           "Release": "15.el9",
@@ -25279,7 +25333,7 @@
           },
           "DependsOn": [
             "audit-libs@3.1.5-7.0.1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libacl@2.3.1-4.el9.x86_64",
             "libattr@2.5.1-3.el9.x86_64",
             "libselinux@3.6-3.el9.x86_64",
@@ -25694,7 +25748,7 @@
           "Name": "sqlite-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/sqlite-libs@3.34.1-9.el9_7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "97b9bc1d59a5eb4"
+            "UID": "b757ee5d98af9f2a"
           },
           "Version": "3.34.1",
           "Release": "9.el9_7",
@@ -25710,7 +25764,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
@@ -25733,7 +25787,7 @@
           "Name": "systemd-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/systemd-libs@252-55.0.3.el9_7.7?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "1dcb207bbebfcd4b"
+            "UID": "fc6ebaf88e28ae72"
           },
           "Version": "252",
           "Release": "55.0.3.el9_7.7",
@@ -25751,7 +25805,7 @@
           "DependsOn": [
             "bash@5.1.8-9.el9.x86_64",
             "coreutils-single@8.32-39.0.1.el9.x86_64",
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "grep@3.6-5.el9.x86_64",
             "libcap@2.48-10.el9.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64",
@@ -25799,7 +25853,7 @@
           "Name": "tar",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/tar@1.34-9.el9_7?arch=x86_64\u0026distro=oracle-9.7\u0026epoch=2",
-            "UID": "f5fc77a81250e2bf"
+            "UID": "f0905e42e38b8bdb"
           },
           "Version": "1.34",
           "Release": "9.el9_7",
@@ -25817,7 +25871,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libacl@2.3.1-4.el9.x86_64",
             "libselinux@3.6-3.el9.x86_64"
           ],
@@ -27790,7 +27844,7 @@
           "Name": "xz",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/xz@5.2.5-8.el9_0?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "96b605e8a54eeb9a"
+            "UID": "3e017b3ac0af3823"
           },
           "Version": "5.2.5",
           "Release": "8.el9_0",
@@ -27806,7 +27860,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "grep@3.6-5.el9.x86_64",
             "xz-libs@5.2.5-8.el9_0.x86_64"
           ],
@@ -27892,7 +27946,7 @@
           "Name": "xz-libs",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/xz-libs@5.2.5-8.el9_0?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "bbbb952fd058e484"
+            "UID": "ce64509e5b5b014a"
           },
           "Version": "5.2.5",
           "Release": "8.el9_0",
@@ -27908,7 +27962,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -27930,7 +27984,7 @@
           "Name": "zlib",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/zlib@1.2.11-40.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "a7e5d2042a481c13"
+            "UID": "315efe946ae7f454"
           },
           "Version": "1.2.11",
           "Release": "40.el9",
@@ -27946,7 +28000,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64"
+            "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
             "DiffID": "sha256:66e4b20d00c4951a8bf38098ada26a27151e98c58e8e38cb2abca1a0ca2a524b"
@@ -27971,7 +28025,7 @@
           "Name": "zstd",
           "Identifier": {
             "PURL": "pkg:rpm/oracle/zstd@1.5.5-1.el9?arch=x86_64\u0026distro=oracle-9.7",
-            "UID": "9d00f45616a288d8"
+            "UID": "dc1dd7223a3a3c2b"
           },
           "Version": "1.5.5",
           "Release": "1.el9",
@@ -27987,7 +28041,7 @@
             "Class": "official"
           },
           "DependsOn": [
-            "glibc@2.34-231.0.1.el9_7.2.x86_64",
+            "glibc@2.34-231.0.1.el9_7.10.x86_64",
             "libgcc@11.5.0-11.0.2.el9.x86_64",
             "libstdc++@11.5.0-11.0.2.el9.x86_64",
             "lz4-libs@1.9.3-5.el9.x86_64",
@@ -28484,7 +28538,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:0c76d951a8308b555e132cb22dfc49b3b79a8af6b8215fba06bf6539400c64b0",
+          "Fingerprint": "sha256:9b668125d4bb14383db5e545abb59b8d2ccafee5a72ba192d95620b139e0a428",
           "Title": "libsodium: pynacl: libsodium: Improper validation of elliptic curve points could lead to data integrity or information disclosure.",
           "Description": "libsodium before ad3004e, in atypical use cases involving certain custom cryptography or untrusted data to crypto_core_ed25519_is_valid_point, mishandles checks for whether an elliptic curve point is valid because it sometimes allows points that aren't in the main cryptographic group.",
           "Severity": "MEDIUM",
@@ -28553,7 +28607,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:f23b64827a77a18c2aecb20b0616d9b52cbaf24228cf1960f0f6c45f202e99d2",
+          "Fingerprint": "sha256:a02c3f0cc31278fb882fec32c62313354ccbc7cb683cd4e6e9df67c6466721ae",
           "Title": "cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
           "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 46.0.5, the public_key_from_numbers (or EllipticCurvePublicNumbers.public_key()), EllipticCurvePublicNumbers.public_key(), load_der_public_key() and load_pem_public_key() functions do not verify that the point belongs to the expected prime-order subgroup of the curve. This missing validation allows an attacker to provide a public key point P from a small-order subgroup. This can lead to security issues in various situations, such as the most commonly used signature verification (ECDSA) and shared key negotiation (ECDH). When the victim computes the shared secret as S = [victim_private_key]P via ECDH, this leaks information about victim_private_key mod (small_subgroup_order). For curves with cofactor \u003e 1, this reveals the least significant bits of the private key. When these weak public keys are used in ECDSA , it's easy to forge signatures on the small subgroup. Only SECT curves are impacted by this. This vulnerability is fixed in 46.0.5.",
           "Severity": "HIGH",
@@ -28565,6 +28619,10 @@
             "redhat": 3
           },
           "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 8.2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
               "V3Score": 7.4
@@ -28607,18 +28665,27 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:7512579b1a00c3f5e60d953cfb63a6434c9fe4eeb89bde2566de7f294035b784",
+          "Fingerprint": "sha256:e053d2a46e5848e05ecd9beeb8f680753c52a55d971457cdf48ced480ead4b21",
           "Title": "pip: pip missing checks on symbolic link extraction",
           "Description": "When extracting a tar archive pip may not check symbolic links point into the extraction directory if the tarfile module doesn't implement PEP 706.\nNote that upgrading pip to a \"fixed\" version for this vulnerability doesn't fix all known vulnerabilities that are remediated by using a Python version that implements PEP 706.\n\nNote that this is a vulnerability in pip's fallback implementation of tar extraction for Python versions that don't implement PEP 706\nand therefore are not secure to all vulnerabilities in the Python 'tarfile' module. If you're using a Python version that implements PEP 706\nthen pip doesn't use the \"vulnerable\" fallback code.\n\nMitigations include upgrading to a version of pip that includes the fix, upgrading to a Python version that implements PEP 706 (Python \u003e=3.9.17, \u003e=3.10.12, \u003e=3.11.4, or \u003e=3.12),\napplying the linked patch, or inspecting source distributions (sdists) before installation as is already a best-practice.",
           "Severity": "MEDIUM",
           "VendorSeverity": {
             "amazon": 2,
             "azure": 2,
+            "bitnami": 2,
             "ghsa": 2,
             "redhat": 2,
             "ubuntu": 2
           },
           "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 5.9
+            },
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 5.9
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
               "V3Score": 5.3
@@ -28663,7 +28730,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:d76eb052d7a703ed21dd340e0a693bfb51dab73df2475eae7bc1d1520d556e6a",
+          "Fingerprint": "sha256:709f15b29c9ade62511f2c94046c9b46328c5121ff8ef6541a0b01dceca73fbf",
           "Title": "pip: pip: Information disclosure via path traversal when installing crafted wheel archives",
           "Description": "When pip is installing and extracting a maliciously crafted wheel archive, files may be extracted outside the installation directory. The path traversal is limited to prefixes of the installation directory, thus isn't able to inject or overwrite executable files in typical situations.",
           "Severity": "LOW",
@@ -28676,6 +28743,14 @@
             "redhat": 1
           },
           "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 2
+            },
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 2
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N",
               "V3Score": 3.9
@@ -28786,7 +28861,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:faafbdf45c5b22533e668d7e34536a4f2b1d7e5a57fb0bbeb9b6c3dfa5061811",
+          "Fingerprint": "sha256:4ab652c2a0047b558a25ba029f409e614a2aae3df5b090bd50ac8f46cb59edb7",
           "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
@@ -28799,6 +28874,7 @@
             "bitnami": 4,
             "nvd": 4,
             "oracle-oval": 3,
+            "photon": 4,
             "redhat": 2
           },
           "CVSS": {
@@ -28816,13 +28892,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2708",
+            "https://access.redhat.com/errata/RHSA-2026:2709",
             "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437016",
             "https://bugzilla.redhat.com/2437111",
-            "https://errata.almalinux.org/8/ALSA-2026-2708.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2709.html",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
@@ -28858,7 +28934,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:f82e8e3a97c984c8ee31b527b66f8cd929d1b4586093ab84dda4ef7bb341b7a5",
+          "Fingerprint": "sha256:4a482aa0830e9fa05450d7f41fe9ad803345d7ddb3d02f44aa2bec0d7392eb4e",
           "Title": "golang: archive/tar: Unbounded allocation when parsing GNU sparse map",
           "Description": "tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.",
           "Severity": "HIGH",
@@ -28869,6 +28945,7 @@
             "bitnami": 2,
             "cbl-mariner": 2,
             "oracle-oval": 2,
+            "photon": 2,
             "redhat": 2,
             "rocky": 2
           },
@@ -28890,7 +28967,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2407258",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183",
             "https://errata.almalinux.org/9/ALSA-2026-1381.html",
-            "https://errata.rockylinux.org/RLSA-2025:23295",
+            "https://errata.rockylinux.org/RLSA-2025:23326",
             "https://go.dev/cl/709861",
             "https://go.dev/issue/75677",
             "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
@@ -28926,7 +29003,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:65b8c8f69c2e3bca40bc196af20c849f8fa132f9b01d524d4f0620fde131ca95",
+          "Fingerprint": "sha256:ad031bb091702c96e655d66a5383573fb68be0802645a65762d0839fe45eb28c",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -28940,6 +29017,7 @@
             "bitnami": 3,
             "cbl-mariner": 2,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3
           },
           "CVSS": {
@@ -28953,13 +29031,13 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2708",
+            "https://access.redhat.com/errata/RHSA-2026:2709",
             "https://access.redhat.com/security/cve/CVE-2025-61726",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437016",
             "https://bugzilla.redhat.com/2437111",
-            "https://errata.almalinux.org/8/ALSA-2026-2708.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2709.html",
             "https://go.dev/cl/736712",
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
@@ -28995,7 +29073,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:109b2a571cdd557292cf68948f51b4c17fbce14f1025a19b3f6e61e4543f156c",
+          "Fingerprint": "sha256:12755ea41ce92a424865cb211f3b826560e3ee1d6736fb70b773fad788aff5ba",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -29008,6 +29086,7 @@
             "azure": 2,
             "bitnami": 2,
             "oracle-oval": 3,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29022,13 +29101,13 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/15/4",
-            "https://access.redhat.com/errata/RHSA-2026:2708",
+            "https://access.redhat.com/errata/RHSA-2026:2709",
             "https://access.redhat.com/security/cve/CVE-2025-61728",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437016",
             "https://bugzilla.redhat.com/2437111",
-            "https://errata.almalinux.org/8/ALSA-2026-2708.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2709.html",
             "https://go.dev/cl/736713",
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
@@ -29064,7 +29143,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:46b19dc57ea2eb4beeb820b93f7ed1b63b8a41f9ec433bf1e6e7afaf577327c4",
+          "Fingerprint": "sha256:97a634f6e3091de2fd65437245cb4387133d8413187987416c2ab249ff11230f",
           "Title": "crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate",
           "Description": "Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.",
           "Severity": "HIGH",
@@ -29076,6 +29155,7 @@
             "amazon": 3,
             "bitnami": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3
           },
@@ -29096,7 +29176,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
             "https://errata.almalinux.org/9/ALSA-2026-1908.html",
-            "https://errata.rockylinux.org/RLSA-2026:1715",
+            "https://errata.rockylinux.org/RLSA-2026:1908",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -29132,13 +29212,14 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:7c90059a5b4bbb1cc799ac4cdbd361566420a8bda8d40d6d5d97060f892e72e9",
+          "Fingerprint": "sha256:91ec751de4b04e31a61ea69c6d3680fa423d87e07a4efb7c3f3e96b25ebc6ffc",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "HIGH",
           "VendorSeverity": {
             "amazon": 3,
-            "bitnami": 2
+            "bitnami": 2,
+            "photon": 2
           },
           "CVSS": {
             "bitnami": {
@@ -29179,13 +29260,14 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:aaddd9f7e2545721d8597525f438d497f4b53d096fc3e7e6debe2b767e754faf",
+          "Fingerprint": "sha256:002faec4116129bd87c7c9d08a46224ac5eccc18c6d3b9b566db7170534b26a4",
           "Title": "net/url: Insufficient validation of bracketed IPv6 hostnames in net/url",
           "Description": "The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: \"http://[::1]/\". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.",
           "Severity": "MEDIUM",
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29234,7 +29316,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:be6cced2ab97b000fc8c0a2f742947386062760e5a406195d3dd8c9dd75420aa",
+          "Fingerprint": "sha256:349ee6a6725cf170e0fd6bb8ed68fad5a883f18c5a388aad8dd51f4d86fe0594",
           "Title": "encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1",
           "Description": "Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.",
           "Severity": "MEDIUM",
@@ -29244,6 +29326,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29293,13 +29376,14 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b26747c8269af1d3f6a35f3fa9ec5c6fd922c47f7032770ee68ed22d4968bd25",
+          "Fingerprint": "sha256:5f84882809be0c7ca3a128166c5f6762c2dfbafb32e0ea884ba674c282be2178",
           "Title": "golang.org/net/http: Lack of limit when parsing cookies can cause memory exhaustion in net/http",
           "Description": "Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.",
           "Severity": "MEDIUM",
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 1
           },
           "CVSS": {
@@ -29348,7 +29432,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:84c9ac627d2e1b73f080daee851346cf9c4e8b5fafba28625d71d02de9758004",
+          "Fingerprint": "sha256:c53cb04d57c45c642fe4a7943ce519e117f8039bc4054a994060d721bfa295f1",
           "Title": "crypto/x509: Quadratic complexity when checking name constraints in crypto/x509",
           "Description": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -29358,6 +29442,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29407,7 +29492,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4287b26b4ce1c766b6929bd612bad2455a0ccc3ce8902b7b87ee0ec9da539f9f",
+          "Fingerprint": "sha256:8a80bd67cf697ef048ec7e77b22c7fbdfbe14893f5888742a6144c1501af1b11",
           "Title": "crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509",
           "Description": "Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -29417,6 +29502,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29466,7 +29552,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:9cd831df867b81094b846d890e03240ae62933e887102d735a2822f35827214e",
+          "Fingerprint": "sha256:e0d1a60cdd828868ffdb9d2d447256717fa02248f2e2bef666aafff555945843",
           "Title": "crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information",
           "Description": "When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.",
           "Severity": "MEDIUM",
@@ -29476,6 +29562,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29524,7 +29611,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4a1e7f1bc5fabb412abbb490b84d528354bdeea9f8249997b32b387d238548a3",
+          "Fingerprint": "sha256:914c68500a52d4e832331e95639008f1582946157fea15272c1654d0e539e820",
           "Title": "encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem",
           "Description": "The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.",
           "Severity": "MEDIUM",
@@ -29534,6 +29621,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29583,7 +29671,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ab084f23fff2de2910df3ffcd462e1a09f8cdf5e26632060e1d4884f7f9a331e",
+          "Fingerprint": "sha256:8ce124a557c8a20a981859ca0ef3e22378bc12b020fccfd38661a588b045698a",
           "Title": "net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto",
           "Description": "The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -29593,6 +29681,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -29641,13 +29730,14 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:675a3e749a0fc1a351010aaacc85d3714fe3984803d1457a41e70186a984d0b9",
+          "Fingerprint": "sha256:6c18957ebc994d378003a9bb6dd7ef6494beccc855ce11df5bc9893259c5940c",
           "Title": "net/mail: Excessive CPU consumption in ParseAddress in net/mail",
           "Description": "The ParseAddress function constructs domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -29696,7 +29786,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:5f9cab0579fbb61b3572f244a46c71c216d46b9c07bfcf28a849734b0d804703",
+          "Fingerprint": "sha256:4e2895e669d161f02c2ca8652ebb27f7947d249fda208c7f53497e9a5e807a28",
           "Title": "golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs",
           "Description": "An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.",
           "Severity": "MEDIUM",
@@ -29706,6 +29796,7 @@
           "VendorSeverity": {
             "amazon": 3,
             "bitnami": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
