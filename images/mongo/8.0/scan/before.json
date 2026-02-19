@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c71f6-ecf9-798f-a278-3488e257d75a",
-  "CreatedAt": "2026-02-19T01:15:33.881629956+07:00",
+  "ReportID": "019c771c-490f-73d9-a734-90c6bd6fcf19",
+  "CreatedAt": "2026-02-20T01:14:28.367254606+07:00",
   "ArtifactID": "sha256:1fbb0f569e5fc8b6da73a577c8ccc9752617767a40ec78de23c1e87e23a4b0cf",
   "ArtifactName": "mongo:8.0",
   "ArtifactType": "container_image",
@@ -9382,6 +9382,7 @@
             "CWE-601"
           ],
           "VendorSeverity": {
+            "amazon": 2,
             "photon": 2,
             "ubuntu": 1
           },
@@ -9423,6 +9424,7 @@
             "CWE-295"
           ],
           "VendorSeverity": {
+            "amazon": 2,
             "photon": 2,
             "ubuntu": 1
           },
@@ -9463,6 +9465,7 @@
             "CWE-297"
           ],
           "VendorSeverity": {
+            "amazon": 2,
             "photon": 2,
             "ubuntu": 1
           },
@@ -9504,6 +9507,7 @@
             "CWE-287"
           ],
           "VendorSeverity": {
+            "amazon": 2,
             "photon": 1,
             "ubuntu": 1
           },
@@ -10050,6 +10054,273 @@
           ],
           "PublishedDate": "2025-08-13T15:15:41.873Z",
           "LastModifiedDate": "2025-11-20T21:16:08.11Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0964",
+          "PkgID": "libssh-4@0.10.6-2ubuntu0.2",
+          "PkgName": "libssh-4",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "f34d5a10961bfc52"
+          },
+          "InstalledVersion": "0.10.6-2ubuntu0.2",
+          "FixedVersion": "0.10.6-2ubuntu0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6893502d91a92452e929501f618ffcc8680e9b307f1fe19c935d2cd34549371a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0964",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:9c202b178dbd8d45f8a364abd8df26da93df018dcbb2ff7d492b92c76c08613f",
+          "Title": "libssh: Improper sanitation of paths received from SCP servers",
+          "Description": "No description is available for this CVE.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-0964",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0964",
+            "https://ubuntu.com/security/notices/USN-8051-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0964",
+            "https://www.libssh.org/security/advisories/CVE-2026-0964.txt"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0967",
+          "PkgID": "libssh-4@0.10.6-2ubuntu0.2",
+          "PkgName": "libssh-4",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "f34d5a10961bfc52"
+          },
+          "InstalledVersion": "0.10.6-2ubuntu0.2",
+          "FixedVersion": "0.10.6-2ubuntu0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6893502d91a92452e929501f618ffcc8680e9b307f1fe19c935d2cd34549371a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0967",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:cbaa43c03fc20573bd012a7a9a612fd6e72cf67841ed0bfeabe87e98912d1c98",
+          "Title": "libssh: libssh: Denial of Service via inefficient regular expression processing",
+          "Description": "No description is available for this CVE.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 2.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-0967",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0967",
+            "https://ubuntu.com/security/notices/USN-8051-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0967",
+            "https://www.libssh.org/security/advisories/CVE-2026-0967.txt"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0968",
+          "PkgID": "libssh-4@0.10.6-2ubuntu0.2",
+          "PkgName": "libssh-4",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "f34d5a10961bfc52"
+          },
+          "InstalledVersion": "0.10.6-2ubuntu0.2",
+          "FixedVersion": "0.10.6-2ubuntu0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6893502d91a92452e929501f618ffcc8680e9b307f1fe19c935d2cd34549371a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0968",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:75e032f28b03f899f5cb1c423c0074703baf0a623e2acec2b761017332527682",
+          "Title": "libssh: libssh: Denial of Service due to malformed SFTP message",
+          "Description": "No description is available for this CVE.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-0968",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0968",
+            "https://ubuntu.com/security/notices/USN-8051-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0968",
+            "https://www.libssh.org/security/advisories/CVE-2026-0968.txt"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2025-8277",
+          "PkgID": "libssh-4@0.10.6-2ubuntu0.2",
+          "PkgName": "libssh-4",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "f34d5a10961bfc52"
+          },
+          "InstalledVersion": "0.10.6-2ubuntu0.2",
+          "FixedVersion": "0.10.6-2ubuntu0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6893502d91a92452e929501f618ffcc8680e9b307f1fe19c935d2cd34549371a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-8277",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:7b31aa8900c3194e57b69d3e52970aa745f3384a895c44b35144c512803e74ca",
+          "Title": "libssh: Memory Exhaustion via Repeated Key Exchange in libssh",
+          "Description": "A flaw was found in libssh's handling of key exchange (KEX) processes when a client repeatedly sends incorrect KEX guesses. The library fails to free memory during these rekey operations, which can gradually exhaust system memory. This issue can lead to crashes on the client side, particularly when using libgcrypt, which impacts application stability and availability.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-401"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 1,
+            "cbl-mariner": 1,
+            "redhat": 1,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-8277",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2383888",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-8277",
+            "https://ubuntu.com/security/notices/USN-8051-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-8277",
+            "https://www.libssh.org/security/advisories/CVE-2025-8277.txt"
+          ],
+          "PublishedDate": "2025-09-09T12:15:30.677Z",
+          "LastModifiedDate": "2025-09-09T16:28:43.66Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0965",
+          "PkgID": "libssh-4@0.10.6-2ubuntu0.2",
+          "PkgName": "libssh-4",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "f34d5a10961bfc52"
+          },
+          "InstalledVersion": "0.10.6-2ubuntu0.2",
+          "FixedVersion": "0.10.6-2ubuntu0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6893502d91a92452e929501f618ffcc8680e9b307f1fe19c935d2cd34549371a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0965",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:65a4d1fd70cbd3ebfd4c250008fc67b728afe13be21edea287837144dabaaf64",
+          "Title": "libssh: libssh: Denial of Service via improper configuration file handling",
+          "Description": "No description is available for this CVE.",
+          "Severity": "LOW",
+          "VendorSeverity": {
+            "redhat": 1,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-0965",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0965",
+            "https://ubuntu.com/security/notices/USN-8051-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0965",
+            "https://www.libssh.org/security/advisories/CVE-2026-0965.txt"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-0966",
+          "PkgID": "libssh-4@0.10.6-2ubuntu0.2",
+          "PkgName": "libssh-4",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "f34d5a10961bfc52"
+          },
+          "InstalledVersion": "0.10.6-2ubuntu0.2",
+          "FixedVersion": "0.10.6-2ubuntu0.3",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:6893502d91a92452e929501f618ffcc8680e9b307f1fe19c935d2cd34549371a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-0966",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Fingerprint": "sha256:f9ad933921d5b05e9b768c7183613683700b6eb02e7972cfabd353c52ac528a9",
+          "Title": "libssh: Buffer underflow in ssh_get_hexa() on invalid input",
+          "Description": "No description is available for this CVE.",
+          "Severity": "LOW",
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-0966",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-0966",
+            "https://ubuntu.com/security/notices/USN-8051-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-0966",
+            "https://www.libssh.org/security/advisories/CVE-2026-0966.txt"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2024-56433",
@@ -10798,7 +11069,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -10868,7 +11139,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -10938,7 +11209,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -11472,7 +11743,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -11542,7 +11813,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -11612,7 +11883,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -12146,7 +12417,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -12216,7 +12487,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -12286,7 +12557,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -12820,7 +13091,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -12890,7 +13161,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -12960,7 +13231,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -13507,7 +13778,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -13577,7 +13848,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -13647,7 +13918,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -14181,7 +14452,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -14251,7 +14522,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -14321,7 +14592,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -14894,7 +15165,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -14964,7 +15235,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -15034,7 +15305,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -15568,7 +15839,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -15638,7 +15909,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -15708,7 +15979,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -15898,7 +16169,7 @@
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
             "https://linux.oracle.com/cve/CVE-2025-68121.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-68121",
             "https://pkg.go.dev/vuln/GO-2026-4337",
             "https://www.cve.org/CVERecord?id=CVE-2025-68121"
@@ -16037,7 +16308,7 @@
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61726.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61726",
             "https://pkg.go.dev/vuln/GO-2026-4341",
             "https://www.cve.org/CVERecord?id=CVE-2025-61726"
@@ -16107,7 +16378,7 @@
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
             "https://linux.oracle.com/cve/CVE-2025-61728.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2709.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61728",
             "https://pkg.go.dev/vuln/GO-2026-4342",
             "https://www.cve.org/CVERecord?id=CVE-2025-61728"
@@ -16176,7 +16447,7 @@
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
             "https://linux.oracle.com/cve/CVE-2025-61729.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2323.html",
+            "https://linux.oracle.com/errata/ELSA-2026-2920.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-61729",
             "https://pkg.go.dev/vuln/GO-2025-4155",
             "https://www.cve.org/CVERecord?id=CVE-2025-61729"

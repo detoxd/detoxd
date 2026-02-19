@@ -32,14 +32,14 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 10 | `httpd:2.4.66-alpine` | 2 | 0 | 2 | 100% |
 | 11 | `httpd:2.4.66-alpine3.22` | 33 | 0 | 33 | 100% |
 | 12 | `httpd:2.4.66-alpine3.23` | 2 | 0 | 2 | 100% |
-| 13 | `mongo:8.0` | 69 | 67 | 2 | 3% |
+| 13 | `mongo:8.0` | 75 | 67 | 8 | 11% |
 | 14 | `mongo:8.2-noble` | 225 | 219 | 6 | 3% |
 | 15 | `mongo:8.2.3` | 241 | 219 | 22 | 9% |
-| 16 | `mongo:8.2.3-noble` | 243 | 219 | 24 | 10% |
-| 17 | `mongo:8.2.4` | 227 | 219 | 8 | 4% |
-| 18 | `mongo:8.2.4-noble` | 227 | 219 | 8 | 4% |
-| 19 | `mongo:8.2.5` | 69 | 67 | 2 | 3% |
-| 20 | `mongo:8.2.5-noble` | 69 | 67 | 2 | 3% |
+| 16 | `mongo:8.2.3-noble` | 249 | 219 | 30 | 12% |
+| 17 | `mongo:8.2.4` | 233 | 219 | 14 | 6% |
+| 18 | `mongo:8.2.4-noble` | 233 | 219 | 14 | 6% |
+| 19 | `mongo:8.2.5` | 75 | 67 | 8 | 11% |
+| 20 | `mongo:8.2.5-noble` | 75 | 67 | 8 | 11% |
 | 21 | `mysql:9.0` | 228 | 85 | 143 | 63% |
 | 22 | `mysql:9.6-oracle` | 29 | 20 | 9 | 31% |
 | 23 | `mysql:9.6-oraclelinux9` | 29 | 20 | 9 | 31% |
@@ -55,7 +55,7 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 33 | `nginx:1.29.4-alpine3.23` | 0 | 0 | 0 | 0% |
 | 34 | `nginx:1.29.5-alpine` | 0 | 0 | 0 | 0% |
 | 35 | `nginx:1.29.5-alpine3.23` | 0 | 0 | 0 | 0% |
-| 36 | `node:22-alpine` | 14 | 17 | -3 | -21% |
+| 36 | `node:22-alpine` | 15 | 18 | -3 | -20% |
 | 37 | `postgres:17-alpine` | 16 | 16 | 0 | 0% |
 | 38 | `postgres:17.7-alpine` | 16 | 16 | 0 | 0% |
 | 39 | `postgres:17.7-alpine3.21` | 42 | 16 | 26 | 62% |
@@ -137,4 +137,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-18*
+*Last updated: 2026-02-19*

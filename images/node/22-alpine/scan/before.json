@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c71ee-2963-7b3a-9e23-fad9185d612d",
-  "CreatedAt": "2026-02-19T01:05:59.523739325+07:00",
+  "ReportID": "019c7714-6508-7065-b33d-25160fa9e228",
+  "CreatedAt": "2026-02-20T01:05:51.240028652+07:00",
   "ArtifactID": "sha256:f780f9b9f3c7b7c0e006a304bbca2b27bfc739e9cc98b2a827a44684e47edc38",
   "ArtifactName": "node:22-alpine",
   "ArtifactType": "container_image",
@@ -4466,6 +4466,50 @@
           "LastModifiedDate": "2025-12-02T19:34:43.27Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-26996",
+          "VendorIDs": [
+            "GHSA-3ppc-4f35-3m26"
+          ],
+          "PkgID": "minimatch@9.0.5",
+          "PkgName": "minimatch",
+          "PkgPath": "usr/local/lib/node_modules/npm/node_modules/minimatch/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/minimatch@9.0.5",
+            "UID": "3c2e4d9d9793eb0b"
+          },
+          "InstalledVersion": "9.0.5",
+          "FixedVersion": "10.2.1",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:73f69c6599be74f4742a84051e5f3c835cf1230fdd3378870b4496cef610952e"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-26996",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:d3ba79e2e94a4a401c2584d089b6052cc251d19f0553bb1f998bc1c5f3aa5350",
+          "Title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "Description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V40Score": 8.7
+            }
+          },
+          "References": [
+            "https://github.com/isaacs/minimatch",
+            "https://github.com/isaacs/minimatch/commit/2e111f3a79abc00fa73110195de2c0f2351904f5",
+            "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26"
+          ]
+        },
+        {
           "VulnerabilityID": "CVE-2026-23745",
           "VendorIDs": [
             "GHSA-8qq5-rm4j-mr97"
@@ -4499,12 +4543,17 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
+            "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
               "V40Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+              "V3Score": 6.1
             },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
@@ -4520,7 +4569,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-23745"
           ],
           "PublishedDate": "2026-01-16T22:16:26.83Z",
-          "LastModifiedDate": "2026-01-26T15:05:39.84Z"
+          "LastModifiedDate": "2026-02-18T16:20:07.823Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23950",
@@ -4558,12 +4607,17 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
+            "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
               "V3Score": 8.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
             },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
@@ -4579,7 +4633,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-23950"
           ],
           "PublishedDate": "2026-01-20T01:15:57.87Z",
-          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
+          "LastModifiedDate": "2026-02-18T15:50:29.91Z"
         },
         {
           "VulnerabilityID": "CVE-2026-24842",
@@ -4718,12 +4772,17 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
+            "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
               "V40Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+              "V3Score": 6.1
             },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
@@ -4739,7 +4798,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-23745"
           ],
           "PublishedDate": "2026-01-16T22:16:26.83Z",
-          "LastModifiedDate": "2026-01-26T15:05:39.84Z"
+          "LastModifiedDate": "2026-02-18T16:20:07.823Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23745",
@@ -4775,12 +4834,17 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
+            "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
               "V40Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+              "V3Score": 6.1
             },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
@@ -4796,7 +4860,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-23745"
           ],
           "PublishedDate": "2026-01-16T22:16:26.83Z",
-          "LastModifiedDate": "2026-01-26T15:05:39.84Z"
+          "LastModifiedDate": "2026-02-18T16:20:07.823Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23950",
@@ -4834,12 +4898,17 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
+            "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
               "V3Score": 8.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
             },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
@@ -4855,7 +4924,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-23950"
           ],
           "PublishedDate": "2026-01-20T01:15:57.87Z",
-          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
+          "LastModifiedDate": "2026-02-18T15:50:29.91Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23950",
@@ -4893,12 +4962,17 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
+            "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
               "V3Score": 8.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
             },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
@@ -4914,7 +4988,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-23950"
           ],
           "PublishedDate": "2026-01-20T01:15:57.87Z",
-          "LastModifiedDate": "2026-01-26T15:05:23.427Z"
+          "LastModifiedDate": "2026-02-18T15:50:29.91Z"
         },
         {
           "VulnerabilityID": "CVE-2026-24842",

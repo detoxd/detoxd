@@ -89,7 +89,7 @@ These remain because **no upstream fix is available**:
 [LOW] TEMP-0290435-0B57B5: tar
 [MEDIUM] CVE-2025-14104: util-linux
 [LOW] CVE-2022-0563: util-linux
-[UNKNOWN] CVE-2026-27171: zlib1g
+[LOW] CVE-2026-27171: zlib1g
 ```
 
 ## Files
