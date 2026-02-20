@@ -4,17 +4,17 @@
 
 | Metric | Before | After | Fixed |
 |--------|--------|-------|-------|
-| Total Vulnerabilities | 29 | 20 | 9 |
-| Fixable | 29 | 20 | 9 |
+| Total Vulnerabilities | 20 | 20 | 0 |
+| Fixable | 20 | 20 | 0 |
 | Unfixable | 0 | 0 | - |
 
-**Reduction: 31%**
+**Reduction: 0%**
 
 ## Quick Start
 
 ```bash
-docker pull detoxd/mysql:9.6-oraclelinux9-detox.2
-docker run -it detoxd/mysql:9.6-oraclelinux9-detox.2
+docker pull detoxd/mysql:9.6-oraclelinux9-detox.1
+docker run -it detoxd/mysql:9.6-oraclelinux9-detox.1
 ```
 
 ## Remaining Vulnerabilities

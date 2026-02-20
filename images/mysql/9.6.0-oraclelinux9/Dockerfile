@@ -1,13 +1,13 @@
 # ============================================================================
-# Detoxd Hardened Image - Iteration 2
+# Detoxd Hardened Image - Iteration 1
 # Generated from Trivy analysis - targeting 20 fixable vulns
 # ============================================================================
 
-ARG BASE_IMAGE=detoxd/mysql:9.6.0-oraclelinux9-detox.1
+ARG BASE_IMAGE=mysql:9.6.0-oraclelinux9
 FROM ${BASE_IMAGE}
 
 LABEL maintainer="detoxd"
-LABEL detoxd.iteration="2"
+LABEL detoxd.iteration="1"
 LABEL detoxd.fixable.count="20"
 LABEL detoxd.unfixable.count="0"
 

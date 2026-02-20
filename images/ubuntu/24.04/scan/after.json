@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c770f-b38b-75b7-990c-731d9ef92dcd",
-  "CreatedAt": "2026-02-20T01:00:43.65937722+07:00",
-  "ArtifactID": "sha256:94518809dae803fd66d054b8a4eea670dd46d2a8d2c70511b0bd734304c067ba",
+  "ReportID": "019c7c35-ff17-7cb2-b2b1-75b4647cb6e7",
+  "CreatedAt": "2026-02-21T01:00:39.447834526+07:00",
+  "ArtifactID": "sha256:62f30eb98598d83e7506b16081c72dabb417e7b4dd09b2e7af6b191afecfe611",
   "ArtifactName": "detoxd/ubuntu:24.04-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,10 +14,10 @@
       "Family": "ubuntu",
       "Name": "24.04"
     },
-    "ImageID": "sha256:66a06c5c7a71160abc1f4cf50be9bfdd27c458b796a4429b4834fd70657c5073",
+    "ImageID": "sha256:ba1401a6c302fb71e098c6ef2e1954b06b0269c6d00e0c73a99475782511df0d",
     "DiffIDs": [
       "sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791",
-      "sha256:773d6928e1b0f20a1ee6debdc6392488dc1ef325e9f4558765b7812035cff4d8",
+      "sha256:7d39671b5e98c4a5b7862852c915648e52461faaf553e406d8b970307afcfeab",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
     ],
     "RepoTags": [
@@ -26,7 +26,7 @@
     "Reference": "detoxd/ubuntu:24.04-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-20T02:00:41.276139682+08:00",
+      "created": "2026-02-21T02:00:36.820125748+08:00",
       "history": [
         {
           "created": "2026-02-10T16:49:54Z",
@@ -58,36 +58,36 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-19T18:00:41Z",
+          "created": "2026-02-20T18:00:36Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-19T18:00:41Z",
+          "created": "2026-02-20T18:00:36Z",
           "created_by": "LABEL detoxd.iteration=1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-19T18:00:41Z",
+          "created": "2026-02-20T18:00:36Z",
           "created_by": "LABEL detoxd.fixable.count=2",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-19T18:00:41Z",
+          "created": "2026-02-20T18:00:36Z",
           "created_by": "LABEL detoxd.unfixable.count=11",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-19T18:00:41Z",
+          "created": "2026-02-20T18:00:36Z",
           "created_by": "RUN /bin/sh -c apt-get update \u0026\u0026     apt-get install -y --only-upgrade libgnutls30t64 || apt-get upgrade -y \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-19T18:00:41Z",
+          "created": "2026-02-20T18:00:36Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -97,7 +97,7 @@
         "type": "layers",
         "diff_ids": [
           "sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791",
-          "sha256:773d6928e1b0f20a1ee6debdc6392488dc1ef325e9f4558765b7812035cff4d8",
+          "sha256:7d39671b5e98c4a5b7862852c915648e52461faaf553e406d8b970307afcfeab",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
         ]
       },
@@ -125,7 +125,7 @@
       },
       {
         "Size": 3104256,
-        "DiffID": "sha256:773d6928e1b0f20a1ee6debdc6392488dc1ef325e9f4558765b7812035cff4d8"
+        "DiffID": "sha256:7d39671b5e98c4a5b7862852c915648e52461faaf553e406d8b970307afcfeab"
       },
       {
         "Size": 1024,
@@ -3023,7 +3023,7 @@
             "libunistring5@1.1-2build1.1"
           ],
           "Layer": {
-            "DiffID": "sha256:773d6928e1b0f20a1ee6debdc6392488dc1ef325e9f4558765b7812035cff4d8"
+            "DiffID": "sha256:7d39671b5e98c4a5b7862852c915648e52461faaf553e406d8b970307afcfeab"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libgnutls.so.30.37.1",
@@ -6819,7 +6819,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:d77238ed5bdfd8653c374988437e513d903a1b5455a2031f27ad5491d90eafc4",
+          "Fingerprint": "sha256:d4e1ccce76ee9f3946e26b2dcb99fb65ff8c292dc3a9de8db02923ce82de0e42",
           "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
           "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
           "Severity": "LOW",
@@ -6881,7 +6881,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:44f2fa7258717be1276f60eeafca1bf8842cf27b2d9cea00624ac4c74f9c2c09",
+          "Fingerprint": "sha256:b12f9063f3a100ef9faff3d3f14bea4d93df03a3eceb45728b083ca40bfc5c72",
           "Title": "gnupg: GnuPG: Signature bypass via form feed character in signed messages",
           "Description": "In GnuPG through 2.4.8, if a signed message has \\f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an \"invalid armor\" message is printed during verification). This is related to use of \\f as a marker to denote truncation of a long plaintext line.",
           "Severity": "MEDIUM",
@@ -6935,7 +6935,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:1714d9c00288a03ef29040ad5dfcd260b1900f88cddf9aa58f4b0b6155bc2f8e",
+          "Fingerprint": "sha256:2457dd8e3cc92a0a9ec1bce0f31f30ea64343bbba8e899f38d7617fb09865b63",
           "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
           "Description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
           "Severity": "LOW",
@@ -6990,7 +6990,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:7b554586d7e42a63c78130e7ecbcf2d02691d501ce65b154690667f1f962932b",
+          "Fingerprint": "sha256:aed67a5645a0c7ddc1339b6eb6407050d53484d025027f1de3db99df6770ea20",
           "Title": "libgcrypt: vulnerable to Marvin Attack",
           "Description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
           "Severity": "LOW",
@@ -7054,7 +7054,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:d0de26d94a2aeafddbe2f7252997551917dbe2ebec76cb59ce19af4800b7031e",
+          "Fingerprint": "sha256:dde5ddb14ca4adea868da8eaef0c6ee4ec115762f4f591205af087c939fb1ac7",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7130,7 +7130,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:ede89a4dfb38246cabbe3e963c036eb5809f6784216204c5466e7b5e800641ee",
+          "Fingerprint": "sha256:276040ac8be5fcc0486355852d6eb4b2e20d2741e3b9c0d8d14850da9132f991",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7206,7 +7206,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:b4eab5cd8ce1cc3c7fede8e38b03bc1a56ea0010a75d8f7848adb27189a6abc9",
+          "Fingerprint": "sha256:4b621fadae69d2eae9cd7ca883a7fd89326f16887b55c35d7bddfe9417e80efd",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7282,7 +7282,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:5019743e807840ea646d9fa778d90e90a85f04ff4998dcc56e06fb4d0159e0e3",
+          "Fingerprint": "sha256:2990b45a11b8eed85ab95774293769858fefc623be45387fe45a5a249f88b380",
           "Title": "linux-pam: Incomplete fix for CVE-2025-6020",
           "Description": "A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a \"complete\" fix for CVE-2025-6020.",
           "Severity": "MEDIUM",
@@ -7358,7 +7358,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:ed244d6c743386f0b199b5f40cc83f92d53fb97552425eb1f6c8b682c0d0d42d",
+          "Fingerprint": "sha256:4a1a3b2d5e6b2ba48c0c92307b083bfc901f2b17f786f11c654587324a719271",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -7380,12 +7380,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20559",
+            "https://access.redhat.com/errata/RHSA-2025:20145",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -7418,7 +7418,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:f1b9b6be04e02bd857fd3cd1e3229691f1aa429d7c2c9b247df9051b18c99236",
+          "Fingerprint": "sha256:86d472b2a281f13bfe4b2a304d775b506e1297498835390115864e60b1d65353",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -7440,12 +7440,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20559",
+            "https://access.redhat.com/errata/RHSA-2025:20145",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
+            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -7478,7 +7478,7 @@
             "Name": "Ubuntu CVE Tracker",
             "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
           },
-          "Fingerprint": "sha256:297ba7e90f4ef45d0bcc075ac4d2cb9d59e512c0afa10db9c22120d65889d17d",
+          "Fingerprint": "sha256:801e808aeda1b6d926305ac8f586cf5357e6f72a4fbed3757045d7c922d9a01b",
           "Title": "tar: Tar path traversal",
           "Description": "GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file's name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of \"Member name contains '..'\" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain \"x -\u003e ../../../../../home/victim/.ssh\" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which \"tar xf\" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each \"tar xf\" in its Security Rules of Thumb; however, third-party advice leads users to run \"tar xf\" more than once into the same directory.",
           "Severity": "MEDIUM",
@@ -7500,12 +7500,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/11/01/6",
-            "https://access.redhat.com/errata/RHSA-2026:0067",
+            "https://access.redhat.com/errata/RHSA-2026:0002",
             "https://access.redhat.com/security/cve/CVE-2025-45582",
             "https://bugzilla.redhat.com/2379592",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2379592",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582",
-            "https://errata.almalinux.org/9/ALSA-2026-0067.html",
+            "https://errata.almalinux.org/10/ALSA-2026-0002.html",
             "https://errata.rockylinux.org/RLSA-2026:0067",
             "https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md",
             "https://linux.oracle.com/cve/CVE-2025-45582.html",

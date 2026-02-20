@@ -41,11 +41,11 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 19 | `mongo:8.2.5` | 75 | 67 | 8 | 11% |
 | 20 | `mongo:8.2.5-noble` | 75 | 67 | 8 | 11% |
 | 21 | `mysql:9.0` | 228 | 85 | 143 | 63% |
-| 22 | `mysql:9.6-oracle` | 29 | 20 | 9 | 31% |
-| 23 | `mysql:9.6-oraclelinux9` | 29 | 20 | 9 | 31% |
-| 24 | `mysql:9.6.0` | 29 | 20 | 9 | 31% |
-| 25 | `mysql:9.6.0-oracle` | 29 | 20 | 9 | 31% |
-| 26 | `mysql:9.6.0-oraclelinux9` | 29 | 20 | 9 | 31% |
+| 22 | `mysql:9.6-oracle` | 20 | 20 | 0 | 0% |
+| 23 | `mysql:9.6-oraclelinux9` | 20 | 20 | 0 | 0% |
+| 24 | `mysql:9.6.0` | 20 | 20 | 0 | 0% |
+| 25 | `mysql:9.6.0-oracle` | 20 | 20 | 0 | 0% |
+| 26 | `mysql:9.6.0-oraclelinux9` | 20 | 20 | 0 | 0% |
 | 27 | `nginx:1.28-alpine` | 0 | 0 | 0 | 0% |
 | 28 | `nginx:1.28.1-alpine3.23` | 0 | 0 | 0 | 0% |
 | 29 | `nginx:1.28.2-alpine3.23` | 0 | 0 | 0 | 0% |
@@ -137,4 +137,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-19*
+*Last updated: 2026-02-20*
