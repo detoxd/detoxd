@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c7c3c-71a3-7012-a990-f8e788f82427",
-  "CreatedAt": "2026-02-21T01:07:41.987006451+07:00",
-  "ArtifactID": "sha256:95a04d6469a83772fb7ba1a9cb4abdce23a227c87fce458528f7ad4f041e1515",
+  "ReportID": "019c8162-9ef0-79f7-a1fc-c9a9e056cdfe",
+  "CreatedAt": "2026-02-22T01:07:30.03265463+07:00",
+  "ArtifactID": "sha256:7044cbdb0116ebd8e498de6d041423dbd4e23939540179e61018a5c1e4edd943",
   "ArtifactName": "detoxd/python:3.11.14-slim-detox.3",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,18 +14,18 @@
       "Family": "debian",
       "Name": "13.3"
     },
-    "ImageID": "sha256:6231df4b510d438efb1f9a2af7f8450961cdc878305d3f13faec4685fac0a963",
+    "ImageID": "sha256:7ad47454b9c18e3d5a6b6816a3964ea2d8915eaff8758adafbc7057e3dc39acf",
     "DiffIDs": [
       "sha256:a8ff6f8cbdfd6741c10dd183560df7212db666db046768b0f05bbc3904515f03",
       "sha256:dfd9efb4ec4c10e7a02c3c6f5835a9b2294e8e174342fae0cd1755e74d73f0c0",
       "sha256:40b88e8d19a2e1f3961ec96a12106592e3417564f76126d31b42563052cae35a",
       "sha256:b69aea4cac7da4ac5ff1ee5a19568e7b9a30f2cf6965318d6869af66131998a8",
-      "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8",
-      "sha256:cd70c7b58bf0fdfc102c63ab998b420cf3f39f9c056409a36abab35929a14e0e",
-      "sha256:07fe0d8c48d444b8cd19dd930d26690f86aab5c453aacc53b2e0cbc3dac0725a",
-      "sha256:632b3ddd3498cc9f34152e6efeb12e32de0760ca0c01f0cfb44bc4f81bde1b74",
-      "sha256:cc55364905e0aeec9ac780616aefb769e23b8bb595f7cd94d6acc9b136abf869",
-      "sha256:8f51c05f6524115fa356a5fd67f442cfedb24cf4aef85ea0ea09a11e230f6701"
+      "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e",
+      "sha256:f3ecdd072a54d4095b5d2a2e90f5b75e66bf1eb38f41ba9aad2d3ce10dcde8ee",
+      "sha256:925d02988b660cca669df666fae816a011ed2a4149cc2e713f37677c6b5fc805",
+      "sha256:471f65800c8675f22764581b7657209ecc9bc7de0d8248f8777de11af81e729b",
+      "sha256:d563b64b9cb0f440a2d22d28472b7371589bee2b9b639292a4cc38389fe8889e",
+      "sha256:c44e696dc3d533a0a73f593fae382d0142e3acce887396146171b3b0e0ab3516"
     ],
     "RepoTags": [
       "detoxd/python:3.11-slim-detox",
@@ -35,7 +35,7 @@
     "Reference": "detoxd/python:3.11.14-slim-detox.3",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-21T02:07:12.068148801+08:00",
+      "created": "2026-02-22T02:07:02.64457213+08:00",
       "history": [
         {
           "created": "2026-02-02T00:00:00Z",
@@ -94,104 +94,104 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:06:59Z",
+          "created": "2026-02-21T18:06:49Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:06:59Z",
+          "created": "2026-02-21T18:06:49Z",
           "created_by": "LABEL detoxd.iteration=1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:06:59Z",
+          "created": "2026-02-21T18:06:49Z",
           "created_by": "LABEL detoxd.fixable.count=5",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:06:59Z",
+          "created": "2026-02-21T18:06:49Z",
           "created_by": "LABEL detoxd.unfixable.count=68",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:06:59Z",
+          "created": "2026-02-21T18:06:49Z",
           "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade jaraco.context==6.1.0 pip==25.3 wheel==0.46.2 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-20T18:07:00Z",
+          "created": "2026-02-21T18:06:49Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-20T18:07:07Z",
+          "created": "2026-02-21T18:06:56Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:07Z",
+          "created": "2026-02-21T18:06:56Z",
           "created_by": "LABEL detoxd.iteration=2",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:07Z",
+          "created": "2026-02-21T18:06:56Z",
           "created_by": "LABEL detoxd.fixable.count=3",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:07Z",
+          "created": "2026-02-21T18:06:56Z",
           "created_by": "LABEL detoxd.unfixable.count=68",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:07Z",
+          "created": "2026-02-21T18:06:56Z",
           "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade jaraco.context==6.1.0 pip==26.0 wheel==0.46.2 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-20T18:07:07Z",
+          "created": "2026-02-21T18:06:56Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-20T18:07:11Z",
+          "created": "2026-02-21T18:07:02Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:11Z",
+          "created": "2026-02-21T18:07:02Z",
           "created_by": "LABEL detoxd.iteration=3",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:11Z",
+          "created": "2026-02-21T18:07:02Z",
           "created_by": "LABEL detoxd.fixable.count=2",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:11Z",
+          "created": "2026-02-21T18:07:02Z",
           "created_by": "LABEL detoxd.unfixable.count=68",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-20T18:07:11Z",
+          "created": "2026-02-21T18:07:02Z",
           "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade jaraco.context==6.1.0 wheel==0.46.2 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-20T18:07:12Z",
+          "created": "2026-02-21T18:07:02Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -204,12 +204,12 @@
           "sha256:dfd9efb4ec4c10e7a02c3c6f5835a9b2294e8e174342fae0cd1755e74d73f0c0",
           "sha256:40b88e8d19a2e1f3961ec96a12106592e3417564f76126d31b42563052cae35a",
           "sha256:b69aea4cac7da4ac5ff1ee5a19568e7b9a30f2cf6965318d6869af66131998a8",
-          "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8",
-          "sha256:cd70c7b58bf0fdfc102c63ab998b420cf3f39f9c056409a36abab35929a14e0e",
-          "sha256:07fe0d8c48d444b8cd19dd930d26690f86aab5c453aacc53b2e0cbc3dac0725a",
-          "sha256:632b3ddd3498cc9f34152e6efeb12e32de0760ca0c01f0cfb44bc4f81bde1b74",
-          "sha256:cc55364905e0aeec9ac780616aefb769e23b8bb595f7cd94d6acc9b136abf869",
-          "sha256:8f51c05f6524115fa356a5fd67f442cfedb24cf4aef85ea0ea09a11e230f6701"
+          "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e",
+          "sha256:f3ecdd072a54d4095b5d2a2e90f5b75e66bf1eb38f41ba9aad2d3ce10dcde8ee",
+          "sha256:925d02988b660cca669df666fae816a011ed2a4149cc2e713f37677c6b5fc805",
+          "sha256:471f65800c8675f22764581b7657209ecc9bc7de0d8248f8777de11af81e729b",
+          "sha256:d563b64b9cb0f440a2d22d28472b7371589bee2b9b639292a4cc38389fe8889e",
+          "sha256:c44e696dc3d533a0a73f593fae382d0142e3acce887396146171b3b0e0ab3516"
         ]
       },
       "config": {
@@ -250,27 +250,27 @@
       },
       {
         "Size": 17889792,
-        "DiffID": "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8"
+        "DiffID": "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:cd70c7b58bf0fdfc102c63ab998b420cf3f39f9c056409a36abab35929a14e0e"
+        "DiffID": "sha256:f3ecdd072a54d4095b5d2a2e90f5b75e66bf1eb38f41ba9aad2d3ce10dcde8ee"
       },
       {
         "Size": 11582976,
-        "DiffID": "sha256:07fe0d8c48d444b8cd19dd930d26690f86aab5c453aacc53b2e0cbc3dac0725a"
+        "DiffID": "sha256:925d02988b660cca669df666fae816a011ed2a4149cc2e713f37677c6b5fc805"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:632b3ddd3498cc9f34152e6efeb12e32de0760ca0c01f0cfb44bc4f81bde1b74"
+        "DiffID": "sha256:471f65800c8675f22764581b7657209ecc9bc7de0d8248f8777de11af81e729b"
       },
       {
         "Size": 2048,
-        "DiffID": "sha256:cc55364905e0aeec9ac780616aefb769e23b8bb595f7cd94d6acc9b136abf869"
+        "DiffID": "sha256:d563b64b9cb0f440a2d22d28472b7371589bee2b9b639292a4cc38389fe8889e"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:8f51c05f6524115fa356a5fd67f442cfedb24cf4aef85ea0ea09a11e230f6701"
+        "DiffID": "sha256:c44e696dc3d533a0a73f593fae382d0142e3acce887396146171b3b0e0ab3516"
       }
     ]
   },
@@ -7819,7 +7819,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0e02704208232173ffe7aa9ddbfc6321902165bc088191b4181460cc5e86b832",
+          "Fingerprint": "sha256:d6fd56b7e0df170a286d0c65a2ee949dcac5bf77a4ea2fc1d593203f1c88030d",
           "Title": "It was found that apt-key in apt, all versions, do not correctly valid ...",
           "Description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
           "Severity": "LOW",
@@ -7870,7 +7870,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:3c92d9061ae50fc2823a2638a59e3e729c681d6b3fb95a647560d4309bb129f5",
+          "Fingerprint": "sha256:ccf10eff82a16cec27f1c9760866c2d2a36d6dcca7010daf7b9082b1e7f945fd",
           "Title": "[Privilege escalation possible to other user than root]",
           "Severity": "LOW",
           "VendorSeverity": {
@@ -7896,7 +7896,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:89875a1efdcd6674c7b3d2dad00eba787538ea5494554d815f4a1242334e16bc",
+          "Fingerprint": "sha256:338a7e8eae7ae1fcc2b753ec0cfac15f20ceed67969b59ad6e811c8e45798195",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -7930,7 +7930,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -7960,7 +7960,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4745b6a41defdd6b1a398b2bb2519a81b370874f364706b31bdc11b7ff7046f4",
+          "Fingerprint": "sha256:db93b847142bb01e12dbe21f6d694a8e7e93d108f6feec1a4f41a25cbd7dcb53",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -8020,7 +8020,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:045c10317441a9f98f16d434404b41faf8214c802464f68d6d7a61ce5a493076",
+          "Fingerprint": "sha256:8050d7d9d0f52630ad49931ad49752e512ad9df197dcb7f3ad7801935f582565",
           "Title": "coreutils: race condition vulnerability in chown and chgrp",
           "Description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
           "Severity": "LOW",
@@ -8073,7 +8073,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:2e716ac922b16f4ea64a5c855af6b0406eedde6a3d86bc2e7582105bf1e090b7",
+          "Fingerprint": "sha256:de10799a11c63f6839dd558e0e61de9c52f6adc50a9cc2c27cac13c04c1fa66d",
           "Title": "coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification",
           "Description": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data.",
           "Severity": "LOW",
@@ -8127,7 +8127,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7612995825029eb91885519efdcc540e7e2f30dc303e237081c94ec7507a1b46",
+          "Fingerprint": "sha256:9c34a2261a8fef02f645c4f4beea8a46d45081c0d2dfac0687cd4ccebd1dc74d",
           "Title": "It was found that apt-key in apt, all versions, do not correctly valid ...",
           "Description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack.",
           "Severity": "LOW",
@@ -8177,7 +8177,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f2086f7aa757463b3d271575d1f955ee11a6c0a76b8a46dac0dec9d0b21cf6ee",
+          "Fingerprint": "sha256:ec6892b1b1ec7faebd9842265a9dbe2cfc21ae580381545fc49547d9b9b527d3",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -8211,7 +8211,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -8241,7 +8241,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ef2aa16e8e2c1099fa19bfa875e654e700c78be9263572430173e89e567c1683",
+          "Fingerprint": "sha256:f2fde4c8edba2615f53a73cd1e87d77a644e5810432c55ba18c5c6eea3684bf6",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -8300,7 +8300,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d6c3d76b92d6593e424ea1ca3156e0509b2f5115a1d3adae0ef0c76b0c4c1ab8",
+          "Fingerprint": "sha256:089cf3088b2b0ec0f7bdc56b43c587e1345e0cad2ed48fdd36c517aebbf86750",
           "Title": "glibc: Integer overflow in memalign leads to heap corruption",
           "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
           "Severity": "HIGH",
@@ -8325,18 +8325,19 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/16/5",
-            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/errata/RHSA-2026:2786",
             "https://access.redhat.com/security/cve/CVE-2026-0861",
             "https://bugzilla.redhat.com/2429771",
             "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/2431196",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
-            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2786.html",
             "https://errata.rockylinux.org/RLSA-2026:1334",
             "https://linux.oracle.com/cve/CVE-2026-0861.html",
-            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50120.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
             "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
@@ -8365,7 +8366,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7121fc5c7fc8386f3bf8a8c95427565bd7115c1a9f35a4e0bf9637ab746a3029",
+          "Fingerprint": "sha256:4eb0f54568bbb91b7d4a900e30055a2e7166eb0ee9d47d0772dfffb7550c2422",
           "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
           "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
           "Severity": "MEDIUM",
@@ -8395,7 +8396,7 @@
             "https://bugzilla.redhat.com/2431196",
             "https://errata.almalinux.org/9/ALSA-2026-2786.html",
             "https://linux.oracle.com/cve/CVE-2025-15281.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2786.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50120.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
             "https://ubuntu.com/security/notices/USN-8005-1",
@@ -8424,7 +8425,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:676a4e4f2ff317a53dc597c8dd15b40114d9fed9b10a1aec9c265f34060d81cd",
+          "Fingerprint": "sha256:a147de009ed1d4cd37b859f03d298a5a8a1e02dbe24d88a45f650d327491bff2",
           "Title": "glibc: glibc: Information disclosure via zero-valued network query",
           "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
           "Severity": "MEDIUM",
@@ -8449,18 +8450,19 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/16/6",
-            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/errata/RHSA-2026:2786",
             "https://access.redhat.com/security/cve/CVE-2026-0915",
             "https://bugzilla.redhat.com/2429771",
             "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/2431196",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
-            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2786.html",
             "https://errata.rockylinux.org/RLSA-2026:1334",
             "https://linux.oracle.com/cve/CVE-2026-0915.html",
-            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50120.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
             "https://ubuntu.com/security/notices/USN-8005-1",
@@ -8490,7 +8492,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8353c2c3d97c8d40e2878f5ce8ea1971b0056894f8497d8aeb80bbf03dca6cae",
+          "Fingerprint": "sha256:a91abbf56b85a5d18f091382b86239ce7288f310a8c8a692afda8b87a00c5d75",
           "Title": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions",
           "Description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
           "Severity": "LOW",
@@ -8546,7 +8548,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:30f3aa1f33b98e9d5109130bc7496187f03a3b6f26f1f502320c99e2adca8e6d",
+          "Fingerprint": "sha256:c5b10a31e6aba93ad0d06e1e1c31bb38cae99dc9ac05c22baeab79f30f7dfb91",
           "Title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
           "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
           "Severity": "LOW",
@@ -8604,7 +8606,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:799c1e9a255138d9d9ddf897d6a3e2d0d7961759f2beeefd222bf2875ff0f269",
+          "Fingerprint": "sha256:5839c9c44b76c54469a7367c5dc2bfae4796b2730a910e734143c78e507cd7d5",
           "Title": "glibc: stack guard protection bypass",
           "Description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
           "Severity": "LOW",
@@ -8655,7 +8657,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8ee7909ad7463248b9dd12d7fc15ec9888c5d300a6c892ada8fe08f5fe0428b8",
+          "Fingerprint": "sha256:75146c31f30610eb1a04cca988bc16be21bd07adc75debf04193386f6b70b558",
           "Title": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation",
           "Description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
           "Severity": "LOW",
@@ -8709,7 +8711,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:eb9708f7263a13c5cf3b74849b2dcdd4af59e32458f82083751cfc0d00c8a1f7",
+          "Fingerprint": "sha256:133d1de6a54d663ca52dd55200975281ad9b13835b602f044343f714daffbf77",
           "Title": "glibc: ASLR bypass using cache of thread stack and heap",
           "Description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
           "Severity": "LOW",
@@ -8767,7 +8769,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7571ca9a14ddb2e534b473002e22c633a9a1cdfb608caa87fb4e0576f8f7f9b1",
+          "Fingerprint": "sha256:f7a0d767410214887eeccdfc694b218a45079570e767cb228e2c411a8a15ad54",
           "Title": "glibc: information disclosure of heap addresses of pthread_created thread",
           "Description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.",
           "Severity": "LOW",
@@ -8824,7 +8826,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:58510e1b17b8531631459fc5e34d97a0bcdad3a4763fdcbad756de522ad926b0",
+          "Fingerprint": "sha256:b676b77920ba141e0a8cd1be44d3b69e92e8ed17f2e21b01303705deb3c5ac92",
           "Title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
           "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern",
           "Severity": "LOW",
@@ -8878,7 +8880,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f4988ba0f7fabd9fbcda61b4efd9dc7158e95f76b2e915bf31bf051cb0eab450",
+          "Fingerprint": "sha256:8819ea70696e445524a9f26b94eee2333b4b89f1a118d1bbf305e006aa86c796",
           "Title": "glibc: Integer overflow in memalign leads to heap corruption",
           "Description": "Passing too large an alignment to the memalign suite of functions (memalign, posix_memalign, aligned_alloc) in the GNU C Library version 2.30 to 2.42 may result in an integer overflow, which could consequently result in a heap corruption.\n\nNote that the attacker must have control over both, the size as well as the alignment arguments of the memalign function to be able to exploit this.  The size parameter must be close enough to PTRDIFF_MAX so as to overflow size_t along with the large alignment argument.  This limits the malicious inputs for the alignment for memalign to the range [1\u003c\u003c62+ 1, 1\u003c\u003c63] and exactly 1\u003c\u003c63 for posix_memalign and aligned_alloc.\n\nTypically the alignment argument passed to such functions is a known constrained quantity (e.g. page size, block size, struct sizes) and is not attacker controlled, because of which this may not be easily exploitable in practice.  An application bug could potentially result in the input alignment being too large, e.g. due to a different buffer overflow or integer overflow in the application or its dependent libraries, but that is again an uncommon usage pattern given typical sources of alignments.",
           "Severity": "HIGH",
@@ -8903,18 +8905,19 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/16/5",
-            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/errata/RHSA-2026:2786",
             "https://access.redhat.com/security/cve/CVE-2026-0861",
             "https://bugzilla.redhat.com/2429771",
             "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/2431196",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
-            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2786.html",
             "https://errata.rockylinux.org/RLSA-2026:1334",
             "https://linux.oracle.com/cve/CVE-2026-0861.html",
-            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50120.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-0861",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33796",
             "https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0001",
@@ -8943,7 +8946,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b3b66245da4b34565d7d9e97811b0643cd6b52550752ddcfcd9dcd1ef0ecc285",
+          "Fingerprint": "sha256:1148e37a1fedaab020ca1536b0a377b815eeea25181aa3c2c5896c2dc5ac23cc",
           "Title": "glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory",
           "Description": "Calling wordexp with WRDE_REUSE in conjunction with WRDE_APPEND in the GNU C Library version 2.0 to version 2.42 may cause the interface to return uninitialized memory in the we_wordv member, which on subsequent calls to wordfree may abort the process.",
           "Severity": "MEDIUM",
@@ -8973,7 +8976,7 @@
             "https://bugzilla.redhat.com/2431196",
             "https://errata.almalinux.org/9/ALSA-2026-2786.html",
             "https://linux.oracle.com/cve/CVE-2025-15281.html",
-            "https://linux.oracle.com/errata/ELSA-2026-2786.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50120.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-15281",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33814",
             "https://ubuntu.com/security/notices/USN-8005-1",
@@ -9002,7 +9005,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:894b456a0eb554ca72b7ba44e074277615f4004f40eaa035f170757a0c6488fe",
+          "Fingerprint": "sha256:447be95d5a1877c335c591139c3d440170a6b51ae3c4350c1edeaadc49eeff51",
           "Title": "glibc: glibc: Information disclosure via zero-valued network query",
           "Description": "Calling getnetbyaddr or getnetbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend for networks and queries for a zero-valued network in the GNU C Library version 2.0 to version 2.42 can leak stack contents to the configured DNS resolver.",
           "Severity": "MEDIUM",
@@ -9027,18 +9030,19 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/16/6",
-            "https://access.redhat.com/errata/RHSA-2026:1334",
+            "https://access.redhat.com/errata/RHSA-2026:2786",
             "https://access.redhat.com/security/cve/CVE-2026-0915",
             "https://bugzilla.redhat.com/2429771",
             "https://bugzilla.redhat.com/2430201",
+            "https://bugzilla.redhat.com/2431196",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2429771",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430201",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0861",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0915",
-            "https://errata.almalinux.org/10/ALSA-2026-1334.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2786.html",
             "https://errata.rockylinux.org/RLSA-2026:1334",
             "https://linux.oracle.com/cve/CVE-2026-0915.html",
-            "https://linux.oracle.com/errata/ELSA-2026-50078.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50120.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-0915",
             "https://sourceware.org/bugzilla/show_bug.cgi?id=33802",
             "https://ubuntu.com/security/notices/USN-8005-1",
@@ -9068,7 +9072,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d7336dc1b2ee4fb6b3819b9d809d5608ee60b3ca25f49552e7928e43fb8f4116",
+          "Fingerprint": "sha256:a00f6175d4169ab806334f45b74536bd26339181c6bbcfd81120dfa937491e8a",
           "Title": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions",
           "Description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632.",
           "Severity": "LOW",
@@ -9124,7 +9128,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7a86201b202ba11c4cd75c54a4d654842e7315d3b1e753855be4b63d0dfc6843",
+          "Fingerprint": "sha256:311f80a5779b1a24beadfc74af0705bd3766a38f4845b127de116acee22a5c6c",
           "Title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
           "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep.",
           "Severity": "LOW",
@@ -9182,7 +9186,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:22bf584ac8f7b1172f1f86e41971434cafaf29e63521964e22c066d0ade1dbb1",
+          "Fingerprint": "sha256:e0880e4e25120aef430b2b384c964a4c00f85b736d56dc8fee7458bca4c97b3a",
           "Title": "glibc: stack guard protection bypass",
           "Description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
           "Severity": "LOW",
@@ -9233,7 +9237,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:2dc8350d95d6efae43764d9b9bcbc7b09504235358ceed6073ea5759d7e95d21",
+          "Fingerprint": "sha256:f09dc0f0510aed87db26b9b3611077451ca0ee58fb326a75f34038499aae69a9",
           "Title": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation",
           "Description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
           "Severity": "LOW",
@@ -9287,7 +9291,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:c1e10c421b4fb016f4987d718c36485f16230da15c528645b39382ba31bfd423",
+          "Fingerprint": "sha256:79fa38d25ec97af6652fae7628d69a5362701b79e029924a64c913b5588a13aa",
           "Title": "glibc: ASLR bypass using cache of thread stack and heap",
           "Description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.",
           "Severity": "LOW",
@@ -9345,7 +9349,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f2d4b06588b8cab5f2c60d8f5321d4de8b9081978bac98e2ace944d47a64b220",
+          "Fingerprint": "sha256:8bf9695288b13c70125a48417c2e5c538ac8bdbf5ba6403bb93f0e384eab8875",
           "Title": "glibc: information disclosure of heap addresses of pthread_created thread",
           "Description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability.",
           "Severity": "LOW",
@@ -9402,7 +9406,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:9bc8a2e148c3e71b7d5db52d0a041931d3333f43d35792c12adc80c6c8799d6e",
+          "Fingerprint": "sha256:d972049563068bab303215fd179b2bd4ceb886c2e28829b8348da589f908b818",
           "Title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
           "Description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern",
           "Severity": "LOW",
@@ -9456,7 +9460,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:1917d16eb0ea7dc366d2059299a67d2099819f276566d22a4f60e2714a19bd2a",
+          "Fingerprint": "sha256:05eb2feb7fee4630fc7e1b538e222505005bf03197cd233c76a912a6e99676a0",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -9490,7 +9494,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -9520,7 +9524,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:5e479cf661d3ddd1af4b68ed70e550764b70ca1cf3382bc0e488dbfa98e6b0b9",
+          "Fingerprint": "sha256:2327d2d91d4a4885437bb91b9595d38ebf8d25d96ac4343c4de488ade1ff5e62",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -9579,7 +9583,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:2dc3c354e2c1baca425d310951618badbe6cac6904eeea0c2fd71f0025ae09c6",
+          "Fingerprint": "sha256:a2b4f18852266b440ddf02047d1ab4b02f0b9913c4f93179979cfd4bfc3fe9cf",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -9613,7 +9617,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -9643,7 +9647,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a20e6919e587fc4642d27df2c9480ef3327b402092e59ad23d6e89244d36cc3c",
+          "Fingerprint": "sha256:872a1b2c051ddad5be5135eed03a5e843ded862328ab0e005b4367bdfdb46857",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -9702,7 +9706,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:360b85ca439889dcd1e2f75070794a2edcd59e13b9df1e421e524df48443714f",
+          "Fingerprint": "sha256:c4b62901f7f7747771a0559255a04d1bf6cb0e55a8a41dc77109c77f013dc393",
           "Title": "gnu-ncurses: ncurses Stack Buffer Overflow",
           "Description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component.",
           "Severity": "LOW",
@@ -9755,7 +9759,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b20bc64ab4667e5b10220cb0fa5f11c40887f9a2dd857060c1136f4955bf33f8",
+          "Fingerprint": "sha256:6c7588eb4839c0982cebeb87d44d5c8de53dd8f643e663fc30626a3e1e26c401",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -9789,7 +9793,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -9819,7 +9823,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:26a8b66d86cbb4ae9277ebf672f9826ab9a31477021f2ce349a3f3ae0885e437",
+          "Fingerprint": "sha256:9fae16cc0fad17b881669fe4a61369e9c5743e6f54f079d2ba37753ce9c72c33",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -9878,7 +9882,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:47da592595d030cde92460b7841e14528c3aae662e853ba1973efa05e64e713c",
+          "Fingerprint": "sha256:e5bf8de5ba292ca8b8635d2245bcc50aed84ed5597493d5f6b8c752d3a022888",
           "Title": "An integer overflow exists in the  FTS5 https://sqlite.org/fts5.html e ...",
           "Description": "An integer overflow exists in the  FTS5 https://sqlite.org/fts5.html  extension. It occurs when the size of an array of tombstone pointers is calculated and truncated into a 32-bit integer. A pointer to partially controlled data can then be written out of bounds.",
           "Severity": "MEDIUM",
@@ -9919,7 +9923,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:465b20081b1d9373f6457d43adf71ad3dc551127f7dbee241e0a4a9355946e1e",
+          "Fingerprint": "sha256:d7bb8e66014fa8a123755929a5553acdbcaffc27096992c44756222a55014982",
           "Title": "sqlite: crafted SQL query allows a malicious user to obtain sensitive information",
           "Description": "A Memory Leak vulnerability exists in SQLite Project SQLite3 3.35.1 and 3.37.0 via maliciously crafted SQL Queries (made via editing the Database File), it is possible to query a record, and leak subsequent bytes of memory that extend beyond the record, which could let a malicious user obtain sensitive information. NOTE: The developer disputes this as a vulnerability stating that If you give SQLite a corrupted database file and submit a query against the database, it might read parts of the database that you did not intend or expect.",
           "Severity": "LOW",
@@ -9981,7 +9985,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:dffbfdc926e1dc41d8f127460a691ea46106ff283b20780fe8f2bd828e7de727",
+          "Fingerprint": "sha256:42b63b8880c12abb1cf7c87abfb0d2e3ab22a16f7978ae3a77a1d2ae420908f2",
           "Title": "systemd: TOCTOU race condition when updating file permissions and SELinux security contexts",
           "Description": "systemd, when updating file permissions, allows local users to change the permissions and SELinux security contexts for arbitrary files via a symlink attack on unspecified files.",
           "Severity": "LOW",
@@ -10034,7 +10038,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:012d459e8af0b21a6babebc2fcfb66a9ee726921bd5ca04c58095c80c02c57b6",
+          "Fingerprint": "sha256:e4f48ef0afb51d2aa9d7dbd3ba606c1f4127ce05e69b60f83e6247cc79c57726",
           "Title": "An issue was discovered in systemd 253. An attacker can modify a seale ...",
           "Description": "An issue was discovered in systemd 253. An attacker can modify a sealed log file such that, in some views, not all existing and sealed log messages are displayed. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\"",
           "Severity": "LOW",
@@ -10079,7 +10083,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:1adb2ef13827ea9d43dc24fd28ddf8a21db4cb58546d67f8515944866968f292",
+          "Fingerprint": "sha256:c9e0d53550be529ec661d1daaf582f4e82bb2478324812e564c7a5d0cb95ffc5",
           "Title": "An issue was discovered in systemd 253. An attacker can truncate a sea ...",
           "Description": "An issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\"",
           "Severity": "LOW",
@@ -10125,7 +10129,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:32bfcb6ab04a456ceaddd207d7ed9755cc9fac6369c66efba7589c21d7b15459",
+          "Fingerprint": "sha256:c254e378d0e151698ace8e1734fc71b699e6457ca4e5aef57cd67d1132229f34",
           "Title": "An issue was discovered in systemd 253. An attacker can modify the con ...",
           "Description": "An issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\"",
           "Severity": "LOW",
@@ -10171,7 +10175,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:cb9579ce88a92e1958945c0953e929785f48962bf8f11a072315d77546d0438b",
+          "Fingerprint": "sha256:4b5a4e760617f3acd4c75429bb5e955794dedee24d1fbd0c9550bf967f2eaa36",
           "Title": "gnu-ncurses: ncurses Stack Buffer Overflow",
           "Description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component.",
           "Severity": "LOW",
@@ -10225,7 +10229,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:510b342613a35fad4d2d50e13e658b1b331db106017f46698727b4716838d9a4",
+          "Fingerprint": "sha256:163ea78aeed8afdf63569d8b3b442334a2bdb44843224777c338edbde07f58cc",
           "Title": "systemd: TOCTOU race condition when updating file permissions and SELinux security contexts",
           "Description": "systemd, when updating file permissions, allows local users to change the permissions and SELinux security contexts for arbitrary files via a symlink attack on unspecified files.",
           "Severity": "LOW",
@@ -10278,7 +10282,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:98c6460eb7c64d2db0b745040167af1fad0101572afb4289c72382b9996cb519",
+          "Fingerprint": "sha256:6ecf835bbba65245a11c855f0b79c3b8cf01e72afffa8912d5c8c8f0de84d325",
           "Title": "An issue was discovered in systemd 253. An attacker can modify a seale ...",
           "Description": "An issue was discovered in systemd 253. An attacker can modify a sealed log file such that, in some views, not all existing and sealed log messages are displayed. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\"",
           "Severity": "LOW",
@@ -10323,7 +10327,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a68e6d9e89e40cb951b712b20f7afeb54b678f4ac0d11f96dff29e8982eeab72",
+          "Fingerprint": "sha256:2d3746f2f806b7fa71a00574ea14510206cef60631ab8a9a04954040149057bc",
           "Title": "An issue was discovered in systemd 253. An attacker can truncate a sea ...",
           "Description": "An issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\"",
           "Severity": "LOW",
@@ -10369,7 +10373,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:c2e55d4529f6dbaf89654d650cc8e45a8297cd1e65ecc79cb5d56878085d5014",
+          "Fingerprint": "sha256:d83336288a2afc4b3fcd2df2d8f20a36b3e22578a8a2e4092964446e344e0079",
           "Title": "An issue was discovered in systemd 253. An attacker can modify the con ...",
           "Description": "An issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\"",
           "Severity": "LOW",
@@ -10415,7 +10419,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d8b88c9de7d40912fc33550b53588e2a0a2163844da75e6e8e7765593a42dc3c",
+          "Fingerprint": "sha256:9fbdb061b8e21d7af4d7683371e631b7cb84e9197c69ae92ea449141f7749109",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -10449,7 +10453,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -10479,7 +10483,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e3747386bca1b3abecc71213bd3d71ee6db99633bcb5cb3e51344d173e4e817a",
+          "Fingerprint": "sha256:7a10f0ff5c02962699fe2e684552c20d8eee28319f2f7f81cea8a9befa720c4a",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -10538,7 +10542,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:6f455c89abe2b6904b09c4648218ba4b792de03a1f54c211c9ec8b64ba3c36f8",
+          "Fingerprint": "sha256:0feebdf3fefea6d0f2b868cf3862252a4dc2cd3176b119a4442e29a16f3e8e61",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -10572,7 +10576,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -10602,7 +10606,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:faa42885eac15fade663dbbec8519a86ebc43283779bd23a2e87d2331fdd1c21",
+          "Fingerprint": "sha256:8463b60e22e96ee4eeefe7933203976c2c0f37c862d34556755dfc004a95f184",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -10662,7 +10666,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f8da754b35d02dd84e84b172c8cc5eb0662edf9df28746750dbfc05f312a5d85",
+          "Fingerprint": "sha256:ba80f00ab5fde2c6f2f76aa377c3aa1c2852c81fd398a17c021d5570a561ed9a",
           "Title": "initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...",
           "Description": "initscripts in rPath Linux 1 sets insecure permissions for the /var/log/btmp file, which allows local users to obtain sensitive information regarding authentication attempts.  NOTE: because sshd detects the insecure permissions and does not log certain events, this also prevents sshd from logging failed authentication attempts by remote attackers.",
           "Severity": "LOW",
@@ -10709,7 +10713,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:39c7cde4cd253ddbcd111988a6b729958a27f2656305ef181c898a974eb72512",
+          "Fingerprint": "sha256:3842529703e4aef1943d109489ac3117c124783a328331b8f326a44985fee359",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -10731,12 +10735,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20145",
+            "https://access.redhat.com/errata/RHSA-2025:20559",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
+            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -10769,7 +10773,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b49c76c46ae38a7b7365974d2f08512381cc18a26b3f0a5afe54797bb82c9b44",
+          "Fingerprint": "sha256:005c2701f4226e6de141e0687b8d5ca04a6adf39ef19583e339c645a30c2cfd2",
           "Title": "[more related to CVE-2005-4890]",
           "Severity": "LOW",
           "VendorSeverity": {
@@ -10795,7 +10799,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:1f249800b3329f408ed33b7e13e00a7666b416fa7a7ead96f90b51a096d09515",
+          "Fingerprint": "sha256:a6298fdcced534f414f7fa698a89970f18793b43f6ad2802f04ff5d194bd840d",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -10829,7 +10833,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -10859,7 +10863,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:97d643d76e9c3e188eba59de733c1c8efcb468be5ee9d7ad78ebb701bcce6ec0",
+          "Fingerprint": "sha256:d3b9bbee35abc7b5918ecd684d4057f7a9cf850e2064f7bb44e6b146586b7a36",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -10918,7 +10922,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0c213c646df9a9621cd6c176d51c74779f8f22d5cb3bcdc08adf51b46255fb1e",
+          "Fingerprint": "sha256:21f8a56ed7a27fd53f3eb4a37679aff4c7489019ae31063f041dd6b4dded238f",
           "Title": "gnu-ncurses: ncurses Stack Buffer Overflow",
           "Description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component.",
           "Severity": "LOW",
@@ -10971,7 +10975,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:595ae7e6f0090b01a48cc158eb54b4b2b411e1728dd8781fa0933d264063974f",
+          "Fingerprint": "sha256:5e354828190f30d6bd282e923d3a1740ac38422146a4e774978175407b15d82c",
           "Title": "gnu-ncurses: ncurses Stack Buffer Overflow",
           "Description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component.",
           "Severity": "LOW",
@@ -11025,7 +11029,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:85b6ada97f78742dd0e82157f83560c92f05209d99a98db449db3c673c39af3b",
+          "Fingerprint": "sha256:32b8464ab44d4270a00c58c395aed7a6fa2626d47678956b087416484f24a357",
           "Title": "initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...",
           "Description": "initscripts in rPath Linux 1 sets insecure permissions for the /var/log/btmp file, which allows local users to obtain sensitive information regarding authentication attempts.  NOTE: because sshd detects the insecure permissions and does not log certain events, this also prevents sshd from logging failed authentication attempts by remote attackers.",
           "Severity": "LOW",
@@ -11072,7 +11076,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:987b23e860a9ece3ef9d58d4648ef7c2dcfafa8006daee214da536405fbdcd5a",
+          "Fingerprint": "sha256:be82c629380d03d881fa54c978b9ec6f7b8e00eb1966c26b7a89c87fc060d943",
           "Title": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
           "Description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
           "Severity": "LOW",
@@ -11094,12 +11098,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2025:20145",
+            "https://access.redhat.com/errata/RHSA-2025:20559",
             "https://access.redhat.com/security/cve/CVE-2024-56433",
             "https://bugzilla.redhat.com/2334165",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2334165",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433",
-            "https://errata.almalinux.org/10/ALSA-2025-20145.html",
+            "https://errata.almalinux.org/9/ALSA-2025-20559.html",
             "https://errata.rockylinux.org/RLSA-2025:20559",
             "https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241",
             "https://github.com/shadow-maint/shadow/issues/1157",
@@ -11132,7 +11136,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:3740346574c33eb229abc392ea7f454e6d46b0669478c21e82fb169bb015df8d",
+          "Fingerprint": "sha256:57e255d204d532edb6c3098115def51352f34f09fdf42ea21499f0b1666a403d",
           "Title": "[more related to CVE-2005-4890]",
           "Severity": "LOW",
           "VendorSeverity": {
@@ -11159,7 +11163,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:3bc70576a348d743ab5d300ed71cc50180bb5bc69ebffe39ff02278e5eed2f0b",
+          "Fingerprint": "sha256:307cf005dfd6fb52050f9a8cc02ffddfc22404538c9443161a3e4e843aa968e7",
           "Title": "perl: File:: Temp insecure temporary file handling",
           "Description": "_is_safe in the File::Temp module for Perl does not properly handle symlinks.",
           "Severity": "LOW",
@@ -11216,7 +11220,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e64e53e477532be0e0bb92edcb16f2b172ff1019b4f4582b9a008917de57bcd0",
+          "Fingerprint": "sha256:60a10f7196cddb84dafad7b7bacc9875c640ac82809ca8fbe1cada8d4e6ee3ea",
           "Title": "[sysvinit: no-root option in expert installer exposes locally exploitable security flaw]",
           "Severity": "LOW",
           "VendorSeverity": {
@@ -11243,7 +11247,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8f2c3c058dc0ec4a5a514cf6ad09f09caefbb6d333cf526cd917e83612b18385",
+          "Fingerprint": "sha256:a101d42bbda1b644cae9f1fa6050150a05c1d90630b7bdf55b69dec81867d0d2",
           "Title": "tar: does not properly warn the user when extracting setuid or setgid files",
           "Description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
           "Severity": "LOW",
@@ -11292,7 +11296,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4f4d65abd3c028b4a524714ddbee3d1be21698aa25537eed3e768a41b284ea5e",
+          "Fingerprint": "sha256:ba95ae0f4cc83bec4f246ba4f59af45bc4f782603b64613a8e892bdc0c896bde",
           "Title": "[tar's rmt command may have undesired side effects]",
           "Severity": "LOW",
           "VendorSeverity": {
@@ -11318,7 +11322,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d2e1dac860045b690c82a6bd5936bdd1c24bcb9d5c911c17218a07d719df7bf8",
+          "Fingerprint": "sha256:a38bda39e0de85764ee85946264313b8a1b58f3563eeb5ee0af8053911a6d937",
           "Title": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
           "Description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database.",
           "Severity": "MEDIUM",
@@ -11352,7 +11356,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/10/ALSA-2026-1696.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -11382,7 +11386,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:085c87b736c8b471828bdaf83e1a80470a8ab49f20630c497517e4b94ac7ccb2",
+          "Fingerprint": "sha256:c01a74939b7c5b5f1ed81ae3f141ed3a4514e728e53b0e64fb6d732c75688fa6",
           "Title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
           "Description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.",
           "Severity": "LOW",
@@ -11435,24 +11439,30 @@
           "Layer": {
             "DiffID": "sha256:a8ff6f8cbdfd6741c10dd183560df7212db666db046768b0f05bbc3904515f03"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-27171",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:eb5b2bfe2a42be369795e17bad983cb1dcb1cc5813d3bdc315e68d9a54c0b279",
+          "Fingerprint": "sha256:45d20a98e28eed558b39ea4d0be49d8e383d502cce16c31148541217b131f3bb",
           "Title": "zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions",
           "Description": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.",
-          "Severity": "LOW",
+          "Severity": "MEDIUM",
           "CweIDs": [
             "CWE-1284"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 1,
-            "ubuntu": 2
+            "ubuntu": 1
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
               "V3Score": 2.9
@@ -11469,7 +11479,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-27171"
           ],
           "PublishedDate": "2026-02-18T04:16:01.263Z",
-          "LastModifiedDate": "2026-02-18T17:51:53.51Z"
+          "LastModifiedDate": "2026-02-20T16:45:28.827Z"
         }
       ]
     },
@@ -11505,7 +11515,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8"
+            "DiffID": "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e"
           },
           "FilePath": "usr/local/lib/python3.11/site-packages/backports.tarfile-1.2.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -11601,7 +11611,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8"
+            "DiffID": "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e"
           },
           "FilePath": "usr/local/lib/python3.11/site-packages/jaraco_context-6.1.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -11682,7 +11692,7 @@
             "Apache-2.0 OR BSD-2-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8"
+            "DiffID": "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e"
           },
           "FilePath": "usr/local/lib/python3.11/site-packages/packaging-26.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -11698,7 +11708,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:07fe0d8c48d444b8cd19dd930d26690f86aab5c453aacc53b2e0cbc3dac0725a"
+            "DiffID": "sha256:925d02988b660cca669df666fae816a011ed2a4149cc2e713f37677c6b5fc805"
           },
           "FilePath": "usr/local/lib/python3.11/site-packages/pip-26.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -11807,7 +11817,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:7660a67d699be6d5473109ccf9acb9ef70a22290645c94d855baf1685f50d1b8"
+            "DiffID": "sha256:e6ac63dceb36cf44fb53f1371c0c34a8180159f0667ee92e3a6cf1209486024e"
           },
           "FilePath": "usr/local/lib/python3.11/site-packages/wheel-0.46.2.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -11854,7 +11864,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:2cc7c6739b491def4f09ede270f9adee23e367969f951fa822bdf139b94d3bed",
+          "Fingerprint": "sha256:9121df5be93ed2c9043ae63beec0b6a162731b872ebae32588cb76145f77a9af",
           "Title": "jaraco.context: jaraco.context: Path traversal via malicious tar archives",
           "Description": "jaraco.context, an open-source software package that provides some useful decorators and context managers, has a Zip Slip path traversal vulnerability in the `jaraco.context.tarball()` function starting in version 5.2.0 and prior to version 6.1.0. The vulnerability may allow attackers to extract files outside the intended extraction directory when malicious tar archives are processed. The strip_first_component filter splits the path on the first `/` and extracts the second component, while allowing `../` sequences. Paths like `dummy_dir/../../etc/passwd` become `../../etc/passwd`. Note that this suffers from a nested tarball attack as well with multi-level tar files such as `dummy_dir/inner.tar.gz`, where the inner.tar.gz includes a traversal `dummy_dir/../../config/.env` that also gets translated to `../../config/.env`. Version 6.1.0 contains a patch for the issue.",
           "Severity": "HIGH",
@@ -11914,7 +11924,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:110a8d376cd20afd5460a056530aacc85f9f4638bfec781b674fec32fe33f38a",
+          "Fingerprint": "sha256:02638a1bccf3643d673d3a70291157e8d94cfeaab6dd648c42048c72bd9b728d",
           "Title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
           "Description": "wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.",
           "Severity": "HIGH",
@@ -11946,12 +11956,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:1902",
+            "https://access.redhat.com/errata/RHSA-2026:1939",
             "https://access.redhat.com/security/cve/CVE-2026-24049",
             "https://bugzilla.redhat.com/2431959",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2431959",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24049",
-            "https://errata.almalinux.org/10/ALSA-2026-1902.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1939.html",
             "https://errata.rockylinux.org/RLSA-2026:1939",
             "https://github.com/pypa/wheel",
             "https://github.com/pypa/wheel/commit/7a7d2de96b22a9adf9208afcc9547e1001569fef",

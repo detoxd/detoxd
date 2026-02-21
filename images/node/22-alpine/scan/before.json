@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c7c3a-c595-7c68-854e-c3b2cdb8ff27",
-  "CreatedAt": "2026-02-21T01:05:52.405816037+07:00",
+  "ReportID": "019c8161-02e8-7847-b4ed-9a4cf490b8d2",
+  "CreatedAt": "2026-02-22T01:05:44.552545181+07:00",
   "ArtifactID": "sha256:f780f9b9f3c7b7c0e006a304bbca2b27bfc739e9cc98b2a827a44684e47edc38",
   "ArtifactName": "node:22-alpine",
   "ArtifactType": "container_image",
@@ -4491,28 +4491,41 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:d3ba79e2e94a4a401c2584d089b6052cc251d19f0553bb1f998bc1c5f3aa5350",
-          "Title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "Title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
           "Description": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Versions 10.2.0 and below are vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive * wildcards followed by a literal character that doesn't appear in the test string. Each * compiles to a separate [^/]*? regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits. The time complexity is O(4^N) where N is the number of * characters. With N=15, a single minimatch() call takes ~2 seconds. With N=34, it hangs effectively forever. Any application that passes user-controlled strings to minimatch() as the pattern argument is vulnerable to DoS. This issue has been fixed in version 10.2.1.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-1333"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
               "V40Score": 8.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-26996",
             "https://github.com/isaacs/minimatch",
             "https://github.com/isaacs/minimatch/commit/2e111f3a79abc00fa73110195de2c0f2351904f5",
-            "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26"
+            "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26996",
+            "https://www.cve.org/CVERecord?id=CVE-2026-26996"
           ],
           "PublishedDate": "2026-02-20T03:16:01.62Z",
-          "LastModifiedDate": "2026-02-20T03:16:01.62Z"
+          "LastModifiedDate": "2026-02-20T19:12:33.527Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23745",
@@ -4724,29 +4737,42 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:3a520aaa7d0dd6d72c0cade84609b987e0ac78a9d996b3d4fe44bb90f428b6db",
-          "Title": "node-tar is a full-featured Tar for Node.js. When using default option ...",
+          "Title": "tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
           "Description": "node-tar is a full-featured Tar for Node.js. When using default options in versions 7.5.7 and below, an attacker-controlled archive can create a hardlink inside the extraction directory that points to a file outside the extraction root, enabling arbitrary file read and write as the extracting user. Severity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive. This issue has been fixed in version 7.5.8.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-22"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
               "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-26960",
             "https://github.com/isaacs/node-tar",
             "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
             "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
-            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26960",
+            "https://www.cve.org/CVERecord?id=CVE-2026-26960"
           ],
           "PublishedDate": "2026-02-20T02:16:53.883Z",
-          "LastModifiedDate": "2026-02-20T02:16:53.883Z"
+          "LastModifiedDate": "2026-02-20T19:24:16.537Z"
         },
         {
           "VulnerabilityID": "CVE-2026-23745",
@@ -5142,29 +5168,42 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:2b0fd2e35a443f556e859e482012d888a92dedbbb844d43603b6d43f1c510a86",
-          "Title": "node-tar is a full-featured Tar for Node.js. When using default option ...",
+          "Title": "tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
           "Description": "node-tar is a full-featured Tar for Node.js. When using default options in versions 7.5.7 and below, an attacker-controlled archive can create a hardlink inside the extraction directory that points to a file outside the extraction root, enabling arbitrary file read and write as the extracting user. Severity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive. This issue has been fixed in version 7.5.8.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-22"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
               "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-26960",
             "https://github.com/isaacs/node-tar",
             "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
             "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
-            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26960",
+            "https://www.cve.org/CVERecord?id=CVE-2026-26960"
           ],
           "PublishedDate": "2026-02-20T02:16:53.883Z",
-          "LastModifiedDate": "2026-02-20T02:16:53.883Z"
+          "LastModifiedDate": "2026-02-20T19:24:16.537Z"
         },
         {
           "VulnerabilityID": "CVE-2026-26960",
@@ -5192,29 +5231,42 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:2b0fd2e35a443f556e859e482012d888a92dedbbb844d43603b6d43f1c510a86",
-          "Title": "node-tar is a full-featured Tar for Node.js. When using default option ...",
+          "Title": "tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
           "Description": "node-tar is a full-featured Tar for Node.js. When using default options in versions 7.5.7 and below, an attacker-controlled archive can create a hardlink inside the extraction directory that points to a file outside the extraction root, enabling arbitrary file read and write as the extracting user. Severity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive. This issue has been fixed in version 7.5.8.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-22"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
               "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-26960",
             "https://github.com/isaacs/node-tar",
             "https://github.com/isaacs/node-tar/commit/2cb1120bcefe28d7ecc719b41441ade59c52e384",
             "https://github.com/isaacs/node-tar/commit/d18e4e1f846f4ddddc153b0f536a19c050e7499f",
-            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx"
+            "https://github.com/isaacs/node-tar/security/advisories/GHSA-83g3-92jg-28cx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26960",
+            "https://www.cve.org/CVERecord?id=CVE-2026-26960"
           ],
           "PublishedDate": "2026-02-20T02:16:53.883Z",
-          "LastModifiedDate": "2026-02-20T02:16:53.883Z"
+          "LastModifiedDate": "2026-02-20T19:24:16.537Z"
         }
       ]
     }
