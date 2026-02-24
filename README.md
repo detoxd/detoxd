@@ -88,8 +88,10 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 66 | `redis:8.6-alpine3.23` | 0 | 0 | 0 | 0% |
 | 67 | `redis:8.6.0-alpine` | 0 | 0 | 0 | 0% |
 | 68 | `redis:8.6.0-alpine3.23` | 0 | 0 | 0 | 0% |
-| 69 | `ubuntu:24.04` | 13 | 11 | 2 | 15% |
-| 70 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
+| 69 | `redis:8.6.1-alpine` | 0 | 0 | 0 | 0% |
+| 70 | `redis:8.6.1-alpine3.23` | 0 | 0 | 0 | 0% |
+| 71 | `ubuntu:24.04` | 13 | 11 | 2 | 15% |
+| 72 | `ubuntu:24.10` | 0 | 0 | 0 | 0% |
 
 ## Quick Start
 
@@ -139,4 +141,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-23*
+*Last updated: 2026-02-24*
