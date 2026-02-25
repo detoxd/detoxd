@@ -25,13 +25,13 @@ These remain because **no upstream fix is available**:
 [LOW] CVE-2016-2781: coreutils
 [MEDIUM] CVE-2025-68972: gpgv
 [LOW] CVE-2022-3219: gpgv
+[MEDIUM] CVE-2025-14017: libcurl4t64
 [LOW] CVE-2025-0167: libcurl4t64
 [LOW] CVE-2025-10148: libcurl4t64
 [LOW] CVE-2025-14524: libcurl4t64
 [LOW] CVE-2025-14819: libcurl4t64
 [LOW] CVE-2025-15079: libcurl4t64
 [LOW] CVE-2025-15224: libcurl4t64
-[LOW] CVE-2025-9086: libcurl4t64
 [LOW] CVE-2024-2236: libgcrypt20
 [MEDIUM] CVE-2025-8941: libpam-modules
 [MEDIUM] CVE-2025-8941: libpam-modules-bin

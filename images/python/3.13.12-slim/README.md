@@ -4,9 +4,9 @@
 
 | Metric | Before | After | Fixed |
 |--------|--------|-------|-------|
-| Total Vulnerabilities | 68 | 67 | 1 |
+| Total Vulnerabilities | 69 | 68 | 1 |
 | Fixable | 1 | 0 | 1 |
-| Unfixable | 67 | 67 | - |
+| Unfixable | 68 | 68 | - |
 
 **Reduction: 1%**
 
@@ -89,6 +89,7 @@ These remain because **no upstream fix is available**:
 [LOW] TEMP-0290435-0B57B5: tar
 [MEDIUM] CVE-2025-14104: util-linux
 [LOW] CVE-2022-0563: util-linux
+[MEDIUM] CVE-2026-27171: zlib1g
 ```
 
 ## Files

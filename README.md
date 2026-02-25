@@ -48,15 +48,15 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 26 | `mysql:9.6.0` | 20 | 20 | 0 | 0% |
 | 27 | `mysql:9.6.0-oracle` | 20 | 20 | 0 | 0% |
 | 28 | `mysql:9.6.0-oraclelinux9` | 20 | 20 | 0 | 0% |
-| 29 | `nginx:1.28-alpine` | 0 | 0 | 0 | 0% |
+| 29 | `nginx:1.28-alpine` | 1 | 0 | 1 | 100% |
 | 30 | `nginx:1.28.1-alpine3.23` | 0 | 0 | 0 | 0% |
-| 31 | `nginx:1.28.2-alpine3.23` | 0 | 0 | 0 | 0% |
-| 32 | `nginx:1.29-alpine` | 0 | 0 | 0 | 0% |
-| 33 | `nginx:1.29-alpine3.23` | 0 | 0 | 0 | 0% |
+| 31 | `nginx:1.28.2-alpine3.23` | 1 | 0 | 1 | 100% |
+| 32 | `nginx:1.29-alpine` | 1 | 0 | 1 | 100% |
+| 33 | `nginx:1.29-alpine3.23` | 1 | 0 | 1 | 100% |
 | 34 | `nginx:1.29.4-alpine` | 0 | 0 | 0 | 0% |
 | 35 | `nginx:1.29.4-alpine3.23` | 0 | 0 | 0 | 0% |
-| 36 | `nginx:1.29.5-alpine` | 0 | 0 | 0 | 0% |
-| 37 | `nginx:1.29.5-alpine3.23` | 0 | 0 | 0 | 0% |
+| 36 | `nginx:1.29.5-alpine` | 1 | 0 | 1 | 100% |
+| 37 | `nginx:1.29.5-alpine3.23` | 1 | 0 | 1 | 100% |
 | 38 | `node:22-alpine` | 15 | 18 | -3 | -20% |
 | 39 | `postgres:17-alpine` | 16 | 16 | 0 | 0% |
 | 40 | `postgres:17.7-alpine` | 16 | 16 | 0 | 0% |
@@ -72,10 +72,10 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 50 | `python:3.12.12-slim` | 70 | 68 | 2 | 3% |
 | 51 | `python:3.13-slim` | 69 | 68 | 1 | 1% |
 | 52 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
-| 53 | `python:3.13.12-slim` | 68 | 67 | 1 | 1% |
-| 54 | `python:3.14-slim` | 68 | 67 | 1 | 1% |
+| 53 | `python:3.13.12-slim` | 69 | 68 | 1 | 1% |
+| 54 | `python:3.14-slim` | 69 | 68 | 1 | 1% |
 | 55 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
-| 56 | `python:3.14.3-slim` | 68 | 67 | 1 | 1% |
+| 56 | `python:3.14.3-slim` | 69 | 68 | 1 | 1% |
 | 57 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
 | 58 | `python:3.15.0a6-slim` | 68 | 68 | 0 | 0% |
 | 59 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
@@ -141,4 +141,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-24*
+*Last updated: 2026-02-25*

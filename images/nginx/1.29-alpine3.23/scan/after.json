@@ -3,18 +3,18 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c90d0-c0c0-7711-a5dc-3ee359bc17ea",
-  "CreatedAt": "2026-02-25T01:02:05.888465299+07:00",
-  "ArtifactID": "sha256:64de248be037cca92fbb9d93f06ad6a22113a4ef9cfda7aa3eda700ace040e6e",
-  "ArtifactName": "nginx:1.29-alpine3.23",
+  "ReportID": "019c95f7-7380-7b70-9116-ef693d3e7ea6",
+  "CreatedAt": "2026-02-26T01:02:28.096751794+07:00",
+  "ArtifactID": "sha256:978a3686d834b6f84c88526c18ea0c43e00fb99017b51eff04c616705b840068",
+  "ArtifactName": "detoxd/nginx:1.29-alpine3.23-detox.1",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 63518208,
+    "Size": 63832576,
     "OS": {
       "Family": "alpine",
       "Name": "3.23.3"
     },
-    "ImageID": "sha256:b76de378d57272a1dd9091a05dd548a3639dfb792ebdbf95d06704d2950afdea",
+    "ImageID": "sha256:91d1515fc19e6dd2b9068785f82fd64d1463c7a4d7b969b4b79a93545ef627d4",
     "DiffIDs": [
       "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
       "sha256:53998a5033c3c508a3912f390e036cf2d3761839a9f33a3116eb4610cff01f5a",
@@ -23,18 +23,21 @@
       "sha256:aa0fc249df10e9949b4deb92b6611a7d25203282b7bfe69c4482a8a717f79510",
       "sha256:6c0e59fd138a72dba956ed6d98dbca77200fd4d822ac65e8f1d04175e441d523",
       "sha256:7b2903554e639cafe89adc85ab96a86c767c9a88dfa90de2dfbe48a7988aec26",
-      "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f"
+      "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f",
+      "sha256:3aa60aba0be894e091a862e7c2845d8345d260bb0172b77a1dc6c19e71ce0169",
+      "sha256:11d361485815210ceebe62806926f46d3adad084e1f268c05146527fafdc73f4"
     ],
     "RepoTags": [
-      "nginx:1.29-alpine3.23"
+      "detoxd/nginx:1.29-alpine-detox",
+      "detoxd/nginx:1.29-alpine3.23-detox.1"
     ],
     "RepoDigests": [
-      "nginx@sha256:1d13701a5f9f3fb01aaa88cef2344d65b6b5bf6b7d9fa4cf0dca557a8d7702ba"
+      "detoxd/nginx@sha256:c2427a9a4cb3d37b5a4350caa200a070deff694918bcb567112d46a885e1d605"
     ],
-    "Reference": "nginx:1.29-alpine3.23",
+    "Reference": "detoxd/nginx:1.29-alpine3.23-detox.1",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-05T00:07:18.369897286Z",
+      "created": "2026-02-26T02:02:04.744131868+08:00",
       "history": [
         {
           "created": "2026-01-28T01:18:04Z",
@@ -147,6 +150,40 @@
           "created": "2026-02-05T00:07:18Z",
           "created_by": "RUN /bin/sh -c set -x     \u0026\u0026 apkArch=\"$(cat /etc/apk/arch)\"     \u0026\u0026 nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}         nginx-module-acme=${NGINX_VERSION}.${ACME_VERSION}-r${PKG_RELEASE}     \"     \u0026\u0026 apk add --no-cache --virtual .checksum-deps         openssl     \u0026\u0026 case \"$apkArch\" in         x86_64|aarch64)             apk add -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             \u0026\u0026 tempDir=\"$(mktemp -d)\"             \u0026\u0026 chown nobody:nobody $tempDir             \u0026\u0026 apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl                 cargo                 clang-libclang             \u0026\u0026 su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 \u0026\u0026 cd ${tempDir}                 \u0026\u0026 curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 \u0026\u0026 PKGOSSCHECKSUM=\\\"b8584eaa97130ba7743dfbb2a10f665d64cb54b864e2038d0fd298d24682fc05eb4472738430b15862dabc6f374917f1b9889117051a852d36d0a6c8bc898921 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 \u0026\u0026 if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 \u0026\u0026 tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 \u0026\u0026 cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 \u0026\u0026 cd alpine                 \u0026\u0026 export BUILDTARGET=\\\"module-geoip module-image-filter module-njs module-xslt module-acme\\\"                 \u0026\u0026 if [ \\\"\\$(apk --print-arch)\\\" = \\\"armhf\\\" ]; then BUILDTARGET=\\\"\\$( echo \\$BUILDTARGET | sed 's,module-acme,,' )\\\"; fi                 \u0026\u0026 make \\$BUILDTARGET                 \u0026\u0026 apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 \u0026\u0026 abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             \u0026\u0026 cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             \u0026\u0026 apk del --no-network .build-deps             \u0026\u0026 if [ \"$apkArch\" = \"armhf\" ]; then nginxPackages=\"$( echo $nginxPackages | sed 's,nginx-module-acme=.*,,')\"; fi             \u0026\u0026 apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     \u0026\u0026 apk del --no-network .checksum-deps     \u0026\u0026 if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     \u0026\u0026 if [ -f \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     \u0026\u0026 apk add --no-cache curl ca-certificates # buildkit",
           "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-02-25T18:02:04Z",
+          "created_by": "LABEL maintainer=detoxd",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-25T18:02:04Z",
+          "created_by": "LABEL detoxd.iteration=1",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-25T18:02:04Z",
+          "created_by": "LABEL detoxd.fixable.count=1",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-25T18:02:04Z",
+          "created_by": "LABEL detoxd.unfixable.count=0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-02-25T18:02:04Z",
+          "created_by": "RUN /bin/sh -c apk update \u0026\u0026     apk upgrade --no-cache libpng \u0026\u0026     rm -rf /var/cache/apk/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-02-25T18:02:04Z",
+          "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
+          "comment": "buildkit.dockerfile.v0"
         }
       ],
       "os": "linux",
@@ -160,7 +197,9 @@
           "sha256:aa0fc249df10e9949b4deb92b6611a7d25203282b7bfe69c4482a8a717f79510",
           "sha256:6c0e59fd138a72dba956ed6d98dbca77200fd4d822ac65e8f1d04175e441d523",
           "sha256:7b2903554e639cafe89adc85ab96a86c767c9a88dfa90de2dfbe48a7988aec26",
-          "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f"
+          "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f",
+          "sha256:3aa60aba0be894e091a862e7c2845d8345d260bb0172b77a1dc6c19e71ce0169",
+          "sha256:11d361485815210ceebe62806926f46d3adad084e1f268c05146527fafdc73f4"
         ]
       },
       "config": {
@@ -182,7 +221,10 @@
           "ACME_VERSION=0.3.1"
         ],
         "Labels": {
-          "maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+          "detoxd.fixable.count": "1",
+          "detoxd.iteration": "1",
+          "detoxd.unfixable.count": "0",
+          "maintainer": "detoxd"
         },
         "WorkingDir": "/",
         "ExposedPorts": {
@@ -223,12 +265,20 @@
       {
         "Size": 50063360,
         "DiffID": "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f"
+      },
+      {
+        "Size": 312832,
+        "DiffID": "sha256:3aa60aba0be894e091a862e7c2845d8345d260bb0172b77a1dc6c19e71ce0169"
+      },
+      {
+        "Size": 1536,
+        "DiffID": "sha256:11d361485815210ceebe62806926f46d3adad084e1f268c05146527fafdc73f4"
       }
     ]
   },
   "Results": [
     {
-      "Target": "nginx:1.29-alpine3.23 (alpine 3.23.3)",
+      "Target": "detoxd/nginx:1.29-alpine3.23-detox.1 (alpine 3.23.3)",
       "Class": "os-pkgs",
       "Type": "alpine",
       "Packages": [
@@ -939,7 +989,7 @@
           "Name": "freetype",
           "Identifier": {
             "PURL": "pkg:apk/alpine/freetype@2.14.1-r0?arch=x86_64\u0026distro=3.23.3",
-            "UID": "be1de2d25e200a17"
+            "UID": "21ab81867b035d6b"
           },
           "Version": "2.14.1-r0",
           "Arch": "x86_64",
@@ -953,7 +1003,7 @@
           "DependsOn": [
             "brotli-libs@1.2.0-r0",
             "libbz2@1.0.8-r6",
-            "libpng@1.6.54-r0",
+            "libpng@1.6.55-r0",
             "musl@1.2.5-r21",
             "zlib@1.3.1-r2"
           ],
@@ -1338,7 +1388,7 @@
           "Name": "libgd",
           "Identifier": {
             "PURL": "pkg:apk/alpine/libgd@2.3.3-r10?arch=x86_64\u0026distro=3.23.3",
-            "UID": "771e86facddc0c0e"
+            "UID": "65b22f80adc66176"
           },
           "Version": "2.3.3-r10",
           "Arch": "x86_64",
@@ -1353,7 +1403,7 @@
             "freetype@2.14.1-r0",
             "libavif@1.3.0-r0",
             "libjpeg-turbo@3.1.2-r0",
-            "libpng@1.6.54-r0",
+            "libpng@1.6.55-r0",
             "libwebp@1.6.0-r0",
             "libxpm@3.5.17-r0",
             "musl@1.2.5-r21",
@@ -1549,16 +1599,16 @@
           "AnalyzedBy": "apk"
         },
         {
-          "ID": "libpng@1.6.54-r0",
+          "ID": "libpng@1.6.55-r0",
           "Name": "libpng",
           "Identifier": {
-            "PURL": "pkg:apk/alpine/libpng@1.6.54-r0?arch=x86_64\u0026distro=3.23.3",
-            "UID": "72123ca33a149751"
+            "PURL": "pkg:apk/alpine/libpng@1.6.55-r0?arch=x86_64\u0026distro=3.23.3",
+            "UID": "9c803c58fd4ab240"
           },
-          "Version": "1.6.54-r0",
+          "Version": "1.6.55-r0",
           "Arch": "x86_64",
           "SrcName": "libpng",
-          "SrcVersion": "1.6.54-r0",
+          "SrcVersion": "1.6.55-r0",
           "Licenses": [
             "Libpng"
           ],
@@ -1568,12 +1618,12 @@
             "zlib@1.3.1-r2"
           ],
           "Layer": {
-            "DiffID": "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f"
+            "DiffID": "sha256:3aa60aba0be894e091a862e7c2845d8345d260bb0172b77a1dc6c19e71ce0169"
           },
-          "Digest": "sha1:8c74dd4ccc19f529367cc90241f21aba407e91c2",
+          "Digest": "sha1:03c56da9ef638f4eba0e4315bfa9b1966c26b328",
           "InstalledFiles": [
             "usr/lib/libpng16.so.16",
-            "usr/lib/libpng16.so.16.54.0"
+            "usr/lib/libpng16.so.16.55.0"
           ],
           "AnalyzedBy": "apk"
         },
