@@ -32,16 +32,16 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 10 | `httpd:2.4.66-alpine` | 2 | 0 | 2 | 100% |
 | 11 | `httpd:2.4.66-alpine3.22` | 33 | 0 | 33 | 100% |
 | 12 | `httpd:2.4.66-alpine3.23` | 2 | 0 | 2 | 100% |
-| 13 | `mongo:8.0` | 75 | 67 | 8 | 11% |
-| 14 | `mongo:8.0.19-noble` | 75 | 67 | 8 | 11% |
-| 15 | `mongo:8.2` | 75 | 67 | 8 | 11% |
-| 16 | `mongo:8.2-noble` | 75 | 67 | 8 | 11% |
+| 13 | `mongo:8.0` | 75 | 61 | 14 | 19% |
+| 14 | `mongo:8.0.19-noble` | 75 | 61 | 14 | 19% |
+| 15 | `mongo:8.2` | 75 | 61 | 14 | 19% |
+| 16 | `mongo:8.2-noble` | 75 | 61 | 14 | 19% |
 | 17 | `mongo:8.2.3` | 241 | 219 | 22 | 9% |
 | 18 | `mongo:8.2.3-noble` | 249 | 219 | 30 | 12% |
 | 19 | `mongo:8.2.4` | 233 | 219 | 14 | 6% |
 | 20 | `mongo:8.2.4-noble` | 233 | 219 | 14 | 6% |
-| 21 | `mongo:8.2.5` | 75 | 67 | 8 | 11% |
-| 22 | `mongo:8.2.5-noble` | 75 | 67 | 8 | 11% |
+| 21 | `mongo:8.2.5` | 75 | 61 | 14 | 19% |
+| 22 | `mongo:8.2.5-noble` | 75 | 61 | 14 | 19% |
 | 23 | `mysql:9.0` | 228 | 85 | 143 | 63% |
 | 24 | `mysql:9.6-oracle` | 20 | 20 | 0 | 0% |
 | 25 | `mysql:9.6-oraclelinux9` | 20 | 20 | 0 | 0% |
@@ -70,14 +70,14 @@ All images are available with the format: `detoxd/<image>:<tag>-detox.1`
 | 48 | `python:3.11.14-slim` | 73 | 70 | 3 | 4% |
 | 49 | `python:3.12-slim` | 70 | 68 | 2 | 3% |
 | 50 | `python:3.12.12-slim` | 70 | 68 | 2 | 3% |
-| 51 | `python:3.13-slim` | 69 | 68 | 1 | 1% |
+| 51 | `python:3.13-slim` | 78 | 77 | 1 | 1% |
 | 52 | `python:3.13.11-slim` | 68 | 67 | 1 | 1% |
-| 53 | `python:3.13.12-slim` | 69 | 68 | 1 | 1% |
-| 54 | `python:3.14-slim` | 69 | 68 | 1 | 1% |
+| 53 | `python:3.13.12-slim` | 78 | 77 | 1 | 1% |
+| 54 | `python:3.14-slim` | 78 | 77 | 1 | 1% |
 | 55 | `python:3.14.2-slim` | 68 | 67 | 1 | 1% |
-| 56 | `python:3.14.3-slim` | 69 | 68 | 1 | 1% |
+| 56 | `python:3.14.3-slim` | 78 | 77 | 1 | 1% |
 | 57 | `python:3.15.0a5-slim` | 68 | 67 | 1 | 1% |
-| 58 | `python:3.15.0a6-slim` | 68 | 68 | 0 | 0% |
+| 58 | `python:3.15.0a6-slim` | 77 | 77 | 0 | 0% |
 | 59 | `redis:8.2.3-alpine3.22` | 0 | 0 | 0 | 0% |
 | 60 | `redis:8.4-alpine` | 0 | 0 | 0 | 0% |
 | 61 | `redis:8.4-alpine3.22` | 0 | 0 | 0 | 0% |
@@ -141,4 +141,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-25*
+*Last updated: 2026-02-26*

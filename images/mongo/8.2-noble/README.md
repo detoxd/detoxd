@@ -4,11 +4,11 @@
 
 | Metric | Before | After | Fixed |
 |--------|--------|-------|-------|
-| Total Vulnerabilities | 75 | 67 | 8 |
-| Fixable | 57 | 49 | 8 |
-| Unfixable | 18 | 18 | - |
+| Total Vulnerabilities | 75 | 61 | 14 |
+| Fixable | 63 | 49 | 14 |
+| Unfixable | 12 | 12 | - |
 
-**Reduction: 10%**
+**Reduction: 18%**
 
 ## Quick Start
 
@@ -25,13 +25,7 @@ These remain because **no upstream fix is available**:
 [LOW] CVE-2016-2781: coreutils
 [MEDIUM] CVE-2025-68972: gpgv
 [LOW] CVE-2022-3219: gpgv
-[MEDIUM] CVE-2025-14017: libcurl4t64
 [LOW] CVE-2025-0167: libcurl4t64
-[LOW] CVE-2025-10148: libcurl4t64
-[LOW] CVE-2025-14524: libcurl4t64
-[LOW] CVE-2025-14819: libcurl4t64
-[LOW] CVE-2025-15079: libcurl4t64
-[LOW] CVE-2025-15224: libcurl4t64
 [LOW] CVE-2024-2236: libgcrypt20
 [MEDIUM] CVE-2025-8941: libpam-modules
 [MEDIUM] CVE-2025-8941: libpam-modules-bin
