@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.69.0"
   },
-  "ReportID": "019c9b25-6138-76fc-b3e6-ae14cb28e2cf",
-  "CreatedAt": "2026-02-27T01:10:44.152460708+07:00",
-  "ArtifactID": "sha256:9a3c2b381c6d9dcac2f1cdef70a2c35c99ff92d1ab97260ccf05a0c8f7cc6392",
+  "ReportID": "019ca04b-e33d-7e6a-ba93-01c6c9c1595f",
+  "CreatedAt": "2026-02-28T01:10:53.885946915+07:00",
+  "ArtifactID": "sha256:1a4f5f4bf1ea6e0fa9ebf26745032d04063da362a1d865c8c4adbf9610ccfa6d",
   "ArtifactName": "detoxd/mysql:9.0-detox.2",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -14,7 +14,7 @@
       "Family": "oracle",
       "Name": "9.4"
     },
-    "ImageID": "sha256:6f80845867d9745ae493bd6084311cad07aa56da24e007eeed74f239962f6cf7",
+    "ImageID": "sha256:47fdc3bff289e92c78b50d04aa2bf5ae031ba008a2b24be9771044a47fc11ee6",
     "DiffIDs": [
       "sha256:664144bd1f243d56de6413950a57ce17fd9d25e925a8e06c4771cc4fb2fdbb50",
       "sha256:4aaf28c8ff69c75ccf3e5d7bea851ba8eb4ab41e2827eb2cee3f289fd181c634",
@@ -26,11 +26,11 @@
       "sha256:a130f94f498e2769ea756192fa4944e772e6eecfbf7d22872748fc98b152ef39",
       "sha256:0af6b660d7af7bdde31e92df9f61fdadbe8f1e7856a0c49f1c75c7fb091796ad",
       "sha256:a0526666ecfef9af2910c46d24bcf0ba5b68a6c8a702a95814f5861ebacfbcd3",
-      "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f",
-      "sha256:d9598e10f08747d9051c9da5defe64200aa18f004b88763704178c8693bf2e9b",
-      "sha256:6b7eec2c9bb1c24aaf329b15db89612467ef9b7a51e0c23664ef3647f9927a7f",
-      "sha256:b44435cd3389d2cedf13e1de8ac6964169107abb9c15dbfb758e4cc49dda09f7",
-      "sha256:b44435cd3389d2cedf13e1de8ac6964169107abb9c15dbfb758e4cc49dda09f7"
+      "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b",
+      "sha256:130bfaf153af61d7b6045284a696a284dedd58fde48495d377e775d4b43de4ca",
+      "sha256:130bfaf153af61d7b6045284a696a284dedd58fde48495d377e775d4b43de4ca",
+      "sha256:bdb0badd2f82aee1298ec2cd1f844b31125d66c7c47b85eb1f9496a06479f005",
+      "sha256:e24df89c39f169816c93921b1392648931a3e8fee7a5fb49d2673936baab951e"
     ],
     "RepoTags": [
       "detoxd/mysql:9.0-detox.2"
@@ -38,7 +38,7 @@
     "Reference": "detoxd/mysql:9.0-detox.2",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-02-27T02:10:22.760782745+08:00",
+      "created": "2026-02-28T02:10:32.438730587+08:00",
       "history": [
         {
           "created": "2024-07-22T22:36:10Z",
@@ -145,75 +145,75 @@
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:09:55Z",
+          "created": "2026-02-27T18:10:06Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:09:55Z",
+          "created": "2026-02-27T18:10:06Z",
           "created_by": "LABEL detoxd.iteration=1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:09:55Z",
+          "created": "2026-02-27T18:10:06Z",
           "created_by": "LABEL detoxd.fixable.count=228",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:09:55Z",
+          "created": "2026-02-27T18:10:06Z",
           "created_by": "LABEL detoxd.unfixable.count=0",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:09:55Z",
+          "created": "2026-02-27T18:10:06Z",
           "created_by": "RUN /bin/sh -c yum update -y bzip2 bzip2-libs curl expat glib2 glibc glibc-common glibc-minimal-langpack gnupg2 gnutls krb5-libs libarchive libblkid libbrotli libcurl libgcc libgcrypt libmount libsmartcols libssh libstdc++ libtasn1 libuuid libxml2 ncurses-libs openssl openssl-fips-provider openssl-libs python3 python3-libs shadow-utils sqlite-libs systemd-libs tar || dnf update -y bzip2 bzip2-libs curl expat glib2 glibc glibc-common glibc-minimal-langpack gnupg2 gnutls krb5-libs libarchive libblkid libbrotli libcurl libgcc libgcrypt libmount libsmartcols libssh libstdc++ libtasn1 libuuid libxml2 ncurses-libs openssl openssl-fips-provider openssl-libs python3 python3-libs shadow-utils sqlite-libs systemd-libs tar || microdnf update -y bzip2 bzip2-libs curl expat glib2 glibc glibc-common glibc-minimal-langpack gnupg2 gnutls krb5-libs libarchive libblkid libbrotli libcurl libgcc libgcrypt libmount libsmartcols libssh libstdc++ libtasn1 libuuid libxml2 ncurses-libs openssl openssl-fips-provider openssl-libs python3 python3-libs shadow-utils sqlite-libs systemd-libs tar \u0026\u0026     yum clean all || dnf clean all || microdnf clean all # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-26T18:09:56Z",
+          "created": "2026-02-27T18:10:07Z",
           "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade PyNaCl==1.6.2 certifi==2024.7.4 cryptography==46.0.5 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-26T18:09:56Z",
+          "created": "2026-02-27T18:10:07Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-26T18:10:22Z",
+          "created": "2026-02-27T18:10:32Z",
           "created_by": "LABEL maintainer=detoxd",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:10:22Z",
+          "created": "2026-02-27T18:10:32Z",
           "created_by": "LABEL detoxd.iteration=2",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:10:22Z",
+          "created": "2026-02-27T18:10:32Z",
           "created_by": "LABEL detoxd.fixable.count=85",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:10:22Z",
+          "created": "2026-02-27T18:10:32Z",
           "created_by": "LABEL detoxd.unfixable.count=0",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-02-26T18:10:22Z",
+          "created": "2026-02-27T18:10:32Z",
           "created_by": "RUN /bin/sh -c if command -v pip \u003e/dev/null 2\u003e\u00261 || command -v pip3 \u003e/dev/null 2\u003e\u00261; then     pip install --no-cache-dir --upgrade PyNaCl==1.6.2 certifi==2024.7.4 cryptography==46.0.5 \u0026\u0026     rm -rf /root/.cache/pip /tmp/*;     fi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-02-26T18:10:22Z",
+          "created": "2026-02-27T18:10:32Z",
           "created_by": "RUN /bin/sh -c rm -rf /tmp/* /var/tmp/* 2\u003e/dev/null || true # buildkit",
           "comment": "buildkit.dockerfile.v0"
         }
@@ -232,11 +232,11 @@
           "sha256:a130f94f498e2769ea756192fa4944e772e6eecfbf7d22872748fc98b152ef39",
           "sha256:0af6b660d7af7bdde31e92df9f61fdadbe8f1e7856a0c49f1c75c7fb091796ad",
           "sha256:a0526666ecfef9af2910c46d24bcf0ba5b68a6c8a702a95814f5861ebacfbcd3",
-          "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f",
-          "sha256:d9598e10f08747d9051c9da5defe64200aa18f004b88763704178c8693bf2e9b",
-          "sha256:6b7eec2c9bb1c24aaf329b15db89612467ef9b7a51e0c23664ef3647f9927a7f",
-          "sha256:b44435cd3389d2cedf13e1de8ac6964169107abb9c15dbfb758e4cc49dda09f7",
-          "sha256:b44435cd3389d2cedf13e1de8ac6964169107abb9c15dbfb758e4cc49dda09f7"
+          "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b",
+          "sha256:130bfaf153af61d7b6045284a696a284dedd58fde48495d377e775d4b43de4ca",
+          "sha256:130bfaf153af61d7b6045284a696a284dedd58fde48495d377e775d4b43de4ca",
+          "sha256:bdb0badd2f82aee1298ec2cd1f844b31125d66c7c47b85eb1f9496a06479f005",
+          "sha256:e24df89c39f169816c93921b1392648931a3e8fee7a5fb49d2673936baab951e"
         ]
       },
       "config": {
@@ -313,23 +313,23 @@
       },
       {
         "Size": 133309440,
-        "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+        "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:d9598e10f08747d9051c9da5defe64200aa18f004b88763704178c8693bf2e9b"
+        "DiffID": "sha256:130bfaf153af61d7b6045284a696a284dedd58fde48495d377e775d4b43de4ca"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:6b7eec2c9bb1c24aaf329b15db89612467ef9b7a51e0c23664ef3647f9927a7f"
+        "DiffID": "sha256:130bfaf153af61d7b6045284a696a284dedd58fde48495d377e775d4b43de4ca"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:b44435cd3389d2cedf13e1de8ac6964169107abb9c15dbfb758e4cc49dda09f7"
+        "DiffID": "sha256:bdb0badd2f82aee1298ec2cd1f844b31125d66c7c47b85eb1f9496a06479f005"
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:b44435cd3389d2cedf13e1de8ac6964169107abb9c15dbfb758e4cc49dda09f7"
+        "DiffID": "sha256:e24df89c39f169816c93921b1392648931a3e8fee7a5fb49d2673936baab951e"
       }
     ]
   },
@@ -647,7 +647,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:3723595696d1d225773791ba59d393a7",
           "InstalledFiles": [
@@ -711,7 +711,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:d157a7316f1468eccd659802367f8077",
           "InstalledFiles": [
@@ -1613,7 +1613,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:50e01f671c7e10f0a44118dedb1c52df",
           "InstalledFiles": [
@@ -1794,7 +1794,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:0422cfb1ce73c0258c2f95f030d1a4ef",
           "InstalledFiles": [
@@ -19468,7 +19468,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:d7d2c4ed63df3fcd4d4c74b18be4588f",
           "InstalledFiles": [
@@ -19662,7 +19662,7 @@
             "libgcc@11.5.0-11.0.2.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:ba602a2d64ccdf9eca1662fce76e21dd",
           "InstalledFiles": [
@@ -19808,7 +19808,7 @@
             "tzdata@2024a-1.el9.noarch"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:591309635aaec6b2f5473008e2ce852c",
           "InstalledFiles": [
@@ -19894,7 +19894,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:79e8483644ec69afaaea590d6d061069",
           "AnalyzedBy": "rpm"
@@ -19984,7 +19984,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:e3e63f326e754428012d99f40c7b85b0",
           "InstalledFiles": [
@@ -20219,7 +20219,7 @@
             "p11-kit@0.25.3-2.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:4dfc0867b982b7c84dfcc74de6fdd1bd",
           "InstalledFiles": [
@@ -20699,7 +20699,7 @@
             "sed@4.8-9.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:c70f9fe516054e522e06f718ca259819",
           "InstalledFiles": [
@@ -20880,7 +20880,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:aabb27d411141c25deb4e9c51ff3546a",
           "InstalledFiles": [
@@ -21008,7 +21008,7 @@
             "libuuid@2.37.4-21.0.1.el9_7.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:899be4f2a21e1247786021e779141086",
           "InstalledFiles": [
@@ -21046,7 +21046,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:551ab29b9d2dbb78bb07f7e3771aea95",
           "InstalledFiles": [
@@ -21247,7 +21247,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:2f19ae68cceee20c36718c523f408f4d",
           "InstalledFiles": [
@@ -21487,7 +21487,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:3843d6b171698b69db7d9a8f0549c292",
           "InstalledFiles": [
@@ -21530,7 +21530,7 @@
             "libgpg-error@1.42-5.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:d6191289edd6605587aedd8f81649952",
           "InstalledFiles": [
@@ -21814,7 +21814,7 @@
             "libuuid@2.37.4-21.0.1.el9_7.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:565353fbd78e1278e777fb0c1678f86b",
           "InstalledFiles": [
@@ -22305,7 +22305,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:09caa9df22002206f2ca503c09e9da43",
           "InstalledFiles": [
@@ -22398,7 +22398,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:b9373139b43eba042f53557cde120df8",
           "InstalledFiles": [
@@ -22440,7 +22440,7 @@
             "Class": "official"
           },
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:9cf2b6ef8a91ef5df089b52c1f9b653c",
           "InstalledFiles": [
@@ -22475,7 +22475,7 @@
             "libgcc@11.5.0-11.0.2.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:e13acf04b2ae770e441ee4f31fae6a2d",
           "InstalledFiles": [
@@ -22537,7 +22537,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:b647a949488e21d38b3d79d4498b5104",
           "InstalledFiles": [
@@ -22669,7 +22669,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:909e883f3f426a527a76b252ab6510db",
           "InstalledFiles": [
@@ -22842,7 +22842,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:6a1719e1d328c1840104657ef76ccfaa",
           "InstalledFiles": [
@@ -23218,7 +23218,7 @@
             "Class": "official"
           },
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:b6b5348184236079979101e059e27de2",
           "InstalledFiles": [
@@ -23425,7 +23425,7 @@
             "ncurses-base@6.2-12.20210508.el9.noarch"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:7349863c162d88081fdf86ef783c625f",
           "InstalledFiles": [
@@ -23501,7 +23501,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:7f754b24ddabefc26917d26d754b2ec1",
           "InstalledFiles": [
@@ -23731,7 +23731,7 @@
             "openssl-libs@3.5.1-7.0.1.el9_7.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:628fbbfffca28690e03c81f5fcba9f46",
           "InstalledFiles": [
@@ -24127,7 +24127,7 @@
             "openssl-fips-provider-so@3.0.7-8.0.1.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:5e911b57bdbbf224924f129f9cc57258",
           "InstalledFiles": [
@@ -24161,7 +24161,7 @@
             "glibc@2.34-231.0.1.el9_7.10.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:c40d05f89f7bc560c1e39d39cd4364c3",
           "InstalledFiles": [
@@ -24202,7 +24202,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:fd790986d401a362f4907314075d3713",
           "InstalledFiles": [
@@ -24780,7 +24780,7 @@
             "python3@3.9.25-3.0.1.el9_7.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:c947dbe902e47cd92f8ba59cee9e4c25",
           "InstalledFiles": [
@@ -24814,7 +24814,7 @@
             "python3-libs@3.9.25-3.0.1.el9_7.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:a11dfa10fab8aa7733edc5b0b2a435a6",
           "InstalledFiles": [
@@ -24874,7 +24874,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:733e65180a52308b1c7cc501f1fdea8d",
           "InstalledFiles": [
@@ -28114,7 +28114,7 @@
             "setup@2.13.7-10.el9.noarch"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:0e569dc26762d09b6ec187fb15244670",
           "InstalledFiles": [
@@ -28540,7 +28540,7 @@
             "zlib@1.2.11-40.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:0aafd349909779518d650de2f8476b44",
           "InstalledFiles": [
@@ -28592,7 +28592,7 @@
             "xz-libs@5.2.5-8.el9_0.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:0a491759343fae86bfdfdc89a4933bb3",
           "InstalledFiles": [
@@ -28648,7 +28648,7 @@
             "libselinux@3.6-1.el9.x86_64"
           ],
           "Layer": {
-            "DiffID": "sha256:062ceb7695be673e3ffe0d469f2e272b5e2ba27091f516d760cdbf499aa16d1f"
+            "DiffID": "sha256:78d2f7926726660beaa5a8143a88c6d8020cbf926f95732a2bf6ccaf1228610b"
           },
           "Digest": "md5:6bfb438da84bd2e715ed7a2cd1462dc5",
           "InstalledFiles": [
@@ -31140,7 +31140,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:662c8f7d34db3412bdaa6b5740dabdae40e55723238e640280d6438db97ebf93",
+          "Fingerprint": "sha256:b34858c858ff4ce891551414893eff39281d73979455b5496ea008b72a9497f8",
           "Title": "libsodium: pynacl: libsodium: Improper validation of elliptic curve points could lead to data integrity or information disclosure.",
           "Description": "libsodium before ad3004e, in atypical use cases involving certain custom cryptography or untrusted data to crypto_core_ed25519_is_valid_point, mishandles checks for whether an elliptic curve point is valid because it sometimes allows points that aren't in the main cryptographic group.",
           "Severity": "MEDIUM",
@@ -31209,7 +31209,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:f1db0891378b62664d5d4317a094bbfeee2ee0adca6808c4a132c463663038d9",
+          "Fingerprint": "sha256:721bd37eae41221a2b2ea67e9e73905ee94fdae338283ad41f992811b0f9d669",
           "Title": "python-certifi: Remove root certificates from `GLOBALTRUST` from the root store",
           "Description": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi starting in 2021.5.30 and prior to 2024.7.4 recognized root certificates from `GLOBALTRUST`. Certifi 2024.7.04 removes root certificates from `GLOBALTRUST` from the root store. These are in the process of being removed from Mozilla's trust store. `GLOBALTRUST`'s root certificates are being removed pursuant to an investigation which identified \"long-running and unresolved compliance issues.\"",
           "Severity": "LOW",
@@ -31272,7 +31272,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:f8d7b180b365736d0c7dd2bb38879dcb70a250bfcdac685f8212d0344f53dd41",
+          "Fingerprint": "sha256:c6330b29ce5ea31bcdc2da2d25d40261702be0d5218779c64dfc9e9ddc4eb6dd",
           "Title": "cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
           "Description": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to 46.0.5, the public_key_from_numbers (or EllipticCurvePublicNumbers.public_key()), EllipticCurvePublicNumbers.public_key(), load_der_public_key() and load_pem_public_key() functions do not verify that the point belongs to the expected prime-order subgroup of the curve. This missing validation allows an attacker to provide a public key point P from a small-order subgroup. This can lead to security issues in various situations, such as the most commonly used signature verification (ECDSA) and shared key negotiation (ECDH). When the victim computes the shared secret as S = [victim_private_key]P via ECDH, this leaks information about victim_private_key mod (small_subgroup_order). For curves with cofactor \u003e 1, this reveals the least significant bits of the private key. When these weak public keys are used in ECDSA , it's easy to forge signatures on the small subgroup. Only SECT curves are impacted by this. This vulnerability is fixed in 46.0.5.",
           "Severity": "HIGH",
@@ -31333,7 +31333,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:fcc9f90759356f30e5dac7d3db863b1d6ef446e6a0bacc427abf752682b4b880",
+          "Fingerprint": "sha256:3250b3c70b4c25709d686af3d0d290252f54054802fb880e2cd2a934812412cf",
           "Title": "pyca/cryptography has a vulnerable OpenSSL included in cryptography wheels",
           "Description": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 37.0.0-43.0.0 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://openssl-library.org/news/secadv/20240903.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n",
           "Severity": "MEDIUM",
@@ -31372,7 +31372,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:c28de29dd69dcb18da8cd7a50dcbc1cd2ceea31394b3b6c04af012360f0d99f4",
+          "Fingerprint": "sha256:13b995b64b2bea7a8f0cecab55516cab880cea9a39e5a3b61fe00b4d03af619e",
           "Title": "openssl: RFC7250 handshakes with unauthenticated servers don't abort as expected",
           "Description": "Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authenticate a\nserver may fail to notice that the server was not authenticated, because\nhandshakes don't abort as expected when the SSL_VERIFY_PEER verification mode\nis set.\n\nImpact summary: TLS and DTLS connections using raw public keys may be\nvulnerable to man-in-middle attacks when server authentication failure is not\ndetected by clients.\n\nRPKs are disabled by default in both TLS clients and TLS servers.  The issue\nonly arises when TLS clients explicitly enable RPK use by the server, and the\nserver, likewise, enables sending of an RPK instead of an X.509 certificate\nchain.  The affected clients are those that then rely on the handshake to\nfail when the server's RPK fails to match one of the expected public keys,\nby setting the verification mode to SSL_VERIFY_PEER.\n\nClients that enable server-side raw public keys can still find out that raw\npublic key verification failed by calling SSL_get_verify_result(), and those\nthat do, and take appropriate action, are not affected.  This issue was\nintroduced in the initial implementation of RPK support in OpenSSL 3.2.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "LOW",
@@ -31512,7 +31512,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0a7d09fc53f34bc4587dc1d394c22022956501856c78de1ce66cf3fa7fa9047d",
+          "Fingerprint": "sha256:af4da20881221b199e4d009d820999a9f41e7a020c73605bf3e91b18b22170be",
           "Title": "golang: html/template: backticks not treated as string delimiters",
           "Description": "Templates do not properly consider backticks (`) as Javascript string delimiters, and do not escape them as expected. Backticks are used, since ES6, for JS template literals. If a template contains a Go template action within a Javascript template literal, the contents of the action can be used to terminate the literal, injecting arbitrary Javascript code into the Go template. As ES6 template literals are rather complex, and themselves can do string interpolation, the decision was made to simply disallow Go template actions from being used inside of them (e.g. \"var a = {{.}}\"), since there is no obviously safe way to allow this behavior. This takes the same approach as github.com/google/safehtml. With fix, Template.Parse returns an Error when it encounters templates like this, with an ErrorCode of value 12. This ErrorCode is currently unexported, but will be exported in the release of Go 1.21. Users who rely on the previous behavior can re-enable it using the GODEBUG flag jstmpllitinterp=1, with the caveat that backticks will now be escaped. This should be used with caution.",
           "Severity": "CRITICAL",
@@ -31643,7 +31643,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ab59975160a5475599bd35cab11b02a54819f46dbcde8bbcd858bac9f8074724",
+          "Fingerprint": "sha256:eef27016c863f33f31d4ba276582bab4bd4a8493a003312eb2daa170dbd49c5d",
           "Title": "golang: html/template: improper handling of JavaScript whitespace",
           "Description": "Not all valid JavaScript whitespace characters are considered to be whitespace. Templates containing whitespace characters outside of the character set \"\\t\\n\\f\\r\\u0020\\u2028\\u2029\" in JavaScript contexts that also contain actions may not be properly sanitized during execution.",
           "Severity": "CRITICAL",
@@ -31769,13 +31769,13 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c1dd547a67de4d70548899343d653ae90074a05382376a5d1865ef2fb37b3fb5",
+          "Fingerprint": "sha256:7b23a2e97faf2b4b569be95085bcbb6daf7e23aed15acb3fadbc65d343ed5252",
           "Title": "golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses",
           "Description": "The various Is methods (IsPrivate, IsLoopback, etc) did not work as expected for IPv4-mapped IPv6 addresses, returning false for addresses which would return true in their traditional IPv4 forms.",
           "Severity": "CRITICAL",
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 4,
             "cbl-mariner": 4,
             "nvd": 4,
@@ -31866,7 +31866,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:9fc5a2761274a6132628b33714093327073abe747e4e1ec601d05245a4e070c2",
+          "Fingerprint": "sha256:edd1e62d850e249f7c3615dcc16aab80bd3d5ededc1a2d1282182df111f30695",
           "Title": "crypto/tls: Unexpected session resumption in crypto/tls",
           "Description": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.",
           "Severity": "CRITICAL",
@@ -31898,23 +31898,20 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2920",
+            "https://access.redhat.com/errata/RHSA-2026:3337",
             "https://access.redhat.com/security/cve/CVE-2025-68121",
             "https://bugzilla.redhat.com/2418462",
-            "https://bugzilla.redhat.com/2433242",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437111",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2434431",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2434432",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2437016",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2437111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61732",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121",
-            "https://errata.almalinux.org/9/ALSA-2026-2920.html",
-            "https://errata.rockylinux.org/RLSA-2026:2709",
+            "https://errata.almalinux.org/9/ALSA-2026-3337.html",
+            "https://errata.rockylinux.org/RLSA-2026:3040",
             "https://go.dev/cl/737700",
             "https://go.dev/issue/77217",
             "https://groups.google.com/g/golang-announce/c/K09ubi9FQFk",
@@ -31952,7 +31949,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:a10c395b1c93da8179c7b29494e1985bd1973cba7b2cf0d653302d29a5cd6ff5",
+          "Fingerprint": "sha256:8e6154d2ce2bd6d2b74e402daad5995e275e611eb08f4e451b549757665d7035",
           "Title": "golang: net/http: handle server errors after sending GOAWAY",
           "Description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
           "Severity": "HIGH",
@@ -32072,7 +32069,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:30d04c3ed6e04bf96c7c4f2ebcee9d4d5c768127bcbb5f87192446d69c5d47e3",
+          "Fingerprint": "sha256:c0dad8b8d800aff93282b8ab8fd11347075c85a023a089aec39d8624c2349aa2",
           "Title": "golang: encoding/xml: stack exhaustion in Decoder.Skip",
           "Description": "Uncontrolled recursion in Decoder.Skip in encoding/xml before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a deeply nested XML document.",
           "Severity": "HIGH",
@@ -32197,7 +32194,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d761f01d5f6011b85b47743d10448759f197d52c08d21461aae084cde1efe6f4",
+          "Fingerprint": "sha256:b1fbfa187b23dc9f61b6c16c43969ec12a18f4547c1a26ba5edca3695bc9ef60",
           "Title": "golang: archive/tar: github.com/vbatts/tar-split: unbounded memory consumption when reading headers",
           "Description": "Reader.Read does not set a limit on the maximum size of file headers. A maliciously crafted archive could cause Read to allocate unbounded amounts of memory, potentially causing resource exhaustion or panics. After fix, Reader.Read limits the maximum size of header blocks to 1 MiB.",
           "Severity": "HIGH",
@@ -32292,7 +32289,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4209e3f087810ab86a03fb991bf04301e16b5f3df7a10d47fff7ca3a517d8bf3",
+          "Fingerprint": "sha256:e8639b7f6fc6b3b664fc5b594858d82a3d0e5940dd4293e94adf6af351f4179c",
           "Title": "golang: net/http/httputil: ReverseProxy should not forward unparseable query parameters",
           "Description": "Requests forwarded by ReverseProxy include the raw query parameters from the inbound request, including unparsable parameters rejected by net/http. This could permit query parameter smuggling when a Go proxy forwards a parameter with an unparsable value. After fix, ReverseProxy sanitizes the query parameters in the forwarded query when the outbound request's Form field is set after the ReverseProxy. Director function returns, indicating that the proxy has parsed the query parameters. Proxies which do not parse query parameters continue to forward the original query parameters unchanged.",
           "Severity": "HIGH",
@@ -32390,7 +32387,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:05249f33ea8cc1c434ba23fe6f73459f103b52660f43d8d0e573918ffcdfdcfe",
+          "Fingerprint": "sha256:b3eed302c2f35631ebb0474a67ffe766108e8b97d323e8319b40e627dbe3e4d0",
           "Title": "ELSA-2022-17957: ol8addon security update (IMPORTANT)",
           "Description": "Incorrect conversion of certain invalid paths to valid, absolute paths in Clean in path/filepath before Go 1.17.11 and Go 1.18.3 on Windows allows potential directory traversal attack.",
           "Severity": "HIGH",
@@ -32450,7 +32447,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:e48909ce1a585d533d994e89c3ebf5f1b7b1d7cf461690aac092c7e0e848d690",
+          "Fingerprint": "sha256:ec9267f3ed1361f70650cdb33ed1e825f51cb60a2884f59fbda7ae913b8f4ada",
           "Title": "golang: os/exec: Code injection in Cmd.Start",
           "Description": "Code injection in Cmd.Start in os/exec before Go 1.17.11 and Go 1.18.3 allows execution of any binaries in the working directory named either \"..com\" or \"..exe\" by calling Cmd.Run, Cmd.Start, Cmd.Output, or Cmd.CombinedOutput when Cmd.Path is unset.",
           "Severity": "HIGH",
@@ -32519,7 +32516,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:74e564eebadc0667748f7088f41c32f4787f0d6358a08c04141e56d1cd46d98f",
+          "Fingerprint": "sha256:7b9c5cd04c1970e1ef6376eee6b7d5d4067a2b34dbf32203893bda34e8419464",
           "Title": "golang: io/fs: stack exhaustion in Glob",
           "Description": "Uncontrolled recursion in Glob in io/fs before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a path which contains a large number of path separators.",
           "Severity": "HIGH",
@@ -32613,7 +32610,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6ae65f2dc9bbdda054a99582902d01214269acd41120b709a6dd7b7edae849e0",
+          "Fingerprint": "sha256:f38daafaacf3c326746d844fc79e2b0e61ed7c71ce620ce66d423d70455bac50",
           "Title": "golang: compress/gzip: stack exhaustion in Reader.Read",
           "Description": "Uncontrolled recursion in Reader.Read in compress/gzip before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via an archive containing a large number of concatenated 0-length compressed files.",
           "Severity": "HIGH",
@@ -32707,7 +32704,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6b2689eac8f5c93638c5c23c98d4dc1308c1731a5a7731c20b690b12f9b90764",
+          "Fingerprint": "sha256:7e615c339d0273073a3486ecb1253588525e98264af0707f7210b02504abdea5",
           "Title": "golang: path/filepath: stack exhaustion in Glob",
           "Description": "Uncontrolled recursion in Glob in path/filepath before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a path containing a large number of path separators.",
           "Severity": "HIGH",
@@ -32801,7 +32798,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:620e889aeb6692f6afd469651f327df83a6536fb96537a36df323cd50bc7c99a",
+          "Fingerprint": "sha256:55e419af06784c275a4570a8040ec35bed158e7239fd71c562c4a5e0795d5ff6",
           "Title": "golang: encoding/xml: stack exhaustion in Unmarshal",
           "Description": "Uncontrolled recursion in Unmarshal in encoding/xml before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via unmarshalling an XML document into a Go struct which has a nested field that uses the 'any' field tag.",
           "Severity": "HIGH",
@@ -32926,7 +32923,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:17a079a7abc62a67580dc9da5b7b4567f52fd68fdce44fe8160d53001b5e5a1f",
+          "Fingerprint": "sha256:b581a2f5e9bf6b3ea2787930d7a2bf90e385ab68e11b1d8faf512d391e9beaf0",
           "Title": "ELSA-2022-17957: ol8addon security update (IMPORTANT)",
           "Description": "Infinite loop in Read in crypto/rand before Go 1.17.11 and Go 1.18.3 on Windows allows attacker to cause an indefinite hang by passing a buffer larger than 1 \u003c\u003c 32 - 1 bytes.",
           "Severity": "HIGH",
@@ -32987,7 +32984,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3e81ef3f94eeb189c366b6d11adf31e50642e70e2b9686429eed1541ac220bab",
+          "Fingerprint": "sha256:01dd44d6bdea9e6e042719c39d02f16b476e9622e74450b9ce0a3a4511e2f440",
           "Title": "golang: encoding/gob: stack exhaustion in Decoder.Decode",
           "Description": "Uncontrolled recursion in Decoder.Decode in encoding/gob before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a message which contains deeply nested structures.",
           "Severity": "HIGH",
@@ -33087,7 +33084,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2c02f28d9e02bbd1a795bdb82d8c00bead11f9c71a5081e50f0fc38948f8d1fd",
+          "Fingerprint": "sha256:c4f99b4cbd7317b63fa35a8a7fe5bba9de9386cf127162e225e16ded25cc8094",
           "Title": "golang: math/big: decoding big.Float and big.Rat types can panic if the encoded message is too short, potentially allowing a denial of service",
           "Description": "A too-short encoded message can cause a panic in Float.GobDecode and Rat GobDecode in math/big in Go before 1.17.13 and 1.18.5, potentially allowing a denial of service.",
           "Severity": "HIGH",
@@ -33186,7 +33183,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:571b621f34fc083649873a451cf39b91502840f7d081813af4cedffe34b1c8a5",
+          "Fingerprint": "sha256:55fef73c2ce964c4fa5bb9bbed815eca628b7b2a475c3f17e6ff7b49749a4d15",
           "Title": "golang: regexp/syntax: limit memory used by parsing regexps",
           "Description": "Programs which compile regular expressions from untrusted sources may be vulnerable to memory exhaustion or denial of service. The parsed regexp representation is linear in the size of the input, but in some cases the constant factor can be as high as 40,000, making relatively small regexps consume much larger amounts of memory. After fix, each regexp being parsed is limited to a 256 MB memory footprint. Regular expressions whose representation would use more space than that are rejected. Normal use of regular expressions is unaffected.",
           "Severity": "HIGH",
@@ -33271,7 +33268,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:1daf61c1d3b96a36864d12d751755b123845dfcd51ad67e09985850d0bd8ace8",
+          "Fingerprint": "sha256:c95345a7835496d5804e51515def6d99f2cf442378f432ea5415186a2bbddf10",
           "Title": "Due to unsanitized NUL values, attackers may be able to maliciously se ...",
           "Description": "Due to unsanitized NUL values, attackers may be able to maliciously set environment variables on Windows. In syscall.StartProcess and os/exec.Cmd, invalid environment variable values containing NUL values are not properly checked for. A malicious environment variable value can exploit this behavior to set a value for a different environment variable. For example, the environment variable string \"A=B\\x00C=D\" sets the variables \"A=B\" and \"C=D\".",
           "Severity": "HIGH",
@@ -33329,7 +33326,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b6d80a5288b04198a9405b647aa65aaf8892b9861af04f1b4860206356dba89e",
+          "Fingerprint": "sha256:5fc661e1047015eff056d4b13bbc8f3af68ebb4ca8483f7d3f2fc9493b876e02",
           "Title": "golang: os, net/http: avoid escapes from os.DirFS and http.Dir on Windows",
           "Description": "On Windows, restricted files can be accessed via os.DirFS and http.Dir. The os.DirFS function and http.Dir type provide access to a tree of files rooted at a given directory. These functions permit access to Windows device files under that root. For example, os.DirFS(\"C:/tmp\").Open(\"COM1\") opens the COM1 device. Both os.DirFS and http.Dir only provide read-only filesystem access. In addition, on Windows, an os.DirFS for the directory (the root of the current drive) can permit a maliciously crafted path to escape from the drive and access any path on the system. With fix applied, the behavior of os.DirFS(\"\") has changed. Previously, an empty root was treated equivalently to \"/\", so os.DirFS(\"\").Open(\"tmp\") would open the path \"/tmp\". This now returns an error.",
           "Severity": "HIGH",
@@ -33395,7 +33392,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:94170a3d7fba9b1dac25b46c316399d93d89a8299695aeb1e402cc95c1da2409",
+          "Fingerprint": "sha256:334b9889d67fec4e4ccbd101834c6d476bdfe952aa5266cec7880d58546f1a92",
           "Title": "golang: path/filepath: path-filepath filepath.Clean path traversal",
           "Description": "A path traversal vulnerability exists in filepath.Clean on Windows. On Windows, the filepath.Clean function could transform an invalid path such as \"a/../c:/b\" into the valid path \"c:\\b\". This transformation of a relative (if invalid) path into an absolute path could enable a directory traversal attack. After fix, the filepath.Clean function transforms this path into the relative (but still invalid) path \".\\c:\\b\".",
           "Severity": "HIGH",
@@ -33462,7 +33459,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ec060a0d70e78be38568e41572879bf15b6b3a4ddbbb9131d97f3cec468c13ce",
+          "Fingerprint": "sha256:51762951ee82c3365e96ff39364eb342f5f72688dbb785a84b1336a9ec47d6b7",
           "Title": "golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding",
           "Description": "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption in the HPACK decoder, sufficient to cause a denial of service from a small number of small requests.",
           "Severity": "HIGH",
@@ -33609,7 +33606,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ad8ed747a730af8b36c4f66e903e5bbf0ff9ad4512b7c8f37cc5661764fa0f6f",
+          "Fingerprint": "sha256:2c7a32c7a6b1809887373c946da3fa1582f2e500f42b2f51adc4c96cbffb7c7d",
           "Title": "golang: crypto/tls: large handshake records may cause panics",
           "Description": "Large handshake records may cause panics in crypto/tls. Both clients and servers may send large TLS handshake records which cause servers and clients, respectively, to panic when attempting to construct responses. This affects all TLS 1.3 clients, TLS 1.2 clients which explicitly enable session resumption (by setting Config.ClientSessionCache to a non-nil value), and TLS 1.3 servers which request client certificates (by setting Config.ClientAuth \u003e= RequestClientCert).",
           "Severity": "HIGH",
@@ -33735,7 +33732,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c15b702d8745aff733a5888d73ad139967725f1023781a894cbb42bf648c50ff",
+          "Fingerprint": "sha256:6bcafa4b7036a85d28eddf688deef5b79d619e3b85ba9b29f561241c8d1d8859",
           "Title": "golang: net/http, mime/multipart: denial of service from excessive resource consumption",
           "Description": "A denial of service is possible from excessive resource consumption in net/http and mime/multipart. Multipart form parsing with mime/multipart.Reader.ReadForm can consume largely unlimited amounts of memory and disk files. This also affects form parsing in the net/http package with the Request methods FormFile, FormValue, ParseMultipartForm, and PostFormValue. ReadForm takes a maxMemory parameter, and is documented as storing \"up to maxMemory bytes +10MB (reserved for non-file parts) in memory\". File parts which cannot be stored in memory are stored on disk in temporary files. The unconfigurable 10MB reserved for non-file parts is excessively large and can potentially open a denial of service vector on its own. However, ReadForm did not properly account for all memory consumed by a parsed form, such as map entry overhead, part names, and MIME headers, permitting a maliciously crafted form to consume well over 10MB. In addition, ReadForm contained no limit on the number of disk files created, permitting a relatively small request body to create a large number of disk temporary files. With fix, ReadForm now properly accounts for various forms of memory overhead, and should now stay within its documented limit of 10MB + maxMemory bytes of memory consumption. Users should still be aware that this limit is high and may still be hazardous. In addition, ReadForm now creates at most one on-disk temporary file, combining multiple form parts into a single temporary file. The mime/multipart.File interface type's documentation states, \"If stored on disk, the File's underlying concrete type will be an *os.File.\". This is no longer the case when a form contains more than one file part, due to this coalescing of parts into a single file. The previous behavior of using distinct files for each form part may be reenabled with the environment variable GODEBUG=multipartfiles=distinct. Users should be aware that multipart.ReadForm and the http.Request methods that call it do not limit the amount of disk consumed by temporary files. Callers can limit the size of form data with http.MaxBytesReader.",
           "Severity": "HIGH",
@@ -33862,7 +33859,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ba29ef8960ea66f2f9d175d97b08fc3ee6ecbebb143df89373028de05b16ddc1",
+          "Fingerprint": "sha256:ebd6d77a4df26afa810367e02e09f4675a97ad06b0ba77fb03c47beaf8bbb9d9",
           "Title": "golang: net/http, net/textproto: denial of service from excessive memory allocation",
           "Description": "HTTP and MIME header parsing can allocate large amounts of memory, even when parsing small inputs, potentially leading to a denial of service. Certain unusual patterns of input data can cause the common function used to parse HTTP and MIME headers to allocate substantially more memory than required to hold the parsed headers. An attacker can exploit this behavior to cause an HTTP server to allocate large amounts of memory from a small request, potentially leading to memory exhaustion and a denial of service. With fix, header parsing now correctly allocates only the memory required to hold parsed headers.",
           "Severity": "HIGH",
@@ -33991,7 +33988,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3155d765fe5d2290270d2be005228d159ba802770d3a212d2158173f0499fd70",
+          "Fingerprint": "sha256:6abc9969b26dfae35425df5b7cf0e747e2d0960a7cf7576ca086e4697bbe6330",
           "Title": "golang: net/http, net/textproto, mime/multipart: denial of service from excessive resource consumption",
           "Description": "Multipart form parsing can consume large amounts of CPU and memory when processing form inputs containing very large numbers of parts. This stems from several causes: 1. mime/multipart.Reader.ReadForm limits the total memory a parsed multipart form can consume. ReadForm can undercount the amount of memory consumed, leading it to accept larger inputs than intended. 2. Limiting total memory does not account for increased pressure on the garbage collector from large numbers of small allocations in forms with many parts. 3. ReadForm can allocate a large number of short-lived buffers, further increasing pressure on the garbage collector. The combination of these factors can permit an attacker to cause an program that parses multipart forms to consume large amounts of CPU and memory, potentially resulting in a denial of service. This affects programs that use mime/multipart.Reader.ReadForm, as well as form parsing in the net/http package with the Request methods FormFile, FormValue, ParseMultipartForm, and PostFormValue. With fix, ReadForm now does a better job of estimating the memory consumption of parsed forms, and performs many fewer short-lived allocations. In addition, the fixed mime/multipart.Reader imposes the following limits on the size of parsed forms: 1. Forms parsed with ReadForm may contain no more than 1000 parts. This limit may be adjusted with the environment variable GODEBUG=multipartmaxparts=. 2. Form parts parsed with NextPart and NextRawPart may contain no more than 10,000 header fields. In addition, forms parsed with ReadForm may contain no more than 10,000 header fields across all parts. This limit may be adjusted with the environment variable GODEBUG=multipartmaxheaders=.",
           "Severity": "HIGH",
@@ -34120,7 +34117,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4504622fc4f361aad44b855419c39a82a3cd9aa29a0aea6dd5053e087397c712",
+          "Fingerprint": "sha256:39e6edff0c8e829c39ab642721ea30a5b41c6ace12511501f3023b67568380cb",
           "Title": "golang: go/parser: Infinite loop in parsing",
           "Description": "Calling any of the Parse functions on Go source code which contains //line directives with very large line numbers can cause an infinite loop due to integer overflow.",
           "Severity": "HIGH",
@@ -34129,7 +34126,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -34250,7 +34247,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b7add88d331784d0222460f0681db4eed81f66538a8bd123ba32ea635409baa1",
+          "Fingerprint": "sha256:7d41c4325b61940d2bade3be2db097311d2fa521c70d0a22ee871f19cbcd0286",
           "Title": "golang: html/template: improper sanitization of CSS values",
           "Description": "Angle brackets (\u003c\u003e) are not considered dangerous characters when inserted into CSS contexts. Templates containing multiple actions separated by a '/' character can result in unexpectedly closing the CSS context and allowing for injection of unexpected HTML, if executed with untrusted input.",
           "Severity": "HIGH",
@@ -34378,7 +34375,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d09c8d72aa8fcc1d95cedb5af4ab37e21a17e7b3e50dd0ff90d789bedcde9dec",
+          "Fingerprint": "sha256:7ae5d746e93838ddaf437791fbe193c3c94c7a9dd0f3258409ebde2a4a80732b",
           "Title": "golang: html/template: improper handling of empty HTML attributes",
           "Description": "Templates containing actions in unquoted HTML attributes (e.g. \"attr={{.}}\") executed with empty input can result in output with unexpected results when parsed due to HTML normalization rules. This may allow injection of arbitrary attributes into tags.",
           "Severity": "HIGH",
@@ -34506,7 +34503,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:92bf225334a382e68e637b49aa4dabfc6df4ddf8e2227fb9655321958b67e3fe",
+          "Fingerprint": "sha256:8edac72722008c3389a60e2da592185964a8c969883a5691eafb34d21d01a25e",
           "Title": "golang: runtime: unexpected behavior of setuid/setgid binaries",
           "Description": "On Unix platforms, the Go runtime does not behave differently when a binary is run with the setuid/setgid bits. This can be dangerous in certain cases, such as when dumping memory state, or assuming the status of standard i/o file descriptors. If a setuid/setgid binary is executed with standard I/O file descriptors closed, opening any files can result in unexpected content being read or written with elevated privileges. Similarly, if a setuid/setgid program is terminated, either via panic or signal, it may leak the contents of its registers.",
           "Severity": "HIGH",
@@ -34604,7 +34601,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:47bc0d4b55b176e160cae9d3475ae44bbbbdc3af778246a5512cdbbeb61d0b8e",
+          "Fingerprint": "sha256:678e6253752b122bf9e605d62918a5a72de75903e6cded70892d5b8df0e99a76",
           "Title": "golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487)",
           "Description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
           "Severity": "HIGH",
@@ -34774,7 +34771,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:dc227583e9726377233445513d3ecd77ad5023a44e8c00cfe3ee629cd850e616",
+          "Fingerprint": "sha256:6b2c1d56ad1c936a777ba187af2e47312a02d80b4f1db2469f6891e458723077",
           "Title": "The filepath package does not recognize paths with a \\??\\ prefix as sp ...",
           "Description": "The filepath package does not recognize paths with a \\??\\ prefix as special. On Windows, a path beginning with \\??\\ is a Root Local Device path equivalent to a path beginning with \\\\?\\. Paths with a \\??\\ prefix may be used to access arbitrary locations on the system. For example, the path \\??\\c:\\x is equivalent to the more common path c:\\x. Before fix, Clean could convert a rooted path such as \\a\\..\\??\\b into the root local device path \\??\\b. Clean will now convert this to .\\??\\b. Similarly, Join(\\, ??, b) could convert a seemingly innocent sequence of path elements into the root local device path \\??\\b. Join will now convert this to \\.\\??\\b. In addition, with fix, IsAbs now correctly reports paths beginning with \\??\\ as absolute, and VolumeName correctly reports the \\??\\ prefix as a volume name. UPDATE: Go 1.20.11 and Go 1.21.4 inadvertently changed the definition of the volume name in Windows paths starting with \\?, resulting in filepath.Clean(\\?\\c:) returning \\?\\c: rather than \\?\\c:\\ (among other effects). The previous behavior has been restored.",
           "Severity": "HIGH",
@@ -34837,7 +34834,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:633d3fcb5fa994ab590eaf6f28fec712166d7adab44fc5db38dbec9107e682ad",
+          "Fingerprint": "sha256:7b743ab6bfd08fd92d55468535c570d5b4f552ebb830c18b7427eb60637a6853",
           "Title": "golang: crypto/tls: Timing Side Channel attack in RSA based TLS key exchanges.",
           "Description": "Before Go 1.20, the RSA based TLS key exchanges used the math/big library, which is not constant time. RSA blinding was applied to prevent timing attacks, but analysis shows this may not have been fully effective. In particular it appears as if the removal of PKCS#1 padding may leak timing information, which in turn could be used to recover session key bits. In Go 1.20, the crypto/tls library switched to a fully constant time RSA implementation, which we do not believe exhibits any timing side channels.",
           "Severity": "HIGH",
@@ -34945,7 +34942,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0c788983a5533d2b3bdab2fcc759e4714753206019b0cefdffbb889d7e5b66d8",
+          "Fingerprint": "sha256:f48afa1958cf80458a764ff34db9adaed0cc0a414bf92f0cb951f99d0390f924",
           "Title": "golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS",
           "Description": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
           "Severity": "HIGH",
@@ -35041,7 +35038,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:21651b60e4c9021fe9f1bc9c4be5b27adaaf8c04d18a210925c93c05b312b412",
+          "Fingerprint": "sha256:17759bb0b94cf3a4ace1d343ec1cb18b1f3638ea3345894f7069f868d9059d22",
           "Title": "encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion",
           "Description": "Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion. This is a follow-up to CVE-2022-30635.",
           "Severity": "HIGH",
@@ -35121,7 +35118,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:80a21df08f35d36d922c4913a4c8331282908caf481843c0f4151e5cf91ae45e",
+          "Fingerprint": "sha256:bca7e5c90aa02ee5323e31aad4727c00c11e1c70ed87446a35ffca96636e4d81",
           "Title": "database/sql: Postgres Scan Race Condition",
           "Description": "Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.",
           "Severity": "HIGH",
@@ -35190,7 +35187,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:caa499ee67888e5d251514a41bab6995db1f3583f59e9b26969acb2488419f14",
+          "Fingerprint": "sha256:7fd92319b179222c391e15644b7a2dce1cd2c057c9402c021205aa63b4f9b605",
           "Title": "golang: archive/tar: Unbounded allocation when parsing GNU sparse map",
           "Description": "tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.",
           "Severity": "HIGH",
@@ -35259,7 +35256,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0d0df78e7146a3cceb3c20a7616c15176dd6f4429ff76d09c3f89e249c888c8e",
+          "Fingerprint": "sha256:48121262000ac2292a500247be17d31a0ec408d6c30200ac7408fb283f8828a0",
           "Title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
           "Description": "The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.",
           "Severity": "HIGH",
@@ -35288,23 +35285,20 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2920",
+            "https://access.redhat.com/errata/RHSA-2026:3337",
             "https://access.redhat.com/security/cve/CVE-2025-61726",
             "https://bugzilla.redhat.com/2418462",
-            "https://bugzilla.redhat.com/2433242",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437111",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2434431",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2434432",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2437016",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2437111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61732",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121",
-            "https://errata.almalinux.org/9/ALSA-2026-2920.html",
-            "https://errata.rockylinux.org/RLSA-2026:2709",
+            "https://errata.almalinux.org/9/ALSA-2026-3337.html",
+            "https://errata.rockylinux.org/RLSA-2026:3040",
             "https://go.dev/cl/736712",
             "https://go.dev/issue/77101",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
@@ -35340,7 +35334,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:910771fe9164782a8333c87d86bccf1bd776a95725d52ec6fd507c82e26dd600",
+          "Fingerprint": "sha256:e65e903b00974b976db0d5e4ab5e000ab0c4a02e1d79e45ab56883834c5375c7",
           "Title": "golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip",
           "Description": "archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.",
           "Severity": "HIGH",
@@ -35369,23 +35363,24 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/15/4",
-            "https://access.redhat.com/errata/RHSA-2026:2920",
+            "https://access.redhat.com/errata/RHSA-2026:3337",
             "https://access.redhat.com/security/cve/CVE-2025-61728",
             "https://bugzilla.redhat.com/2418462",
-            "https://bugzilla.redhat.com/2433242",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437111",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2433242",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2434431",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2434432",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2437016",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2437111",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728",
-            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61732",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121",
-            "https://errata.almalinux.org/9/ALSA-2026-2920.html",
-            "https://errata.rockylinux.org/RLSA-2026:2709",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21721",
+            "https://errata.almalinux.org/9/ALSA-2026-3337.html",
+            "https://errata.rockylinux.org/RLSA-2026:2920",
             "https://go.dev/cl/736713",
             "https://go.dev/issue/77102",
             "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
@@ -35421,7 +35416,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:69ee285b92dac03f058b48193efe7a4af5a4b8ad73894466bf0386df384538cc",
+          "Fingerprint": "sha256:3d6bb75a0e01b652909e1164a18133e5ee2c86fe09031976c914a29288cae25c",
           "Title": "crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate",
           "Description": "Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.",
           "Severity": "HIGH",
@@ -35448,17 +35443,20 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:2920",
+            "https://access.redhat.com/errata/RHSA-2026:3337",
             "https://access.redhat.com/security/cve/CVE-2025-61729",
             "https://bugzilla.redhat.com/2418462",
-            "https://bugzilla.redhat.com/2433242",
             "https://bugzilla.redhat.com/2434431",
             "https://bugzilla.redhat.com/2434432",
             "https://bugzilla.redhat.com/2437111",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2418462",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2434432",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2437111",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729",
-            "https://errata.almalinux.org/9/ALSA-2026-2920.html",
-            "https://errata.rockylinux.org/RLSA-2026:1908",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121",
+            "https://errata.almalinux.org/9/ALSA-2026-3337.html",
+            "https://errata.rockylinux.org/RLSA-2026:3040",
             "https://go.dev/cl/725920",
             "https://go.dev/issue/76445",
             "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
@@ -35494,7 +35492,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:612a6e87460fdd5c20a603637c1cec3ab2768b7e71f46642fafcb5412b5d59bf",
+          "Fingerprint": "sha256:84911fc5f1c2a60edb4a61079c64cbd12b533949c8b72278fc3ffccd68f1c505",
           "Title": "During the TLS 1.3 handshake if multiple messages are sent in records  ...",
           "Description": "During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.",
           "Severity": "HIGH",
@@ -35543,7 +35541,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:7cc1f59812714c747636c2dcf4e44ee6dda6ffd6ab0f41726a91ccfda8988b31",
+          "Fingerprint": "sha256:6ae27b549aa1be5b6d9dd8bbd648120f05dc1b307408779d1e92473105d4e04f",
           "Title": "golang: net/http: improper sanitization of Transfer-Encoding header",
           "Description": "Acceptance of some invalid Transfer-Encoding headers in the HTTP/1 client in net/http before Go 1.17.12 and Go 1.18.4 allows HTTP request smuggling if combined with an intermediate server that also improperly fails to reject the header as invalid.",
           "Severity": "MEDIUM",
@@ -35644,7 +35642,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:fd96b24f4710b13f6dfd5846a4f8778c673adccd9d1168f701cf9458df4c8a1d",
+          "Fingerprint": "sha256:e0dad191c82f6ed0a0edb48f7d38e923e82cf5792e88a1431c4260bf787155ec",
           "Title": "golang: go/parser: stack exhaustion in all Parse* functions",
           "Description": "Uncontrolled recursion in the Parse functions in go/parser before Go 1.17.12 and Go 1.18.4 allow an attacker to cause a panic due to stack exhaustion via deeply nested types or declarations.",
           "Severity": "MEDIUM",
@@ -35768,7 +35766,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:086afdae8a18fe3069cd26d731a6ea91cb55ab6582be0106fc4f510d00cc05af",
+          "Fingerprint": "sha256:316144d1dd9d6bc7684b8fb6f5407a1ca0d8557699180ec09742297eb237afa5",
           "Title": "golang: net/http/httputil: NewSingleHostReverseProxy - omit X-Forwarded-For not working",
           "Description": "Improper exposure of client IP addresses in net/http before Go 1.17.12 and Go 1.18.4 can be triggered by calling httputil.ReverseProxy.ServeHTTP with a Request.Header map containing a nil value for the X-Forwarded-For header, which causes ReverseProxy to set the client IP as the value of the X-Forwarded-For header.",
           "Severity": "MEDIUM",
@@ -35866,7 +35864,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c5544a2354c797dcfc92ad4dd8fbd278490926e527190ba5ea7acc512f040436",
+          "Fingerprint": "sha256:c39c9180f70d406831cbd0563ee5ce3dc644b8955f289b333d0d866162508544",
           "Title": "golang: net/http: excessive memory growth in a Go server accepting HTTP/2 requests",
           "Description": "An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection.",
           "Severity": "MEDIUM",
@@ -35875,7 +35873,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 2,
             "bitnami": 2,
             "cbl-mariner": 2,
@@ -36026,7 +36024,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ecef807be5c701346359dc63ba7f0db47be2eacb1a170d2c93c29f22f1f8418d",
+          "Fingerprint": "sha256:062e6779607dc5995487e67953ff422b308b61cfed382e5702cf620a5045974d",
           "Title": "golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results",
           "Description": "The ScalarMult and ScalarBaseMult methods of the P256 Curve may return an incorrect result if called with some specific unreduced scalars (a scalar larger than the order of the curve). This does not impact usages of crypto/ecdsa or crypto/ecdh.",
           "Severity": "MEDIUM",
@@ -36093,7 +36091,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:20472cf455168061295bd50503b0921abace84cbaf1b07a38be3198fb618a961",
+          "Fingerprint": "sha256:ea5054eaa628e7b68462e07b6e7528e3730d25dba9ce1b674e2043087193e417",
           "Title": "golang: net/http: insufficient sanitization of Host header",
           "Description": "The HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests. With fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.",
           "Severity": "MEDIUM",
@@ -36191,7 +36189,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6cecad1642835a915f5db63e481ff33e2b4acdb21cf101905bc8c62f07f2d9ec",
+          "Fingerprint": "sha256:a5cea20ac1b94630d63a6fca9f0286edba791d622dc7fd25d10f9f2c23dbfbf3",
           "Title": "golang: crypto/tls: slow verification of certificate chains containing large RSA keys",
           "Description": "Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures. With fix, the size of RSA keys transmitted during handshakes is restricted to \u003c= 8192 bits. Based on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.",
           "Severity": "MEDIUM",
@@ -36304,7 +36302,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2b398c374339aeaa5a06f9496f6576b719fa7db08a2a677f8fe59a45669912f5",
+          "Fingerprint": "sha256:fe13f7562955d30441cdb92c42a0c808ffb5ca3e5e380df2b63e1f63395952c9",
           "Title": "golang: html/template: improper handling of HTML-like comments within script contexts",
           "Description": "The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in \u003cscript\u003e contexts. This may cause the template parser to improperly interpret the contents of \u003cscript\u003e contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.",
           "Severity": "MEDIUM",
@@ -36313,7 +36311,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 2,
             "bitnami": 2,
             "cbl-mariner": 2,
@@ -36423,7 +36421,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:a7fb3dc31bb55295d2184bd6b9a3960920221ebbf355c863e747621c12c1af91",
+          "Fingerprint": "sha256:3b85b496cbff3350985cf6976b61c67c099cc6452b7972451a2a5a7cac00b079",
           "Title": "golang: html/template: improper handling of special tags within script contexts",
           "Description": "The html/template package does not apply the proper rules for handling occurrences of \"\u003cscript\", \"\u003c!--\", and \"\u003c/script\" within JS literals in \u003cscript\u003e contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.",
           "Severity": "MEDIUM",
@@ -36432,7 +36430,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 2,
             "bitnami": 2,
             "cbl-mariner": 2,
@@ -36542,7 +36540,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:f6e434c40d6023c8a2b47986c110ce4bf824c02148f42a73fecafa8c3b3fe686",
+          "Fingerprint": "sha256:92f1bc15626078bdf853d84f2bd73dfbc8ff63f18b4c909ae30e6b9e6e87cd62",
           "Title": "golang: net/http/internal: Denial of Service (DoS) via Resource Consumption via HTTP requests",
           "Description": "A malicious HTTP sender can use chunk extensions to cause a receiver reading from a request or response body to read many more bytes from the network than are in the body. A malicious HTTP client can further exploit this to cause a server to automatically read a large amount of data (up to about 1GiB) when a handler fails to read the entire body of a request. Chunk extensions are a little-used HTTP feature which permit including additional metadata in a request or response body sent using the chunked encoding. The net/http chunked encoding reader discards this metadata. A sender can exploit this by inserting a large metadata segment with each byte transferred. The chunk reader now produces an error if the ratio of real body to encoded bytes grows too small.",
           "Severity": "MEDIUM",
@@ -36651,7 +36649,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d60b1a8681abfbf9d510adca7ee8273d9cdb4367d69f0a728703f9c56dd065ac",
+          "Fingerprint": "sha256:237fc4fdf9e9fd234caa17017d314a6787be0cba68106d4b82aec31e19ffa0fd",
           "Title": "On Windows, The IsLocal function does not correctly detect reserved de ...",
           "Description": "On Windows, The IsLocal function does not correctly detect reserved device names in some cases. Reserved names followed by spaces, such as \"COM1 \", and reserved names \"COM\" and \"LPT\" followed by superscript 1, 2, or 3, are incorrectly reported as local. With fix, IsLocal now correctly reports these names as non-local.",
           "Severity": "MEDIUM",
@@ -36705,7 +36703,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3f3488810b1ad9093a5382305f8801296392858f5f63da91e399057e55d06dec",
+          "Fingerprint": "sha256:95b58666a852bab79814e7fc025bca819ae1d65911a780bd63c0011f5d68319d",
           "Title": "golang: net/http/cookiejar: incorrect forwarding of sensitive headers and cookies on HTTP redirect",
           "Description": "When following an HTTP redirect to a domain which is not a subdomain match or exact match of the initial domain, an http.Client does not forward sensitive headers such as \"Authorization\" or \"Cookie\". For example, a redirect from foo.com to www.foo.com will forward the Authorization header, but a redirect to bar.com will not. A maliciously crafted HTTP redirect could cause sensitive headers to be unexpectedly forwarded.",
           "Severity": "MEDIUM",
@@ -36787,7 +36785,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3a80195a53a275245bb552ca062ba721bd28617ba0df15eb497cf4e040bd0e9a",
+          "Fingerprint": "sha256:ee27c84d27d95e8b156b6db9ef65fcb3ecb0743e153877093f14cfb411948d32",
           "Title": "golang: net/http: golang: mime/multipart: golang: net/textproto: memory exhaustion in Request.ParseMultipartForm",
           "Description": "When parsing a multipart form (either explicitly with Request.ParseMultipartForm or implicitly with Request.FormValue, Request.PostFormValue, or Request.FormFile), limits on the total size of the parsed form were not applied to the memory consumed while reading a single form line. This permits a maliciously crafted input containing very long lines to cause allocation of arbitrarily large amounts of memory, potentially leading to memory exhaustion. With fix, the ParseMultipartForm function now correctly limits the maximum size of form lines.",
           "Severity": "MEDIUM",
@@ -36875,7 +36873,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:a1cf71a88bcca1027ffc7beab158e338181025ea14e97eda502d5009716522b0",
+          "Fingerprint": "sha256:0cdf5e438f36663d01ee7bf6f587544eaedd5a819850586ad3d90579b03946b8",
           "Title": "golang: crypto/x509: Verify panics on certificates with an unknown public key algorithm",
           "Description": "Verifying a certificate chain which contains a certificate with an unknown public key algorithm will cause Certificate.Verify to panic. This affects all crypto/tls clients, and servers that set Config.ClientAuth to VerifyClientCertIfGiven or RequireAndVerifyClientCert. The default behavior is for TLS servers to not verify client certificates.",
           "Severity": "MEDIUM",
@@ -36961,7 +36959,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:d5a470bef562a01e244492b52a908c77a87644a01a0df5b636ddeccc575e5292",
+          "Fingerprint": "sha256:a5f69e3f91cdcd7250212a53731c96bef2a57001ddfcaeb8b8f964d7853645b1",
           "Title": "golang: net/mail: comments in display names are incorrectly handled",
           "Description": "The ParseAddressList function incorrectly handles comments (text within parentheses) within display names. Since this is a misalignment with conforming address parsers, it can result in different trust decisions being made by programs using different parsers.",
           "Severity": "MEDIUM",
@@ -37055,7 +37053,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2a7e6f5fb01e4574a9d4a7548ebca25ab9e9bc4469d025d7f615eac4eabe14d0",
+          "Fingerprint": "sha256:ebd58eea6241a97412a8ec12d5773fcc0d0386778b6e36a82f769e85257b03d9",
           "Title": "golang: html/template: errors returned from MarshalJSON methods may break template escaping",
           "Description": "If errors returned from MarshalJSON methods contain user controlled data, they may be used to break the contextual auto-escaping behavior of the html/template package, allowing for subsequent actions to inject unexpected content into templates.",
           "Severity": "MEDIUM",
@@ -37141,7 +37139,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:79400cde9eb956ffabf9fa4cd6c6adf28cdd87e1cb705c464d44fdbbc4f46e71",
+          "Fingerprint": "sha256:f979c0e96da8ed165741bedd3f935c5aa1d14d1f0486908203c4fd908f6b0e3a",
           "Title": "golang: archive/zip: Incorrect handling of certain ZIP files",
           "Description": "The archive/zip package's handling of certain types of invalid zip files differs from the behavior of most zip implementations. This misalignment could be exploited to create an zip file with contents that vary depending on the implementation reading the file. The archive/zip package now rejects files containing these errors.",
           "Severity": "MEDIUM",
@@ -37235,7 +37233,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b383bf460568e921b4b8dd63a27f3def2253d8292a372cc10954ab021a465e98",
+          "Fingerprint": "sha256:0b6b9379a1222c8c720a71646f90f2246277c699c9f30c8895285002cc300620",
           "Title": "net/http: Denial of service due to improper 100-continue handling in net/http",
           "Description": "The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an \"Expect: 100-continue\" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending \"Expect: 100-continue\" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.",
           "Severity": "MEDIUM",
@@ -37322,7 +37320,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:0c115b62f33f45cb34b702d8e6f5f899664e420016d5e79cf0f0f5cf53877346",
+          "Fingerprint": "sha256:e39b33275b189443bebea998a5b4f2aecb92d382cf61f10058c10752f6d4c500",
           "Title": "go/parser: golang: Calling any of the Parse functions containing deeply nested literals can cause a panic/stack exhaustion",
           "Description": "Calling any of the Parse functions on Go source code which contains deeply nested literals can cause a panic due to stack exhaustion.",
           "Severity": "MEDIUM",
@@ -37408,7 +37406,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6e3dd5ec8636a607379a6400828e04cf4e7a4847e201a7e8f448e14631ee0fc1",
+          "Fingerprint": "sha256:b5ccf57c329dd380ed02718c1f2bca2b9f7fbbec1fdc632c150229e9619da5ed",
           "Title": "go/build/constraint: golang: Calling Parse on a \"// +build\" build tag line with deeply nested expressions can cause a panic due to stack exhaustion",
           "Description": "Calling Parse on a \"// +build\" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.",
           "Severity": "MEDIUM",
@@ -37494,7 +37492,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:960ff585981f2a23ad10b58fb29efe1c4b93a4b81a9c8b4a6ef70bebe64f729d",
+          "Fingerprint": "sha256:2b2a64c26893f16e9d886abcab4b0bf2ee8004bfd305bd51f5984936d05e47fa",
           "Title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
           "Description": "The HTTP client drops sensitive headers after following a cross-domain redirect. For example, a request to a.com/ containing an Authorization header which is redirected to b.com/ will not send that header to b.com. In the event that the client received a subsequent same-domain redirect, however, the sensitive headers would be restored. For example, a chain of redirects from a.com/, to b.com/1, and finally to b.com/2 would incorrectly send the Authorization header to b.com/2.",
           "Severity": "MEDIUM",
@@ -37573,7 +37571,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:113853bfd99b6987cdd5e390b81a94b72f44362314ca1c360f193767a9d37b0c",
+          "Fingerprint": "sha256:9ce4c10626a87a08374d53f1d436f185fae1c4125ca28df10a4ced03b146d87c",
           "Title": "golang: crypto/x509: crypto/x509: usage of IPv6 zone IDs can bypass URI name constraints",
           "Description": "A certificate with a URI which has a IPv6 address with a zone ID may incorrectly satisfy a URI name constraint that applies to the certificate chain. Certificates containing URIs are not permitted in the web PKI, so this only affects users of private PKIs which make use of URIs.",
           "Severity": "MEDIUM",
@@ -37651,7 +37649,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2042e87b0236d6868b2f7ae2f9df1d70dcef5fe092cac76e806e86d611a640ea",
+          "Fingerprint": "sha256:6427847af1210c8a2ac541029a9e78868de3627133c0993b93e9f8844a560023",
           "Title": "Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall",
           "Description": "os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.",
           "Severity": "MEDIUM",
@@ -37700,7 +37698,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:c5782d318ff4d8dc517a93f7885540e36ec789444ae76434e8a75e5b8c2a0b08",
+          "Fingerprint": "sha256:9b4e492af7358e0af8e00b43b0456a020261217c9ff1cf8c78bcf985975b1171",
           "Title": "crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec",
           "Description": "Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.",
           "Severity": "MEDIUM",
@@ -37773,7 +37771,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:27dbb8898f315c66e90c2ec1a19155fdd85939f6f8d05b75f02457869e62a367",
+          "Fingerprint": "sha256:21f941095df65171eb1d8cd1f3ab386c81d6cf9ff2ed19003aecab1358ae1726",
           "Title": "net/http: Request smuggling due to acceptance of invalid chunked data in net/http",
           "Description": "The net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines. This can permit request smuggling if a net/http server is used in conjunction with a server that incorrectly accepts a bare LF as part of a chunk-ext.",
           "Severity": "MEDIUM",
@@ -37850,7 +37848,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:9da6629ba16e8d76d4800e9f8ec57e8f719b72a1d44f818df2ca8db749726c1b",
+          "Fingerprint": "sha256:e3457b4cb2c204f76d6565d5aca1b5163aace122f3c8c549f189c68ebbfb4b44",
           "Title": "os: os: Information disclosure via path traversal using specially crafted filenames",
           "Description": "It was possible to improperly access the parent directory of an os.Root by opening a filename ending in \"../\". For example, Root.Open(\"../\") would open the parent directory of the Root. This escape only permits opening the parent directory itself, not ancestors of the parent or files contained within the parent.",
           "Severity": "MEDIUM",
@@ -37908,7 +37906,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:46797eefe87ac8c41439748c72b0137f4b4894e19e75254a6d9a04da69a9f6af",
+          "Fingerprint": "sha256:6c0627b7209e0e69bd56d040d4431a284a49729dba3846c6c7aa570290cea294",
           "Title": "net/http: Sensitive headers not cleared on cross-origin redirect in net/http",
           "Description": "Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.",
           "Severity": "MEDIUM",
@@ -37977,7 +37975,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:10d2ee3adb6780f73d87e1fbaeefb978136db9d95414ce9e52688cb13b68b576",
+          "Fingerprint": "sha256:d7bce198b5fd25999c562fa06770c03538c0d80ca506fff6a4335238fccbbdac",
           "Title": "os/exec: Unexpected paths returned from LookPath in os/exec",
           "Description": "If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath (\"\", \".\", and \"..\"), can result in the binaries listed in the PATH being unexpectedly returned.",
           "Severity": "MEDIUM",
@@ -38046,7 +38044,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:2f4d443f8d45070c4347fce9b9becc24d4b449f406dcb8292a8927e0b207f14e",
+          "Fingerprint": "sha256:c33908416e96008ca7c90a95330608076d4f19e9c7762a504855e83c6ef4b14b",
           "Title": "net/url: Insufficient validation of bracketed IPv6 hostnames in net/url",
           "Description": "The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: \"http://[::1]/\". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.",
           "Severity": "MEDIUM",
@@ -38102,7 +38100,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4d4f40f84b4ff1961163abc0560c388b1eabdbd252307be1cc537477ed84c18f",
+          "Fingerprint": "sha256:498db9f76612fe35afae5b1a4178b117b62489ed302fa8c902a5823bdca360fc",
           "Title": "encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1",
           "Description": "Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.",
           "Severity": "MEDIUM",
@@ -38162,7 +38160,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:4e4e5b3aa80ade3fb7216c2fdd63aee3f4ae041d0a9b7aeb2ec9fab1adc05c90",
+          "Fingerprint": "sha256:ed393ce4bb74712d85341fd929ee04b8ac7585856072faa26e2b728370423e2a",
           "Title": "golang.org/net/http: Lack of limit when parsing cookies can cause memory exhaustion in net/http",
           "Description": "Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.",
           "Severity": "MEDIUM",
@@ -38218,7 +38216,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:cd4faedda35030a672d449e5466625f36b79e70c029418d462dc91bfe0272296",
+          "Fingerprint": "sha256:b154d26f406f164ff442a8645ba16f07cb1d7ac96cbaa9bf54afca69aa86376c",
           "Title": "crypto/x509: Quadratic complexity when checking name constraints in crypto/x509",
           "Description": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -38278,7 +38276,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:e2347995c7db568c455c8c00df9dbe1969653d8fb3c04be706b1007d9d9e375c",
+          "Fingerprint": "sha256:58abc213a57bdf8dd7df7c2612e9470f7f0d9226aa7b0bac9256914ac5af8043",
           "Title": "crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509",
           "Description": "Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.",
           "Severity": "MEDIUM",
@@ -38338,7 +38336,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:09a0b3b8a3b99f0f81eb93d508a1d48adb811b7ae4f5892c623bf739f627e959",
+          "Fingerprint": "sha256:dd11dce27d69aaa75f64582ab6994e80299efd67b382a7b0ced67f00e3426cc2",
           "Title": "crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information",
           "Description": "When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.",
           "Severity": "MEDIUM",
@@ -38397,7 +38395,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:ab89c68549aa28294f4df36fa144924d01589a665dc3eef07787f2eb94d3f971",
+          "Fingerprint": "sha256:968551a7d5f30b638f742d85147976839d9ba876382b65c3993bd59329d30096",
           "Title": "encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem",
           "Description": "The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.",
           "Severity": "MEDIUM",
@@ -38457,7 +38455,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:eca240d34af429fccf5bd82a5f1d7f295511b2e174b9481a1147fe9c669adfc9",
+          "Fingerprint": "sha256:dacfd96e36da41d47bd8adf41ee26c4d610f3e7ee9283bf10db843257dcd6e8a",
           "Title": "net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto",
           "Description": "The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -38516,7 +38514,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:b6cb8002468c4e1ac12bd48b82b06136176f331d20dc609129ac3438a61e6c21",
+          "Fingerprint": "sha256:c3f681cb646c978b945cfab0c6662de2a7bbe38f69d1cbf5e1bd19687cbf668d",
           "Title": "net/mail: Excessive CPU consumption in ParseAddress in net/mail",
           "Description": "The ParseAddress function constructs domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.",
           "Severity": "MEDIUM",
@@ -38572,7 +38570,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:6507c1f87ba2e3afae4ac471813f15a332c4cc1f8a666d13e7627e4d5c3c6761",
+          "Fingerprint": "sha256:3f1a2119ca7fc5b433d27de217c3cfa1f1450771c4740ffb3b65df1616f3016f",
           "Title": "golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs",
           "Description": "An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.",
           "Severity": "MEDIUM",
@@ -38631,7 +38629,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:3023b98db82b69f0575394b3031d29306bce127dbf4ff94e17a1b428e8d9287c",
+          "Fingerprint": "sha256:38d9f14a7ec0dd6137f0cceb923e9630f1ffc3f647cdbfe3e2608de5fa425721",
           "Title": "golang: crypto/tls: session tickets lack random ticket_age_add",
           "Description": "Non-random values for ticket_age_add in session tickets in crypto/tls before Go 1.17.11 and Go 1.18.3 allow an attacker that can observe TLS handshakes to correlate successive connections by comparing ticket ages during session resumption.",
           "Severity": "LOW",

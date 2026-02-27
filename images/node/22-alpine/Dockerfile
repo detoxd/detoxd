@@ -1,6 +1,6 @@
 # ============================================================================
 # Detoxd Hardened Image - Iteration 1
-# Generated from Trivy analysis - targeting 15 fixable vulns
+# Generated from Trivy analysis - targeting 17 fixable vulns
 # ============================================================================
 
 ARG BASE_IMAGE=node:22-alpine
@@ -8,7 +8,7 @@ FROM ${BASE_IMAGE}
 
 LABEL maintainer="detoxd"
 LABEL detoxd.iteration="1"
-LABEL detoxd.fixable.count="15"
+LABEL detoxd.fixable.count="17"
 LABEL detoxd.unfixable.count="0"
 
 # Fix NPM packages (only if npm is available)
