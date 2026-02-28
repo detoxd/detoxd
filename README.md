@@ -144,4 +144,4 @@ This repository is purely for **transparency** - to show what we scan and the re
 Apache 2.0 - See [LICENSE](LICENSE)
 
 ---
-*Last updated: 2026-02-27*
+*Last updated: 2026-02-28*
